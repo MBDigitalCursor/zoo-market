@@ -1,0 +1,21 @@
+:root {
+  --yellow: #F8C81F;
+  --green: #348A0C;
+  --black: #000000;
+  --grey: #C2C1C1;
+  --hover-grey: #C2C1C1;
+  --active-grey: #8E8E8E;
+
+
+  /* popular items paddings */
+  --pop-pt: 65px;
+  --pop-pb: 94px;
+
+  /* catalog paddings */
+  --catalog-pt: 153px;
+  --catalog-pb: 107px;
+
+  /* contact paddings */
+  --contact-pt: 172px;
+  --contact-pb: 108px;
+}
