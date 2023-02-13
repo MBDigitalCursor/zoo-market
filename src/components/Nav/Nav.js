@@ -4,8 +4,18 @@ import "./nav.css";
 function Nav() {
 	return (
 		<div className="nav-container">
-			<h1>test</h1>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, odio nulla! Quos, nihil dicta magni excepturi culpa assumenda perspiciatis rem.</p>
+			<div className="nav-links">
+				<a href="/">Produktai</a>
+				<a href="/">Kontaktai</a>
+			</div>
+			<img
+				src={require("../../assets/img/zoo-market-logo.png")}
+				alt="zoo market logo"
+			/>
+			<div className="nav-lang">
+				<a href="/">LT</a>
+				<a href="/">EN</a>
+			</div>
 		</div>
 	);
 }
