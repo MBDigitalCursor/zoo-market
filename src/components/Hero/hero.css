@@ -4,6 +4,8 @@
   display: flex;
   align-items: center;
   text-align: center;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-container img {
@@ -16,7 +18,7 @@
   margin-bottom: 40px;
 }
 
-.hero-container button {
+.hero-container .container button {
   font-size: var(--21px);
   border-radius: var(--border-radius);
   padding: 13px 31px 14px 31px;
@@ -25,11 +27,12 @@
   color: white;
 }
 
-.hero-container button:hover {
+.hero-container .container button:hover {
   background-color: var(--hover-green);
 }
 
 .hero-animation-paws {
+
   position: absolute;
   margin-left: auto;
   margin-right: auto;
