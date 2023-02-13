@@ -1,0 +1,26 @@
+.hero-container {
+  height: 720px;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-container img {
+  margin-bottom: var(--21px);
+}
+
+.hero-container h1 {
+  font-weight: var(--regular);
+  font-size: var(--37px);
+  margin-bottom: 40px;
+}
+
+.hero-container button {
+  font-size: var(--21px);
+  border-radius: var(--border-radius);
+  padding: 13px 31px 18px 31px;
+  border: none;
+  background-color: var(--green);
+  color: white;
+}

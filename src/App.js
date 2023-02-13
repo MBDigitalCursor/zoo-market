@@ -9,12 +9,16 @@ import Contacts from "./components/Contacts/Contacts";
 
 function App() {
 	return (
-		<div className="container">
-			<Nav />
+		<div>
+			<div className="container">
+				<Nav />
+			</div>
 			<Hero />
-			<PopularItems />
-			<Catalog />
-			<Contacts />
+			<div className="container">
+				<PopularItems />
+				<Catalog />
+				<Contacts />
+			</div>
 		</div>
 	);
 }

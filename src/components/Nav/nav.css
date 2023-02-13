@@ -1,9 +1,31 @@
+nav {
+  text-align: center;
+  position: relative;
+}
+
+nav img {
+  position: absolute;
+  top: 0;
+}
+
 .nav-container {
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: var(--21px);
+  font-weight: var(--semi-bold);
 }
 
-.nav-container .nav-links a {
-  font-size: var(--21px);
+.nav-container a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav-container .nav-links a:first-of-type {
+  padding-right: 40px;
+}
+
+.nav-container .nav-lang a:last-of-type {
+  padding-left: 10px;
 }
