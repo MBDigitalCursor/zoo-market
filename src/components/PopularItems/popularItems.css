@@ -1,6 +1,9 @@
 .pop-items-container {
   padding-top: var(--pop-pt);
   padding-bottom: var(--pop-pb);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .pop-items-title {
