@@ -2,7 +2,7 @@ import React from "react";
 import "./contacs.css";
 
 function Contacts() {
-	return <div>Contacts</div>;
+	return <div className="contacts-container">Contacts</div>;
 }
 
 export default Contacts;

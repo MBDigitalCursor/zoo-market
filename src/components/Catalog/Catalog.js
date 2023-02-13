@@ -49,14 +49,22 @@ function Catalog() {
 					))}
 				</div>
 				<div className="catalog-right-side">
-					<img
-						src={require("../../assets/img/dog-photo.png")}
-						alt="dog with jumper"
-					/>
-					<img
-						src={require("../../assets/img/product-desc.png")}
-						alt="dog with jumper"
-					/>
+					<div className="right-side-photo">
+						<img
+							src={require("../../assets/img/dog-photo.png")}
+							alt="dog with jumper"
+						/>
+						<h4 className="photo-header">
+							PREKIAUJAME <span>SVERIAMU</span> POPULIARIŲ <br /> GAMINTOJŲ SAUSU ĖDALU{" "}
+						</h4>
+						<p className="photo-credit">Photo by Karsten Winegeart on Unsplash</p>
+					</div>
+					<div className="left-side-desc">
+						<img
+							src={require("../../assets/img/product-desc.png")}
+							alt="animals products description"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
