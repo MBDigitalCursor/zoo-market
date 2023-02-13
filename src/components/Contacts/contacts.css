@@ -1,0 +1,158 @@
+.contacts-container {
+  padding-bottom: var(--contact-pb);
+  padding-top: var(--contact-pt);
+  display: flex;
+  align-items: flex-start;
+  gap: 90px;
+}
+
+.contacts-left {
+  background-color: var(--yellow);
+  width: 638px;
+  height: 744px;
+  position: relative;
+  margin-left: 82px;
+  font-size: var(--16px);
+
+}
+
+.open-times {
+  position: absolute;
+  width: 214px;
+  height: 201px;
+  left: -60px;
+  top: 83px;
+  padding: 68px 28px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-times ul {
+  padding: 0;
+  margin: 0;
+}
+
+.open-times ul li {
+  list-style: none;
+  line-height: 30px;
+
+  font-weight: var(--regular);
+}
+
+.location {
+  position: absolute;
+  padding: 68px 28px;
+  background-color: white;
+  bottom: 42px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.location img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 38px;
+}
+
+.location-desc p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.location-desc span {
+  font-weight: var(--semi-bold);
+}
+
+.contacts-paws {
+  position: absolute;
+  left: 2.2rem;
+  bottom: 3rem;
+  z-index: 0;
+}
+
+/* contact-right */
+
+.contacts-right h2 {
+  font-size: var(--28px);
+  font-weight: var(--semi-bold);
+  margin-bottom: 40px;
+  margin-top: 83px;
+}
+
+.fb-icon {
+  font-size: 40px;
+  margin-top: 2px;
+}
+
+.phone-fb {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+  margin-bottom: 19px;
+}
+
+.phone-fb p,
+.email-phone p {
+  font-size: var(--21px);
+  font-weight: var(--regular);
+}
+
+.phone-fb p {
+  margin-bottom: 5px;
+}
+
+.email {
+  margin-bottom: 35px;
+}
+
+/* form */
+
+.contacts-form {
+  width: 493px;
+}
+
+.contacts-form form {
+  font-family: 'Red Hat Display', sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 25px 25px 25px;
+  background-color: var(--grey);
+  margin-bottom: 26px;
+}
+
+.contacts-form form label {
+  font-size: var(--16px);
+  padding-bottom: 10px;
+}
+
+
+.contacts-form form label:nth-child(3) {
+  padding-top: 13px;
+}
+
+.contacts-form input,
+textarea {
+  padding: 6px;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+
+.form-btn {
+  font-size: var(--21px);
+  border-radius: var(--border-radius);
+  padding: 13px 31px 14px 31px;
+  border: none;
+  background-color: var(--green);
+  color: white;
+}
+
+.form-btn:hover {
+  background-color: var(--hover-green);
+}

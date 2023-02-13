@@ -6,21 +6,23 @@ import Hero from "./components/Hero/Hero";
 import PopularItems from "./components/PopularItems/PopularItems";
 import Catalog from "./components/Catalog/Catalog";
 import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
 		<div>
-			<div className='container'>
+			<div className="container">
 				<Nav />
 			</div>
 			<Hero />
-			<div className='container'>
+			<div className="container">
 				<PopularItems />
 			</div>
 			<Catalog />
-			<div className='container'>
+			<div className="container">
 				<Contacts />
 			</div>
+			<Footer />
 		</div>
 	);
 }

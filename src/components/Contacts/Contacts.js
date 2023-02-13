@@ -1,5 +1,7 @@
 import React from "react";
-import "./contacs.css";
+import "./contacts.css";
+import ContactForm from "./ContactForm";
+import { ImFacebook2 } from "react-icons/im";
 
 function Contacts() {
 	return (
@@ -40,8 +42,27 @@ function Contacts() {
 						<p>(Lazdynai, šalia IKI-Papartis)</p>
 					</div>
 				</div>
+				<div className="contacts-paws">
+					<img
+						src={require("../../assets/img/pedutes-group.png")}
+						alt="paws pattern"
+					/>
+				</div>
 			</div>
-			<div className="contacts-right"></div>
+			<div className="contacts-right">
+				<div className="email-phone">
+					<h2>Kontaktai</h2>
+					<div className="phone-fb">
+						<div>
+							<p>+370 656 82575</p>
+							<p>+370 648 73014</p>
+						</div>
+						<ImFacebook2 className="fb-icon" />
+					</div>
+					<p className="email">ausvydas@zoomarket.lt</p>
+				</div>
+				<ContactForm />
+			</div>
 		</div>
 	);
 }
