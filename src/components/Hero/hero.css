@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-  z-index: 1;
-  position: relative;
 }
 
 .hero-container img {
@@ -32,7 +30,6 @@
 }
 
 .hero-animation-paws {
-
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -54,6 +51,8 @@
 
 .tracking-in-expand {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+  z-index: 1;
+  position: relative
 }
 
 @keyframes tracking-in-expand {
