@@ -52,13 +52,8 @@ function PopularItems() {
 	];
 
 	return (
-		<Stack
-			className='pop-items-container'
-			direction='row'
-			justifyContent='space-between'
-			alignItems='flex-start'
-		>
-			<Box>
+		<div className='pop-items-container'>
+			<div>
 				<h3 className='pop-items-title'>Populiarios prekės</h3>
 				<Grid2
 					container
@@ -82,14 +77,10 @@ function PopularItems() {
 						</Grid2>
 					))}
 				</Grid2>
-			</Box>
-			<Box>
+			</div>
+			<div>
 				<h3 className='pop-items-title'>Naujienos ir pasiūlymai</h3>
-				<Grid2
-					className='pop-items-right-side'
-					container
-					direction='column'
-				>
+				<div className='pop-items-right-side'>
 					<div className='pop-items-right-side-top'>
 						<h4 className='pop-items-right-side-top-title'>Puiki nauja prekė, OMG!</h4>
 						<p>Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients</p>
@@ -101,9 +92,9 @@ function PopularItems() {
 							alt=''
 						/>
 					</div>
-				</Grid2>
-			</Box>
-		</Stack>
+				</div>
+			</div>
+		</div>
 	);
 }
 
