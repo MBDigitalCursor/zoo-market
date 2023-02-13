@@ -1,0 +1,21 @@
+.catalog-title {
+  padding-top: var(--catalog-pt);
+}
+
+.catalog-categories {
+  background-color: var(--yellow);
+  padding-left: 20px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  box-sizing: border-box;
+  width: 247px;
+  height: 528px;
+  gap: 54px;
+}
+
+.single-category {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 34px;
+}
