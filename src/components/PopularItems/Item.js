@@ -29,7 +29,7 @@ function Item({ item }) {
 				alt=''
 			/>
 			<p>{item.desc}</p>
-			<p>{item.price}</p>
+			<p>${item.price}</p>
 		</div>
 	);
 }
