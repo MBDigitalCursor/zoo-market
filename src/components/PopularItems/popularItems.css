@@ -1,0 +1,8 @@
+.pop-items-container {
+  padding-top: var(--pop-pt);
+  padding-bottom: var(--pop-pb);
+}
+
+.pop-items-title {
+  font-size: var(--28px);
+}
