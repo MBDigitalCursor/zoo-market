@@ -151,6 +151,8 @@ textarea {
   border: none;
   background-color: var(--green);
   color: white;
+  position: relative;
+
 }
 
 .form-btn:hover {

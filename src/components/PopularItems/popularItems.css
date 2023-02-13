@@ -51,6 +51,10 @@
   font-size: var(--21px);
 }
 
+.pop-items-right-side-top>p {
+  font-size: var(--16px);
+}
+
 .pop-items-right-side-bottom {
   display: flex;
   justify-content: center;

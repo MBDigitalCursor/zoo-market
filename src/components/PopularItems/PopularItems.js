@@ -1,6 +1,5 @@
 import React from "react";
 import "./popularItems.css";
-import { Box, Stack } from "@mui/material";
 import testItem from "../../assets/img/testItem.png";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Item from "./Item";
@@ -52,13 +51,13 @@ function PopularItems() {
 	];
 
 	return (
-		<div className='pop-items-container'>
+		<div className="pop-items-container">
 			<div>
-				<h3 className='pop-items-title'>Populiarios prekės</h3>
+				<h3 className="pop-items-title">Populiarios prekės</h3>
 				<Grid2
 					container
-					columnGap={2}
-					rowGap={2}
+					columnGap={"40px"}
+					rowGap={"16px"}
 					sx={{
 						maxWidth: "812px",
 					}}
@@ -68,6 +67,8 @@ function PopularItems() {
 							xs={4}
 							sx={{
 								maxWidth: "244px",
+								fontSize: "16px",
+								fontWeight: "500",
 							}}
 						>
 							<Item
@@ -79,17 +80,17 @@ function PopularItems() {
 				</Grid2>
 			</div>
 			<div>
-				<h3 className='pop-items-title'>Naujienos ir pasiūlymai</h3>
-				<div className='pop-items-right-side'>
-					<div className='pop-items-right-side-top'>
-						<h4 className='pop-items-right-side-top-title'>Puiki nauja prekė, OMG!</h4>
+				<h3 className="pop-items-title">Naujienos ir pasiūlymai</h3>
+				<div className="pop-items-right-side">
+					<div className="pop-items-right-side-top">
+						<h4 className="pop-items-right-side-top-title">Puiki nauja prekė, OMG!</h4>
 						<p>Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients</p>
 						<p>$59.99 for limited time</p>
 					</div>
-					<div className='pop-items-right-side-bottom'>
+					<div className="pop-items-right-side-bottom">
 						<img
 							src={testItem}
-							alt=''
+							alt="dog food"
 						/>
 					</div>
 				</div>
