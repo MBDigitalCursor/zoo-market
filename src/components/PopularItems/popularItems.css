@@ -5,4 +5,67 @@
 
 .pop-items-title {
   font-size: var(--28px);
+  font-weight: var(--regular);
+  padding-bottom: 45px;
+}
+
+.pop-single-item {
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pop-items-right-side {
+  width: 506px;
+  height: 792px;
+  background-color: var(--yellow);
+  padding: 35px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+}
+
+.pop-items-right-side div {
+  background-color: #fff;
+  width: 100%;
+}
+
+.pop-items-right-side-top {
+  padding: 36px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.pop-items-right-side-top-title {
+  font-weight: var(--regular);
+  font-size: var(--21px);
+}
+
+.pop-items-right-side-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 474px;
+}
+
+.pop-items-right-side-bottom img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.hot-new-icons {
+  position: absolute;
+  width: 57px;
+  height: 48px;
+  top: -5px;
+  right: 0px;
 }
