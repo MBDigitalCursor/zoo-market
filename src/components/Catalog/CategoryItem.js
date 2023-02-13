@@ -22,21 +22,59 @@ const StyledMenu = styled((props) => (
 	"& .MuiPaper-root": {
 		marginLeft: "0",
 		borderRadius: 0,
-		marginTop: theme.spacing(3),
+		marginTop: theme.spacing(0),
 		minWidth: 180,
 		color: "rgb(55, 65, 81)",
 
 		backgroundColor: "rgba(194, 193, 193, 0.7)",
 		"& .MuiMenu-list": {
-			padding: "2px 0",
+			padding: "0px 0",
 		},
 		"& .MuiMenuItem-root": {
 			fontSize: "21px",
 			fontWeight: "400",
 			fontFamily: "'Red Hat Display', sans-serif",
-			padding: "13px 48px",
+			padding: "13px 37px",
+			maxHeight: "50px",
 			"&:active": {
-				backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity),
+				// backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity),
+			},
+		},
+	},
+}));
+const NestedMenu = styled((props) => (
+	<Menu
+		elevation={0}
+		anchorOrigin={{
+			vertical: "top",
+			horizontal: "right",
+		}}
+		transformOrigin={{
+			vertical: "top",
+			horizontal: "left",
+		}}
+		{...props}
+	/>
+))(({ theme }) => ({
+	"& .MuiPaper-root": {
+		marginLeft: "0",
+		borderRadius: 0,
+		marginTop: theme.spacing(0),
+		minWidth: 180,
+		color: "rgb(55, 65, 81)",
+
+		backgroundColor: "rgba(194, 193, 193, 0.7)",
+		"& .MuiMenu-list": {
+			padding: "0px 0",
+		},
+		"& .MuiMenuItem-root": {
+			fontSize: "21px",
+			fontWeight: "400",
+			fontFamily: "'Red Hat Display', sans-serif",
+			padding: "13px 37px",
+			maxHeight: "50px",
+			"&:active": {
+				// backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity),
 			},
 		},
 	},
@@ -44,20 +82,27 @@ const StyledMenu = styled((props) => (
 
 function CategoryItem({ category }) {
 	const dispatch = useDispatch();
-	const [anchorEl, setAnchorEl] = useState(null);
-	const open = Boolean(anchorEl);
-
 	const { selectedCategory } = useSelector((state) => state.generalSlice);
-
-	console.log("selectedCategory ===", selectedCategory);
+	const [anchorEl, setAnchorEl] = useState(null);
+	const [anchorEl2, setAnchorEl2] = useState(null);
+	const [open, setOpen] = useState(false);
+	const [openNested, setOpenNested] = useState(false);
 
 	const handleClick = (event) => {
 		setAnchorEl(event.currentTarget);
+		setOpen(true);
 	};
 	const handleClose = () => {
 		setAnchorEl(null);
+		setOpen(false);
 		dispatch(setSelectedCategory(""));
 	};
+
+	const handleItemClick = (event) => {
+		setAnchorEl2(event.currentTarget);
+		setOpenNested(!openNested);
+	};
+
 	return (
 		<div>
 			<div
@@ -85,9 +130,6 @@ function CategoryItem({ category }) {
 			{category.nestedCategories ? (
 				<StyledMenu
 					id='demo-customized-menu'
-					MenuListProps={{
-						"aria-labelledby": "demo-customized-button",
-					}}
 					anchorEl={anchorEl}
 					open={open}
 					onClose={handleClose}
@@ -121,10 +163,18 @@ function CategoryItem({ category }) {
 						Konservai
 					</MenuItem>
 					<MenuItem
-						onClick={handleClose}
+						onClick={handleItemClick}
 						disableRipple
 					>
 						Skanėstai
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+						</NestedMenu>
 					</MenuItem>
 					<MenuItem
 						onClick={handleClose}
