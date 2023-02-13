@@ -10,13 +10,15 @@ import Contacts from "./components/Contacts/Contacts";
 function App() {
 	return (
 		<div>
-			<div className="container">
+			<div className='container'>
 				<Nav />
 			</div>
 			<Hero />
-			<div className="container">
+			<div className='container'>
 				<PopularItems />
-				<Catalog />
+			</div>
+			<Catalog />
+			<div className='container'>
 				<Contacts />
 			</div>
 		</div>
