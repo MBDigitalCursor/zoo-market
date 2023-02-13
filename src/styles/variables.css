@@ -8,6 +8,10 @@
   --hover-grey: #C2C1C1;
   --active-grey: #8E8E8E;
 
+  /* button hover */
+
+  --hover-green: #2f7a0c;
+
   --border-radius: 20px;
 
   /* popular items paddings */
