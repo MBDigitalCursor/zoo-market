@@ -20,16 +20,21 @@ const StyledMenu = styled((props) => (
 	/>
 ))(({ theme }) => ({
 	"& .MuiPaper-root": {
-		marginLeft: "10px",
-		borderRadius: 2,
-		marginTop: theme.spacing(2),
+		marginLeft: "0",
+		borderRadius: 0,
+		marginTop: theme.spacing(3),
 		minWidth: 180,
 		color: "rgb(55, 65, 81)",
-		backgroundColor: theme.palette.grey[400],
+
+		backgroundColor: "rgba(194, 193, 193, 0.7)",
 		"& .MuiMenu-list": {
 			padding: "2px 0",
 		},
 		"& .MuiMenuItem-root": {
+			fontSize: "21px",
+			fontWeight: "400",
+			fontFamily: "'Red Hat Display', sans-serif",
+			padding: "13px 48px",
 			"&:active": {
 				backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity),
 			},
@@ -51,18 +56,25 @@ function CategoryItem({ category }) {
 	};
 	const handleClose = () => {
 		setAnchorEl(null);
+		dispatch(setSelectedCategory(""));
 	};
 	return (
 		<div>
 			<div
 				className='single-category-item'
+				style={{
+					backgroundColor: selectedCategory.includes(category.category) ? "rgba(194, 193, 193, 0.7)" : "",
+				}}
 				id='demo-customized-button'
 				aria-controls={open ? "demo-customized-menu" : undefined}
 				aria-haspopup='true'
 				aria-expanded={open ? "true" : undefined}
 				variant='contained'
 				disableElevation
-				onClick={handleClick}
+				onClick={(e) => {
+					handleClick(e);
+					dispatch(setSelectedCategory(category.category));
+				}}
 			>
 				<img
 					src={category.icon}
@@ -84,10 +96,10 @@ function CategoryItem({ category }) {
 						onClick={() => {
 							handleClose();
 							if (category.title === "Šunims") {
-								dispatch(setSelectedCategory("dryFoodDogs"));
+								dispatch(setSelectedCategory("dogDryFood"));
 							}
 							if (category.title === "Katėms") {
-								dispatch(setSelectedCategory("dryFoodCats"));
+								dispatch(setSelectedCategory("catDryFood"));
 							}
 						}}
 						disableRipple
@@ -98,10 +110,10 @@ function CategoryItem({ category }) {
 						onClick={() => {
 							handleClose();
 							if (category.title === "Šunims") {
-								dispatch(setSelectedCategory("cannedFoodDogs"));
+								dispatch(setSelectedCategory("dogCannedFood"));
 							}
 							if (category.title === "Katėms") {
-								dispatch(setSelectedCategory("cannedFoodCats"));
+								dispatch(setSelectedCategory("catCannedFood"));
 							}
 						}}
 						disableRipple

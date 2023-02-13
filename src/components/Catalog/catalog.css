@@ -15,7 +15,12 @@
 .single-category-item {
   display: flex;
   align-items: center;
+}
 
+.single-category-item:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--hover-grey);
+  cursor: pointer;
 }
 
 .single-category-item p {
