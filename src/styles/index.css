@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Red Hat Display', sans-serif;
+  box-sizing: border-box;
 }
 
 button {
