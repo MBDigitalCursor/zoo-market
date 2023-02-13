@@ -2,10 +2,13 @@
   --yellow: #F8C81F;
   --green: #348A0C;
   --black: #000000;
+  /* formos  */
   --grey: #C2C1C1;
+  /* opacity 0.7 */
   --hover-grey: #C2C1C1;
   --active-grey: #8E8E8E;
 
+  --border-radius: 20px;
 
   /* popular items paddings */
   --pop-pt: 65px;
@@ -18,4 +21,15 @@
   /* contact paddings */
   --contact-pt: 172px;
   --contact-pb: 108px;
+
+  --semi-bold: 500;
+  --regular: 400;
+
+  --16px: 16px;
+  --21px: 21px;
+  --28px: 28px;
+  --37px: 37px;
+
+  /* footeryje, pavadinimas */
+  --remodal: 12px;
 }
