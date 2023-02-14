@@ -37,8 +37,8 @@ const StyledMenu = styled((props) => (
 			fontFamily: "'Red Hat Display', sans-serif",
 			padding: "13px 37px",
 			maxHeight: "50px",
-			"&:active": {
-				// backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity),
+			"&:hover": {
+				backgroundColor: "#aaaaaab3",
 			},
 		},
 	},
@@ -145,7 +145,7 @@ function CategoryItem({ category }) {
 					open={open}
 					onClose={() => {
 						handleClose();
-						console.log("closing styledMenu");
+
 						if (categoryProducts.active) {
 							dispatch(
 								setCategoryProducts({
@@ -228,7 +228,7 @@ function CategoryItem({ category }) {
 									scrollToSection("contacts");
 								}}
 							>
-								Teirautis Krautuveleje
+								Teirautis krautuvėlėje
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
@@ -250,7 +250,7 @@ function CategoryItem({ category }) {
 									scrollToSection("contacts");
 								}}
 							>
-								Teirautis Krautuveleje
+								Teirautis krautuvėlėje
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
@@ -272,7 +272,7 @@ function CategoryItem({ category }) {
 									scrollToSection("contacts");
 								}}
 							>
-								Teirautis Krautuveleje
+								Teirautis krautuvėlėje
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
@@ -294,7 +294,7 @@ function CategoryItem({ category }) {
 									scrollToSection("contacts");
 								}}
 							>
-								Teirautis Krautuveleje
+								Teirautis krautuvėlėje
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
@@ -304,7 +304,10 @@ function CategoryItem({ category }) {
 					id='nested-customized-menu2'
 					anchorEl={anchorEl}
 					open={open}
-					onClose={handleClose}
+					onClose={() => {
+						handleClose();
+						dispatch(setMainCategory(""));
+					}}
 				>
 					<MenuItem
 						onClick={() => {
@@ -314,7 +317,7 @@ function CategoryItem({ category }) {
 						}}
 						disableRipple
 					>
-						Teirautis krauveleje
+						Teirautis krautuvėlėje
 					</MenuItem>
 				</NestedMenu>
 			)}

@@ -4,9 +4,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { setCategoryProducts } from "../../store/generalStore";
 import { AiOutlineClose } from "react-icons/ai";
 import dogsDryFoodArr from "../../helpers/dogsDryFood.js";
+import dogsCannedFoodArr from "../../helpers/dogsCannedFood.js";
+import catsDryFoodArr from "../../helpers/catsDryFood.js";
+import catsCannedFoodArr from "../../helpers/catsCannedFood.js";
 
 function ProductsSlide() {
 	console.log("dogsDryFoodArr ===", dogsDryFoodArr);
+	console.log("dogsCannedFoodArr ===", dogsCannedFoodArr);
+	console.log("catsDryFoodArr ===", catsDryFoodArr);
+	console.log("catsCannedFoodArr ===", catsCannedFoodArr);
 
 	const dispatch = useDispatch();
 
@@ -38,7 +44,7 @@ function ProductsSlide() {
 		>
 			<Box sx={{ width: "100%" }}>
 				<Slide
-					direction="left"
+					direction='left'
 					in={categoryProducts.active}
 				>
 					<Paper
@@ -46,8 +52,8 @@ function ProductsSlide() {
 							width: "99.9%",
 							height: "99.5%",
 							borderRadius: 0,
+							boxShadow: "0 0 0 0 white",
 							backgroundColor: "white",
-							border: "1px solid black",
 							paddingRight: "0.1%",
 						}}
 					>
@@ -62,7 +68,7 @@ function ProductsSlide() {
 							}}
 						>
 							<AiOutlineClose
-								className="close-icon"
+								className='close-icon'
 								onClick={closeProducts}
 								style={{
 									fontSize: "1.7rem",
@@ -78,25 +84,72 @@ function ProductsSlide() {
 							}}
 						>
 							<Stack
-								direction="row"
-								justifyContent="flex-start"
-								alignItems="flex-start"
+								direction='row'
+								justifyContent='space-between'
+								alignItems='flex-start'
 								gap={1}
-								flexWrap="wrap"
+								flexWrap='wrap'
+								sx={{
+									padding: "0 0.5rem",
+								}}
 							>
-								{dogsDryFoodArr.map((product, i) => (
-									<div
-										className="single-cat-product"
-										key={i}
-									>
-										<img
-											src={product.img}
-											alt=""
-										/>
-										<p>{product.desc}</p>
-										<p>{product.price}</p>
-									</div>
-								))}
+								{categoryProducts.catTree === "Šunims > Sausas ėdalas"
+									? dogsDryFoodArr.map((product, i) => (
+											<div
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Katėms > Sausas ėdalas"
+									? catsDryFoodArr.map((product, i) => (
+											<div
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Šunims > Konservai"
+									? dogsCannedFoodArr.map((product, i) => (
+											<div
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Katėms > Konservai"
+									? catsCannedFoodArr.map((product, i) => (
+											<div
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: ""}
 							</Stack>
 						</Box>
 					</Paper>
