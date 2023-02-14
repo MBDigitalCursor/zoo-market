@@ -14,6 +14,8 @@
 
   --border-radius: 20px;
 
+  /* tablet padding */
+  --tablet-padding: 20px;
   /* popular items paddings */
   --pop-pt: 65px;
   --pop-pb: 94px;

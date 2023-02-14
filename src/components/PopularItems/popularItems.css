@@ -6,6 +6,13 @@
   align-items: flex-start;
 }
 
+.pop-items {
+  height: 792px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .pop-items-title {
   font-size: var(--28px);
   font-weight: var(--regular);
@@ -75,4 +82,26 @@
   height: 48px;
   top: -5px;
   right: 0px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .pop-items-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .pop-items-right-side {
+    width: 337px;
+  }
+
+  .pop-items-tablet {
+    height: 668px;
+    gap: 0;
+    border: 1px solid red;
+  }
+
+  .pop-single-item {
+    max-width: 140px;
+  }
 }

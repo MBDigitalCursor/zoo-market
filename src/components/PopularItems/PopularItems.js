@@ -1,48 +1,53 @@
 import React from "react";
 import "./popularItems.css";
-import testItem from "../../assets/img/testItem.png";
+import img1 from "../../assets/img/dogsDryFood/dog sausas 3.png";
+import img2 from "../../assets/img/catsCannedFood/cat konservai 8.png";
+import img3 from "../../assets/img/catsDryFood/cat sausas 6.png";
+import img4 from "../../assets/img/dogsDryFood/dog sausas 6.png";
+import img5 from "../../assets/img/dogsCannedFood/dog konservai 3.png";
+import img6 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Item from "./Item";
 
 function PopularItems() {
 	const items = [
 		{
-			img: testItem,
+			img: img1,
 			desc: "Kačių skanėstas Pussycat Juice Mega Pussy Extra Wet, 1 kg",
 			price: 14.99,
 			hot: false,
 			new: false,
 		},
 		{
-			img: testItem,
+			img: img2,
 			desc: "Sausas šunų ėdalas Royal Canin Puppy Pussy Magnet, 2 kg",
 			price: 69.99,
 			hot: false,
 			new: false,
 		},
 		{
-			img: testItem,
+			img: img3,
 			desc: "Sausas šunų ėdalas Royal Canin Bright Wet Pussy Boy, 5 kg",
 			price: 20.99,
 			hot: true,
 			new: false,
 		},
 		{
-			img: testItem,
+			img: img4,
 			desc: "Šunų ėdalas Boombastic Ultra Royal Canin Dry Pussy, 15 kg",
 			price: 23.99,
 			hot: false,
 			new: false,
 		},
 		{
-			img: testItem,
+			img: img5,
 			desc: "Šunų ir kačių universalus ėdalas Royal Canin Festival Pussy, 10 vnt",
 			price: 21.99,
 			hot: false,
 			new: true,
 		},
 		{
-			img: testItem,
+			img: img6,
 			desc: "Cat food Royal Canin Fake Hair Protection From Dogs, 5 kg",
 			price: 13.99,
 			hot: false,
@@ -52,32 +57,18 @@ function PopularItems() {
 
 	return (
 		<div className="pop-items-container">
-			<div>
+			<div className="pop-items-left-side">
 				<h3 className="pop-items-title">Populiarios prekės</h3>
-				<Grid2
-					container
-					columnGap={"40px"}
-					rowGap={"16px"}
-					sx={{
-						maxWidth: "812px",
-					}}
-				>
+				<div className="pop-items">
 					{items.map((item, i) => (
-						<Grid2
-							xs={4}
-							sx={{
-								maxWidth: "244px",
-								fontSize: "16px",
-								fontWeight: "500",
-							}}
-						>
+						<div>
 							<Item
 								item={item}
 								key={i}
-							></Item>
-						</Grid2>
+							/>
+						</div>
 					))}
-				</Grid2>
+				</div>
 			</div>
 			<div>
 				<h3 className="pop-items-title">Naujienos ir pasiūlymai</h3>
@@ -89,7 +80,7 @@ function PopularItems() {
 					</div>
 					<div className="pop-items-right-side-bottom">
 						<img
-							src={testItem}
+							src={img3}
 							alt="dog food"
 						/>
 					</div>
