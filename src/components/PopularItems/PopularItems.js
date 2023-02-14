@@ -6,7 +6,6 @@ import img3 from "../../assets/img/catsDryFood/cat sausas 6.png";
 import img4 from "../../assets/img/dogsDryFood/dog sausas 6.png";
 import img5 from "../../assets/img/dogsCannedFood/dog konservai 3.png";
 import img6 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Item from "./Item";
 
 function PopularItems() {
@@ -58,7 +57,7 @@ function PopularItems() {
 	return (
 		<div className="pop-items-container">
 			<div className="pop-items-left-side">
-				<h3 className="pop-items-title">Populiarios prekės</h3>
+				<h3>Populiarios prekės</h3>
 				<div className="pop-items">
 					{items.map((item, i) => (
 						<div>
@@ -70,15 +69,15 @@ function PopularItems() {
 					))}
 				</div>
 			</div>
-			<div>
-				<h3 className="pop-items-title">Naujienos ir pasiūlymai</h3>
-				<div className="pop-items-right-side">
-					<div className="pop-items-right-side-top">
-						<h4 className="pop-items-right-side-top-title">Puiki nauja prekė, OMG!</h4>
-						<p>Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients</p>
-						<p>$59.99 for limited time</p>
-					</div>
-					<div className="pop-items-right-side-bottom">
+			<div className="pop-items-right-side">
+				<div className="content">
+					<h3>Naujienos ir pasiūlymai</h3>
+					<div className="new-item-container">
+						<div className="new-item-desc">
+							<h4>Puiki nauja prekė, OMG!</h4>
+							<p>Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients</p>
+							<p>$59.99 for limited time</p>
+						</div>
 						<img
 							src={img3}
 							alt="dog food"

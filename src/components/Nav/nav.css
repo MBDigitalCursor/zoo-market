@@ -25,6 +25,8 @@ nav {
 }
 
 nav img {
+  width: 80px;
+  height: 80px;
   cursor: pointer;
   position: absolute;
   top: 0;

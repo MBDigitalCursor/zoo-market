@@ -3,85 +3,85 @@
   padding-bottom: var(--pop-pb);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
-.pop-items {
-  height: 792px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.pop-items-title {
+.pop-items-right-side h3,
+.pop-items-left-side h3 {
   font-size: var(--28px);
   font-weight: var(--regular);
   padding-bottom: 45px;
 }
 
-.pop-single-item {
-  width: 244px;
+.pop-items-right-side {
+  flex-basis: 506px;
+}
+
+.pop-items-left-side {
+  flex-basis: 812px;
+}
+
+.pop-items {
+  height: 795px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 40px;
+  row-gap: 32px;
+}
+
+.pop-items * div {
+  text-align: center;
+  max-width: 244px;
+}
+
+.single-item {
   position: relative;
 }
 
-.pop-items-right-side {
-  width: 506px;
-  height: 792px;
+
+.single-item p {
+  text-align: left;
+  font-size: var(--16px);
+  font-weight: var(--semi-bold);
+}
+
+.new-item-container {
   background-color: var(--yellow);
   padding: 35px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 35px;
-  align-items: center;
 }
 
-.pop-items-right-side div {
+.new-item-container img {
+  height: 477px;
+  width: 436px;
+  object-fit: cover;
   background-color: #fff;
-  width: 100%;
 }
 
-.pop-items-right-side-top {
-  padding: 36px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
+.new-item-desc {
+  background-color: #fff;
+  padding: 35px;
+  margin-bottom: 35px;
 }
 
-.pop-items-right-side-top-title {
-  font-weight: var(--regular);
+.new-item-desc h4 {
   font-size: var(--21px);
+  font-weight: var(--regular);
+  margin-bottom: 15px;
 }
 
-.pop-items-right-side-top>p {
+.new-item-desc p {
   font-size: var(--16px);
 }
 
-.pop-items-right-side-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 474px;
+.new-item-desc p:first-of-type {
+  margin-bottom: 15px;
 }
-
-.pop-items-right-side-bottom img {
-  height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-}
-
 
 .hot-new-icons {
   position: absolute;
   width: 57px;
   height: 48px;
-  top: -5px;
-  right: 0px;
+  right: 15px;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
