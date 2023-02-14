@@ -3,8 +3,11 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setCategoryProducts } from "../../store/generalStore";
 import { AiOutlineClose } from "react-icons/ai";
+import dogsDryFoodArr from "../../helpers/dogsDryFood.js";
 
 function ProductsSlide() {
+	console.log("dogsDryFoodArr ===", dogsDryFoodArr);
+
 	const dispatch = useDispatch();
 
 	const { categoryProducts } = useSelector((state) => state.generalSlice);
@@ -35,7 +38,7 @@ function ProductsSlide() {
 		>
 			<Box sx={{ width: "100%" }}>
 				<Slide
-					direction='left'
+					direction="left"
 					in={categoryProducts.active}
 				>
 					<Paper
@@ -59,7 +62,7 @@ function ProductsSlide() {
 							}}
 						>
 							<AiOutlineClose
-								className='close-icon'
+								className="close-icon"
 								onClick={closeProducts}
 								style={{
 									fontSize: "1.7rem",
@@ -75,12 +78,26 @@ function ProductsSlide() {
 							}}
 						>
 							<Stack
-								direction='row'
-								justifyContent='flex-start'
-								alignItems='flex-start'
+								direction="row"
+								justifyContent="flex-start"
+								alignItems="flex-start"
 								gap={1}
-								flexWrap='wrap'
-							></Stack>
+								flexWrap="wrap"
+							>
+								{dogsDryFoodArr.map((product, i) => (
+									<div
+										className="single-cat-product"
+										key={i}
+									>
+										<img
+											src={product.img}
+											alt=""
+										/>
+										<p>{product.desc}</p>
+										<p>{product.price}</p>
+									</div>
+								))}
+							</Stack>
 						</Box>
 					</Paper>
 				</Slide>
