@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { styled, alpha } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useDispatch, useSelector } from "react-redux";
-import { setSelectedCategory } from "../../store/generalStore";
+import { setMainCategory, setCategoryProducts } from "../../store/generalStore";
 
 const StyledMenu = styled((props) => (
 	<Menu
@@ -60,7 +60,7 @@ const NestedMenu = styled((props) => (
 		marginLeft: "0",
 		borderRadius: 0,
 		marginTop: theme.spacing(0),
-		minWidth: 180,
+		minWidth: "225px",
 		color: "rgb(55, 65, 81)",
 
 		backgroundColor: "rgba(194, 193, 193, 0.7)",
@@ -73,8 +73,10 @@ const NestedMenu = styled((props) => (
 			fontFamily: "'Red Hat Display', sans-serif",
 			padding: "13px 37px",
 			maxHeight: "50px",
-			"&:active": {
-				// backgroundColor: alpha(theme.palette.primary.main, theme.palette.action.selectedOpacity),
+			backgroundColor: "#348A0C",
+			color: "white",
+			"&:hover": {
+				backgroundColor: "#2f7a0c",
 			},
 		},
 	},
@@ -82,25 +84,37 @@ const NestedMenu = styled((props) => (
 
 function CategoryItem({ category }) {
 	const dispatch = useDispatch();
-	const { selectedCategory } = useSelector((state) => state.generalSlice);
+	const { mainCategory, categoryProducts } = useSelector((state) => state.generalSlice);
+
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [anchorEl2, setAnchorEl2] = useState(null);
 	const [open, setOpen] = useState(false);
 	const [openNested, setOpenNested] = useState(false);
 
 	const handleClick = (event) => {
+		console.log("handleClick");
+		console.log("mainCategory ===", mainCategory);
+
 		setAnchorEl(event.currentTarget);
 		setOpen(true);
 	};
 	const handleClose = () => {
+		console.log("handleClose");
+		console.log("mainCategory ===", mainCategory);
 		setAnchorEl(null);
 		setOpen(false);
-		dispatch(setSelectedCategory(""));
 	};
 
 	const handleItemClick = (event) => {
+		console.log("handleItemClick");
+		console.log("mainCategory ===", mainCategory);
+
 		setAnchorEl2(event.currentTarget);
 		setOpenNested(!openNested);
+	};
+
+	const resetMainAndSecondCat = () => {
+		dispatch(setMainCategory(""));
 	};
 
 	return (
@@ -108,7 +122,7 @@ function CategoryItem({ category }) {
 			<div
 				className='single-category-item'
 				style={{
-					backgroundColor: selectedCategory.includes(category.category) ? "rgba(194, 193, 193, 0.7)" : "",
+					backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
 				}}
 				id='demo-customized-button'
 				aria-controls={open ? "demo-customized-menu" : undefined}
@@ -118,7 +132,11 @@ function CategoryItem({ category }) {
 				disableElevation
 				onClick={(e) => {
 					handleClick(e);
-					dispatch(setSelectedCategory(category.category));
+					if (category.title === "Šunims" || category.title === "Katėms") {
+						dispatch(setMainCategory(category.title));
+					} else {
+						dispatch(setMainCategory(""));
+					}
 				}}
 			>
 				<img
@@ -132,16 +150,30 @@ function CategoryItem({ category }) {
 					id='demo-customized-menu'
 					anchorEl={anchorEl}
 					open={open}
-					onClose={handleClose}
+					onClose={() => {
+						handleClose();
+					}}
 				>
 					<MenuItem
 						onClick={() => {
 							handleClose();
 							if (category.title === "Šunims") {
-								dispatch(setSelectedCategory("dogDryFood"));
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Šunims > Sausas ėdalas",
+									})
+								);
+								dispatch(setMainCategory(""));
 							}
 							if (category.title === "Katėms") {
-								dispatch(setSelectedCategory("catDryFood"));
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Katėms > Sausas ėdalas",
+									})
+								);
+								dispatch(setMainCategory(""));
 							}
 						}}
 						disableRipple
@@ -152,10 +184,22 @@ function CategoryItem({ category }) {
 						onClick={() => {
 							handleClose();
 							if (category.title === "Šunims") {
-								dispatch(setSelectedCategory("dogCannedFood"));
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Šunims > Konservai",
+									})
+								);
+								dispatch(setMainCategory(""));
 							}
 							if (category.title === "Katėms") {
-								dispatch(setSelectedCategory("catCannedFood"));
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Katėms > Konservai",
+									})
+								);
+								dispatch(setMainCategory(""));
 							}
 						}}
 						disableRipple
@@ -177,30 +221,51 @@ function CategoryItem({ category }) {
 						</NestedMenu>
 					</MenuItem>
 					<MenuItem
-						onClick={handleClose}
+						onClick={handleItemClick}
 						disableRipple
 					>
 						Higienos prekės
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+						</NestedMenu>
 					</MenuItem>
 					<MenuItem
-						onClick={handleClose}
+						onClick={handleItemClick}
 						disableRipple
 					>
 						Žaislai
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+						</NestedMenu>
 					</MenuItem>
 					<MenuItem
-						onClick={handleClose}
+						onClick={handleItemClick}
 						disableRipple
 					>
 						Aksesuarai
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+						</NestedMenu>
 					</MenuItem>
 				</StyledMenu>
 			) : (
-				<StyledMenu
-					id='demo-customized-menu'
-					MenuListProps={{
-						"aria-labelledby": "demo-customized-button",
-					}}
+				<NestedMenu
+					id='nested-customized-menu2'
 					anchorEl={anchorEl}
 					open={open}
 					onClose={handleClose}
@@ -211,7 +276,7 @@ function CategoryItem({ category }) {
 					>
 						Teirautis krauveleje
 					</MenuItem>
-				</StyledMenu>
+				</NestedMenu>
 			)}
 		</div>
 	);

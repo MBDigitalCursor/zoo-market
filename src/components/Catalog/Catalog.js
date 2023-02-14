@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./catalog.css";
 import dog from "../../assets/icons/dog2.png";
 import cat from "../../assets/icons/cat2.png";
@@ -6,6 +6,9 @@ import bird from "../../assets/icons/bird2.png";
 import hamster from "../../assets/icons/hamster2.png";
 import fish from "../../assets/icons/fish2.png";
 import CategoryItem from "./CategoryItem";
+import { useSelector } from "react-redux";
+import { Slide } from "@mui/material";
+import ProductsSlide from "./ProductsSlide";
 
 function Catalog() {
 	const categories = [
@@ -41,6 +44,13 @@ function Catalog() {
 		},
 	];
 
+	const { mainCategory, categoryProducts } = useSelector((state) => state.generalSlice);
+
+	useEffect(() => {
+		console.log("Main ===> ", `${mainCategory}`);
+		console.log("Show products ===> ", `${categoryProducts.catTree}`);
+	}, [mainCategory, categoryProducts]);
+
 	return (
 		<div className='container'>
 			<h3 className='catalog-title'>Siūlomi produktai</h3>
@@ -71,6 +81,7 @@ function Catalog() {
 						/>
 					</div>
 				</div>
+				<ProductsSlide></ProductsSlide>
 			</div>
 		</div>
 	);

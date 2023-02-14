@@ -2,15 +2,22 @@ import { createSlice } from "@reduxjs/toolkit";
 export const generalSlice = createSlice({
 	name: "generalSlice",
 	initialState: {
-		selectedCategory: "",
+		mainCategory: "",
+		categoryProducts: {
+			active: false,
+			catTree: "",
+		},
 	},
 	reducers: {
-		setSelectedCategory: (state, action) => {
-			state.selectedCategory = action.payload;
+		setMainCategory: (state, action) => {
+			state.mainCategory = action.payload;
+		},
+		setCategoryProducts: (state, action) => {
+			state.categoryProducts = action.payload;
 		},
 	},
 });
 
-export const { setSelectedCategory } = generalSlice.actions;
+export const { setMainCategory, setCategoryProducts } = generalSlice.actions;
 
 export default generalSlice.reducer;
