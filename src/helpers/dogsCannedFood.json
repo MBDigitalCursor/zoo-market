@@ -1,1 +1,52 @@
-n;
+[
+	{
+		"img": "../assets/img/dogsCannedFood/dog konservai 1.png",
+		"desc": "Royal Canin Pussy Juice Extra Wet, 1 kg",
+		"price": "$14.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 2.png",
+		"desc": "Royal Canin Puppy Pussy Magnet, 2 kg",
+		"price": "$69.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 3.png",
+		"desc": "Royal CaninWet Pussy Boy Destroyer, 5 kg",
+		"price": "$20.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 4.png",
+		"desc": "Royal Canin Dry Pussy Smasher, 15 kg",
+		"price": "$23.69"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 5.png",
+		"desc": "Royal Canin Festival Pussy Eater Monster, 10 vnt.",
+		"price": "$21.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 6.png",
+		"desc": "Royal Canin Pussy Advance Terminator,5 kg",
+		"price": "$13.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 7.png",
+		"desc": "Royal CaninBright Wet Pussy Boy, 5 kg",
+		"price": "$20.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 8.png",
+		"desc": "Royal Canin Puppy Pussy Magnet Boy Millenium, 2 kg",
+		"price": "$69.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 9.png",
+		"desc": "Josera Pussy Master Potatoes & Carrots, 2 kg",
+		"price": "$49.99"
+	},
+	{
+		"img": "../assets/img/catsCannedFood/dog konservai 10.png",
+		"desc": "Josera Pussy Cowboy Potatoes & Carrots, 6 kg",
+		"price": "$19.99"
+	}
+]
