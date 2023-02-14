@@ -5,36 +5,35 @@ import "./hero.css";
 function Hero() {
 	return (
 		<div className="hero-container">
-			<div className="container">
-				<div className="tracking-in-expand">
-					<img
-						src={require("../../assets/img/zoo-market-text.png")}
-						alt="zoo market text"
-					/>
-					<h1>Jūsų augintinio kūnui ir meilei</h1>
-					<button
-						onClick={() => scrollToSection("contacts")}
-						className="puff-in-center"
-					>
-						Sužinoti daugiau
-					</button>
-				</div>
+			<div className="tracking-in-expand hero-text">
+				<img
+					src={require("../../assets/img/zoo-market-text.png")}
+					alt="zoo market text"
+				/>
+				<h1>Jūsų augintinio kūnui ir meilei</h1>
+				<button
+					onClick={() => scrollToSection("contacts")}
+					className="puff-in-center"
+				>
+					Sužinoti daugiau
+				</button>
 			</div>
 			<div className="hero-animation-paws">
-				<img
-					className="left paws-left"
-					src={require("../../assets/img/pedutes-left.png")}
-					alt="zoo market logo"
-				/>
-				<img
-					className="right paws-right"
-					src={require("../../assets/img/pedutes-right.png")}
-					alt="zoo market logo"
-				/>
+				<div className="paws-left left">
+					<img
+						src={require("../../assets/img/pedutes-left.png")}
+						alt="zoo market logo"
+					/>
+				</div>
+				<div className="paws-right right">
+					<img
+						src={require("../../assets/img/pedutes-right.png")}
+						alt="zoo market logo"
+					/>
+				</div>
 			</div>
-			<div className="hero-animation-logo">
+			<div className="middle fade-out ">
 				<img
-					className="middle fade-out "
 					src={require("../../assets/img/zoo-market-logo.png")}
 					alt="zoo market logo"
 				/>
