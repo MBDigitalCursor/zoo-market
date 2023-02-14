@@ -1,4 +1,5 @@
 import React from "react";
+import { scrollToSection } from "../../helpers/scrollToSection";
 import "./hero.css";
 
 function Hero() {
@@ -11,7 +12,12 @@ function Hero() {
 						alt="zoo market text"
 					/>
 					<h1>Jūsų augintinio kūnui ir meilei</h1>
-					<button className="puff-in-center">Sužinoti daugiau</button>
+					<button
+						onClick={() => scrollToSection("contacts")}
+						className="puff-in-center"
+					>
+						Sužinoti daugiau
+					</button>
 				</div>
 			</div>
 			<div className="hero-animation-paws">

@@ -48,6 +48,9 @@ function Contacts() {
 						alt='paws pattern'
 					/>
 				</div>
+				<p className='remodal'>
+					© <span>remodal.</span> 2023
+				</p>
 			</div>
 			<div className='contacts-right'>
 				<div className='email-phone'>
