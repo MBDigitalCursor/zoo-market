@@ -5,7 +5,10 @@ import { ImFacebook2 } from "react-icons/im";
 
 function Contacts() {
 	return (
-		<div className="contacts-container">
+		<div
+			id="contacts"
+			className="contacts-container"
+		>
 			<div className="contacts-left">
 				<div className="open-times">
 					<ul>
@@ -48,6 +51,9 @@ function Contacts() {
 						alt="paws pattern"
 					/>
 				</div>
+				<p className="remodal">
+					© <span>remodal.</span> 2023
+				</p>
 			</div>
 			<div className="contacts-right">
 				<div className="email-phone">

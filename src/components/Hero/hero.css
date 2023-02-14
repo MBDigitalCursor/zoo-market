@@ -99,7 +99,7 @@
     opacity: 1;
   }
 
-  90% {
+  60% {
     filter: blur(0px);
   }
 
@@ -121,7 +121,7 @@
     opacity: 1;
   }
 
-  90% {
+  60% {
     filter: blur(0px);
   }
 

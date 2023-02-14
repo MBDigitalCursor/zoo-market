@@ -42,10 +42,13 @@ function Catalog() {
 	];
 
 	return (
-		<div className='container'>
-			<h3 className='catalog-title'>Siūlomi produktai</h3>
-			<div className=' catalog-container'>
-				<div className='categories-left-side'>
+		<div
+			id="catalog"
+			className="container"
+		>
+			<h3 className="catalog-title">Siūlomi produktai</h3>
+			<div className=" catalog-container">
+				<div className="categories-left-side">
 					{categories.map((category, i) => (
 						<CategoryItem
 							category={category}
@@ -53,21 +56,21 @@ function Catalog() {
 						/>
 					))}
 				</div>
-				<div className='catalog-right-side'>
-					<div className='right-side-photo'>
+				<div className="catalog-right-side">
+					<div className="right-side-photo">
 						<img
 							src={require("../../assets/img/dog-photo.png")}
-							alt='dog with jumper'
+							alt="dog with jumper"
 						/>
-						<h4 className='photo-header'>
+						<h4 className="photo-header">
 							PREKIAUJAME <span>SVERIAMU</span> POPULIARIŲ <br /> GAMINTOJŲ SAUSU ĖDALU{" "}
 						</h4>
-						<p className='photo-credit'>Photo by Karsten Winegeart on Unsplash</p>
+						<p className="photo-credit">Photo by Karsten Winegeart on Unsplash</p>
 					</div>
-					<div className='left-side-desc'>
+					<div className="left-side-desc">
 						<img
 							src={require("../../assets/img/product-desc.png")}
-							alt='animals products description'
+							alt="animals products description"
 						/>
 					</div>
 				</div>

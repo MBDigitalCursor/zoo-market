@@ -158,3 +158,15 @@ textarea {
 .form-btn:hover {
   background-color: var(--hover-green);
 }
+
+.remodal {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.remodal span {
+  font-weight: 500;
+}
