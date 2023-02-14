@@ -5,9 +5,12 @@ import { ImFacebook2 } from "react-icons/im";
 
 function Contacts() {
 	return (
-		<div className='contacts-container'>
-			<div className='contacts-left'>
-				<div className='open-times'>
+		<div
+			id="contacts"
+			className="contacts-container"
+		>
+			<div className="contacts-left">
+				<div className="open-times">
 					<ul>
 						<li>Pirmadienis</li>
 						<li>Antradienis</li>
@@ -27,13 +30,13 @@ function Contacts() {
 						<li> NEDIRBAME</li>
 					</ul>
 				</div>
-				<div className='location'>
+				<div className="location">
 					<img
 						src={require("../../assets/img/zoo-market-logo.png")}
-						alt='zoo market logo'
+						alt="zoo market logo"
 					/>
 
-					<div className='location-desc'>
+					<div className="location-desc">
 						<p>
 							<span>Zoo Market</span> krautuvėlė
 						</p>
@@ -42,27 +45,27 @@ function Contacts() {
 						<p>(Lazdynai, šalia IKI-Papartis)</p>
 					</div>
 				</div>
-				<div className='contacts-paws'>
+				<div className="contacts-paws">
 					<img
 						src={require("../../assets/img/pedutes-group.png")}
-						alt='paws pattern'
+						alt="paws pattern"
 					/>
 				</div>
-				<p className='remodal'>
+				<p className="remodal">
 					© <span>remodal.</span> 2023
 				</p>
 			</div>
-			<div className='contacts-right'>
-				<div className='email-phone'>
+			<div className="contacts-right">
+				<div className="email-phone">
 					<h2>Kontaktai</h2>
-					<div className='phone-fb'>
+					<div className="phone-fb">
 						<div>
 							<p>+370 656 82575</p>
 							<p>+370 648 73014</p>
 						</div>
-						<ImFacebook2 className='fb-icon' />
+						<ImFacebook2 className="fb-icon" />
 					</div>
-					<p className='email'>ausvydas@zoomarket.lt</p>
+					<p className="email">ausvydas@zoomarket.lt</p>
 				</div>
 				<ContactForm />
 			</div>
