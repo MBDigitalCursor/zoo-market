@@ -4,6 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useDispatch, useSelector } from "react-redux";
 import { setMainCategory, setCategoryProducts } from "../../store/generalStore";
+import { scrollToSection } from "../../helpers/scrollToSection";
 
 const StyledMenu = styled((props) => (
 	<Menu
@@ -92,29 +93,17 @@ function CategoryItem({ category }) {
 	const [openNested, setOpenNested] = useState(false);
 
 	const handleClick = (event) => {
-		console.log("handleClick");
-		console.log("mainCategory ===", mainCategory);
-
 		setAnchorEl(event.currentTarget);
 		setOpen(true);
 	};
 	const handleClose = () => {
-		console.log("handleClose");
-		console.log("mainCategory ===", mainCategory);
 		setAnchorEl(null);
 		setOpen(false);
 	};
 
 	const handleItemClick = (event) => {
-		console.log("handleItemClick");
-		console.log("mainCategory ===", mainCategory);
-
 		setAnchorEl2(event.currentTarget);
 		setOpenNested(!openNested);
-	};
-
-	const resetMainAndSecondCat = () => {
-		dispatch(setMainCategory(""));
 	};
 
 	return (
@@ -132,10 +121,14 @@ function CategoryItem({ category }) {
 				disableElevation
 				onClick={(e) => {
 					handleClick(e);
-					if (category.title === "Šunims" || category.title === "Katėms") {
-						dispatch(setMainCategory(category.title));
-					} else {
-						dispatch(setMainCategory(""));
+					dispatch(setMainCategory(category.title));
+					if (categoryProducts.active) {
+						dispatch(
+							setCategoryProducts({
+								active: false,
+								catTree: "",
+							})
+						);
 					}
 				}}
 			>
@@ -152,11 +145,22 @@ function CategoryItem({ category }) {
 					open={open}
 					onClose={() => {
 						handleClose();
+						console.log("closing styledMenu");
+						if (categoryProducts.active) {
+							dispatch(
+								setCategoryProducts({
+									active: false,
+									catTree: "",
+								})
+							);
+						}
+						dispatch(setMainCategory(""));
 					}}
 				>
 					<MenuItem
 						onClick={() => {
 							handleClose();
+
 							if (category.title === "Šunims") {
 								dispatch(
 									setCategoryProducts({
@@ -217,7 +221,15 @@ function CategoryItem({ category }) {
 							open={openNested}
 							onClose={() => setOpenNested(false)}
 						>
-							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis Krautuveleje
+							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
 					<MenuItem
@@ -231,7 +243,15 @@ function CategoryItem({ category }) {
 							open={openNested}
 							onClose={() => setOpenNested(false)}
 						>
-							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis Krautuveleje
+							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
 					<MenuItem
@@ -245,7 +265,15 @@ function CategoryItem({ category }) {
 							open={openNested}
 							onClose={() => setOpenNested(false)}
 						>
-							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis Krautuveleje
+							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
 					<MenuItem
@@ -259,7 +287,15 @@ function CategoryItem({ category }) {
 							open={openNested}
 							onClose={() => setOpenNested(false)}
 						>
-							<MenuItem onClick={handleClose}>Teirautis Krautuveleje</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis Krautuveleje
+							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
 				</StyledMenu>
@@ -271,7 +307,11 @@ function CategoryItem({ category }) {
 					onClose={handleClose}
 				>
 					<MenuItem
-						onClick={handleClose}
+						onClick={() => {
+							handleClose();
+							dispatch(setMainCategory(""));
+							scrollToSection("contacts");
+						}}
 						disableRipple
 					>
 						Teirautis krauveleje

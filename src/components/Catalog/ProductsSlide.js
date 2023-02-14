@@ -10,7 +10,12 @@ function ProductsSlide() {
 	const { categoryProducts } = useSelector((state) => state.generalSlice);
 
 	const closeProducts = () => {
-		dispatch(setCategoryProducts(""));
+		dispatch(
+			setCategoryProducts({
+				active: false,
+				catTree: "",
+			})
+		);
 	};
 
 	return (
@@ -35,33 +40,37 @@ function ProductsSlide() {
 				>
 					<Paper
 						sx={{
-							width: "100%",
+							width: "99.9%",
 							height: "99.5%",
 							borderRadius: 0,
 							backgroundColor: "white",
 							border: "1px solid black",
+							paddingRight: "0.1%",
 						}}
 					>
-						<AiOutlineClose
-							onClick={closeProducts}
-							style={{
-								position: "absolute",
-								left: "5%",
-								top: "4%",
-								fontSize: "1.5rem",
-								opacity: "1",
-							}}
-						></AiOutlineClose>
 						<Box
 							sx={{
-								padding: "0.3rem 0",
-								opacity: "1",
+								display: "flex",
+								alignItems: "center",
+								justifyContent: "space-between",
+								paddingTop: "0.4rem",
+								paddingLeft: "0.4rem",
+								paddingRight: "0.6rem",
 							}}
-						></Box>
+						>
+							<AiOutlineClose
+								className='close-icon'
+								onClick={closeProducts}
+								style={{
+									fontSize: "1.7rem",
+									cursor: "pointer",
+								}}
+							/>
+							<p>{categoryProducts.catTree}</p>
+						</Box>
 						<Box
 							sx={{
-								height: 517,
-								padding: "5px",
+								height: "100%",
 								boxSizing: "border-box",
 							}}
 						>
