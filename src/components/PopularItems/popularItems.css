@@ -29,13 +29,15 @@
   row-gap: 32px;
 }
 
-.pop-items * div {
-  text-align: center;
-  max-width: 244px;
-}
 
 .single-item {
+  max-width: 244px;
   position: relative;
+}
+
+.single-item img {
+  height: 312px;
+  object-fit: contain;
 }
 
 
@@ -81,7 +83,8 @@
   position: absolute;
   width: 57px;
   height: 48px;
-  right: 15px;
+  right: 10px;
+  top: -115px;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -92,16 +95,129 @@
   }
 
   .pop-items-right-side {
-    width: 337px;
+    min-width: 337px;
+    max-height: 668px;
   }
 
-  .pop-items-tablet {
-    height: 668px;
-    gap: 0;
-    border: 1px solid red;
+  .new-item-desc h4,
+  .new-item-desc p {
+    font-size: var(--16px);
   }
 
-  .pop-single-item {
-    max-width: 140px;
+  .pop-items-left-side {
+    width: 368px;
+    margin-right: 23px;
+    max-height: 668px;
   }
+
+  .pop-items {
+    column-gap: 20px;
+    justify-content: flex-end;
+
+  }
+
+  .single-item {
+    text-align: center;
+    max-width: 174px;
+  }
+
+  .single-item img {
+    height: 140px;
+  }
+
+  .new-item-container img {
+    height: 415px;
+    width: 291px;
+  }
+
+  .hot-new-icons {
+    top: -80px;
+  }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .pop-items-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+
+  .new-item-desc h4,
+  .new-item-desc p {
+    font-size: var(--16px);
+  }
+
+  .pop-items-left-side {
+    margin-right: 23px;
+  }
+
+  .pop-items {
+    column-gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .single-item {
+    text-align: center;
+    max-width: 174px;
+  }
+
+  .single-item img {
+    min-height: 140px;
+  }
+
+  .new-item-container img {
+    height: 415px;
+    width: 291px;
+  }
+
+  .hot-new-icons {
+    top: -80px;
+  }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+  .pop-items-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .new-item-desc h4,
+  .new-item-desc p {
+    font-size: var(--16px);
+  }
+
+  .pop-items-left-side {
+    margin-right: 23px;
+  }
+
+  .pop-items {
+    column-gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .single-item {
+    text-align: center;
+    max-width: 174px;
+  }
+
+  .single-item img {
+    min-height: 140px;
+  }
+
+  .new-item-container img {
+    height: 415px;
+    width: 291px;
+  }
+
+  .hot-new-icons {
+    top: -80px;
+  }
+
 }

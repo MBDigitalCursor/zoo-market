@@ -60,12 +60,10 @@ function PopularItems() {
 				<h3>Populiarios prekės</h3>
 				<div className="pop-items">
 					{items.map((item, i) => (
-						<div>
-							<Item
-								item={item}
-								key={i}
-							/>
-						</div>
+						<Item
+							item={item}
+							key={i}
+						/>
 					))}
 				</div>
 			</div>
