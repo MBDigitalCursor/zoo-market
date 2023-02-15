@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./catalog.css";
 import dog from "../../assets/icons/dog2.png";
 import cat from "../../assets/icons/cat2.png";
