@@ -162,16 +162,15 @@ function CategoryItem({ category }) {
 	return (
 		<div>
 			<div
-				className="single-category-item"
+				className='single-category-item'
 				style={{
 					backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
 				}}
-				id="demo-customized-button"
+				id='demo-customized-button'
 				aria-controls={open ? "demo-customized-menu" : undefined}
-				aria-haspopup="true"
+				aria-haspopup='true'
 				aria-expanded={open ? "true" : undefined}
-				variant="contained"
-				disableElevation
+				variant='contained'
 				onClick={(e) => {
 					handleClick(e);
 					dispatch(setMainCategory(category.title));
@@ -193,7 +192,7 @@ function CategoryItem({ category }) {
 			</div>
 			{category.nestedCategories ? (
 				<StyledMenu
-					id="demo-customized-menu"
+					id='demo-customized-menu'
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {
@@ -232,7 +231,6 @@ function CategoryItem({ category }) {
 								dispatch(setMainCategory(""));
 							}
 						}}
-						disableRipple
 					>
 						Sausas ėdalas
 					</MenuItem>
@@ -258,17 +256,13 @@ function CategoryItem({ category }) {
 								dispatch(setMainCategory(""));
 							}
 						}}
-						disableRipple
 					>
 						Konservai
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Skanėstai
 						<NestedMenu
-							id="nested-customized-menu2"
+							id='nested-customized-menu2'
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -284,13 +278,10 @@ function CategoryItem({ category }) {
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Higienos prekės
 						<NestedMenu
-							id="nested-customized-menu2"
+							id='nested-customized-menu2'
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -306,13 +297,10 @@ function CategoryItem({ category }) {
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Žaislai
 						<NestedMenu
-							id="nested-customized-menu2"
+							id='nested-customized-menu2'
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -328,13 +316,10 @@ function CategoryItem({ category }) {
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Aksesuarai
 						<NestedMenu
-							id="nested-customized-menu2"
+							id='nested-customized-menu2'
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -353,7 +338,7 @@ function CategoryItem({ category }) {
 				</StyledMenu>
 			) : (
 				<NestedMenu
-					id="nested-customized-menu2"
+					id='nested-customized-menu2'
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {
@@ -367,7 +352,6 @@ function CategoryItem({ category }) {
 							dispatch(setMainCategory(""));
 							scrollToSection("contacts");
 						}}
-						disableRipple
 					>
 						Teirautis krautuvėlėje
 					</MenuItem>

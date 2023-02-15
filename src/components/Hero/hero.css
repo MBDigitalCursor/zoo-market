@@ -166,6 +166,9 @@
   }
 }
 
+@media(max-width: 479px) {}
+
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .hero-container {
     height: 492px;
