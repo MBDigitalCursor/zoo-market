@@ -86,7 +86,7 @@ const NestedMenu = styled((props) => (
 function CategoryItem({ category }) {
 	const dispatch = useDispatch();
 	const { mainCategory, categoryProducts } = useSelector((state) => state.generalSlice);
-
+	console.log("mainCategory ===", mainCategory);
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [anchorEl2, setAnchorEl2] = useState(null);
 	const [open, setOpen] = useState(false);
@@ -144,7 +144,6 @@ function CategoryItem({ category }) {
 					open={open}
 					onClose={() => {
 						handleClose();
-
 						if (categoryProducts.active) {
 							dispatch(
 								setCategoryProducts({

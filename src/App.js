@@ -18,9 +18,9 @@ function App() {
 				<PopularItems />
 			</div>
 			<Catalog />
-			{/* <div className="container">
+			<div className="container">
 				<Contacts />
-			</div> */}
+			</div>
 		</div>
 	);
 }
