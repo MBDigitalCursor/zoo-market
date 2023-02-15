@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { scrollToSection } from "../../helpers/scrollToSection";
 import "./nav.css";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Nav() {
 	const [blur, setBlur] = useState(false);
+	const [burgerTrigger, setBurgerTrigger] = useState(false);
 
 	const addBlur = () => {
 		if (window.scrollY >= 80) {
@@ -31,34 +33,45 @@ function Nav() {
 		requestAnimationFrame(() => animateScroll(performance.now()));
 	};
 
+	const openNavMenu = () => {
+		setBurgerTrigger(!burgerTrigger);
+	};
+
 	return (
 		<nav className={blur ? "blur" : ""}>
-			<div className="nav-container container">
-				<div className="nav-links">
+			<div className='nav-container container'>
+				<div className='nav-links'>
 					<a
-						href="#catalog"
+						href='#catalog'
 						onClick={() => scrollToSection("catalog")}
 					>
 						Produktai
 					</a>
 					<a
-						href="#contacts"
+						href='#contacts'
 						onClick={() => scrollToSection("contacts")}
 					>
 						Kontaktai
 					</a>
 				</div>
 
-				<div className="nav-lang">
-					<a href="/">LT</a>
-					<a href="/">EN</a>
+				<div className='nav-lang'>
+					<a href='/'>LT</a>
+					<a href='/'>EN</a>
 				</div>
 			</div>
 			<img
 				onClick={scrollToTop}
 				src={require("../../assets/img/zoo-market-logo.png")}
-				alt="zoo market logo"
+				alt='zoo market logo'
 			/>
+			<div className='nav-burger-container'>
+				<RxHamburgerMenu
+					className='nav-burger'
+					onClick={openNavMenu}
+				/>
+			</div>
+			{burgerTrigger && <div className='burger-menu-container'></div>}
 		</nav>
 	);
 }

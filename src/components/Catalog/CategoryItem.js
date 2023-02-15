@@ -118,7 +118,6 @@ function CategoryItem({ category }) {
 				aria-haspopup='true'
 				aria-expanded={open ? "true" : undefined}
 				variant='contained'
-				disableElevation
 				onClick={(e) => {
 					handleClick(e);
 					dispatch(setMainCategory(category.title));
@@ -180,7 +179,6 @@ function CategoryItem({ category }) {
 								dispatch(setMainCategory(""));
 							}
 						}}
-						disableRipple
 					>
 						Sausas ėdalas
 					</MenuItem>
@@ -206,14 +204,10 @@ function CategoryItem({ category }) {
 								dispatch(setMainCategory(""));
 							}
 						}}
-						disableRipple
 					>
 						Konservai
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Skanėstai
 						<NestedMenu
 							id='nested-customized-menu2'
@@ -232,10 +226,7 @@ function CategoryItem({ category }) {
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Higienos prekės
 						<NestedMenu
 							id='nested-customized-menu2'
@@ -254,10 +245,7 @@ function CategoryItem({ category }) {
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Žaislai
 						<NestedMenu
 							id='nested-customized-menu2'
@@ -276,10 +264,7 @@ function CategoryItem({ category }) {
 							</MenuItem>
 						</NestedMenu>
 					</MenuItem>
-					<MenuItem
-						onClick={handleItemClick}
-						disableRipple
-					>
+					<MenuItem onClick={handleItemClick}>
 						Aksesuarai
 						<NestedMenu
 							id='nested-customized-menu2'
@@ -315,7 +300,6 @@ function CategoryItem({ category }) {
 							dispatch(setMainCategory(""));
 							scrollToSection("contacts");
 						}}
-						disableRipple
 					>
 						Teirautis krautuvėlėje
 					</MenuItem>

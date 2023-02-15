@@ -9,11 +9,6 @@ import catsDryFoodArr from "../../helpers/catsDryFood.js";
 import catsCannedFoodArr from "../../helpers/catsCannedFood.js";
 
 function ProductsSlide() {
-	console.log("dogsDryFoodArr ===", dogsDryFoodArr);
-	console.log("dogsCannedFoodArr ===", dogsCannedFoodArr);
-	console.log("catsDryFoodArr ===", catsDryFoodArr);
-	console.log("catsCannedFoodArr ===", catsCannedFoodArr);
-
 	const dispatch = useDispatch();
 
 	const { categoryProducts } = useSelector((state) => state.generalSlice);
