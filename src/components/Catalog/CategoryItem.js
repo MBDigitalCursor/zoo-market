@@ -86,7 +86,7 @@ const NestedMenu = styled((props) => (
 function CategoryItem({ category }) {
 	const dispatch = useDispatch();
 	const { mainCategory, categoryProducts } = useSelector((state) => state.generalSlice);
-
+	console.log("mainCategory ===", mainCategory);
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [anchorEl2, setAnchorEl2] = useState(null);
 	const [open, setOpen] = useState(false);
@@ -109,15 +109,15 @@ function CategoryItem({ category }) {
 	return (
 		<div>
 			<div
-				className='single-category-item'
+				className="single-category-item"
 				style={{
 					backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
 				}}
-				id='demo-customized-button'
+				id="demo-customized-button"
 				aria-controls={open ? "demo-customized-menu" : undefined}
-				aria-haspopup='true'
+				aria-haspopup="true"
 				aria-expanded={open ? "true" : undefined}
-				variant='contained'
+				variant="contained"
 				disableElevation
 				onClick={(e) => {
 					handleClick(e);
@@ -140,12 +140,11 @@ function CategoryItem({ category }) {
 			</div>
 			{category.nestedCategories ? (
 				<StyledMenu
-					id='demo-customized-menu'
+					id="demo-customized-menu"
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {
 						handleClose();
-
 						if (categoryProducts.active) {
 							dispatch(
 								setCategoryProducts({
@@ -216,7 +215,7 @@ function CategoryItem({ category }) {
 					>
 						Skanėstai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -238,7 +237,7 @@ function CategoryItem({ category }) {
 					>
 						Higienos prekės
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -260,7 +259,7 @@ function CategoryItem({ category }) {
 					>
 						Žaislai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -282,7 +281,7 @@ function CategoryItem({ category }) {
 					>
 						Aksesuarai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -301,7 +300,7 @@ function CategoryItem({ category }) {
 				</StyledMenu>
 			) : (
 				<NestedMenu
-					id='nested-customized-menu2'
+					id="nested-customized-menu2"
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {

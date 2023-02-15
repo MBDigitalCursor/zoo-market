@@ -170,3 +170,52 @@ textarea {
 .remodal span {
   font-weight: 500;
 }
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .contacts {
+    padding: 0px 85px;
+  }
+
+  .contacts-container {
+    flex-direction: column;
+  }
+
+  .contacts-paws {
+    left: -2.8rem;
+    bottom: 6rem;
+  }
+
+  .contacts-left {
+    max-width: 538px;
+    margin-left: 75px;
+  }
+
+  .contacts-right {
+    margin: 0 auto;
+  }
+
+  .email-hone {
+    flex-basis: 30%;
+  }
+
+  .form-socials {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+  }
+
+  .contacts-form {
+    width: 325px;
+  }
+
+  .phone-fb {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 19px;
+    flex-direction: column-reverse;
+  }
+
+}

@@ -5,10 +5,7 @@ import { ImFacebook2 } from "react-icons/im";
 
 function Contacts() {
 	return (
-		<div
-			id="contacts"
-			className="contacts-container"
-		>
+		<div className="contacts-container">
 			<div className="contacts-left">
 				<div className="open-times">
 					<ul>
@@ -55,19 +52,24 @@ function Contacts() {
 					© <span>remodal.</span> 2023
 				</p>
 			</div>
-			<div className="contacts-right">
-				<div className="email-phone">
-					<h2>Kontaktai</h2>
-					<div className="phone-fb">
-						<div>
-							<p>+370 656 82575</p>
-							<p>+370 648 73014</p>
+			<div
+				id="contacts"
+				className="contacts-right"
+			>
+				<h2>Kontaktai</h2>
+				<div className="form-socials">
+					<div className="email-phone">
+						<div className="phone-fb">
+							<div>
+								<p>+370 656 82575</p>
+								<p>+370 648 73014</p>
+							</div>
+							<ImFacebook2 className="fb-icon" />
 						</div>
-						<ImFacebook2 className="fb-icon" />
+						<p className="email">ausvydas@zoomarket.lt</p>
 					</div>
-					<p className="email">ausvydas@zoomarket.lt</p>
+					<ContactForm />
 				</div>
-				<ContactForm />
 			</div>
 		</div>
 	);

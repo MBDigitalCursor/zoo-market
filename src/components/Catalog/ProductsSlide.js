@@ -28,23 +28,10 @@ function ProductsSlide() {
 	};
 
 	return (
-		<Box
-			sx={{
-				position: "absolute",
-				top: "-75px",
-				right: "0",
-				height: 750,
-				width: 1000,
-				display: "flex",
-				padding: 0,
-				borderRadius: 0,
-				bgcolor: "transparent",
-				overflow: "hidden",
-			}}
-		>
+		<Box className="catalog-slide">
 			<Box sx={{ width: "100%" }}>
 				<Slide
-					direction='left'
+					direction="left"
 					in={categoryProducts.active}
 				>
 					<Paper
@@ -68,7 +55,7 @@ function ProductsSlide() {
 							}}
 						>
 							<AiOutlineClose
-								className='close-icon'
+								className="close-icon"
 								onClick={closeProducts}
 								style={{
 									fontSize: "1.7rem",
@@ -84,11 +71,11 @@ function ProductsSlide() {
 							}}
 						>
 							<Stack
-								direction='row'
-								justifyContent='space-between'
-								alignItems='flex-start'
+								direction="row"
+								justifyContent="space-between"
+								alignItems="flex-start"
 								gap={1}
-								flexWrap='wrap'
+								flexWrap="wrap"
 								sx={{
 									padding: "0 0.5rem",
 								}}
@@ -96,12 +83,12 @@ function ProductsSlide() {
 								{categoryProducts.catTree === "Šunims > Sausas ėdalas"
 									? dogsDryFoodArr.map((product, i) => (
 											<div
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -110,12 +97,12 @@ function ProductsSlide() {
 									: categoryProducts.catTree === "Katėms > Sausas ėdalas"
 									? catsDryFoodArr.map((product, i) => (
 											<div
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -124,12 +111,12 @@ function ProductsSlide() {
 									: categoryProducts.catTree === "Šunims > Konservai"
 									? dogsCannedFoodArr.map((product, i) => (
 											<div
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -138,12 +125,12 @@ function ProductsSlide() {
 									: categoryProducts.catTree === "Katėms > Konservai"
 									? catsCannedFoodArr.map((product, i) => (
 											<div
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
