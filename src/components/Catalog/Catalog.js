@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./catalog.css";
 import dog from "../../assets/icons/dog2.png";
 import cat from "../../assets/icons/cat2.png";
 import bird from "../../assets/icons/bird2.png";
 import hamster from "../../assets/icons/hamster2.png";
 import fish from "../../assets/icons/fish2.png";
+import info from "../../assets/img/division-section.svg";
 import CategoryItem from "./CategoryItem";
 import ProductsSlide from "./ProductsSlide";
 
@@ -76,7 +77,7 @@ function Catalog() {
 					</div>
 					<div className="left-side-desc">
 						<img
-							src={require("../../assets/img/product-desc.png")}
+							src={info}
 							alt="animals products description"
 						/>
 					</div>

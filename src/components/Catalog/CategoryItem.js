@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMainCategory, setCategoryProducts } from "../../store/generalStore";
 import { scrollToSection } from "../../helpers/scrollToSection";
 
-const StyledMenu = styled((props) => (
+const StyledMobileMenu = styled((props) => (
 	<Menu
 		elevation={0}
 		anchorOrigin={{
@@ -20,13 +20,15 @@ const StyledMenu = styled((props) => (
 		{...props}
 	/>
 ))(({ theme }) => ({
+	"& .Menu": {
+		top: "5rem",
+	},
 	"& .MuiPaper-root": {
 		marginLeft: "0",
 		borderRadius: 0,
 		marginTop: theme.spacing(0),
 		minWidth: 180,
 		color: "rgb(55, 65, 81)",
-
 		backgroundColor: "rgba(194, 193, 193, 0.7)",
 		"& .MuiMenu-list": {
 			padding: "0px 0",
@@ -43,6 +45,47 @@ const StyledMenu = styled((props) => (
 		},
 	},
 }));
+
+const StyledMenu = styled((props) => (
+	<Menu
+		elevation={0}
+		anchorOrigin={{
+			vertical: "top",
+			horizontal: "right",
+		}}
+		transformOrigin={{
+			vertical: "top",
+			horizontal: "left",
+		}}
+		{...props}
+	/>
+))(({ theme }) => ({
+	"& .Menu": {
+		top: "5rem",
+	},
+	"& .MuiPaper-root": {
+		marginLeft: "0",
+		borderRadius: 0,
+		marginTop: theme.spacing(0),
+		minWidth: 180,
+		color: "rgb(55, 65, 81)",
+		backgroundColor: "rgba(194, 193, 193, 0.7)",
+		"& .MuiMenu-list": {
+			padding: "0px 0",
+		},
+		"& .MuiMenuItem-root": {
+			fontSize: "21px",
+			fontWeight: "400",
+			fontFamily: "'Red Hat Display', sans-serif",
+			padding: "13px 37px",
+			maxHeight: "50px",
+			"&:hover": {
+				backgroundColor: "#aaaaaab3",
+			},
+		},
+	},
+}));
+
 const NestedMenu = styled((props) => (
 	<Menu
 		elevation={0}
@@ -86,7 +129,6 @@ const NestedMenu = styled((props) => (
 function CategoryItem({ category }) {
 	const dispatch = useDispatch();
 	const { mainCategory, categoryProducts } = useSelector((state) => state.generalSlice);
-	console.log("mainCategory ===", mainCategory);
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [anchorEl2, setAnchorEl2] = useState(null);
 	const [open, setOpen] = useState(false);
@@ -100,11 +142,22 @@ function CategoryItem({ category }) {
 		setAnchorEl(null);
 		setOpen(false);
 	};
-
 	const handleItemClick = (event) => {
 		setAnchorEl2(event.currentTarget);
 		setOpenNested(!openNested);
 	};
+
+	// const [mobileView, setMobileView] = useState(false);
+
+	// useEffect(() => {
+	// 	function handleResize() {
+	// 		setMobileView(window.innerWidth <= 769);
+	// 	}
+	// 	window.addEventListener("resize", handleResize);
+	// 	return () => {
+	// 		window.removeEventListener("resize", handleResize);
+	// 	};
+	// }, []);
 
 	return (
 		<div>

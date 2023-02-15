@@ -16,6 +16,7 @@
 
   /* tablet padding */
   --tablet-padding: 20px;
+
   /* popular items paddings */
   --pop-pt: 65px;
   --pop-pb: 94px;
@@ -26,7 +27,7 @@
 
   /* contact paddings */
   --contact-pt: 130px;
-  --contact-pb: 120px;
+  --contact-pb: 60px;
 
   --semi-bold: 500;
   --regular: 400;
