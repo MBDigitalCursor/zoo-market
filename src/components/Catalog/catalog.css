@@ -164,6 +164,10 @@
   align-items: center;
 }
 
+.catalog-mobile-title {
+  display: none;
+}
+
 @media(max-width: 480px) {
   .catalog-container {
     display: none;
