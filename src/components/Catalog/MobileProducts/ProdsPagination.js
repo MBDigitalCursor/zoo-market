@@ -30,17 +30,29 @@ function ProdsPagination({ products }) {
 	return (
 		<Box
 			justifyContent={"center"}
-			alignItems='center'
+			alignItems="center"
 			display={"flex"}
-			flexDirection='column'
+			flexDirection="column"
 			sx={{
 				margin: "20px 0",
+
+				"& .MuiPaginationItem-page": {
+					backgroundColor: "var(--grey)",
+				},
+
+				"& .Mui-selected:hover": {
+					backgroundColor: "var(--yellow)",
+				},
+
+				"& .Mui-selected": {
+					backgroundColor: "var(--yellow)",
+				},
 			}}
 		>
 			{slicedArr && (
-				<div className='page-products'>
+				<div className="page-products">
 					{slicedArr.map((prod, i) => (
-						<div className='single-product'>
+						<div className="single-product">
 							<img
 								style={{
 									maxHeight: "222px",
@@ -48,13 +60,15 @@ function ProdsPagination({ products }) {
 								}}
 								key={i}
 								src={prod.img}
-								alt=''
+								alt=""
 							></img>
 							<div
 								style={{
 									display: "flex",
 									flexDirection: "column",
 									alignItems: "flex-start",
+									fontWeight: "500",
+									fontSize: "16px",
 								}}
 							>
 								<p>{prod.desc}</p>

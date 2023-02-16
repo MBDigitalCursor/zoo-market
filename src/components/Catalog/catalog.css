@@ -126,7 +126,6 @@
 }
 
 .products-with-pagination {
-  border: 1px solid red;
   width: max-content;
   display: none;
   flex-direction: column;
@@ -154,6 +153,10 @@
 .tree-products {
   padding: 0 20px;
   margin-bottom: 115px;
+}
+
+.tree-products h4 {
+  font-size: var(--16px);
 }
 
 .single-product {
