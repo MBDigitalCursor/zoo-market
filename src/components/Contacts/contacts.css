@@ -172,12 +172,15 @@ textarea {
 @media(max-width: 480px) {
   .contacts-container {
     flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px;
   }
 
   .contacts-left {
-    width: 440px;
+    margin: 0 auto;
+    width: 445px;
     height: 460px;
-    margin: 0 20px;
+    margin-left: 20px;
   }
 
   .open-times {
@@ -201,6 +204,70 @@ textarea {
 
   .location-desc p:first-of-type {
     margin-bottom: 10px;
+  }
+
+  .contacts-paws {
+    position: relative;
+  }
+
+  .contacts-paws img {
+    position: absolute;
+    left: 50px;
+    top: 80px;
+  }
+
+  .contacts-right {
+    margin: 0 20px;
+    position: relative;
+  }
+
+  .contacts-right h2 {
+    font-size: var(--21px);
+    margin: 0px 0px 30px 0px;
+  }
+
+  .form-socials {
+    display: flex;
+    gap: 10px;
+  }
+
+  .email-phone {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .phone-fb {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .email {
+    margin-bottom: 20px;
+  }
+
+  .email-phone p,
+  .phone-fb p {
+    font-size: var(--16px);
+  }
+
+  .fb-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+
+  .contacts-form {
+    width: 240px;
+    position: absolute;
+    bottom: -4rem;
+    right: -14rem;
+  }
+
+  .contacts-form form {
+    padding: 15px;
+    margin-bottom: 13px;
   }
 }
 
