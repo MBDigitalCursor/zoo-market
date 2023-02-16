@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.App {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "@mui/material/styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -10,8 +10,8 @@ const StyledMobileMenu = styled((props) => (
 	<Menu
 		elevation={0}
 		anchorOrigin={{
-			vertical: "top",
-			horizontal: "right",
+			vertical: "bottom",
+			horizontal: "left",
 		}}
 		transformOrigin={{
 			vertical: "top",
@@ -127,6 +127,18 @@ const NestedMenu = styled((props) => (
 }));
 
 function CategoryItem({ category }) {
+	const [mobileView, setMobileView] = useState(false);
+
+	useEffect(() => {
+		function handleResize() {
+			setMobileView(window.innerWidth <= 769);
+		}
+		window.addEventListener("resize", handleResize);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	const dispatch = useDispatch();
 	const { mainCategory, categoryProducts } = useSelector((state) => state.generalSlice);
 	const [anchorEl, setAnchorEl] = useState(null);
@@ -147,30 +159,18 @@ function CategoryItem({ category }) {
 		setOpenNested(!openNested);
 	};
 
-	// const [mobileView, setMobileView] = useState(false);
-
-	// useEffect(() => {
-	// 	function handleResize() {
-	// 		setMobileView(window.innerWidth <= 769);
-	// 	}
-	// 	window.addEventListener("resize", handleResize);
-	// 	return () => {
-	// 		window.removeEventListener("resize", handleResize);
-	// 	};
-	// }, []);
-
 	return (
 		<div>
 			<div
-				className='single-category-item'
+				className="single-category-item"
 				style={{
 					backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
 				}}
-				id='demo-customized-button'
+				id="demo-customized-button"
 				aria-controls={open ? "demo-customized-menu" : undefined}
-				aria-haspopup='true'
+				aria-haspopup="true"
 				aria-expanded={open ? "true" : undefined}
-				variant='contained'
+				variant="contained"
 				onClick={(e) => {
 					handleClick(e);
 					dispatch(setMainCategory(category.title));
@@ -192,7 +192,7 @@ function CategoryItem({ category }) {
 			</div>
 			{category.nestedCategories ? (
 				<StyledMenu
-					id='demo-customized-menu'
+					id="demo-customized-menu"
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {
@@ -262,7 +262,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Skanėstai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -281,7 +281,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Higienos prekės
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -300,7 +300,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Žaislai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -319,7 +319,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Aksesuarai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -338,7 +338,7 @@ function CategoryItem({ category }) {
 				</StyledMenu>
 			) : (
 				<NestedMenu
-					id='nested-customized-menu2'
+					id="nested-customized-menu2"
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {
