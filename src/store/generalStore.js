@@ -15,6 +15,7 @@ export const generalSlice = createSlice({
 			from: 0,
 			to: 4,
 		},
+		mobileView: false,
 	},
 	reducers: {
 		setMainCategory: (state, action) => {
@@ -35,9 +36,12 @@ export const generalSlice = createSlice({
 		setPagination: (state, action) => {
 			state.pagination = { ...state.pagination, from: action.payload.from, to: action.payload.to };
 		},
+		setMobileView: (state, action) => {
+			state.mobileView = action.payload;
+		},
 	},
 });
 
-export const { setMainCategory, setCategoryProducts, setSlicedProds, setProducts, setPagination } = generalSlice.actions;
+export const { setMainCategory, setCategoryProducts, setSlicedProds, setProducts, setPagination, setMobileView } = generalSlice.actions;
 
 export default generalSlice.reducer;

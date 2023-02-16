@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./catalog.css";
 import dog from "../../assets/icons/dog2.png";
 import cat from "../../assets/icons/cat2.png";
@@ -8,6 +8,8 @@ import fish from "../../assets/icons/fish2.png";
 import info from "../../assets/img/division-section.svg";
 import CategoryItem from "./CategoryItem";
 import ProductsSlide from "./ProductsSlide";
+import { useDispatch, useSelector } from "react-redux";
+import { setMobileView } from "../../store/generalStore";
 
 function Catalog() {
 	const categories = [
@@ -43,14 +45,28 @@ function Catalog() {
 		},
 	];
 
+	const dispatch = useDispatch();
+
+	const { mobileView } = useSelector((state) => state.generalSlice);
+
+	useEffect(() => {
+		function handleResize() {
+			dispatch(setMobileView(window.innerWidth <= 1000));
+		}
+		window.addEventListener("resize", handleResize);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, [dispatch, mobileView]);
+
 	return (
 		<div
-			id="catalog"
-			className="container"
+			id='catalog'
+			className='container'
 		>
-			<h3 className="catalog-title">Siūlomi produktai</h3>
-			<div className=" catalog-container">
-				<div className="categories-left-side">
+			<h3 className='catalog-title'>Siūlomi produktai</h3>
+			<div className=' catalog-container'>
+				<div className='categories-left-side'>
 					{categories.map((category, i) => (
 						<CategoryItem
 							category={category}
@@ -58,8 +74,8 @@ function Catalog() {
 						/>
 					))}
 				</div>
-				<div className="catalog-right-side">
-					<div className="right-side-photo">
+				<div className='catalog-right-side'>
+					<div className='right-side-photo'>
 						<div
 							style={{
 								position: "relative",
@@ -67,18 +83,18 @@ function Catalog() {
 						>
 							<img
 								src={require("../../assets/img/dog-photo.png")}
-								alt="dog with jumper"
+								alt='dog with jumper'
 							/>
-							<p className="photo-credit">Photo by Karsten Winegeart on Unsplash</p>
+							<p className='photo-credit'>Photo by Karsten Winegeart on Unsplash</p>
 						</div>
-						<h4 className="photo-header">
+						<h4 className='photo-header'>
 							PREKIAUJAME <span>SVERIAMU</span> POPULIARIŲ <br /> GAMINTOJŲ SAUSU ĖDALU{" "}
 						</h4>
 					</div>
-					<div className="left-side-desc">
+					<div className='left-side-desc'>
 						<img
 							src={info}
-							alt="animals products description"
+							alt='animals products description'
 						/>
 					</div>
 				</div>
