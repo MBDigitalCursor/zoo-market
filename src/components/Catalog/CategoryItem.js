@@ -46,6 +46,46 @@ const StyledMobileMenu = styled((props) => (
 	},
 }));
 
+const NestedMobileMenu = styled((props) => (
+	<Menu
+		elevation={0}
+		anchorOrigin={{
+			vertical: "bottom",
+			horizontal: "left",
+		}}
+		transformOrigin={{
+			vertical: "top",
+			horizontal: "left",
+		}}
+		{...props}
+	/>
+))(({ theme }) => ({
+	"& .MuiPaper-root": {
+		marginLeft: "0",
+		borderRadius: 0,
+		marginTop: theme.spacing(0),
+		minWidth: "225px",
+		color: "rgb(55, 65, 81)",
+
+		backgroundColor: "rgba(194, 193, 193, 0.7)",
+		"& .MuiMenu-list": {
+			padding: "0px 0",
+		},
+		"& .MuiMenuItem-root": {
+			fontSize: "21px",
+			fontWeight: "400",
+			fontFamily: "'Red Hat Display', sans-serif",
+			padding: "13px 37px",
+			maxHeight: "50px",
+			backgroundColor: "#348A0C",
+			color: "white",
+			"&:hover": {
+				backgroundColor: "#2f7a0c",
+			},
+		},
+	},
+}));
+
 const StyledMenu = styled((props) => (
 	<Menu
 		elevation={0}
@@ -140,7 +180,7 @@ function CategoryItem({ category }) {
 	}, []);
 
 	const dispatch = useDispatch();
-	const { mainCategory, categoryProducts } = useSelector((state) => state.generalSlice);
+	const { mainCategory, categoryProducts, mobileView } = useSelector((state) => state.generalSlice);
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [anchorEl2, setAnchorEl2] = useState(null);
 	const [open, setOpen] = useState(false);
@@ -190,7 +230,7 @@ function CategoryItem({ category }) {
 				/>
 				<p>{category.title}</p>
 			</div>
-			{category.nestedCategories ? (
+			{category.nestedCategories && !mobileView ? (
 				<StyledMenu
 					id="demo-customized-menu"
 					anchorEl={anchorEl}
@@ -336,7 +376,153 @@ function CategoryItem({ category }) {
 						</NestedMenu>
 					</MenuItem>
 				</StyledMenu>
-			) : (
+			) : category.nestedCategories && mobileView ? (
+				<StyledMobileMenu
+					id='demo-customized-menu'
+					anchorEl={anchorEl}
+					open={open}
+					onClose={() => {
+						handleClose();
+						if (categoryProducts.active) {
+							dispatch(
+								setCategoryProducts({
+									active: false,
+									catTree: "",
+								})
+							);
+						}
+						dispatch(setMainCategory(""));
+					}}
+				>
+					<MenuItem
+						onClick={() => {
+							handleClose();
+
+							if (category.title === "Šunims") {
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Šunims > Sausas ėdalas",
+									})
+								);
+								dispatch(setMainCategory(""));
+							}
+							if (category.title === "Katėms") {
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Katėms > Sausas ėdalas",
+									})
+								);
+								dispatch(setMainCategory(""));
+							}
+						}}
+					>
+						Sausas ėdalas
+					</MenuItem>
+					<MenuItem
+						onClick={() => {
+							handleClose();
+							if (category.title === "Šunims") {
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Šunims > Konservai",
+									})
+								);
+								dispatch(setMainCategory(""));
+							}
+							if (category.title === "Katėms") {
+								dispatch(
+									setCategoryProducts({
+										active: true,
+										catTree: "Katėms > Konservai",
+									})
+								);
+								dispatch(setMainCategory(""));
+							}
+						}}
+					>
+						Konservai
+					</MenuItem>
+					<MenuItem onClick={handleItemClick}>
+						Skanėstai
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis krautuvėlėje
+							</MenuItem>
+						</NestedMenu>
+					</MenuItem>
+					<MenuItem onClick={handleItemClick}>
+						Higienos prekės
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis krautuvėlėje
+							</MenuItem>
+						</NestedMenu>
+					</MenuItem>
+					<MenuItem onClick={handleItemClick}>
+						Žaislai
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis krautuvėlėje
+							</MenuItem>
+						</NestedMenu>
+					</MenuItem>
+					<MenuItem onClick={handleItemClick}>
+						Aksesuarai
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl2}
+							open={openNested}
+							onClose={() => setOpenNested(false)}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Teirautis krautuvėlėje
+							</MenuItem>
+						</NestedMenu>
+					</MenuItem>
+				</StyledMobileMenu>
+			) : !category.nestedCategories && !mobileView ? (
 				<NestedMenu
 					id="nested-customized-menu2"
 					anchorEl={anchorEl}
@@ -356,6 +542,28 @@ function CategoryItem({ category }) {
 						Teirautis krautuvėlėje
 					</MenuItem>
 				</NestedMenu>
+			) : !category.nestedCategories && mobileView ? (
+				<NestedMobileMenu
+					id='nested-customized-menu2'
+					anchorEl={anchorEl}
+					open={open}
+					onClose={() => {
+						handleClose();
+						dispatch(setMainCategory(""));
+					}}
+				>
+					<MenuItem
+						onClick={() => {
+							handleClose();
+							dispatch(setMainCategory(""));
+							scrollToSection("contacts");
+						}}
+					>
+						Teirautis krautuvėlėje
+					</MenuItem>
+				</NestedMobileMenu>
+			) : (
+				""
 			)}
 		</div>
 	);
