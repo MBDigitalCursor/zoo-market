@@ -20,7 +20,8 @@
 .hero-title h1 {
   position: absolute;
   font-size: 287px;
-  bottom: 7.4rem;
+  bottom: 7.38rem;
+  left: 8px;
   color: white;
 }
 

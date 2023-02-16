@@ -38,12 +38,14 @@
 }
 
 .categories-left-side {
+  padding: 30px 0px;
   background: var(--yellow);
   position: absolute;
   left: -1700px;
   padding-left: 1700px;
   display: flex;
   flex-direction: column;
+  gap: 49px;
 }
 
 .catalog-right-side {
@@ -58,7 +60,7 @@
 }
 
 .left-side-desc {
-  padding-right: 72px;
+  padding-left: 72px;
   margin-top: 226px;
 }
 
@@ -94,11 +96,6 @@
   width: 170px;
 }
 
-.single-category-item {
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-
 .single-cat-product p {
   font-size: var(--16px);
   font-weight: var(--semi-bold);
@@ -113,7 +110,7 @@
   position: absolute;
   top: -75px;
   right: 0;
-  height: 750px;
+  height: 765px;
   width: 1000px;
   display: flex;
   padding: 0;
