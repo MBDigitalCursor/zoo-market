@@ -5,7 +5,7 @@ import { ImFacebook2 } from "react-icons/im";
 
 function Contacts() {
 	return (
-		<div className="contacts-container">
+		<div className="contacts-container container">
 			<div className="contacts-left">
 				<div className="open-times">
 					<ul>

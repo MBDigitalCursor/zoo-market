@@ -61,12 +61,14 @@ function Catalog() {
 
 	return (
 		<div
-			id='catalog'
-			className='container'
+			id="catalog"
+			className="container"
 		>
-			<h3 className='catalog-title'>Siūlomi produktai</h3>
-			<div className=' catalog-container'>
-				<div className='categories-left-side'>
+			<h3 className="catalog-title">Siūlomi produktai</h3>
+			<h3 className="catalog-mobile-title">Populiarios prekės</h3>
+
+			<div className=" catalog-container">
+				<div className="categories-left-side">
 					{categories.map((category, i) => (
 						<CategoryItem
 							category={category}
@@ -74,8 +76,8 @@ function Catalog() {
 						/>
 					))}
 				</div>
-				<div className='catalog-right-side'>
-					<div className='right-side-photo'>
+				<div className="catalog-right-side">
+					<div className="right-side-photo">
 						<div
 							style={{
 								position: "relative",
@@ -83,18 +85,18 @@ function Catalog() {
 						>
 							<img
 								src={require("../../assets/img/dog-photo.png")}
-								alt='dog with jumper'
+								alt="dog with jumper"
 							/>
-							<p className='photo-credit'>Photo by Karsten Winegeart on Unsplash</p>
+							<p className="photo-credit">Photo by Karsten Winegeart on Unsplash</p>
 						</div>
-						<h4 className='photo-header'>
+						<h4 className="photo-header">
 							PREKIAUJAME <span>SVERIAMU</span> POPULIARIŲ <br /> GAMINTOJŲ SAUSU ĖDALU{" "}
 						</h4>
 					</div>
-					<div className='left-side-desc'>
+					<div className="left-side-desc">
 						<img
 							src={info}
-							alt='animals products description'
+							alt="animals products description"
 						/>
 					</div>
 				</div>

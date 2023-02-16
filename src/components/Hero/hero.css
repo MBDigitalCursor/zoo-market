@@ -179,6 +179,77 @@
   }
 }
 
+@media(max-width: 480px) {
+  .hero-container {
+    height: 665px;
+  }
+
+  .hero-wrapper {
+    margin: 0 20px;
+  }
+
+  .hero-title h1 {
+    position: absolute;
+    font-size: 153px;
+    bottom: 21.9rem;
+    left: 4px;
+  }
+
+  .hero-title h2 {
+    position: absolute;
+    font-size: 117px;
+    bottom: 18rem;
+  }
+
+
+  .quote {
+    top: 20rem;
+    left: 0;
+    text-align: left;
+    font-size: var(--16px);
+    line-height: 2;
+  }
+
+  .quote span {
+    font-size: var(--16px);
+  }
+
+  .paws-container img:nth-child(1) {
+    width: 55.89px;
+    height: 92.06px;
+    bottom: 0rem;
+    right: 11rem;
+  }
+
+  .paws-container img:nth-child(2) {
+    width: 97.11px;
+    height: 112.91px;
+    bottom: 8rem;
+    right: 7rem;
+  }
+
+  .paws-container img:nth-child(3) {
+    width: 59.92px;
+    height: 75.45px;
+    bottom: 8rem;
+    right: 2rem;
+  }
+
+  .paws-container img:nth-child(4) {
+    width: 61.15px;
+    height: 64.88px;
+    top: -20rem;
+    right: 1rem;
+  }
+
+  .paws-container img:nth-child(5) {
+    width: 191.56px;
+    height: 173.65px;
+    bottom: -4.5rem;
+    right: -4rem;
+  }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero-container {
     height: 494px;

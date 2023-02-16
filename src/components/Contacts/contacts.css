@@ -169,6 +169,41 @@ textarea {
   font-weight: 500;
 }
 
+@media(max-width: 480px) {
+  .contacts-container {
+    flex-direction: column;
+  }
+
+  .contacts-left {
+    width: 440px;
+    height: 460px;
+    margin: 0 20px;
+  }
+
+  .open-times {
+    left: 15px;
+    top: 0;
+    padding: 20px;
+  }
+
+  .location {
+    padding: 20px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .location img {
+    width: 33px;
+    height: 28px;
+    object-fit: contain;
+    margin-bottom: 17px;
+  }
+
+  .location-desc p:first-of-type {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
   .contacts {

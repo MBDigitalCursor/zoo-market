@@ -16,14 +16,10 @@ function App() {
 			<div className="App">
 				<Hero />
 				<HeroPaws />
-				<MobileProducts></MobileProducts>
-				<div className="container">
-					<PopularItems />
-				</div>
+				<MobileProducts />
+				<PopularItems />
 				<Catalog />
-				<div className="container">
-					<Contacts />
-				</div>
+				<Contacts />
 			</div>
 		</>
 	);

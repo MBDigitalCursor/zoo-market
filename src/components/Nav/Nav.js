@@ -66,12 +66,10 @@ function Nav() {
 				</div>
 			</div>
 
-			<div className="nav-burger-container">
-				<RxHamburgerMenu
-					className="nav-burger"
-					onClick={openNavMenu}
-				/>
-			</div>
+			<RxHamburgerMenu
+				className="nav-burger"
+				onClick={openNavMenu}
+			/>
 			{burgerTrigger && <div className="burger-menu-container"></div>}
 		</nav>
 	);

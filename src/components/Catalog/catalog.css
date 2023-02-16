@@ -31,7 +31,6 @@
   padding-left: 0;
 }
 
-
 .single-category-item img {
   height: 50px;
   width: 50px;
@@ -68,7 +67,6 @@
   width: 380px;
 }
 
-
 .photo-credit {
   position: absolute;
   font-size: 6px;
@@ -95,7 +93,6 @@
 .single-cat-product {
   width: 170px;
 }
-
 
 .single-cat-product p {
   color: var(--p-grey);
@@ -125,8 +122,64 @@
   border-radius: 0;
   background-color: transparent;
   overflow: hidden;
+
 }
 
+.products-with-pagination {
+  border: 1px solid red;
+  width: max-content;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.page-products {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 34px;
+}
+
+.products-with-pagination-logo {
+  background-color: var(--yellow);
+  width: 100%;
+  height: 70px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tree-products {
+  padding: 0 20px;
+  margin-bottom: 115px;
+}
+
+.single-product {
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 480px) {
+  .catalog-container {
+    display: none;
+  }
+
+  .catalog-title {
+    display: none;
+  }
+
+  .catalog-mobile-title {
+    padding-top: 0;
+    padding: 0 20px;
+    font-size: var(--21px);
+    font-weight: var(--regular);
+  }
+}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
@@ -176,48 +229,6 @@
     top: 9rem;
     width: 100%;
   }
-}
-
-.products-with-pagination {
-  border: 1px solid red;
-  width: max-content;
-  display: none;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.page-products {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-bottom: 34px;
-}
-
-.products-with-pagination-logo {
-  background-color: var(--yellow);
-  width: 100%;
-  height: 70px;
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tree-products {
-  padding: 0 20px;
-  margin-bottom: 115px;
-}
-
-.single-product {
-  max-width: 210px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
 
   .catalog-right-side {
     padding: 0 20px;

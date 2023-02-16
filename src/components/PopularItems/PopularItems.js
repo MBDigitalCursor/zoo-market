@@ -6,6 +6,9 @@ import img3 from "../../assets/img/catsDryFood/cat sausas 6.png";
 import img4 from "../../assets/img/dogsDryFood/dog sausas 6.png";
 import img5 from "../../assets/img/dogsCannedFood/dog konservai 3.png";
 import img6 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
+import logo from "../../assets/img/mobileMain/brand logos.svg";
+import division from "../../assets/img/mobileMain/division section.svg";
+import nose from "../../assets/img/mobileMain/nose 1.svg";
 import Item from "./Item";
 
 function PopularItems() {
@@ -55,7 +58,7 @@ function PopularItems() {
 	];
 
 	return (
-		<div className="pop-items-container">
+		<div className="pop-items-container container">
 			<div className="pop-items-left-side">
 				<h3>Populiarios prekės</h3>
 				<div className="pop-items">
@@ -81,6 +84,25 @@ function PopularItems() {
 							alt="dog food"
 						/>
 					</div>
+				</div>
+			</div>
+			<div className="pop-items-mobile-top">
+				<div className="mobile-main-container">
+					<img
+						className="mobile-logos"
+						src={logo}
+						alt="dog food brand logos"
+					/>
+					<img
+						className="mobile-division"
+						src={division}
+						alt="dog food description"
+					/>
+					<img
+						className="mobile-nose"
+						src={nose}
+						alt="emoji of dog nose"
+					/>
 				</div>
 			</div>
 		</div>
