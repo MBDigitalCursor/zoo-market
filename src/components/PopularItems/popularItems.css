@@ -21,7 +21,6 @@
 }
 
 .pop-items {
-  height: 795px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -42,8 +41,14 @@
 
 
 .single-item p {
+  color: var(--p-grey);
   text-align: left;
   font-size: var(--16px);
+  font-weight: var(--regular);
+}
+
+.single-item p:last-of-type {
+  color: var(--black);
   font-weight: var(--semi-bold);
 }
 

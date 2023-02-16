@@ -127,25 +127,15 @@ nav img {
 } */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
   .nav-container {
     height: 60px;
     padding: 0 20px;
     position: relative;
   }
 
-  .nav-links,
-  .nav-lang {
-    font-size: var(--16px);
-  }
-
   nav img {
-    width: 42px;
-    height: 34px;
-    object-fit: contain;
-    padding: 13px 0px;
-    transform: translate(40%, 0%);
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
   }
 }
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {}

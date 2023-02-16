@@ -8,6 +8,10 @@
   --hover-grey: rgba(194, 193, 193, 0.7);
   --active-grey: #8E8E8E;
 
+  /* p grey */
+
+  --p-grey: #353535;
+
   /* button hover */
 
   --hover-green: #2f7a0c;
