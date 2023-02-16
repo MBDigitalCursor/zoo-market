@@ -7,10 +7,11 @@ import PopularItems from "./components/PopularItems/PopularItems";
 import Catalog from "./components/Catalog/Catalog";
 import Contacts from "./components/Contacts/Contacts";
 import MobileProducts from "./components/Catalog/MobileProducts/MobileProducts";
+import HeroPaws from "./components/Hero/HeroPaws/HeroPaws";
 
 function App() {
 	return (
-		<div>
+		<>
 			<Nav />
 			<Hero />
 			<MobileProducts></MobileProducts>
@@ -18,7 +19,7 @@ function App() {
 				<PopularItems />
 			</div>
 			<Catalog />
-			<div className='container'>
+			<div className="container">
 				<Contacts />
 			</div>
 		</div>

@@ -39,39 +39,40 @@ function Nav() {
 
 	return (
 		<nav className={blur ? "blur" : ""}>
-			<div className='nav-container container'>
-				<div className='nav-links'>
+			<div className="nav-container container">
+				<img
+					onClick={scrollToTop}
+					src={require("../../assets/img/zoo-market-logo.png")}
+					alt="zoo market logo"
+				/>
+				<div className="nav-links">
 					<a
-						href='#catalog'
+						href="#catalog"
 						onClick={() => scrollToSection("catalog")}
 					>
 						Produktai
 					</a>
 					<a
-						href='#contacts'
+						href="#contacts"
 						onClick={() => scrollToSection("contacts")}
 					>
 						Kontaktai
 					</a>
 				</div>
 
-				<div className='nav-lang'>
-					<a href='/'>LT</a>
-					<a href='/'>EN</a>
+				<div className="nav-lang">
+					<a href="/">LT</a>
+					<a href="/">EN</a>
 				</div>
 			</div>
-			<img
-				onClick={scrollToTop}
-				src={require("../../assets/img/zoo-market-logo.png")}
-				alt='zoo market logo'
-			/>
-			<div className='nav-burger-container'>
+
+			<div className="nav-burger-container">
 				<RxHamburgerMenu
-					className='nav-burger'
+					className="nav-burger"
 					onClick={openNavMenu}
 				/>
 			</div>
-			{burgerTrigger && <div className='burger-menu-container'></div>}
+			{burgerTrigger && <div className="burger-menu-container"></div>}
 		</nav>
 	);
 }
