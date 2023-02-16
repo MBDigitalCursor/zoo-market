@@ -1,23 +1,30 @@
 import { Box, Pagination } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setPagination, setSlicedProds } from "../../../store/generalStore.js";
 
 const pageSize = 4;
 
-function ProdsPagination() {
-	const dispatch = useDispatch();
+function ProdsPagination({ products }) {
+	const [pagination, setPagination] = useState({
+		count: 0,
+		from: 0,
+		to: pageSize,
+	});
 
-	const { products, pagination, slicedProds } = useSelector((state) => state.generalSlice);
+	const [slicedArr, setSlicedArr] = useState([]);
 
 	useEffect(() => {
-		dispatch(setSlicedProds({ arr: products, from: pagination.from, to: pagination.to }));
-	}, [dispatch, pagination.from, pagination.to, products]);
+		const slicedProds = (from, to) => {
+			const slicedProdsArr = products.slice(from, to);
+			setSlicedArr(slicedProdsArr);
+			setPagination({ ...pagination, count: products.length });
+		};
+		slicedProds(pagination.from, pagination.to);
+	}, [pagination.from, pagination.to, pagination, products]);
 
 	const handlePageChange = (event, page) => {
 		const from = (page - 1) * pageSize;
 		const to = (page - 1) * pageSize + pageSize;
-		dispatch(setPagination({ from, to }));
+		setPagination({ from, to });
 	};
 
 	return (
@@ -30,15 +37,30 @@ function ProdsPagination() {
 				margin: "20px 0",
 			}}
 		>
-			{slicedProds && (
+			{slicedArr && (
 				<div className='page-products'>
-					{slicedProds.map((prod, i) => (
-						<img
-							style={{}}
-							key={i}
-							src={prod.img}
-							alt=''
-						></img>
+					{slicedArr.map((prod, i) => (
+						<div className='single-product'>
+							<img
+								style={{
+									maxHeight: "222px",
+									maxWidth: "209px",
+								}}
+								key={i}
+								src={prod.img}
+								alt=''
+							></img>
+							<div
+								style={{
+									display: "flex",
+									flexDirection: "column",
+									alignItems: "flex-start",
+								}}
+							>
+								<p>{prod.desc}</p>
+								<p>{prod.price}</p>
+							</div>
+						</div>
 					))}
 				</div>
 			)}
