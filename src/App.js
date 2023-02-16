@@ -16,8 +16,8 @@ function App() {
 			<div className="App">
 				<Hero />
 				<HeroPaws />
-				<MobileProducts />
 				<PopularItems />
+				<MobileProducts />
 				<Catalog />
 				<Contacts />
 			</div>

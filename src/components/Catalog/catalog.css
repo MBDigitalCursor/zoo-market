@@ -183,6 +183,10 @@
     font-size: var(--21px);
     font-weight: var(--regular);
   }
+
+  .products-with-pagination {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
