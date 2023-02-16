@@ -12,14 +12,14 @@ function ProdsPagination({ products }) {
 
 	const [slicedArr, setSlicedArr] = useState([]);
 
-	useEffect(() => {
-		const slicedProds = (from, to) => {
-			const slicedProdsArr = products.slice(from, to);
-			setSlicedArr(slicedProdsArr);
-			setPagination({ ...pagination, count: products.length });
-		};
-		slicedProds(pagination.from, pagination.to);
-	}, [pagination.from, pagination.to, pagination, products]);
+	// useEffect(() => {
+	// 	const slicedProds = (from, to) => {
+	// 		const slicedProdsArr = products.slice(from, to);
+	// 		setSlicedArr(slicedProdsArr);
+	// 		setPagination({ ...pagination, count: products.length });
+	// 	};
+	// 	slicedProds(pagination.from, pagination.to);
+	// }, [pagination.from, pagination.to, pagination, products]);
 
 	const handlePageChange = (event, page) => {
 		const from = (page - 1) * pageSize;
@@ -30,9 +30,9 @@ function ProdsPagination({ products }) {
 	return (
 		<Box
 			justifyContent={"center"}
-			alignItems="center"
+			alignItems='center'
 			display={"flex"}
-			flexDirection="column"
+			flexDirection='column'
 			sx={{
 				margin: "20px 0",
 
@@ -50,17 +50,19 @@ function ProdsPagination({ products }) {
 			}}
 		>
 			{slicedArr && (
-				<div className="page-products">
+				<div className='page-products'>
 					{slicedArr.map((prod, i) => (
-						<div className="single-product">
+						<div
+							className='single-product'
+							key={i}
+						>
 							<img
 								style={{
 									maxHeight: "222px",
 									maxWidth: "209px",
 								}}
-								key={i}
 								src={prod.img}
-								alt=""
+								alt=''
 							></img>
 							<div
 								style={{

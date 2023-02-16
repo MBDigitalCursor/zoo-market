@@ -16,6 +16,7 @@ export const generalSlice = createSlice({
 			to: 4,
 		},
 		mobileView: false,
+		burgerMenu: false,
 	},
 	reducers: {
 		setMainCategory: (state, action) => {
@@ -39,9 +40,12 @@ export const generalSlice = createSlice({
 		setMobileView: (state, action) => {
 			state.mobileView = action.payload;
 		},
+		setBurgerMenu: (state, action) => {
+			state.burgerMenu = action.payload;
+		},
 	},
 });
 
-export const { setMainCategory, setCategoryProducts, setSlicedProds, setProducts, setPagination, setMobileView } = generalSlice.actions;
+export const { setMainCategory, setCategoryProducts, setSlicedProds, setProducts, setPagination, setMobileView, setBurgerMenu } = generalSlice.actions;
 
 export default generalSlice.reducer;

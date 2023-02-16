@@ -126,7 +126,7 @@
 }
 
 .products-with-pagination {
-  width: max-content;
+  width: 100%;
   display: none;
   flex-direction: column;
   align-items: flex-end;
@@ -188,7 +188,7 @@
   }
 
   .products-with-pagination {
-    display: block;
+    display: flex;
   }
 }
 
