@@ -13,19 +13,16 @@ function App() {
 	return (
 		<>
 			<Nav />
-			<div className="App">
-				<Hero />
-				<HeroPaws />
-				<MobileProducts></MobileProducts>
-				<div className="container">
-					<PopularItems />
-				</div>
-				<Catalog />
-				<div className="container">
-					<Contacts />
-				</div>
+			<Hero />
+			<MobileProducts></MobileProducts>
+			<div className='container'>
+				<PopularItems />
 			</div>
-		</>
+			<Catalog />
+			<div className="container">
+				<Contacts />
+			</div>
+		</div>
 	);
 }
 
