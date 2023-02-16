@@ -11,15 +11,16 @@ import HeroPaws from "./components/Hero/HeroPaws/HeroPaws";
 
 function App() {
 	return (
-		<>
+		<div>
 			<Nav />
 			<Hero />
+
 			<MobileProducts></MobileProducts>
 			<div className='container'>
 				<PopularItems />
 			</div>
 			<Catalog />
-			<div className="container">
+			<div className='container'>
 				<Contacts />
 			</div>
 		</div>
