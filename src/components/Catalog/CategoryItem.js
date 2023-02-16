@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useDispatch, useSelector } from "react-redux";
-import { setMainCategory, setCategoryProducts } from "../../store/generalStore";
+import { setMainCategory, setCategoryProducts, setMobileView } from "../../store/generalStore";
 import { scrollToSection } from "../../helpers/scrollToSection";
 
 const StyledMobileMenu = styled((props) => (
@@ -167,8 +167,6 @@ const NestedMenu = styled((props) => (
 }));
 
 function CategoryItem({ category }) {
-	const [mobileView, setMobileView] = useState(false);
-
 	useEffect(() => {
 		function handleResize() {
 			setMobileView(window.innerWidth <= 769);
@@ -378,7 +376,7 @@ function CategoryItem({ category }) {
 				</StyledMenu>
 			) : category.nestedCategories && mobileView ? (
 				<StyledMobileMenu
-					id='demo-customized-menu'
+					id="demo-customized-menu"
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {
@@ -448,7 +446,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Skanėstai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -467,7 +465,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Higienos prekės
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -486,7 +484,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Žaislai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -505,7 +503,7 @@ function CategoryItem({ category }) {
 					<MenuItem onClick={handleItemClick}>
 						Aksesuarai
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl2}
 							open={openNested}
 							onClose={() => setOpenNested(false)}
@@ -544,7 +542,7 @@ function CategoryItem({ category }) {
 				</NestedMenu>
 			) : !category.nestedCategories && mobileView ? (
 				<NestedMobileMenu
-					id='nested-customized-menu2'
+					id="nested-customized-menu2"
 					anchorEl={anchorEl}
 					open={open}
 					onClose={() => {
