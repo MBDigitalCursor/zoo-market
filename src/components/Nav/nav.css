@@ -64,6 +64,12 @@ nav img {
   display: none;
 }
 
+.nav-lang {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
 @media(max-width: 768px) {
 
   .nav-burger {
@@ -118,18 +124,3 @@ nav img {
     z-index: 1201;
   }
 }
-
-/* 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .nav-container {
-    height: 60px;
-    padding: 0 20px;
-    position: relative;
-  }
-
-  nav img {
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-  }
-} */

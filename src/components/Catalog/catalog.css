@@ -158,6 +158,7 @@
 
 .tree-products h4 {
   font-size: var(--16px);
+  font-weight: var(--regular);
 }
 
 .single-product {
@@ -166,6 +167,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.single-product p {
+  color: var(--p-grey);
+  font-weight: var(--regular);
+}
+
+.single-product p:last-of-type {
+  color: var(--black);
+  font-weight: var(--semi-bold);
 }
 
 .catalog-mobile-title {
