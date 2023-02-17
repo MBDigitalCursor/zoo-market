@@ -6,25 +6,27 @@ import catsCannedFoodArr from "../../../helpers/catsCannedFood.js";
 import ProdsPagination from "./ProdsPagination.js";
 import dogIcon from "../../../assets/icons/dog2.png";
 import catIcon from "../../../assets/icons/cat2.png";
+import { useSelector } from "react-redux";
 
 function MobileProducts() {
+	const { pageLanguage } = useSelector((state) => state.generalSlice);
 	const dogsCategoryTrees = [
 		{
-			title: "Šunims > Sausas ėdalas",
+			title: pageLanguage === "LT" ? "Šunims > Sausas ėdalas" : "Dogs > Dry food",
 			products: dogsDryFoodArr,
 		},
 		{
-			title: "Šunims > Konservai",
+			title: pageLanguage === "LT" ? "Šunims > Konservai" : "Dogs > Canned food",
 			products: dogsCannedFoodArr,
 		},
 	];
 	const catsCategoryTrees = [
 		{
-			title: "Katėms > Sausas ėdalas",
+			title: pageLanguage === "LT" ? "Katėms > Sausas ėdalas" : "Cats > Dry food",
 			products: catsDryFoodArr,
 		},
 		{
-			title: "Katėms > Konservai",
+			title: pageLanguage === "LT" ? "Katėms > Konservai" : "Cats > Canned food",
 			products: catsCannedFoodArr,
 		},
 	];

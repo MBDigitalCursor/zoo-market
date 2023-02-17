@@ -3,13 +3,14 @@ import { scrollToSection } from "../../helpers/scrollToSection";
 import "./nav.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import DrawerComp from "./DrawerComp";
-import { useDispatch } from "react-redux";
-import { setBurgerMenu } from "../../store/generalStore";
+import { useDispatch, useSelector } from "react-redux";
+import { setBurgerMenu, setLanguage } from "../../store/generalStore";
 
 function Nav() {
 	const [blur, setBlur] = useState(false);
 
 	const dispatch = useDispatch();
+	const { pageLanguage } = useSelector((state) => state.generalSlice);
 
 	const addBlur = () => {
 		if (window.scrollY >= 80) {
@@ -50,19 +51,19 @@ function Nav() {
 						href='#catalog'
 						onClick={() => scrollToSection("catalog")}
 					>
-						Produktai
+						{pageLanguage === "LT" ? "Produktai" : "Products"}
 					</a>
 					<a
 						href='#contacts'
 						onClick={() => scrollToSection("contacts")}
 					>
-						Kontaktai
+						{pageLanguage === "LT" ? "Kontaktai" : "Contacts"}
 					</a>
 				</div>
 
 				<div className='nav-lang'>
-					<a href='/'>LT</a>
-					<a href='/'>EN</a>
+					<p onClick={() => dispatch(setLanguage("LT"))}>LT</p>
+					<p onClick={() => dispatch(setLanguage("EN"))}>EN</p>
 				</div>
 			</div>
 

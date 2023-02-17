@@ -9,6 +9,7 @@ import Contacts from "./components/Contacts/Contacts";
 import MobileProducts from "./components/Catalog/MobileProducts/MobileProducts";
 import HeroPaws from "./components/Hero/HeroPaws/HeroPaws";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useSelector } from "react-redux";
 
 const theme = createTheme({
 	palette: {
@@ -19,6 +20,8 @@ const theme = createTheme({
 });
 
 function App() {
+	const { pageLanguage } = useSelector((state) => state.generalSlice);
+
 	return (
 		<>
 			<ThemeProvider theme={theme}>

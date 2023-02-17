@@ -46,7 +46,8 @@ nav img {
   gap: 50px;
 }
 
-.nav-container a {
+.nav-container a,
+.nav-container p {
   text-decoration: none;
   color: var(--black);
 }

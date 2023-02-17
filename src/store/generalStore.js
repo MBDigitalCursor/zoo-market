@@ -17,7 +17,9 @@ export const generalSlice = createSlice({
 		},
 		mobileView: false,
 		burgerMenu: false,
+		pageLanguage: "LT",
 	},
+
 	reducers: {
 		setMainCategory: (state, action) => {
 			state.mainCategory = action.payload;
@@ -43,9 +45,12 @@ export const generalSlice = createSlice({
 		setBurgerMenu: (state, action) => {
 			state.burgerMenu = action.payload;
 		},
+		setLanguage: (state, action) => {
+			state.pageLanguage = action.payload;
+		},
 	},
 });
 
-export const { setMainCategory, setCategoryProducts, setSlicedProds, setProducts, setPagination, setMobileView, setBurgerMenu } = generalSlice.actions;
+export const { setMainCategory, setCategoryProducts, setSlicedProds, setProducts, setPagination, setMobileView, setBurgerMenu, setLanguage } = generalSlice.actions;
 
 export default generalSlice.reducer;
