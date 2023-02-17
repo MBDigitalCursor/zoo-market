@@ -126,7 +126,6 @@
 }
 
 .products-with-pagination {
-  width: max-content;
   display: none;
   flex-direction: column;
   align-items: flex-end;

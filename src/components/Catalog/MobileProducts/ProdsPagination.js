@@ -35,17 +35,8 @@ function ProdsPagination({ products }) {
 			flexDirection="column"
 			sx={{
 				margin: "20px 0",
-
 				"& .MuiPaginationItem-page": {
-					backgroundColor: "var(--grey)",
-				},
-
-				"& .Mui-selected:hover": {
-					backgroundColor: "var(--yellow)",
-				},
-
-				"& .Mui-selected": {
-					backgroundColor: "var(--yellow)",
+					backgroundColor: "#C2C1C1",
 				},
 			}}
 		>
