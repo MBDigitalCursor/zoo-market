@@ -126,9 +126,13 @@
 }
 
 .products-with-pagination {
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> 33d76c8be792a8c5ffa8ce9a2ec24d67e977d0f1
   display: none;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .page-products {
@@ -187,7 +191,7 @@
   }
 
   .products-with-pagination {
-    display: block;
+    display: flex;
   }
 }
 
