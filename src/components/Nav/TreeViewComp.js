@@ -3,11 +3,13 @@ import TreeView from "@mui/lab/TreeView";
 import TreeItem from "@mui/lab/TreeItem";
 import { MdOutlineKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
 import { scrollToSection } from "../../helpers/scrollToSection";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setBurgerMenu } from "../../store/generalStore";
 
 export default function TreeViewComp() {
 	const dispatch = useDispatch();
+
+	const { pageLanguage } = useSelector((state) => state.generalSlice);
 
 	return (
 		<TreeView
@@ -31,92 +33,181 @@ export default function TreeViewComp() {
 				},
 			}}
 		>
-			<TreeItem
-				nodeId='1'
-				label='Produktai'
-			>
+			{pageLanguage === "LT" ? (
 				<TreeItem
-					nodeId='2'
-					label='Šunims'
+					nodeId='1'
+					label='Produktai'
 				>
 					<TreeItem
-						nodeId='3'
-						label='Sausas ėdalas'
-						onClick={() => {
-							dispatch(setBurgerMenu(false));
-							scrollToSection("dogsDryFood");
-						}}
-					/>
+						nodeId='2'
+						label='Šunims'
+					>
+						<TreeItem
+							nodeId='3'
+							label='Sausas ėdalas'
+							onClick={() => {
+								dispatch(setBurgerMenu(false));
+								scrollToSection("dogsDryFood");
+							}}
+						/>
+						<TreeItem
+							nodeId='4'
+							label='Konservai'
+							onClick={() => {
+								scrollToSection("dogsCannedFood");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
 					<TreeItem
-						nodeId='4'
-						label='Konservai'
-						onClick={() => {
-							scrollToSection("dogsCannedFood");
-							dispatch(setBurgerMenu(false));
-						}}
-					/>
+						nodeId='5'
+						label='Katėms'
+					>
+						<TreeItem
+							nodeId='6'
+							label='Sausas ėdalas'
+							onClick={() => {
+								scrollToSection("catsDryFood");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+						<TreeItem
+							nodeId='7'
+							label='Konservai'
+							onClick={() => {
+								scrollToSection("catsCannedFood");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
+					<TreeItem
+						nodeId='8'
+						label='Paukščiams'
+					>
+						<TreeItem
+							nodeId='9'
+							label='Teirautis krautuvėlėje'
+							onClick={() => {
+								scrollToSection("contacts");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
+					<TreeItem
+						nodeId='10'
+						label='Graužikams'
+					>
+						<TreeItem
+							nodeId='11'
+							label='Teirautis krautuvėlėje'
+							onClick={() => {
+								scrollToSection("contacts");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
+					<TreeItem
+						nodeId='12'
+						label='Žuvims'
+					>
+						<TreeItem
+							nodeId='13'
+							label='Teirautis krautuvėlėje'
+							onClick={() => {
+								scrollToSection("contacts");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
 				</TreeItem>
+			) : (
 				<TreeItem
-					nodeId='5'
-					label='Katėms'
+					nodeId='1'
+					label='Products'
 				>
 					<TreeItem
-						nodeId='6'
-						label='Sausas ėdalas'
-						onClick={() => {
-							scrollToSection("catsDryFood");
-							dispatch(setBurgerMenu(false));
-						}}
-					/>
+						nodeId='2'
+						label='Dogs'
+					>
+						<TreeItem
+							nodeId='3'
+							label='Dry food'
+							onClick={() => {
+								dispatch(setBurgerMenu(false));
+								scrollToSection("dogsDryFood");
+							}}
+						/>
+						<TreeItem
+							nodeId='4'
+							label='Canned food'
+							onClick={() => {
+								scrollToSection("dogsCannedFood");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
 					<TreeItem
-						nodeId='7'
-						label='Konservai'
-						onClick={() => {
-							scrollToSection("catsCannedFood");
-							dispatch(setBurgerMenu(false));
-						}}
-					/>
-				</TreeItem>
-				<TreeItem
-					nodeId='8'
-					label='Paukščiams'
-				>
+						nodeId='5'
+						label='Cats'
+					>
+						<TreeItem
+							nodeId='6'
+							label='Dry food'
+							onClick={() => {
+								scrollToSection("catsDryFood");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+						<TreeItem
+							nodeId='7'
+							label='Canned food'
+							onClick={() => {
+								scrollToSection("catsCannedFood");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
 					<TreeItem
-						nodeId='9'
-						label='Teirautis krautuvėlėje'
-						onClick={() => {
-							scrollToSection("contacts");
-							dispatch(setBurgerMenu(false));
-						}}
-					/>
-				</TreeItem>
-				<TreeItem
-					nodeId='10'
-					label='Graužikams'
-				>
+						nodeId='8'
+						label='Birds'
+					>
+						<TreeItem
+							nodeId='9'
+							label='Ask at the store'
+							onClick={() => {
+								scrollToSection("contacts");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
 					<TreeItem
-						nodeId='11'
-						label='Teirautis krautuvėlėje'
-						onClick={() => {
-							scrollToSection("contacts");
-							dispatch(setBurgerMenu(false));
-						}}
-					/>
-				</TreeItem>
-				<TreeItem
-					nodeId='12'
-					label='Žuvims'
-				>
+						nodeId='10'
+						label='Hamsters'
+					>
+						<TreeItem
+							nodeId='11'
+							label='Ask at the store'
+							onClick={() => {
+								scrollToSection("contacts");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
 					<TreeItem
-						nodeId='13'
-						label='Teirautis krautuvėlėje'
-						onClick={() => {
-							scrollToSection("contacts");
-							dispatch(setBurgerMenu(false));
-						}}
-					/>
+						nodeId='12'
+						label='Fish'
+					>
+						<TreeItem
+							nodeId='13'
+							label='Ask at the store'
+							onClick={() => {
+								scrollToSection("contacts");
+								dispatch(setBurgerMenu(false));
+							}}
+						/>
+					</TreeItem>
 				</TreeItem>
-			</TreeItem>
+			)}
 		</TreeView>
 	);
 }

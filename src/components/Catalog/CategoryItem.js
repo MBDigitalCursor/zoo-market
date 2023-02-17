@@ -179,7 +179,7 @@ function CategoryItem({ category }) {
 		};
 	}, []);
 
-	const { mainCategory, categoryProducts, mobileView } = useSelector((state) => state.generalSlice);
+	const { mainCategory, categoryProducts, mobileView, pageLanguage } = useSelector((state) => state.generalSlice);
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [anchorEl2, setAnchorEl2] = useState(null);
 	const [open, setOpen] = useState(false);
@@ -200,257 +200,338 @@ function CategoryItem({ category }) {
 
 	return (
 		<div>
-			<div
-				className='single-category-item'
-				style={{
-					backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
-				}}
-				id='demo-customized-button'
-				aria-controls={open ? "demo-customized-menu" : undefined}
-				aria-haspopup='true'
-				aria-expanded={open ? "true" : undefined}
-				variant='contained'
-				onClick={(e) => {
-					handleClick(e);
-					dispatch(setMainCategory(category.title));
-					if (categoryProducts.active) {
-						dispatch(
-							setCategoryProducts({
-								active: false,
-								catTree: "",
-							})
-						);
-					}
-				}}
-			>
-				<img
-					src={category.icon}
-					alt={category.title}
-				/>
-				<p>{category.title}</p>
-			</div>
-			{category.nestedCategories && !mobileView ? (
-				<StyledMenu
-					id='demo-customized-menu'
-					anchorEl={anchorEl}
-					open={open}
-					onClose={() => {
-						handleClose();
-						if (categoryProducts.active) {
-							dispatch(
-								setCategoryProducts({
-									active: false,
-									catTree: "",
-								})
-							);
-						}
-						dispatch(setMainCategory(""));
-					}}
-				>
-					<MenuItem
-						onClick={() => {
-							handleClose();
+			{pageLanguage === "LT" ? (
+				<div>
+					<div
+						className='single-category-item'
+						style={{
+							backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
+						}}
+						id='demo-customized-button'
+						aria-controls={open ? "demo-customized-menu" : undefined}
+						aria-haspopup='true'
+						aria-expanded={open ? "true" : undefined}
+						variant='contained'
+						onClick={(e) => {
+							handleClick(e);
+							dispatch(setMainCategory(category.title));
+							if (categoryProducts.active) {
+								dispatch(
+									setCategoryProducts({
+										active: false,
+										catTree: "",
+									})
+								);
+							}
+						}}
+					>
+						<img
+							src={category.icon}
+							alt={category.title}
+						/>
+						<p>{category.title}</p>
+					</div>
+					{category.nestedCategories && !mobileView ? (
+						<StyledMenu
+							id='demo-customized-menu'
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								if (categoryProducts.active) {
+									dispatch(
+										setCategoryProducts({
+											active: false,
+											catTree: "",
+										})
+									);
+								}
+								dispatch(setMainCategory(""));
+							}}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
 
-							if (category.title === "Šunims") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Šunims > Sausas ėdalas",
-									})
-								);
+									if (category.title === "Šunims") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Šunims > Sausas ėdalas",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Katėms") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Katėms > Sausas ėdalas",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Sausas ėdalas
+							</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									if (category.title === "Šunims") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Šunims > Konservai",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Katėms") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Katėms > Konservai",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Konservai
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Skanėstai
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Higienos prekės
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Žaislai
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Aksesuarai
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+						</StyledMenu>
+					) : category.nestedCategories && mobileView ? (
+						<StyledMobileMenu
+							id='demo-customized-menu'
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								if (categoryProducts.active) {
+									dispatch(
+										setCategoryProducts({
+											active: false,
+											catTree: "",
+										})
+									);
+								}
 								dispatch(setMainCategory(""));
-							}
-							if (category.title === "Katėms") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Katėms > Sausas ėdalas",
-									})
-								);
-								dispatch(setMainCategory(""));
-							}
-						}}
-					>
-						Sausas ėdalas
-					</MenuItem>
-					<MenuItem
-						onClick={() => {
-							handleClose();
-							if (category.title === "Šunims") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Šunims > Konservai",
-									})
-								);
-								dispatch(setMainCategory(""));
-							}
-							if (category.title === "Katėms") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Katėms > Konservai",
-									})
-								);
-								dispatch(setMainCategory(""));
-							}
-						}}
-					>
-						Konservai
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Skanėstai
-						<NestedMenu
-							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
+							}}
 						>
 							<MenuItem
 								onClick={() => {
 									handleClose();
-									dispatch(setMainCategory(""));
-									scrollToSection("contacts");
-								}}
-							>
-								Teirautis krautuvėlėje
-							</MenuItem>
-						</NestedMenu>
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Higienos prekės
-						<NestedMenu
-							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
-						>
-							<MenuItem
-								onClick={() => {
-									handleClose();
-									dispatch(setMainCategory(""));
-									scrollToSection("contacts");
-								}}
-							>
-								Teirautis krautuvėlėje
-							</MenuItem>
-						</NestedMenu>
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Žaislai
-						<NestedMenu
-							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
-						>
-							<MenuItem
-								onClick={() => {
-									handleClose();
-									dispatch(setMainCategory(""));
-									scrollToSection("contacts");
-								}}
-							>
-								Teirautis krautuvėlėje
-							</MenuItem>
-						</NestedMenu>
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Aksesuarai
-						<NestedMenu
-							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
-						>
-							<MenuItem
-								onClick={() => {
-									handleClose();
-									dispatch(setMainCategory(""));
-									scrollToSection("contacts");
-								}}
-							>
-								Teirautis krautuvėlėje
-							</MenuItem>
-						</NestedMenu>
-					</MenuItem>
-				</StyledMenu>
-			) : category.nestedCategories && mobileView ? (
-				<StyledMobileMenu
-					id='demo-customized-menu'
-					anchorEl={anchorEl}
-					open={open}
-					onClose={() => {
-						handleClose();
-						if (categoryProducts.active) {
-							dispatch(
-								setCategoryProducts({
-									active: false,
-									catTree: "",
-								})
-							);
-						}
-						dispatch(setMainCategory(""));
-					}}
-				>
-					<MenuItem
-						onClick={() => {
-							handleClose();
 
-							if (category.title === "Šunims") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Šunims > Sausas ėdalas",
-									})
-								);
-								dispatch(setMainCategory(""));
-							}
-							if (category.title === "Katėms") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Katėms > Sausas ėdalas",
-									})
-								);
-								dispatch(setMainCategory(""));
-							}
-						}}
-					>
-						Sausas ėdalas
-					</MenuItem>
-					<MenuItem
-						onClick={() => {
-							handleClose();
-							if (category.title === "Šunims") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Šunims > Konservai",
-									})
-								);
-								dispatch(setMainCategory(""));
-							}
-							if (category.title === "Katėms") {
-								dispatch(
-									setCategoryProducts({
-										active: true,
-										catTree: "Katėms > Konservai",
-									})
-								);
-								dispatch(setMainCategory(""));
-							}
-						}}
-					>
-						Konservai
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Skanėstai
+									if (category.title === "Šunims") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Šunims > Sausas ėdalas",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Katėms") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Katėms > Sausas ėdalas",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Sausas ėdalas
+							</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									if (category.title === "Šunims") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Šunims > Konservai",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Katėms") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Katėms > Konservai",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Konservai
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Skanėstai
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Higienos prekės
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Žaislai
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Aksesuarai
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Teirautis krautuvėlėje
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+						</StyledMobileMenu>
+					) : !category.nestedCategories && !mobileView ? (
 						<NestedMenu
 							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								dispatch(setMainCategory(""));
+							}}
 						>
 							<MenuItem
 								onClick={() => {
@@ -462,14 +543,15 @@ function CategoryItem({ category }) {
 								Teirautis krautuvėlėje
 							</MenuItem>
 						</NestedMenu>
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Higienos prekės
-						<NestedMenu
+					) : !category.nestedCategories && mobileView ? (
+						<NestedMobileMenu
 							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								dispatch(setMainCategory(""));
+							}}
 						>
 							<MenuItem
 								onClick={() => {
@@ -480,89 +562,378 @@ function CategoryItem({ category }) {
 							>
 								Teirautis krautuvėlėje
 							</MenuItem>
-						</NestedMenu>
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Žaislai
-						<NestedMenu
-							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
-						>
-							<MenuItem
-								onClick={() => {
-									handleClose();
-									dispatch(setMainCategory(""));
-									scrollToSection("contacts");
-								}}
-							>
-								Teirautis krautuvėlėje
-							</MenuItem>
-						</NestedMenu>
-					</MenuItem>
-					<MenuItem onClick={handleItemClick}>
-						Aksesuarai
-						<NestedMenu
-							id='nested-customized-menu2'
-							anchorEl={anchorEl2}
-							open={openNested}
-							onClose={() => setOpenNested(false)}
-						>
-							<MenuItem
-								onClick={() => {
-									handleClose();
-									dispatch(setMainCategory(""));
-									scrollToSection("contacts");
-								}}
-							>
-								Teirautis krautuvėlėje
-							</MenuItem>
-						</NestedMenu>
-					</MenuItem>
-				</StyledMobileMenu>
-			) : !category.nestedCategories && !mobileView ? (
-				<NestedMenu
-					id='nested-customized-menu2'
-					anchorEl={anchorEl}
-					open={open}
-					onClose={() => {
-						handleClose();
-						dispatch(setMainCategory(""));
-					}}
-				>
-					<MenuItem
-						onClick={() => {
-							handleClose();
-							dispatch(setMainCategory(""));
-							scrollToSection("contacts");
-						}}
-					>
-						Teirautis krautuvėlėje
-					</MenuItem>
-				</NestedMenu>
-			) : !category.nestedCategories && mobileView ? (
-				<NestedMobileMenu
-					id='nested-customized-menu2'
-					anchorEl={anchorEl}
-					open={open}
-					onClose={() => {
-						handleClose();
-						dispatch(setMainCategory(""));
-					}}
-				>
-					<MenuItem
-						onClick={() => {
-							handleClose();
-							dispatch(setMainCategory(""));
-							scrollToSection("contacts");
-						}}
-					>
-						Teirautis krautuvėlėje
-					</MenuItem>
-				</NestedMobileMenu>
+						</NestedMobileMenu>
+					) : (
+						""
+					)}
+				</div>
 			) : (
-				""
+				<div>
+					<div
+						className='single-category-item'
+						style={{
+							backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
+						}}
+						id='demo-customized-button'
+						aria-controls={open ? "demo-customized-menu" : undefined}
+						aria-haspopup='true'
+						aria-expanded={open ? "true" : undefined}
+						variant='contained'
+						onClick={(e) => {
+							handleClick(e);
+							dispatch(setMainCategory(category.title));
+							if (categoryProducts.active) {
+								dispatch(
+									setCategoryProducts({
+										active: false,
+										catTree: "",
+									})
+								);
+							}
+						}}
+					>
+						<img
+							src={category.icon}
+							alt={category.title}
+						/>
+						<p>{category.title}</p>
+					</div>
+					{category.nestedCategories && !mobileView ? (
+						<StyledMenu
+							id='demo-customized-menu'
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								if (categoryProducts.active) {
+									dispatch(
+										setCategoryProducts({
+											active: false,
+											catTree: "",
+										})
+									);
+								}
+								dispatch(setMainCategory(""));
+							}}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+
+									if (category.title === "Dogs") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Dogs > Dry food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Cats") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Cats > Dry food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Dry food
+							</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									if (category.title === "Dogs") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Dogs > Canned food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Cats") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Cats > Canned food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Canned food
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Treats
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Hygiene products
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Toys
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Accessories
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+						</StyledMenu>
+					) : category.nestedCategories && mobileView ? (
+						<StyledMobileMenu
+							id='demo-customized-menu'
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								if (categoryProducts.active) {
+									dispatch(
+										setCategoryProducts({
+											active: false,
+											catTree: "",
+										})
+									);
+								}
+								dispatch(setMainCategory(""));
+							}}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+
+									if (category.title === "Dogs") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Dogs > Dry food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Cats") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Cats > Dry food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Dry food
+							</MenuItem>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									if (category.title === "Dogs") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Dogs > Canned food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+									if (category.title === "Cats") {
+										dispatch(
+											setCategoryProducts({
+												active: true,
+												catTree: "Cats > Canned food",
+											})
+										);
+										dispatch(setMainCategory(""));
+									}
+								}}
+							>
+								Canned food
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Treats
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Hygiene products
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Toys
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+							<MenuItem onClick={handleItemClick}>
+								Accessories
+								<NestedMenu
+									id='nested-customized-menu2'
+									anchorEl={anchorEl2}
+									open={openNested}
+									onClose={() => setOpenNested(false)}
+								>
+									<MenuItem
+										onClick={() => {
+											handleClose();
+											dispatch(setMainCategory(""));
+											scrollToSection("contacts");
+										}}
+									>
+										Ask at the store
+									</MenuItem>
+								</NestedMenu>
+							</MenuItem>
+						</StyledMobileMenu>
+					) : !category.nestedCategories && !mobileView ? (
+						<NestedMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								dispatch(setMainCategory(""));
+							}}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Ask at the store
+							</MenuItem>
+						</NestedMenu>
+					) : !category.nestedCategories && mobileView ? (
+						<NestedMobileMenu
+							id='nested-customized-menu2'
+							anchorEl={anchorEl}
+							open={open}
+							onClose={() => {
+								handleClose();
+								dispatch(setMainCategory(""));
+							}}
+						>
+							<MenuItem
+								onClick={() => {
+									handleClose();
+									dispatch(setMainCategory(""));
+									scrollToSection("contacts");
+								}}
+							>
+								Ask at the store
+							</MenuItem>
+						</NestedMobileMenu>
+					) : (
+						""
+					)}
+				</div>
 			)}
 		</div>
 	);

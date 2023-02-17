@@ -11,26 +11,29 @@ import logo from "../../assets/img/mobileMain/brand logos.svg";
 import division from "../../assets/img/mobileMain/division section.svg";
 import nose from "../../assets/img/mobileMain/nose 1.svg";
 import Item from "./Item";
+import { useSelector } from "react-redux";
 
 function PopularItems() {
+	const { pageLanguage } = useSelector((state) => state.generalSlice);
+
 	const items = [
 		{
 			img: img1,
-			desc: "Kačių skanėstas Pussycat Juice Mega Pussy Extra Wet, 1 kg",
+			desc: pageLanguage === "LT" ? "Kačių skanėstas Pussycat Juice Mega Pussy Extra Wet, 1 kg" : "Cat treat Pussycat Juice Mega Pussy Extra Wet",
 			price: 14.99,
 			hot: false,
 			new: false,
 		},
 		{
 			img: img2,
-			desc: "Sausas šunų ėdalas Royal Canin Puppy Pussy Magnet, 2 kg",
+			desc: pageLanguage === "LT" ? "Sausas šunų ėdalas Royal Canin Puppy Pussy Magnet, 2 kg" : "Dry dog food Royal Canin Puppy Pussy Magnet, 2 kg",
 			price: 69.99,
 			hot: false,
 			new: false,
 		},
 		{
 			img: img3,
-			desc: "Sausas šunų ėdalas Royal Canin Bright Wet Pussy Boy, 5 kg",
+			desc: pageLanguage === "LT" ? "Sausas šunų ėdalas Royal Canin Bright Wet Pussy Boy, 5 kg" : "Dry dog food Royal Canin Bright Wet Pussy Boy, 5 kg",
 			price: 20.99,
 			hot: true,
 			new: false,
@@ -59,10 +62,10 @@ function PopularItems() {
 	];
 
 	return (
-		<div className="pop-items-container container">
-			<div className="pop-items-left-side">
-				<h3>Populiarios prekės</h3>
-				<div className="pop-items">
+		<div className='pop-items-container container'>
+			<div className='pop-items-left-side'>
+				{pageLanguage === "LT" ? <h3>Populiarios prekės</h3> : <h3>Popular products</h3>}
+				<div className='pop-items'>
 					{items.map((item, i) => (
 						<Item
 							item={item}
@@ -71,38 +74,38 @@ function PopularItems() {
 					))}
 				</div>
 			</div>
-			<div className="pop-items-right-side">
-				<div className="content">
-					<h3>Naujienos ir pasiūlymai</h3>
-					<div className="new-item-container">
-						<div className="new-item-desc">
+			<div className='pop-items-right-side'>
+				<div className='content'>
+					{pageLanguage === "LT" ? <h3>Naujienos ir pasiūlymai</h3> : <h3>News and offers</h3>}
+					<div className='new-item-container'>
+						<div className='new-item-desc'>
 							<h4>Puiki nauja prekė, OMG!</h4>
 							<p>Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients</p>
 							<p>$59.99 for limited time</p>
 						</div>
 						<img
 							src={popImg}
-							alt="dog food"
+							alt='dog food'
 						/>
 					</div>
 				</div>
 			</div>
-			<div className="pop-items-mobile-top">
-				<div className="mobile-main-container">
+			<div className='pop-items-mobile-top'>
+				<div className='mobile-main-container'>
 					<img
-						className="mobile-logos"
+						className='mobile-logos'
 						src={logo}
-						alt="dog food brand logos"
+						alt='dog food brand logos'
 					/>
 					<img
-						className="mobile-division"
+						className='mobile-division'
 						src={division}
-						alt="dog food description"
+						alt='dog food description'
 					/>
 					<img
-						className="mobile-nose"
+						className='mobile-nose'
 						src={nose}
-						alt="emoji of dog nose"
+						alt='emoji of dog nose'
 					/>
 				</div>
 			</div>

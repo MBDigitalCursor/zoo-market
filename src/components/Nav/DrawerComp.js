@@ -22,7 +22,7 @@ const MyDrawer = styled(Drawer)({
 export default function DrawerComp() {
 	const dispatch = useDispatch();
 
-	const { burgerMenu } = useSelector((state) => state.generalSlice);
+	const { burgerMenu, pageLanguage } = useSelector((state) => state.generalSlice);
 
 	return (
 		<div>
@@ -50,7 +50,7 @@ export default function DrawerComp() {
 								dispatch(setBurgerMenu(false));
 							}}
 						>
-							Kontaktai
+							{pageLanguage === "LT" ? "Kontaktai" : "Contacts"}
 						</p>
 						<VscChromeClose
 							className='close-icon'
