@@ -23,9 +23,11 @@ export default function TreeViewComp() {
 				height: "max-content",
 				"& .MuiTreeItem-label": {
 					padding: "14px 0",
-					fontSize: "1rem",
+
 					fontWeight: "400",
 					marginLeft: "-5px",
+					fontFamily: "Red Hat Display !important",
+					fontSize: "16px !important",
 				},
 				"& .MuiTreeItem-iconContainer": {
 					marginLeft: "-5px",

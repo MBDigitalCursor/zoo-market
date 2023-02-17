@@ -158,61 +158,6 @@
   }
 }
 
-/* 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-  .pop-items-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .pop-items-container h3 {
-    font-size: var(--21px);
-    padding-bottom: 27px;
-  }
-
-  .new-item-desc h4,
-  .new-item-desc p {
-    font-size: var(--16px);
-  }
-
-  .pop-items {
-    justify-content: flex-start;
-  }
-
-  .single-item {
-    max-width: 170px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .single-item img {
-    max-height: 140px;
-    max-width: 174px;
-  }
-
-  .new-item-container {
-    padding: 23px;
-  }
-
-  .new-item-container img {
-    height: 415px;
-    width: 291px;
-  }
-
-  .new-item-desc {
-    padding: 17px;
-  }
-
-  .hot-new-icons {
-    height: 50px;
-    width: 50px;
-    top: -80px;
-  }
-} */
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .pop-items-container {
     padding-left: 20px;

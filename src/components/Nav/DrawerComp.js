@@ -32,7 +32,7 @@ export default function DrawerComp() {
 				onClose={() => dispatch(setBurgerMenu(false))}
 			>
 				<Box
-					role='presentation'
+					role="presentation"
 					onKeyDown={() => dispatch(setBurgerMenu(false))}
 					sx={{
 						display: "flex",
@@ -40,10 +40,11 @@ export default function DrawerComp() {
 						gap: "35px",
 					}}
 				>
-					<div className='drawer-top-side'>
+					<div className="drawer-top-side">
 						<p
 							style={{
-								marginLeft: "33px",
+								marginLeft: "20px",
+								fontSize: "16px",
 							}}
 							onClick={() => {
 								scrollToSection("contacts");
@@ -53,7 +54,7 @@ export default function DrawerComp() {
 							{pageLanguage === "LT" ? "Kontaktai" : "Contacts"}
 						</p>
 						<VscChromeClose
-							className='close-icon'
+							className="close-icon"
 							style={{
 								fontSize: "30px",
 							}}
