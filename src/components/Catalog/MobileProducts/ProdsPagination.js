@@ -9,17 +9,17 @@ function ProdsPagination({ products }) {
 		from: 0,
 		to: pageSize,
 	});
-
 	const [slicedArr, setSlicedArr] = useState([]);
 
-	// useEffect(() => {
-	// 	const slicedProds = (from, to) => {
-	// 		const slicedProdsArr = products.slice(from, to);
-	// 		setSlicedArr(slicedProdsArr);
-	// 		setPagination({ ...pagination, count: products.length });
-	// 	};
-	// 	slicedProds(pagination.from, pagination.to);
-	// }, [pagination.from, pagination.to, pagination, products]);
+	const slicedProds = (from, to) => {
+		return products.slice(from, to);
+	};
+
+	useEffect(() => {
+		const newSlicedArr = slicedProds(pagination.from, pagination.to);
+		setSlicedArr(newSlicedArr);
+		setPagination({ ...pagination, count: products.length });
+	}, [pagination.from, pagination.to, products]);
 
 	const handlePageChange = (event, page) => {
 		const from = (page - 1) * pageSize;
@@ -40,7 +40,7 @@ function ProdsPagination({ products }) {
 				},
 			}}
 		>
-			{slicedArr && (
+			{slicedArr.length > 0 && (
 				<div className='page-products'>
 					{slicedArr.map((prod, i) => (
 						<div
@@ -54,7 +54,7 @@ function ProdsPagination({ products }) {
 								}}
 								src={prod.img}
 								alt=''
-							></img>
+							/>
 							<div
 								style={{
 									display: "flex",
@@ -75,6 +75,12 @@ function ProdsPagination({ products }) {
 				count={Math.ceil(pagination.count / pageSize)}
 				onChange={handlePageChange}
 				defaultPage={1}
+				color='primary'
+				sx={{
+					"& .Mui-selected": {
+						pointerEvents: "none",
+					},
+				}}
 			/>
 		</Box>
 	);

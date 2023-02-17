@@ -8,19 +8,30 @@ import Catalog from "./components/Catalog/Catalog";
 import Contacts from "./components/Contacts/Contacts";
 import MobileProducts from "./components/Catalog/MobileProducts/MobileProducts";
 import HeroPaws from "./components/Hero/HeroPaws/HeroPaws";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+	palette: {
+		primary: {
+			main: "#F8C81F",
+		},
+	},
+});
 
 function App() {
 	return (
 		<>
-			<Nav />
-			<div className="App">
-				<Hero />
-				<HeroPaws />
-				<PopularItems />
-				<MobileProducts />
-				<Catalog />
-				<Contacts />
-			</div>
+			<ThemeProvider theme={theme}>
+				<Nav />
+				<div className='App'>
+					<Hero />
+					<HeroPaws />
+					<PopularItems />
+					<MobileProducts />
+					<Catalog />
+					<Contacts />
+				</div>
+			</ThemeProvider>
 		</>
 	);
 }
