@@ -6,13 +6,14 @@ import { setBurgerMenu } from "../../store/generalStore";
 import { styled } from "@mui/material/styles";
 import { VscChromeClose } from "react-icons/vsc";
 import TreeViewComp from "./TreeViewComp";
+import { scrollToSection } from "../../helpers/scrollToSection";
 
 const MyDrawer = styled(Drawer)({
 	"& .MuiPaper-root": {
 		boxSizing: "border-box",
 		padding: "20px",
 		width: 250,
-		height: 400,
+		height: "max-content",
 		backgroundColor: "rgba(30, 30, 30, 0.9)",
 		color: "white",
 	},
@@ -43,6 +44,10 @@ export default function DrawerComp() {
 						<p
 							style={{
 								marginLeft: "33px",
+							}}
+							onClick={() => {
+								scrollToSection("contacts");
+								dispatch(setBurgerMenu(false));
 							}}
 						>
 							Kontaktai

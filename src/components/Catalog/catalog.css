@@ -134,7 +134,7 @@
 
 .page-products {
   display: grid;
-  gap: 20px;
+  column-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-bottom: 34px;
@@ -153,6 +153,7 @@
 .tree-products {
   padding: 0 20px;
   margin-bottom: 115px;
+  min-height: 100vh;
 }
 
 .tree-products h4 {
