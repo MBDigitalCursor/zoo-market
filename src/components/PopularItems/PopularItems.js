@@ -6,6 +6,7 @@ import img3 from "../../assets/img/catsDryFood/cat sausas 6.png";
 import img4 from "../../assets/img/dogsDryFood/dog sausas 6.png";
 import img5 from "../../assets/img/dogsCannedFood/dog konservai 3.png";
 import img6 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
+import popImg from "../../assets/img/dogsDryFood/dog sausas 8.png";
 import logo from "../../assets/img/mobileMain/brand logos.svg";
 import division from "../../assets/img/mobileMain/division section.svg";
 import nose from "../../assets/img/mobileMain/nose 1.svg";
@@ -80,7 +81,7 @@ function PopularItems() {
 							<p>$59.99 for limited time</p>
 						</div>
 						<img
-							src={img3}
+							src={popImg}
 							alt="dog food"
 						/>
 					</div>

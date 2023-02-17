@@ -3,6 +3,8 @@
   padding-top: var(--contact-pt);
   display: flex;
   align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
   gap: 90px;
 }
 
@@ -117,7 +119,6 @@
 
 .contacts-form form {
   font-family: 'Red Hat Display', sans-serif;
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 13px 25px 25px 25px;
@@ -169,19 +170,18 @@ textarea {
   font-weight: 500;
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   .contacts-container {
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 50px;
     padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .contacts-left {
     margin: 0 auto;
-    width: 445px;
     height: 460px;
-    margin-left: 20px;
+    width: calc(100vw - 40px);
   }
 
   .open-times {
@@ -212,15 +212,9 @@ textarea {
     position: relative;
   }
 
-  .contacts-paws img {
-    position: absolute;
-    left: 50px;
-    top: 80px;
-  }
-
   .contacts-right {
-    margin: 0 20px;
     position: relative;
+    flex-grow: 1;
   }
 
   .contacts-right h2 {
@@ -230,19 +224,22 @@ textarea {
 
   .form-socials {
     display: flex;
+    flex-direction: column-reverse;
     gap: 10px;
+    position: relative;
   }
 
   .email-phone {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    margin-top: -50px;
   }
 
   .phone-fb {
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 10px;
   }
 
   .email {
@@ -261,20 +258,52 @@ textarea {
   }
 
   .contacts-form {
-    width: 240px;
-    position: absolute;
-    bottom: -4rem;
-    right: -14rem;
+    width: calc(100vw - 40px);
+    display: flex;
+    flex-direction: column;
   }
 
   .contacts-form form {
     padding: 15px;
     margin-bottom: 13px;
   }
+
+  .form-btn {
+    font-size: var(--16px);
+    margin-left: auto;
+    padding: 8px 14px;
+    border-radius: 10px;
+  }
+
+  .contacts-paws img {
+    position: absolute;
+    left: 51px;
+    top: 245px;
+  }
+
+  .open-times {
+    left: 20px;
+    top: 19px;
+    padding: 11px;
+  }
+
+  .location {
+    padding: 15px;
+    bottom: 20px;
+    left: 20px;
+    width: max-content;
+    z-index: 1;
+    padding-right: 23px;
+  }
+
+  .remodal {
+    bottom: -24.5rem;
+    right: 0rem;
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .contacts {
     padding: 0px 85px;
   }
