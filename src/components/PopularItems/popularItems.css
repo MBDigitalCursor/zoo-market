@@ -60,7 +60,7 @@
 .new-item-container img {
   height: 477px;
   width: 436px;
-  object-fit: cover;
+  object-fit: contain;
   background-color: #fff;
 }
 
@@ -96,7 +96,7 @@
   display: none;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 768px) {
   .pop-items-left-side {
     display: none;
   }
@@ -158,6 +158,7 @@
   }
 }
 
+/* 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
   .pop-items-container {
@@ -210,7 +211,7 @@
     width: 50px;
     top: -80px;
   }
-}
+} */
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .pop-items-container {

@@ -64,7 +64,7 @@ nav img {
   display: none;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 768px) {
 
   .nav-burger {
     display: block;
@@ -119,6 +119,7 @@ nav img {
   }
 }
 
+/* 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .nav-container {
     height: 60px;
@@ -131,4 +132,4 @@ nav img {
     height: 60px;
     margin-left: 20px;
   }
-}
+} */

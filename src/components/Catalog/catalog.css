@@ -60,7 +60,7 @@
 
 .left-side-desc {
   padding-left: 72px;
-  margin-top: 226px;
+  margin-top: 271px
 }
 
 .left-side-desc img {
@@ -172,7 +172,7 @@
   display: none;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 768px) {
   .catalog-container {
     display: none;
   }
@@ -193,7 +193,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
   .catalog-container {
     width: 100%;
