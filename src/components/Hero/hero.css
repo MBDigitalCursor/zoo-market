@@ -179,7 +179,7 @@
   }
 }
 
-@media(max-width: 480px) {
+@media(max-width: 768px) {
   .hero-container {
     height: 550px;
   }
@@ -249,7 +249,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .hero-container {
     height: 550px;
   }

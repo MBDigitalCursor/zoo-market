@@ -170,7 +170,7 @@ textarea {
   font-weight: 500;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contacts-container {
     flex-direction: column;
     gap: 15px;
@@ -297,13 +297,13 @@ textarea {
   }
 
   .remodal {
-    bottom: -24.5rem;
+    bottom: -27rem;
     right: 0rem;
   }
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .contacts {
     padding: 0px 85px;
   }
