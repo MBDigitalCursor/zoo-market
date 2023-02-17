@@ -7,7 +7,6 @@ export const generalSlice = createSlice({
 			active: false,
 			catTree: "",
 		},
-		products: [],
 		slicedProds: [],
 		pageSize: 4,
 		pagination: {
@@ -27,9 +26,7 @@ export const generalSlice = createSlice({
 		setCategoryProducts: (state, action) => {
 			state.categoryProducts = action.payload;
 		},
-		setProducts: (state, action) => {
-			state.products = action.payload;
-		},
+
 		setSlicedProds: (state, action) => {
 			const { arr, from, to } = action.payload;
 			const slicedArr = arr.slice(from, to);
@@ -47,10 +44,15 @@ export const generalSlice = createSlice({
 		},
 		setLanguage: (state, action) => {
 			state.pageLanguage = action.payload;
+			state.mainCategory = "";
+			state.categoryProducts = {
+				active: false,
+				catTree: "",
+			};
 		},
 	},
 });
 
-export const { setMainCategory, setCategoryProducts, setSlicedProds, setProducts, setPagination, setMobileView, setBurgerMenu, setLanguage } = generalSlice.actions;
+export const { setMainCategory, setCategoryProducts, setSlicedProds, setPagination, setMobileView, setBurgerMenu, setLanguage } = generalSlice.actions;
 
 export default generalSlice.reducer;
