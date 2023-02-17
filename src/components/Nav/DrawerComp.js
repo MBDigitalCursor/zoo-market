@@ -43,7 +43,7 @@ export default function DrawerComp() {
 					<div className="drawer-top-side">
 						<p
 							style={{
-								marginLeft: "18px",
+								marginLeft: "20px",
 								fontSize: "16px",
 							}}
 							onClick={() => {
