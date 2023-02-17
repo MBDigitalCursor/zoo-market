@@ -203,15 +203,15 @@ function CategoryItem({ category }) {
 			{pageLanguage === "LT" ? (
 				<div>
 					<div
-						className='single-category-item'
+						className="single-category-item"
 						style={{
 							backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
 						}}
-						id='demo-customized-button'
+						id="demo-customized-button"
 						aria-controls={open ? "demo-customized-menu" : undefined}
-						aria-haspopup='true'
+						aria-haspopup="true"
 						aria-expanded={open ? "true" : undefined}
-						variant='contained'
+						variant="contained"
 						onClick={(e) => {
 							handleClick(e);
 							dispatch(setMainCategory(category.title));
@@ -233,7 +233,7 @@ function CategoryItem({ category }) {
 					</div>
 					{category.nestedCategories && !mobileView ? (
 						<StyledMenu
-							id='demo-customized-menu'
+							id="demo-customized-menu"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -303,7 +303,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Skanėstai
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -322,7 +322,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Higienos prekės
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -341,7 +341,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Žaislai
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -360,7 +360,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Aksesuarai
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -379,7 +379,7 @@ function CategoryItem({ category }) {
 						</StyledMenu>
 					) : category.nestedCategories && mobileView ? (
 						<StyledMobileMenu
-							id='demo-customized-menu'
+							id="demo-customized-menu"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -449,7 +449,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Skanėstai
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -468,7 +468,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Higienos prekės
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -487,7 +487,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Žaislai
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -506,7 +506,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Aksesuarai
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -525,7 +525,7 @@ function CategoryItem({ category }) {
 						</StyledMobileMenu>
 					) : !category.nestedCategories && !mobileView ? (
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -545,7 +545,7 @@ function CategoryItem({ category }) {
 						</NestedMenu>
 					) : !category.nestedCategories && mobileView ? (
 						<NestedMobileMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -570,15 +570,15 @@ function CategoryItem({ category }) {
 			) : (
 				<div>
 					<div
-						className='single-category-item'
+						className="single-category-item"
 						style={{
 							backgroundColor: mainCategory === category.title ? "rgba(194, 193, 193, 0.7)" : "",
 						}}
-						id='demo-customized-button'
+						id="demo-customized-button"
 						aria-controls={open ? "demo-customized-menu" : undefined}
-						aria-haspopup='true'
+						aria-haspopup="true"
 						aria-expanded={open ? "true" : undefined}
-						variant='contained'
+						variant="contained"
 						onClick={(e) => {
 							handleClick(e);
 							dispatch(setMainCategory(category.title));
@@ -600,7 +600,7 @@ function CategoryItem({ category }) {
 					</div>
 					{category.nestedCategories && !mobileView ? (
 						<StyledMenu
-							id='demo-customized-menu'
+							id="demo-customized-menu"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -670,7 +670,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Treats
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -682,14 +682,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 							<MenuItem onClick={handleItemClick}>
 								Hygiene products
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -701,14 +701,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 							<MenuItem onClick={handleItemClick}>
 								Toys
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -720,14 +720,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 							<MenuItem onClick={handleItemClick}>
 								Accessories
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -739,14 +739,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 						</StyledMenu>
 					) : category.nestedCategories && mobileView ? (
 						<StyledMobileMenu
-							id='demo-customized-menu'
+							id="demo-customized-menu"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -816,7 +816,7 @@ function CategoryItem({ category }) {
 							<MenuItem onClick={handleItemClick}>
 								Treats
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -828,14 +828,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 							<MenuItem onClick={handleItemClick}>
 								Hygiene products
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -847,14 +847,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 							<MenuItem onClick={handleItemClick}>
 								Toys
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -866,14 +866,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 							<MenuItem onClick={handleItemClick}>
 								Accessories
 								<NestedMenu
-									id='nested-customized-menu2'
+									id="nested-customized-menu2"
 									anchorEl={anchorEl2}
 									open={openNested}
 									onClose={() => setOpenNested(false)}
@@ -885,14 +885,14 @@ function CategoryItem({ category }) {
 											scrollToSection("contacts");
 										}}
 									>
-										Ask at the store
+										Make an inquiry
 									</MenuItem>
 								</NestedMenu>
 							</MenuItem>
 						</StyledMobileMenu>
 					) : !category.nestedCategories && !mobileView ? (
 						<NestedMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -907,12 +907,12 @@ function CategoryItem({ category }) {
 									scrollToSection("contacts");
 								}}
 							>
-								Ask at the store
+								Make an inquiry
 							</MenuItem>
 						</NestedMenu>
 					) : !category.nestedCategories && mobileView ? (
 						<NestedMobileMenu
-							id='nested-customized-menu2'
+							id="nested-customized-menu2"
 							anchorEl={anchorEl}
 							open={open}
 							onClose={() => {
@@ -927,7 +927,7 @@ function CategoryItem({ category }) {
 									scrollToSection("contacts");
 								}}
 							>
-								Ask at the store
+								Make an inquiry
 							</MenuItem>
 						</NestedMobileMenu>
 					) : (
