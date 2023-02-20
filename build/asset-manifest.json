@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zoo-market/static/css/main.e30a5189.css",
-    "main.js": "/zoo-market/static/js/main.fcd01501.js",
+    "main.css": "/zoo-market/static/css/main.98209573.css",
+    "main.js": "/zoo-market/static/js/main.954469ff.js",
     "static/media/division-section.svg": "/zoo-market/static/media/division-section.04315585ca52ca647ccd50c47e0ffa9e.svg",
     "static/media/dog-photo.png": "/zoo-market/static/media/dog-photo.80e796640be128c514e5.png",
     "static/media/brand logos.svg": "/zoo-market/static/media/brand logos.e66c3676e51491fdae05cad8f8f212fc.svg",
@@ -53,11 +53,11 @@
     "static/media/maxi pedute.png": "/zoo-market/static/media/maxi pedute.e9bd3163db2d261f7af5.png",
     "static/media/mini pedute 5.png": "/zoo-market/static/media/mini pedute 5.4feae3707865f589798b.png",
     "index.html": "/zoo-market/index.html",
-    "main.e30a5189.css.map": "/zoo-market/static/css/main.e30a5189.css.map",
-    "main.fcd01501.js.map": "/zoo-market/static/js/main.fcd01501.js.map"
+    "main.98209573.css.map": "/zoo-market/static/css/main.98209573.css.map",
+    "main.954469ff.js.map": "/zoo-market/static/js/main.954469ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.e30a5189.css",
-    "static/js/main.fcd01501.js"
+    "static/css/main.98209573.css",
+    "static/js/main.954469ff.js"
   ]
 }
