@@ -83,10 +83,12 @@ function PopularItems() {
 							<p>Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients</p>
 							<p>$59.99 for limited time</p>
 						</div>
-						<img
-							src={popImg}
-							alt='dog food'
-						/>
+						<div className='pop-items-right-side-bottom-container'>
+							<img
+								src={popImg}
+								alt='dog food'
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

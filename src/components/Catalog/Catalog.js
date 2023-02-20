@@ -12,10 +12,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMobileView } from "../../store/generalStore";
 
 function Catalog() {
-	const { pageLanguage } = useSelector((state) => state.generalSlice);
-
 	const dispatch = useDispatch();
 
+	const { mobileView, pageLanguage } = useSelector((state) => state.generalSlice);
 	const categories = [
 		{
 			icon: dog,
@@ -49,28 +48,25 @@ function Catalog() {
 		},
 	];
 
-	const { mobileView } = useSelector((state) => state.generalSlice);
-
+	function handleResize() {
+		if (window.innerWidth > 1024) return;
+		dispatch(setMobileView(window.innerWidth));
+	}
 	useEffect(() => {
-		function handleResize() {
-			dispatch(setMobileView(window.innerWidth <= 1000));
-		}
-		window.addEventListener("resize", handleResize);
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	}, [dispatch, mobileView]);
+		dispatch(setMobileView(window.innerWidth));
+		if (!mobileView) window.addEventListener("resize", handleResize);
+	}, []);
 
 	return (
 		<div
-			id="catalog"
-			className="container"
+			id='catalog'
+			className='container'
 		>
-			<h3 className="catalog-title">{pageLanguage === "LT" ? "Siūlomi produktai" : "Categories"}</h3>
-			<h3 className="catalog-mobile-title">{pageLanguage === "LT" ? "Populiarios prekės" : "Popular products"}</h3>
+			<h3 className='catalog-title'>{pageLanguage === "LT" ? "Siūlomi produktai" : "Categories"}</h3>
+			<h3 className='catalog-mobile-title'>{pageLanguage === "LT" ? "Populiarios prekės" : "Popular products"}</h3>
 
-			<div className=" catalog-container">
-				<div className="categories-left-side">
+			<div className=' catalog-container'>
+				<div className='categories-left-side'>
 					{categories.map((category, i) => (
 						<CategoryItem
 							category={category}
@@ -78,8 +74,8 @@ function Catalog() {
 						/>
 					))}
 				</div>
-				<div className="catalog-right-side">
-					<div className="right-side-photo">
+				<div className='catalog-right-side'>
+					<div className='right-side-photo'>
 						<div
 							style={{
 								position: "relative",
@@ -87,25 +83,25 @@ function Catalog() {
 						>
 							<img
 								src={require("../../assets/img/dog-photo.png")}
-								alt="dog with jumper"
+								alt='dog with jumper'
 							/>
-							<p className="photo-credit">Photo by Karsten Winegeart on Unsplash</p>
+							<p className='photo-credit'>Photo by Karsten Winegeart on Unsplash</p>
 						</div>
 
 						{pageLanguage === "LT" ? (
-							<h4 className="photo-header">
+							<h4 className='photo-header'>
 								PREKIAUJAME <span>SVERIAMU</span> POPULIARIŲ <br /> GAMINTOJŲ SAUSU ĖDALU
 							</h4>
 						) : (
-							<h4 className="photo-header">
+							<h4 className='photo-header'>
 								WE SELL DRY FOOD <span>BY THE KILO</span> FROM <br /> POPULAR MANUFACTURERS
 							</h4>
 						)}
 					</div>
-					<div className="left-side-desc">
+					<div className='left-side-desc'>
 						<img
 							src={info}
-							alt="animals products description"
+							alt='animals products description'
 						/>
 					</div>
 				</div>

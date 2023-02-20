@@ -156,9 +156,9 @@ textarea {
   border: none;
   background-color: var(--green);
   color: white;
-  position: relative;
-
 }
+
+
 
 .form-btn:hover {
   background-color: var(--hover-green);
@@ -174,6 +174,10 @@ textarea {
 
 .remodal span {
   font-weight: 500;
+}
+
+.email-btn-container button {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -232,7 +236,7 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
-    position: relative;
+
   }
 
   .email-phone {
@@ -271,7 +275,7 @@ textarea {
 
   .contacts-form form {
     padding: 15px;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
   }
 
   .form-btn {
@@ -303,8 +307,18 @@ textarea {
   }
 
   .remodal {
-    bottom: -25.5rem;
+    bottom: -26.2rem;
     right: 0rem;
+  }
+
+  .email-btn-container button {
+    display: block;
+  }
+
+  .email-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
