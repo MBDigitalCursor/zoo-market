@@ -28,7 +28,7 @@ const StyledMobileMenu = styled((props) => (
 		borderRadius: 0,
 		marginTop: theme.spacing(0),
 		minWidth: 180,
-		color: "rgb(55, 65, 81)",
+		color: "black",
 		backgroundColor: "rgba(194, 193, 193, 0.7)",
 		"& .MuiMenu-list": {
 			padding: "0px 0",
@@ -65,7 +65,7 @@ const NestedMobileMenu = styled((props) => (
 		borderRadius: 0,
 		marginTop: theme.spacing(0),
 		minWidth: "225px",
-		color: "rgb(55, 65, 81)",
+		color: "black",
 
 		backgroundColor: "rgba(194, 193, 193, 0.7)",
 		"& .MuiMenu-list": {
@@ -108,7 +108,7 @@ const StyledMenu = styled((props) => (
 		borderRadius: 0,
 		marginTop: theme.spacing(0),
 		minWidth: 180,
-		color: "rgb(55, 65, 81)",
+		color: "black",
 		backgroundColor: "rgba(194, 193, 193, 0.7)",
 		"& .MuiMenu-list": {
 			padding: "0px 0",
@@ -145,7 +145,7 @@ const NestedMenu = styled((props) => (
 		borderRadius: 0,
 		marginTop: theme.spacing(0),
 		minWidth: "225px",
-		color: "rgb(55, 65, 81)",
+		color: "black",
 
 		backgroundColor: "rgba(194, 193, 193, 0.7)",
 		"& .MuiMenu-list": {

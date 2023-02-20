@@ -32,6 +32,7 @@
 }
 
 .single-category-item img {
+  padding-left: 5px;
   height: 50px;
   width: 50px;
 }

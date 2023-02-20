@@ -66,7 +66,7 @@ function Catalog() {
 			id="catalog"
 			className="container"
 		>
-			<h3 className="catalog-title">{pageLanguage === "LT" ? "Siūlomi produktai" : "Products by category"}</h3>
+			<h3 className="catalog-title">{pageLanguage === "LT" ? "Siūlomi produktai" : "Categories"}</h3>
 			<h3 className="catalog-mobile-title">{pageLanguage === "LT" ? "Populiarios prekės" : "Popular products"}</h3>
 
 			<div className=" catalog-container">

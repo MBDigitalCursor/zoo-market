@@ -18,7 +18,7 @@
 .hero-title h1 {
   position: absolute;
   font-size: 287px;
-  bottom: -31.9rem;
+  bottom: -35.9rem;
   left: 8px;
   color: white;
 }
@@ -26,13 +26,13 @@
 .hero-title h2 {
   position: absolute;
   font-size: 220px;
-  bottom: -39.3rem;
+  bottom: -44.2rem;
 }
 
 .quote {
   position: absolute;
   top: 8rem;
-  left: 20rem;
+  left: 24rem;
   text-align: right;
   font-size: var(--28px);
 }
@@ -67,7 +67,7 @@
 
 .paws-container img:nth-child(4) {
   position: absolute;
-  top: -35rem;
+  top: -40rem;
   right: 2rem;
 }
 

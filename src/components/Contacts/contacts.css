@@ -59,6 +59,7 @@
   width: 50px;
   height: 50px;
   margin-bottom: 38px;
+  margin-right: auto;
 }
 
 .location-desc p:first-of-type {
@@ -71,9 +72,10 @@
 
 .contacts-paws {
   position: absolute;
-  left: 2.2rem;
-  bottom: 3rem;
+  left: -2.8rem;
+  bottom: 4.5rem;
   z-index: 0;
+  transform: translateX(114px);
 }
 
 /* contact-right */
