@@ -89,9 +89,9 @@ function Contacts() {
 				<div className="form-socials">
 					<div className="email-phone">
 						<div className="phone-fb">
-							<div>
-								<a href="tel:+900300400">+370 656 82575</a>
-								<a href="tel:+900300400">+370 648 73014</a>
+							<div className="phones-container">
+								<a href="tel:+370 656 82575">+370 656 82575</a>
+								<a href="tel:+370 648 73014">+370 648 73014</a>
 							</div>
 							<a
 								className="fb-icon"
@@ -104,6 +104,7 @@ function Contacts() {
 						</div>
 						<div className="email-btn-container">
 							<a
+								className="email"
 								target="_blank"
 								rel="noreferrer"
 								href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=ausvydas@zoomarket.lt&tf=1"
