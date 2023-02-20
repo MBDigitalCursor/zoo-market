@@ -272,4 +272,8 @@
     height: 40px;
     width: 40px;
   }
+
+  .left-side-desc {
+    margin-top: 200px;
+  }
 }
