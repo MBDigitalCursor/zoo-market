@@ -76,12 +76,12 @@ function Contacts() {
 						{pageLanguage === "LT" ? <p>(Lazdynai, šalia IKI-Papartis)</p> : <p>(Lazdynai, near IKI-Papartis)</p>}
 					</div>
 				</div>
-				<div className="contacts-paws">
+				{/* <div className="contacts-paws">
 					<img
 						src={require("../../assets/img/pedutes-group.png")}
 						alt="paws pattern"
 					/>
-				</div>
+				</div> */}
 				<p className="remodal">
 					© <span>remodal.</span> 2023
 				</p>

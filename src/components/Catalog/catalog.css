@@ -152,11 +152,13 @@
 }
 
 .tree-products {
+  margin-bottom: 20px;
   padding: 0 20px;
   min-height: 100vh;
 }
 
 .tree-products h4 {
+  color: var(--p-grey);
   font-size: var(--16px);
   font-weight: var(--regular);
 }
