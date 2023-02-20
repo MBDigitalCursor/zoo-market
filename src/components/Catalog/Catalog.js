@@ -37,7 +37,7 @@ function Catalog() {
 		{
 			icon: hamster,
 			category: "hamster",
-			title: pageLanguage === "LT" ? "Graužikams" : "Hamsters",
+			title: pageLanguage === "LT" ? "Graužikams" : "Rodents",
 			nestedCategories: false,
 		},
 		{

@@ -28,7 +28,7 @@ function Contacts() {
 							<li> 10:00 - 19:00</li>
 							<li> 10:00 - 19:00 </li>
 							<li> 10:00 - 15:00</li>
-							<li> NEDIRBAME</li>
+							<li>-------------</li>
 						</ul>
 					</div>
 				) : (
