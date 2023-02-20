@@ -12,22 +12,21 @@
 }
 
 .hero-headings {
-  position: absolute;
-  bottom: -39.2rem;
-  left: 0;
+  position: relative;
 }
 
 .hero-title h1 {
   position: absolute;
   font-size: 287px;
-  bottom: 7.38rem;
+  bottom: -31.9rem;
   left: 8px;
   color: white;
 }
 
 .hero-title h2 {
+  position: absolute;
   font-size: 220px;
-  bottom: 8rem;
+  bottom: -39.3rem;
 }
 
 .quote {
