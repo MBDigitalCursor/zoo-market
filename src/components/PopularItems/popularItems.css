@@ -96,6 +96,14 @@
   display: none;
 }
 
+.pop-items-right-side-bottom-container {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media(max-width: 768px) {
   .pop-items-left-side {

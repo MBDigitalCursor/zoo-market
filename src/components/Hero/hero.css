@@ -347,13 +347,13 @@
   .paws-container img:nth-child(1) {
     width: calc(100% - 80%);
     bottom: 0rem;
-    right: 12rem;
+    right: 15rem;
   }
 
   .paws-container img:nth-child(2) {
-    width: calc(100% - 71%);
-    bottom: 8rem;
-    right: 6rem;
+    width: calc(100% - 79%);
+    bottom: 8.6rem;
+    right: 8rem;
   }
 
   .paws-container img:nth-child(3) {

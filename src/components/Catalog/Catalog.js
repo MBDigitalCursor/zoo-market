@@ -12,10 +12,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMobileView } from "../../store/generalStore";
 
 function Catalog() {
-	const { pageLanguage } = useSelector((state) => state.generalSlice);
-
 	const dispatch = useDispatch();
 
+	const { mobileView, pageLanguage } = useSelector((state) => state.generalSlice);
 	const categories = [
 		{
 			icon: dog,
@@ -49,17 +48,14 @@ function Catalog() {
 		},
 	];
 
-	const { mobileView } = useSelector((state) => state.generalSlice);
-
+	function handleResize() {
+		if (window.innerWidth > 1024) return;
+		dispatch(setMobileView(window.innerWidth));
+	}
 	useEffect(() => {
-		function handleResize() {
-			dispatch(setMobileView(window.innerWidth <= 1024));
-		}
-		window.addEventListener("resize", handleResize);
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	}, [dispatch, mobileView]);
+		dispatch(setMobileView(window.innerWidth));
+		if (!mobileView) window.addEventListener("resize", handleResize);
+	}, []);
 
 	return (
 		<div
