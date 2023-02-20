@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/zoo-market/static/css/main.b1c9dc7e.css",
-    "main.js": "/zoo-market/static/js/main.68d987f7.js",
+    "main.js": "/zoo-market/static/js/main.86e8e35a.js",
     "static/media/division-section.svg": "/zoo-market/static/media/division-section.6c2c4f8f506aa40c690a703826ef6489.svg",
     "static/media/dog-photo.png": "/zoo-market/static/media/dog-photo.80e796640be128c514e5.png",
     "static/media/brand logos.svg": "/zoo-market/static/media/brand logos.4052be69ad438b532e1b3b402d7f6a7f.svg",
-    "static/media/division section.svg": "/zoo-market/static/media/division section.e40f0cb268ef164c21f994acc957f89c.svg",
+    "static/media/division section.svg": "/zoo-market/static/media/division section.49ba829be6208ce5f35b9d883cea419d.svg",
     "static/media/pedutes-group.png": "/zoo-market/static/media/pedutes-group.643b4e6d4154ee469232.png",
     "static/media/cat sausas 8.png": "/zoo-market/static/media/cat sausas 8.d065035a0f4fb610be8b.png",
     "static/media/cat sausas 7.png": "/zoo-market/static/media/cat sausas 7.c91b63308b3a49b3dcd2.png",
@@ -56,10 +56,10 @@
     "static/media/dog 2.svg": "/zoo-market/static/media/dog 2.a1c49e67b82fc0806d593f275831d60c.svg",
     "index.html": "/zoo-market/index.html",
     "main.b1c9dc7e.css.map": "/zoo-market/static/css/main.b1c9dc7e.css.map",
-    "main.68d987f7.js.map": "/zoo-market/static/js/main.68d987f7.js.map"
+    "main.86e8e35a.js.map": "/zoo-market/static/js/main.86e8e35a.js.map"
   },
   "entrypoints": [
     "static/css/main.b1c9dc7e.css",
-    "static/js/main.68d987f7.js"
+    "static/js/main.86e8e35a.js"
   ]
 }
