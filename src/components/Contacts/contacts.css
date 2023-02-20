@@ -156,8 +156,12 @@ textarea {
   border: none;
   background-color: var(--green);
   color: white;
-  position: relative;
+}
 
+.email-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .form-btn:hover {
@@ -232,7 +236,7 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
-    position: relative;
+
   }
 
   .email-phone {
@@ -271,7 +275,7 @@ textarea {
 
   .contacts-form form {
     padding: 15px;
-    margin-bottom: 13px;
+    margin-bottom: 50px;
   }
 
   .form-btn {
