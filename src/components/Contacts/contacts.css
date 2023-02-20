@@ -92,6 +92,7 @@
 }
 
 .fb-icon {
+  color: black;
   font-size: 40px;
   margin-top: 2px;
 }
@@ -170,10 +171,6 @@ textarea {
   bottom: 0;
   padding-left: 5px;
   padding-bottom: 5px;
-}
-
-.remodal span {
-  font-weight: 500;
 }
 
 .email-btn-container button {
