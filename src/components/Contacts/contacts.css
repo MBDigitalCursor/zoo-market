@@ -221,7 +221,7 @@ textarea {
 
   .contacts-right h2 {
     font-size: var(--21px);
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 15px 0px;
   }
 
   .form-socials {
@@ -279,8 +279,8 @@ textarea {
 
   .contacts-paws img {
     position: absolute;
-    left: 51px;
-    top: 245px;
+    left: 0rem;
+    top: 15rem;
   }
 
   .open-times {
@@ -299,7 +299,7 @@ textarea {
   }
 
   .remodal {
-    bottom: -27rem;
+    bottom: -25.5rem;
     right: 0rem;
   }
 }
