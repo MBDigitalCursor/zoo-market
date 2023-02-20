@@ -96,6 +96,7 @@
   display: none;
 }
 
+
 @media(max-width: 768px) {
   .pop-items-left-side {
     display: none;
@@ -128,6 +129,14 @@
   .mobile-division {
     padding-bottom: 40px;
     padding-top: 98px;
+  }
+
+  .mobile-logos {
+    margin: 0 20px;
+  }
+
+  .mobile-main-container img {
+    width: 90%;
   }
 
   .pop-items-right-side {
