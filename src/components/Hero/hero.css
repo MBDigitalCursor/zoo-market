@@ -216,7 +216,7 @@
   .paws-container img:nth-child(1) {
     width: calc(100% - 80%);
     bottom: 0rem;
-    right: 8rem;
+    right: 11rem;
   }
 
   .paws-container img:nth-child(2) {
@@ -227,7 +227,7 @@
 
   .paws-container img:nth-child(3) {
     width: calc(100% - 87%);
-    bottom: 6rem;
+    bottom: 8rem;
     right: 2rem;
   }
 
@@ -282,7 +282,7 @@
   .paws-container img:nth-child(1) {
     width: calc(100% - 80%);
     bottom: 0rem;
-    right: 8rem;
+    right: 13rem;
   }
 
   .paws-container img:nth-child(2) {
@@ -293,19 +293,19 @@
 
   .paws-container img:nth-child(3) {
     width: calc(100% - 87%);
-    bottom: 6rem;
+    bottom: 11rem;
     right: 2rem;
   }
 
   .paws-container img:nth-child(4) {
-    width: calc(100% - 88%);
-    top: -17rem;
+    width: calc(100% - 86%);
+    top: -24rem;
     right: 1rem;
   }
 
   .paws-container img:nth-child(5) {
-    width: calc(100% - 50%);
-    bottom: -6.3rem;
+    width: calc(100% - 60%);
+    bottom: -8.3rem;
     right: -4rem;
   }
 }
