@@ -90,8 +90,8 @@ function Contacts() {
 					<div className="email-phone">
 						<div className="phone-fb">
 							<div>
-								<p>+370 656 82575</p>
-								<p>+370 648 73014</p>
+								<a href="tel:+900300400">+370 656 82575</a>
+								<a href="tel:+900300400">+370 648 73014</a>
 							</div>
 							<a
 								className="fb-icon"
@@ -103,7 +103,13 @@ function Contacts() {
 							</a>
 						</div>
 						<div className="email-btn-container">
-							<a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=ausvydas@zoomarket.lt&tf=1">ausvydas@zoomarket.lt</a>
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=ausvydas@zoomarket.lt&tf=1"
+							>
+								ausvydas@zoomarket.lt
+							</a>
 							<button className="form-btn">{pageLanguage === "LT" ? "Išsiųsti" : "Send"}</button>
 						</div>
 					</div>

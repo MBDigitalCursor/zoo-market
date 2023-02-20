@@ -114,14 +114,18 @@
   margin-bottom: 5px;
 }
 
-.email {
-  margin-bottom: 35px;
+.email-btn-container a {
+  font-size: var(--21px);
+  font-weight: var(--regular);
+  text-decoration: none;
+  color: var(--black);
 }
 
 /* form */
 
 .contacts-form {
   width: 493px;
+  margin-top: 35px;
 }
 
 .contacts-form form {
@@ -158,8 +162,6 @@ textarea {
   background-color: var(--green);
   color: white;
 }
-
-
 
 .form-btn:hover {
   background-color: var(--hover-green);
