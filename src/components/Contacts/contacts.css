@@ -158,11 +158,7 @@ textarea {
   color: white;
 }
 
-.email-btn-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
+
 
 .form-btn:hover {
   background-color: var(--hover-green);
@@ -178,6 +174,10 @@ textarea {
 
 .remodal span {
   font-weight: 500;
+}
+
+.email-btn-container button {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -307,8 +307,18 @@ textarea {
   }
 
   .remodal {
-    bottom: -25.5rem;
+    bottom: -27.9rem;
     right: 0rem;
+  }
+
+  .email-btn-container button {
+    display: block;
+  }
+
+  .email-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
   }
 }
 

@@ -18,6 +18,7 @@ function ContactForm() {
 					rows='4'
 				></textarea>
 			</form>
+			<button className='form-btn'>{pageLanguage === "LT" ? "Išsiųsti" : "Send"}</button>
 		</div>
 	);
 }
