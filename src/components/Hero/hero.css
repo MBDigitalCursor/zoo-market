@@ -32,8 +32,8 @@
 
 .quote {
   position: absolute;
-  top: 8rem;
-  left: 24rem;
+  top: 9rem;
+  left: 26rem;
   text-align: right;
   font-size: var(--28px);
 }

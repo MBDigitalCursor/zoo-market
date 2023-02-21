@@ -86,7 +86,7 @@ function ContactForm() {
 						<Checkbox
 							checked={checkbox}
 							sx={{
-								color: ` ${checkboxError ? "red" : "secondary"}`,
+								color: ` ${checkboxError ? "#d22c2c" : "secondary"}`,
 							}}
 							color="secondary"
 							onChange={(e) => {

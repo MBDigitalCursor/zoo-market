@@ -12,9 +12,8 @@ function Hero() {
 					</div>
 				</div>
 				<p className="quote">
-					“The dog represents all that is best in man.”
+					Jūsų augintinis - mūsų rūpestis!
 					<br />
-					<span>Etienne Charlet</span>
 				</p>
 			</div>
 		</div>
