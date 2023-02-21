@@ -131,7 +131,8 @@
   .mobile-nose {
     position: absolute;
     left: 0;
-    top: 15rem;
+    top: 17rem;
+    max-height: 150px;
   }
 
   .mobile-division {

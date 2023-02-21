@@ -190,6 +190,10 @@ textarea {
   display: none;
 }
 
+.error-message {
+  color: rgb(235, 15, 15);
+}
+
 @media (max-width: 768px) {
   .contacts-container {
     flex-direction: column;
