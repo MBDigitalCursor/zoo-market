@@ -1,8 +1,9 @@
 import React from "react";
+import "./nav.css";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import { useDispatch, useSelector } from "react-redux";
-import { setBurgerMenu } from "../../store/generalStore";
+import { setBurgerMenu, setLanguage } from "../../store/generalStore";
 import { styled } from "@mui/material/styles";
 import { VscChromeClose } from "react-icons/vsc";
 import TreeViewComp from "./TreeViewComp";
@@ -40,6 +41,33 @@ export default function DrawerComp() {
 						gap: "35px",
 					}}
 				>
+					<div className="mobile-lang">
+						<div>
+							<p
+								onClick={() => {
+									dispatch(setLanguage("LT"));
+									dispatch(setBurgerMenu(false));
+								}}
+							>
+								LT
+							</p>
+							<p
+								onClick={() => {
+									dispatch(setLanguage("EN"));
+									dispatch(setBurgerMenu(false));
+								}}
+							>
+								EN
+							</p>
+						</div>
+						<VscChromeClose
+							className="close-icon"
+							style={{
+								fontSize: "30px",
+							}}
+							onClick={() => dispatch(setBurgerMenu(false))}
+						/>
+					</div>
 					<div className="drawer-top-side">
 						<p
 							style={{
@@ -53,15 +81,8 @@ export default function DrawerComp() {
 						>
 							{pageLanguage === "LT" ? "Kontaktai" : "Contacts"}
 						</p>
-						<VscChromeClose
-							className="close-icon"
-							style={{
-								fontSize: "30px",
-							}}
-							onClick={() => dispatch(setBurgerMenu(false))}
-						/>
 					</div>
-					<TreeViewComp></TreeViewComp>
+					<TreeViewComp />
 				</Box>
 			</MyDrawer>
 		</div>
