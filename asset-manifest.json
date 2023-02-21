@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zoo-market/static/css/main.0d2824ca.css",
-    "main.js": "/zoo-market/static/js/main.cb88ae80.js",
+    "main.js": "/zoo-market/static/js/main.44c736ee.js",
     "static/media/division-section.svg": "/zoo-market/static/media/division-section.6c2c4f8f506aa40c690a703826ef6489.svg",
     "static/media/dog-photo.png": "/zoo-market/static/media/dog-photo.80e796640be128c514e5.png",
     "static/media/brand logos.svg": "/zoo-market/static/media/brand logos.4052be69ad438b532e1b3b402d7f6a7f.svg",
@@ -56,10 +56,10 @@
     "static/media/dog 2.svg": "/zoo-market/static/media/dog 2.a1c49e67b82fc0806d593f275831d60c.svg",
     "index.html": "/zoo-market/index.html",
     "main.0d2824ca.css.map": "/zoo-market/static/css/main.0d2824ca.css.map",
-    "main.cb88ae80.js.map": "/zoo-market/static/js/main.cb88ae80.js.map"
+    "main.44c736ee.js.map": "/zoo-market/static/js/main.44c736ee.js.map"
   },
   "entrypoints": [
     "static/css/main.0d2824ca.css",
-    "static/js/main.cb88ae80.js"
+    "static/js/main.44c736ee.js"
   ]
 }
