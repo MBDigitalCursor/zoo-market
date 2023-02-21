@@ -23,18 +23,23 @@ export default function TreeViewComp() {
 				height: "max-content",
 				"& .MuiTreeItem-label": {
 					padding: "14px 0",
-
 					fontWeight: "400",
 					marginLeft: "-5px",
 					fontFamily: "Red Hat Display !important",
 					fontSize: "16px !important",
 				},
+				"& .MuiTreeItem-content.Mui-selected:hover": {
+					backgroundColor: "hsl(0,0%,0%, 0.5)",
+				},
 				"& .MuiTreeItem-iconContainer": {
 					marginLeft: "-5px",
 					marginRight: "5px",
 				},
-				"& .Mui-selected.Mui-focused": {
-					backgroundColor: "hsl(0,0%,0%, 0.6)",
+				"& .Mui-expanded.Mui-selected:hover": {
+					backgroundColor: "hsl(0,0%,0%, 0.5)",
+				},
+				"& .MuiTreeItem-content.Mui-selected": {
+					backgroundColor: "hsl(0,0%,0%, 0.5)",
 				},
 			}}
 		>
