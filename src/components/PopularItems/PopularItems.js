@@ -12,6 +12,7 @@ import division from "../../assets/img/mobileMain/division section.svg";
 import nose from "../../assets/img/mobileMain/nose 1.svg";
 import Item from "./Item";
 import { useSelector } from "react-redux";
+import SlideComp from "./SlideComp";
 
 function PopularItems() {
 	const { pageLanguage } = useSelector((state) => state.generalSlice);
@@ -61,6 +62,33 @@ function PopularItems() {
 		},
 	];
 
+	const sliderItems = [
+		{
+			title: "Puiki nauja prekė, OMG! 1",
+			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
+			price: "$59.99 for limited time",
+			img: popImg,
+		},
+		{
+			title: "Puiki nauja prekė, OMG! 2",
+			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
+			price: "$59.99 for limited time",
+			img: "https://images.unsplash.com/photo-1604544203292-0daa7f847478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+		},
+		{
+			title: "Puiki nauja prekė, OMG! 3",
+			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
+			price: "$59.99 for limited time",
+			img: "https://images.unsplash.com/photo-1583337260546-28b6bf66d004?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+		},
+		{
+			title: "Puiki nauja prekė, OMG! 4",
+			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
+			price: "$59.99 for limited time",
+			img: "https://images.unsplash.com/photo-1608096275263-1667980c4dc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+		},
+	];
+
 	return (
 		<div className='pop-items-container container'>
 			<div className='pop-items-left-side'>
@@ -78,17 +106,7 @@ function PopularItems() {
 				<div className='content'>
 					{pageLanguage === "LT" ? <h3>Naujienos ir pasiūlymai</h3> : <h3>News and offers</h3>}
 					<div className='new-item-container'>
-						<div className='new-item-desc'>
-							<h4>Puiki nauja prekė, OMG!</h4>
-							<p>Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients</p>
-							<p>$59.99 for limited time</p>
-						</div>
-						<div className='pop-items-right-side-bottom-container'>
-							<img
-								src={popImg}
-								alt='dog food'
-							/>
-						</div>
+						<SlideComp slides={sliderItems}></SlideComp>
 					</div>
 				</div>
 			</div>

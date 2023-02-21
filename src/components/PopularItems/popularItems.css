@@ -13,18 +13,19 @@
 }
 
 .pop-items-right-side {
-  flex-basis: 506px;
+  max-width: 37%;
 }
 
 .pop-items-left-side {
-  flex-basis: 812px;
+  width: 60%;
 }
 
 .pop-items {
+  margin-left: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 40px;
+  column-gap: 2.5%;
   row-gap: 32px;
 }
 
@@ -55,14 +56,10 @@
 .new-item-container {
   background-color: var(--yellow);
   padding: 35px;
+  margin: 0 20px;
 }
 
-.new-item-container img {
-  height: 477px;
-  width: 436px;
-  object-fit: contain;
-  background-color: #fff;
-}
+
 
 .new-item-desc {
   background-color: #fff;
@@ -102,12 +99,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  height: 477px;
 }
 
+.pop-items-right-side-bottom-container img {
+  height: 477px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-icon {
+  font-size: 3rem;
+  opacity: 0.3;
+}
+
+.slide-icon:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.slide-icon:active {
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
+.slide-icon-left {
+  position: absolute;
+  left: 0;
+}
+
+.slide-icon-right {
+  position: absolute;
+  right: 0;
+}
 
 @media(max-width: 768px) {
   .pop-items-left-side {
     display: none;
+  }
+
+  .pop-items-right-side {
+    max-width: 100%;
+    width: 100%;
   }
 
   .pop-items-mobile-top {
@@ -121,6 +157,7 @@
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 0;
+    align-items: center;
   }
 
   .mobile-main-container {
@@ -153,6 +190,7 @@
   }
 
   .pop-items-right-side h3 {
+    margin-left: 20px;
     font-size: var(--21px);
   }
 
@@ -246,22 +284,18 @@
   }
 
   .pop-items {
+
     column-gap: 20px;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 
   .single-item {
     text-align: center;
-    max-width: 174px;
+    max-width: 209px;
   }
 
   .single-item img {
     min-height: 140px;
-  }
-
-  .new-item-container img {
-    height: 415px;
-    width: 291px;
   }
 
   .hot-new-icons {
