@@ -1,6 +1,7 @@
 .hero-container {
   background-color: var(--yellow);
   height: 640px;
+  user-select: none;
 }
 
 .hero-wrapper {

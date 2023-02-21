@@ -72,6 +72,17 @@ nav img {
 
 @media(max-width: 768px) {
 
+  .mobile-lang {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-lang div:first-of-type {
+    display: flex;
+    margin-left: 20px;
+    gap: 20px;
+  }
+
   .nav-burger {
     display: block;
   }
