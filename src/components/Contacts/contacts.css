@@ -139,14 +139,14 @@
   font-family: 'Red Hat Display', sans-serif;
   display: flex;
   flex-direction: column;
-  padding: 13px 25px 25px 25px;
+  padding: 13px 25px 0px 25px;
   background-color: var(--grey);
   margin-bottom: 26px;
 }
 
 .contacts-form form label {
   font-size: var(--16px);
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .contacts-form form label:nth-child(3) {

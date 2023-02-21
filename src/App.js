@@ -16,17 +16,18 @@ const theme = createTheme({
 		primary: {
 			main: "#F8C81F",
 		},
+		secondary: {
+			main: "#4E4D4D",
+		},
 	},
 });
 
 function App() {
-	const { pageLanguage } = useSelector((state) => state.generalSlice);
-
 	return (
 		<>
 			<ThemeProvider theme={theme}>
 				<Nav />
-				<div className='App'>
+				<div className="App">
 					<Hero />
 					<HeroPaws />
 					<PopularItems />

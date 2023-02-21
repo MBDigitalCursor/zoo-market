@@ -2,11 +2,14 @@ import React, { useRef, useState } from "react";
 import axios from "axios";
 import "./contacts.css";
 import { useSelector } from "react-redux";
+import { Checkbox, FormControlLabel } from "@mui/material";
 
 function ContactForm() {
 	const { pageLanguage } = useSelector((state) => state.generalSlice);
 	const [emailErrorMsg, setEmailErrorMsg] = useState(false);
 	const [textErrorMsg, setTextErrorMsg] = useState(false);
+	const [checkbox, setCheckbox] = useState(false);
+	const [checkboxError, setCheckboxError] = useState(null);
 	const emailRef = useRef();
 	const textRef = useRef();
 
@@ -24,12 +27,14 @@ function ContactForm() {
 
 		if (formObj.message.length < 5 || formObj.message.length > 150) return setTextErrorMsg(true);
 
-		console.log("formObj ===", formObj);
+		if (!checkbox) return setCheckboxError(true);
 
 		axios.post("https://formspree.io/f/xyyovoyq", formObj).then((res) => {
 			if (res.status === 200) {
 				setEmailErrorMsg(false);
 				setTextErrorMsg(false);
+				setCheckbox(false);
+				setCheckboxError(null);
 				emailRef.current.value = "";
 				textRef.current.value = "";
 			}
@@ -70,6 +75,27 @@ function ContactForm() {
 					cols="30"
 					rows="4"
 				></textarea>
+				<FormControlLabel
+					sx={{
+						"& .MuiFormControlLabel-label": {
+							fontSize: "12px",
+							fontFamily: "Red Hat Display, sans-serif",
+						},
+					}}
+					control={
+						<Checkbox
+							checked={checkbox}
+							sx={{
+								color: ` ${checkboxError ? "red" : "secondary"}`,
+							}}
+							color="secondary"
+							onChange={(e) => {
+								setCheckbox(e.target.checked);
+							}}
+						/>
+					}
+					label={pageLanguage === "LT" ? "Sutinku, kad su manimi susisiektų" : "I agree to be contacted"}
+				/>
 			</form>
 			<button
 				onClick={handleFormSubmit}
