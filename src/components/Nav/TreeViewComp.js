@@ -13,7 +13,7 @@ export default function TreeViewComp() {
 
 	return (
 		<TreeView
-			aria-label='multi-select'
+			aria-label="multi-select"
 			defaultCollapseIcon={<MdKeyboardArrowDown />}
 			defaultExpandIcon={<MdOutlineKeyboardArrowRight />}
 			multiSelect
@@ -33,28 +33,31 @@ export default function TreeViewComp() {
 					marginLeft: "-5px",
 					marginRight: "5px",
 				},
+				"& .Mui-selected.Mui-focused": {
+					backgroundColor: "hsl(0,0%,0%, 0.6)",
+				},
 			}}
 		>
 			{pageLanguage === "LT" ? (
 				<TreeItem
-					nodeId='1'
-					label='Produktai'
+					nodeId="1"
+					label="Produktai"
 				>
 					<TreeItem
-						nodeId='2'
-						label='Šunims'
+						nodeId="2"
+						label="Šunims"
 					>
 						<TreeItem
-							nodeId='3'
-							label='Sausas ėdalas'
+							nodeId="3"
+							label="Sausas ėdalas"
 							onClick={() => {
 								dispatch(setBurgerMenu(false));
 								scrollToSection("dogsDryFood");
 							}}
 						/>
 						<TreeItem
-							nodeId='4'
-							label='Konservai'
+							nodeId="4"
+							label="Konservai"
 							onClick={() => {
 								scrollToSection("dogsCannedFood");
 								dispatch(setBurgerMenu(false));
@@ -62,20 +65,20 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='5'
-						label='Katėms'
+						nodeId="5"
+						label="Katėms"
 					>
 						<TreeItem
-							nodeId='6'
-							label='Sausas ėdalas'
+							nodeId="6"
+							label="Sausas ėdalas"
 							onClick={() => {
 								scrollToSection("catsDryFood");
 								dispatch(setBurgerMenu(false));
 							}}
 						/>
 						<TreeItem
-							nodeId='7'
-							label='Konservai'
+							nodeId="7"
+							label="Konservai"
 							onClick={() => {
 								scrollToSection("catsCannedFood");
 								dispatch(setBurgerMenu(false));
@@ -83,12 +86,12 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='8'
-						label='Paukščiams'
+						nodeId="8"
+						label="Paukščiams"
 					>
 						<TreeItem
-							nodeId='9'
-							label='Teirautis krautuvėlėje'
+							nodeId="9"
+							label="Teirautis krautuvėlėje"
 							onClick={() => {
 								scrollToSection("contacts");
 								dispatch(setBurgerMenu(false));
@@ -96,12 +99,12 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='10'
-						label='Graužikams'
+						nodeId="10"
+						label="Graužikams"
 					>
 						<TreeItem
-							nodeId='11'
-							label='Teirautis krautuvėlėje'
+							nodeId="11"
+							label="Teirautis krautuvėlėje"
 							onClick={() => {
 								scrollToSection("contacts");
 								dispatch(setBurgerMenu(false));
@@ -109,12 +112,12 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='12'
-						label='Žuvims'
+						nodeId="12"
+						label="Žuvims"
 					>
 						<TreeItem
-							nodeId='13'
-							label='Teirautis krautuvėlėje'
+							nodeId="13"
+							label="Teirautis krautuvėlėje"
 							onClick={() => {
 								scrollToSection("contacts");
 								dispatch(setBurgerMenu(false));
@@ -124,24 +127,24 @@ export default function TreeViewComp() {
 				</TreeItem>
 			) : (
 				<TreeItem
-					nodeId='1'
-					label='Products'
+					nodeId="1"
+					label="Products"
 				>
 					<TreeItem
-						nodeId='2'
-						label='Dogs'
+						nodeId="2"
+						label="Dogs"
 					>
 						<TreeItem
-							nodeId='3'
-							label='Dry food'
+							nodeId="3"
+							label="Dry food"
 							onClick={() => {
 								dispatch(setBurgerMenu(false));
 								scrollToSection("dogsDryFood");
 							}}
 						/>
 						<TreeItem
-							nodeId='4'
-							label='Canned food'
+							nodeId="4"
+							label="Canned food"
 							onClick={() => {
 								scrollToSection("dogsCannedFood");
 								dispatch(setBurgerMenu(false));
@@ -149,20 +152,20 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='5'
-						label='Cats'
+						nodeId="5"
+						label="Cats"
 					>
 						<TreeItem
-							nodeId='6'
-							label='Dry food'
+							nodeId="6"
+							label="Dry food"
 							onClick={() => {
 								scrollToSection("catsDryFood");
 								dispatch(setBurgerMenu(false));
 							}}
 						/>
 						<TreeItem
-							nodeId='7'
-							label='Canned food'
+							nodeId="7"
+							label="Canned food"
 							onClick={() => {
 								scrollToSection("catsCannedFood");
 								dispatch(setBurgerMenu(false));
@@ -170,12 +173,12 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='8'
-						label='Birds'
+						nodeId="8"
+						label="Birds"
 					>
 						<TreeItem
-							nodeId='9'
-							label='Ask at the store'
+							nodeId="9"
+							label="Ask at the store"
 							onClick={() => {
 								scrollToSection("contacts");
 								dispatch(setBurgerMenu(false));
@@ -183,12 +186,12 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='10'
-						label='Hamsters'
+						nodeId="10"
+						label="Hamsters"
 					>
 						<TreeItem
-							nodeId='11'
-							label='Ask at the store'
+							nodeId="11"
+							label="Ask at the store"
 							onClick={() => {
 								scrollToSection("contacts");
 								dispatch(setBurgerMenu(false));
@@ -196,12 +199,12 @@ export default function TreeViewComp() {
 						/>
 					</TreeItem>
 					<TreeItem
-						nodeId='12'
-						label='Fish'
+						nodeId="12"
+						label="Fish"
 					>
 						<TreeItem
-							nodeId='13'
-							label='Ask at the store'
+							nodeId="13"
+							label="Ask at the store"
 							onClick={() => {
 								scrollToSection("contacts");
 								dispatch(setBurgerMenu(false));
