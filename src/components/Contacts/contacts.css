@@ -311,6 +311,7 @@ textarea {
     left: 20px;
     top: 19px;
     padding: 11px;
+    padding-bottom: 15px;
   }
 
   .location {
