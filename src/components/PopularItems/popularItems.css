@@ -101,12 +101,14 @@
   align-items: center;
   position: relative;
   height: 477px;
+  user-select: none;
 }
 
 .pop-items-right-side-bottom-container img {
   height: 477px;
   width: 100%;
   object-fit: cover;
+
 }
 
 .slide-icon {
