@@ -1,5 +1,5 @@
 import { Box, Paper, Stack, Slide, Modal, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setCategoryProducts } from "../../store/generalStore";
 import { AiOutlineClose } from "react-icons/ai";
@@ -12,7 +12,7 @@ function ProductsSlide() {
 	const dispatch = useDispatch();
 
 	const { categoryProducts } = useSelector((state) => state.generalSlice);
-	const [open, setOpen] = React.useState(false);
+	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 
@@ -35,10 +35,10 @@ function ProductsSlide() {
 		p: 4,
 	};
 	return (
-		<Box className="catalog-slide">
+		<Box className='catalog-slide'>
 			<Box sx={{ width: "100%" }}>
 				<Slide
-					direction="left"
+					direction='left'
 					in={categoryProducts.active}
 				>
 					<Paper
@@ -62,7 +62,7 @@ function ProductsSlide() {
 							}}
 						>
 							<AiOutlineClose
-								className="close-icon"
+								className='close-icon'
 								onClick={closeProducts}
 								style={{
 									fontSize: "1.7rem",
@@ -78,11 +78,11 @@ function ProductsSlide() {
 							}}
 						>
 							<Stack
-								direction="row"
-								justifyContent="space-between"
-								alignItems="flex-start"
+								direction='row'
+								justifyContent='space-between'
+								alignItems='flex-start'
 								gap={1}
-								flexWrap="wrap"
+								flexWrap='wrap'
 								sx={{
 									padding: "0 0.5rem",
 								}}
@@ -91,12 +91,12 @@ function ProductsSlide() {
 									? dogsDryFoodArr.map((product, i) => (
 											<div
 												onClick={handleOpen}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -106,12 +106,12 @@ function ProductsSlide() {
 									? catsDryFoodArr.map((product, i) => (
 											<div
 												onClick={handleOpen}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -121,12 +121,12 @@ function ProductsSlide() {
 									? dogsCannedFoodArr.map((product, i) => (
 											<div
 												onClick={handleOpen}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -136,12 +136,12 @@ function ProductsSlide() {
 									? catsCannedFoodArr.map((product, i) => (
 											<div
 												onClick={handleOpen}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -153,28 +153,28 @@ function ProductsSlide() {
 							<Modal
 								open={open}
 								onClose={handleClose}
-								aria-labelledby="modal-modal-title"
-								aria-describedby="modal-modal-description"
+								aria-labelledby='modal-modal-title'
+								aria-describedby='modal-modal-description'
 							>
 								<Box
-									className="modal-container"
+									className='modal-container'
 									sx={style}
 								>
 									<AiOutlineClose onClick={handleClose} />
 									<img
-										src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-										alt=""
+										src='https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+										alt=''
 									/>
-									<div className="modal-container-desc">
+									<div className='modal-container-desc'>
 										<Typography
-											id="modal-modal-title"
-											variant="h6"
-											component="h2"
+											id='modal-modal-title'
+											variant='h6'
+											component='h2'
 										>
 											Produkto pav.
 										</Typography>
 										<Typography
-											id="modal-modal-description"
+											id='modal-modal-description'
 											sx={{ mt: 2 }}
 										>
 											produkto aprasymas

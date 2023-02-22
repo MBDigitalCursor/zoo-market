@@ -14,6 +14,18 @@ const catsCannedFoodArr = [
 		img: img1,
 		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
 		price: "$14.99",
+		fullDesc: {
+			analysis: ["Protein 21.2%"],
+			vitPerKg: [""],
+			feedingGuide: [""],
+			desc: {
+				firstPart: "",
+				secondPart: "",
+				thirdPart: "",
+				keyBenefits: "",
+				ingredients: "",
+			},
+		},
 	},
 	{
 		img: img2,
