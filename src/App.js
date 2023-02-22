@@ -9,24 +9,24 @@ import Contacts from "./components/Contacts/Contacts";
 import MobileProducts from "./components/Catalog/MobileProducts/MobileProducts";
 import HeroPaws from "./components/Hero/HeroPaws/HeroPaws";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useSelector } from "react-redux";
 
 const theme = createTheme({
 	palette: {
 		primary: {
 			main: "#F8C81F",
 		},
+		secondary: {
+			main: "#4E4D4D",
+		},
 	},
 });
 
 function App() {
-	const { pageLanguage } = useSelector((state) => state.generalSlice);
-
 	return (
 		<>
 			<ThemeProvider theme={theme}>
 				<Nav />
-				<div className='App'>
+				<div className="App">
 					<Hero />
 					<HeroPaws />
 					<PopularItems />

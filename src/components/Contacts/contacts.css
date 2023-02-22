@@ -139,14 +139,14 @@
   font-family: 'Red Hat Display', sans-serif;
   display: flex;
   flex-direction: column;
-  padding: 13px 25px 25px 25px;
+  padding: 13px 25px 0px 25px;
   background-color: var(--grey);
   margin-bottom: 26px;
 }
 
 .contacts-form form label {
   font-size: var(--16px);
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .contacts-form form label:nth-child(3) {
@@ -168,6 +168,7 @@ textarea {
   border: none;
   background-color: var(--green);
   color: white;
+  z-index: 2;
 }
 
 .form-btn:hover {
@@ -188,6 +189,10 @@ textarea {
 
 .email-btn-container button {
   display: none;
+}
+
+.error-message {
+  color: rgb(235, 15, 15);
 }
 
 @media (max-width: 768px) {
@@ -286,6 +291,7 @@ textarea {
   .contacts-form form {
     padding: 15px;
     margin-bottom: 20px;
+    padding-bottom: 0;
   }
 
   .form-btn {
@@ -305,6 +311,7 @@ textarea {
     left: 20px;
     top: 19px;
     padding: 11px;
+    padding-bottom: 15px;
   }
 
   .location {
@@ -317,7 +324,7 @@ textarea {
   }
 
   .remodal {
-    bottom: -29.8rem;
+    bottom: -31.5rem;
     right: 0rem;
   }
 

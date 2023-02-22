@@ -101,12 +101,14 @@
   align-items: center;
   position: relative;
   height: 477px;
+  user-select: none;
 }
 
 .pop-items-right-side-bottom-container img {
   height: 477px;
   width: 100%;
   object-fit: cover;
+
 }
 
 .slide-icon {
@@ -168,7 +170,8 @@
   .mobile-nose {
     position: absolute;
     left: 0;
-    top: 15rem;
+    top: 17rem;
+    max-height: 150px;
   }
 
   .mobile-division {

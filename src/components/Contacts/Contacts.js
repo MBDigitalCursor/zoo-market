@@ -111,7 +111,12 @@ function Contacts() {
 							>
 								ausvydas@zoomarket.lt
 							</a>
-							<button className="form-btn">{pageLanguage === "LT" ? "Išsiųsti" : "Send"}</button>
+							{/* <button
+								onClick={handleFormSubmit}
+								className="form-btn"
+							>
+								{pageLanguage === "LT" ? "Išsiųsti" : "Send"}
+							</button> */}
 						</div>
 					</div>
 					<ContactForm />

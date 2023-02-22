@@ -22,5 +22,11 @@ img {
   max-width: 100%;
 }
 
+textarea,
+input {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
 /* neleidzia kopijuoti teksto */
 /* user-select: none; */

@@ -185,6 +185,19 @@
   display: none;
 }
 
+.modal-container {
+  display: flex;
+}
+
+.modal-container img {
+  width: 50%;
+}
+
+.modal-container-desc {
+  display: flex;
+  flex-direction: column;
+}
+
 @media(max-width: 768px) {
   .catalog-container {
     display: none;
