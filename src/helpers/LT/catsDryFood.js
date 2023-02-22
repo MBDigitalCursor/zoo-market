@@ -1,13 +1,13 @@
-import img1 from "../assets/img/catsDryFood/cat sausas 1.png";
-import img2 from "../assets/img/catsDryFood/cat sausas 2.png";
-import img3 from "../assets/img/catsDryFood/cat sausas 3.png";
-import img4 from "../assets/img/catsDryFood/cat sausas 4.png";
-import img5 from "../assets/img/catsDryFood/cat sausas 5.png";
-import img6 from "../assets/img/catsDryFood/cat sausas 6.png";
-import img7 from "../assets/img/catsDryFood/cat sausas 7.png";
-import img8 from "../assets/img/catsDryFood/cat sausas 8.png";
-import img9 from "../assets/img/catsDryFood/cat sausas 9.png";
-import img10 from "../assets/img/catsDryFood/cat sausas 10.png";
+import img1 from "../../assets/img/catsDryFood/cat sausas 1.png";
+import img2 from "../../assets/img/catsDryFood/cat sausas 2.png";
+import img3 from "../../assets/img/catsDryFood/cat sausas 3.png";
+import img4 from "../../assets/img/catsDryFood/cat sausas 4.png";
+import img5 from "../../assets/img/catsDryFood/cat sausas 5.png";
+import img6 from "../../assets/img/catsDryFood/cat sausas 6.png";
+import img7 from "../../assets/img/catsDryFood/cat sausas 7.png";
+import img8 from "../../assets/img/catsDryFood/cat sausas 8.png";
+import img9 from "../../assets/img/catsDryFood/cat sausas 9.png";
+import img10 from "../../assets/img/catsDryFood/cat sausas 10.png";
 
 const catsDryFoodArr = [
 	{

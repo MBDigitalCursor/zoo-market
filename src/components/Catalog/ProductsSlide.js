@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setCategoryProducts } from "../../store/generalStore";
 import { AiOutlineClose } from "react-icons/ai";
-import dogsDryFoodArr from "../../helpers/dogsDryFood.js";
-import dogsCannedFoodArr from "../../helpers/dogsCannedFood.js";
-import catsDryFoodArr from "../../helpers/catsDryFood.js";
-import catsCannedFoodArr from "../../helpers/catsCannedFood.js";
+import dogsDryFoodArr from "../../helpers/LT/dogsDryFood.js";
+import dogsCannedFoodArr from "../../helpers/LT/dogsCannedFood.js";
+import catsDryFoodArr from "../../helpers/LT/catsDryFood.js";
+import catsCannedFoodArr from "../../helpers/LT/catsCannedFood.js";
 
 function ProductsSlide() {
 	const dispatch = useDispatch();
