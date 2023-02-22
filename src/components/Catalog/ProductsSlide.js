@@ -14,7 +14,10 @@ function ProductsSlide() {
 	const { categoryProducts } = useSelector((state) => state.generalSlice);
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
-	const handleClose = () => setOpen(false);
+	const handleClose = () => {
+		setOpen(false);
+		console.log("uzdaryta");
+	};
 
 	const closeProducts = () => {
 		dispatch(
@@ -24,6 +27,7 @@ function ProductsSlide() {
 			})
 		);
 	};
+
 	const style = {
 		position: "absolute",
 		top: "50%",
@@ -34,6 +38,7 @@ function ProductsSlide() {
 		boxShadow: 24,
 		p: 4,
 	};
+
 	return (
 		<Box className='catalog-slide'>
 			<Box sx={{ width: "100%" }}>
@@ -135,7 +140,10 @@ function ProductsSlide() {
 									: categoryProducts.catTree === "Katėms > Konservai" || categoryProducts.catTree === "Cats > Canned food"
 									? catsCannedFoodArr.map((product, i) => (
 											<div
-												onClick={handleOpen}
+												onClick={() => {
+													handleOpen();
+													console.log(product);
+												}}
 												className='single-cat-product'
 												key={i}
 											>

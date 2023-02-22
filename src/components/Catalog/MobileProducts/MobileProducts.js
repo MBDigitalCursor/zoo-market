@@ -10,6 +10,7 @@ import { useSelector } from "react-redux";
 
 function MobileProducts() {
 	const { pageLanguage } = useSelector((state) => state.generalSlice);
+
 	const dogsCategoryTrees = [
 		{
 			title: pageLanguage === "LT" ? "Šunims > Sausas ėdalas" : "Dogs > Dry food",

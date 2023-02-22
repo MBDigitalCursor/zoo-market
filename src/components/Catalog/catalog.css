@@ -92,6 +92,7 @@
 }
 
 .single-cat-product {
+  cursor: pointer;
   width: 170px;
 }
 
@@ -155,6 +156,7 @@
   margin-bottom: 20px;
   padding: 0 20px;
   min-height: 100vh;
+  cursor: pointer;
 }
 
 .tree-products h4 {
@@ -187,6 +189,7 @@
 
 .modal-container {
   display: flex;
+  margin: 0 20px;
 }
 
 .modal-container img {
