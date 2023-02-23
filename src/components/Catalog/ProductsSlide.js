@@ -15,7 +15,7 @@ import catsCannedFoodArrEN from "../../helpers/EN/catsCannedFoodEN.js";
 function ProductsSlide() {
 	const dispatch = useDispatch();
 
-	const { categoryProducts, selectedProduct, pageLanguage } = useSelector((state) => state.generalSlice);
+	const { categoryProducts, selectedProduct, pageLanguage, mobileView } = useSelector((state) => state.generalSlice);
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => {
@@ -37,7 +37,7 @@ function ProductsSlide() {
 		top: "50%",
 		left: "50%",
 		transform: "translate(-50%, -50%)",
-		width: 950,
+		width: mobileView ? 450 : 950,
 		height: 700,
 		bgcolor: "background.paper",
 		boxShadow: 24,
@@ -47,10 +47,10 @@ function ProductsSlide() {
 	};
 
 	return (
-		<Box className='catalog-slide'>
+		<Box className="catalog-slide">
 			<Box sx={{ width: "100%" }}>
 				<Slide
-					direction='left'
+					direction="left"
 					in={categoryProducts.active}
 				>
 					<Paper
@@ -74,7 +74,7 @@ function ProductsSlide() {
 							}}
 						>
 							<AiOutlineClose
-								className='close-icon'
+								className="close-icon"
 								onClick={closeProducts}
 								style={{
 									fontSize: "1.7rem",
@@ -90,11 +90,11 @@ function ProductsSlide() {
 							}}
 						>
 							<Stack
-								direction='row'
-								justifyContent='space-between'
-								alignItems='flex-start'
+								direction="row"
+								justifyContent="space-between"
+								alignItems="flex-start"
 								gap={1}
-								flexWrap='wrap'
+								flexWrap="wrap"
 								sx={{
 									padding: "0 0.5rem",
 								}}
@@ -106,12 +106,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -124,12 +124,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -142,12 +142,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -160,12 +160,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -178,12 +178,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -196,12 +196,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -214,12 +214,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -232,12 +232,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className='single-cat-product'
+												className="single-cat-product"
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt=""
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -249,16 +249,16 @@ function ProductsSlide() {
 							<Modal
 								open={open}
 								onClose={handleClose}
-								aria-labelledby='modal-modal-title'
-								aria-describedby='modal-modal-description'
+								aria-labelledby="modal-modal-title"
+								aria-describedby="modal-modal-description"
 							>
 								<Box sx={style}>
 									<AiOutlineClose
 										onClick={handleClose}
-										className='product-modal-icon'
+										className="product-modal-icon"
 									/>
 									{selectedProduct && (
-										<div className='modal-container'>
+										<div className="modal-container">
 											<div
 												style={{
 													gridArea: "img",
@@ -269,7 +269,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={selectedProduct.img}
-													alt='product'
+													alt="product"
 													style={{
 														width: "170px",
 														maxHeight: "240px",
@@ -282,7 +282,7 @@ function ProductsSlide() {
 													gridArea: "analysis",
 													display: "flex",
 													flexDirection: "column",
-													width: "max-content",
+													width: mobileView ? "100%" : "max-content",
 													justifySelf: "center",
 													fontSize: "15px",
 												}}
@@ -297,7 +297,7 @@ function ProductsSlide() {
 													gridArea: "vitPerKg",
 													display: "flex",
 													flexDirection: "column",
-													width: "max-content",
+													width: mobileView ? "100%" : "max-content",
 													justifySelf: "center",
 													fontSize: "15px",
 												}}
@@ -312,7 +312,7 @@ function ProductsSlide() {
 													gridArea: "feedingGuide",
 													display: "flex",
 													flexDirection: "column",
-													width: "max-content",
+													width: mobileView ? "100%" : "max-content",
 													justifySelf: "center",
 													fontSize: "15px",
 												}}

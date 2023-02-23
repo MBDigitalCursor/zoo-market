@@ -340,4 +340,28 @@
   .left-side-desc {
     margin-top: 200px;
   }
+
+  .modal-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    grid-template-areas:
+      'img'
+      'analysis'
+      'vitPerKg'
+      'feedingGuide'
+      'fPart'
+      'sPart'
+      'tPart'
+      'keyBenefits'
+      'ingredients'
+    ;
+    row-gap: 10px;
+
+  }
+
+
+  .modal-container>div {
+    width: 100%
+  }
 }
