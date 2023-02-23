@@ -114,10 +114,10 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "€14.99",
+		desc: "",
+		price: "€",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
+			analysis: [""],
 			vitPerKg: [""],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 30", "4 - 45", "6 - 60", "8 - 75"],
 			desc: {
@@ -131,10 +131,10 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img8,
-		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "€14.99",
+		desc: "",
+		price: "€",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
+			analysis: [""],
 			vitPerKg: [""],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 30", "4 - 45", "6 - 60", "8 - 75"],
 			desc: {
@@ -148,10 +148,10 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img9,
-		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "€14.99",
+		desc: "",
+		price: "€",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
+			analysis: [""],
 			vitPerKg: [""],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 30", "4 - 45", "6 - 60", "8 - 75"],
 			desc: {
@@ -165,10 +165,10 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "€14.99",
+		desc: "",
+		price: "€",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
+			analysis: [""],
 			vitPerKg: [""],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 30", "4 - 45", "6 - 60", "8 - 75"],
 			desc: {
