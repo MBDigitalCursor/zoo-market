@@ -23,10 +23,6 @@ function ProdsPagination({ products }) {
 	});
 	const [slicedArr, setSlicedArr] = useState([]);
 
-	const slicedProds = (from, to) => {
-		return products.slice(from, to);
-	};
-
 	const style = {
 		position: "absolute",
 		top: "50%",
@@ -43,7 +39,7 @@ function ProdsPagination({ products }) {
 	};
 
 	useEffect(() => {
-		const newSlicedArr = slicedProds(pagination.from, pagination.to);
+		const newSlicedArr = products.slice(pagination.from, pagination.to);
 		setSlicedArr(newSlicedArr);
 		setPagination({ ...pagination, count: products.length });
 	}, [pagination.from, pagination.to, products]);
@@ -57,9 +53,9 @@ function ProdsPagination({ products }) {
 	return (
 		<Box
 			justifyContent={"center"}
-			alignItems="center"
+			alignItems='center'
 			display={"flex"}
-			flexDirection="column"
+			flexDirection='column'
 			sx={{
 				margin: "20px 0",
 				"& .MuiPaginationItem-page": {
@@ -68,23 +64,24 @@ function ProdsPagination({ products }) {
 			}}
 		>
 			{slicedArr.length > 0 && (
-				<div className="page-products">
+				<div className='page-products'>
 					{slicedArr.map((prod, i) => (
 						<div
 							onClick={() => {
 								handleOpen();
 								dispatch(setSelectedProduct(prod));
 							}}
-							className="single-product"
+							className='single-product'
 							key={i}
 						>
 							<img
 								style={{
-									maxHeight: "222px",
-									maxWidth: "209px",
+									width: "170px",
+									height: "230px",
+									objectFit: "contain",
 								}}
 								src={prod.img}
-								alt=""
+								alt=''
 							/>
 							<div
 								style={{
@@ -106,7 +103,7 @@ function ProdsPagination({ products }) {
 				count={Math.ceil(pagination.count / pageSize)}
 				onChange={handlePageChange}
 				defaultPage={1}
-				color="primary"
+				color='primary'
 				sx={{
 					"& .Mui-selected": {
 						pointerEvents: "none",
@@ -116,9 +113,10 @@ function ProdsPagination({ products }) {
 			<Modal
 				open={open}
 				onClose={handleClose}
-				aria-labelledby="modal-modal-title"
-				aria-describedby="modal-modal-description"
+				aria-labelledby='modal-modal-title'
+				aria-describedby='modal-modal-description'
 			>
+<<<<<<< HEAD
 				<Box sx={style}>
 					<AiOutlineClose
 						onClick={handleClose}
@@ -241,6 +239,32 @@ function ProdsPagination({ products }) {
 							</div>
 						</div>
 					)}
+=======
+				<Box
+					className='modal-container'
+					sx={style}
+				>
+					<AiOutlineClose onClick={handleClose} />
+					<img
+						src='https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+						alt=''
+					/>
+					<div className='modal-container-desc'>
+						<Typography
+							id='modal-modal-title'
+							variant='h6'
+							component='h2'
+						>
+							Produkto pav.
+						</Typography>
+						<Typography
+							id='modal-modal-description'
+							sx={{ mt: 2 }}
+						>
+							produkto aprasymas
+						</Typography>
+					</div>
+>>>>>>> 933fb9e3c8db9db7d37ac8448b970cf149248005
 				</Box>
 			</Modal>
 		</Box>
