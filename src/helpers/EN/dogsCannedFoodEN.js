@@ -30,7 +30,7 @@ const dogsCannedFoodArr = [
 	{
 		img: img2,
 		desc: "Advance Veterinary Diets Gastroenteric Wet Pouch 150 g",
-		price: "$3.00",
+		price: "€3.00",
 		fullDesc: {
 			analysis: ["Crude protein 8%", "Crude fat 2.5%", "Crude fiber 0.3%", "Crude ash 2.3%", "Moisture 79%", "Sodium 0.1%", "Potassium 0.2%"],
 			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 20 mg", "Iodine 0.75 mg", "Copper 1.75 mg", "Manganese 1.4 mg", "Zinc 25 mg"],
@@ -81,7 +81,7 @@ const dogsCannedFoodArr = [
 	{
 		img: img5,
 		desc: "Petkult Miel Grain Free Adult Wet Dog Food With Lamb 400 g",
-		price: "$2.40",
+		price: "€2.40",
 		fullDesc: {
 			analysis: ["Protein 10%", "Fat 8%", "Fiber 0.6%", "Ash 2.5%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%"],
 			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 20 mg", "Vitamin B1", "Vitamin B2", "Vitamin B6", "Vitamin B5", "Vitamin B9", "Vitamin B12", "Omega-3", "Biotin", "Zinc (zinc oxide) 13 mg"],
@@ -98,7 +98,7 @@ const dogsCannedFoodArr = [
 	{
 		img: img6,
 		desc: "Barking Heads Puppy Days Wet Puppy Food 300 g",
-		price: "$3.50",
+		price: "€3.50",
 		fullDesc: {
 			analysis: ["Crude protein 11%", "Crude fat 7%", "Crude fiber 0.8%", "Crude ash 2.5%", "Moisture 76%"],
 			vitPerKg: [""],
@@ -115,7 +115,7 @@ const dogsCannedFoodArr = [
 	{
 		img: img7,
 		desc: "Carnilove Lamb & Wild Boar Pate For Adult Dogs 400 g",
-		price: "$3.00",
+		price: "€3.00",
 		fullDesc: {
 			analysis: ["Crude protein 9.5%", "Crude fat 6.5%", "Crude fiber 0.4%", "Crude ash 2.5%", "Moisture 78%", "Calcium 0.2%", "Phosphorus 0.25%", "Sodium 0.3%"],
 			vitPerKg: ["Vtamin D3 (3a671) 250 IU", "Vitamin E (3a700) 150 mg", "Biotin (3a880) 0.5 mg", "Copper (3b406) 4 mg", "Iron (3b106) 10 mg", "Iodine (3b201) 0.75 mg", "Manganese (3b504) 3 mg", "Zinc (3b606) 15 mg", "Taurine (3a370) 1000 mg"],
@@ -132,7 +132,7 @@ const dogsCannedFoodArr = [
 	{
 		img: img8,
 		desc: "Monge BWild Grain Free Salmon Wet Food For Adults 400 g",
-		price: "$2.10",
+		price: "€2.10",
 		fullDesc: {
 			analysis: ["Crude protein 8.6%", "Crude fat 6.2%", "Crude fiber 0.7%", "Crude ash 2.6%", "Moisture 79%"],
 			vitPerKg: ["Vitamin D3 434 IU", "Vitamin E (all-rac-alpha-tocopheryl-acetate) 15.5 mg", "Selenium (sodium selenite 0.05 mg) 0.02 mg", "Manganese (manganous sulphate monohydrate 11 mg) 3.5 mg", "Zinc (zinc oxide 20 mg) 16 mg", "Copper (copper (II) sulphate pentahydrate 5.5 mg) 1.4 mg", "Iron  (iron (II) sulphate monohydrate 35 mg) 11.5 mg", "Iodine (calcium iodate anhydrous 0.3 mg) 0.19 mg"],
@@ -149,7 +149,7 @@ const dogsCannedFoodArr = [
 	{
 		img: img9,
 		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "$14.99",
+		price: "€14.99",
 		fullDesc: {
 			analysis: ["Protein 21.2%"],
 			vitPerKg: [""],
@@ -166,7 +166,7 @@ const dogsCannedFoodArr = [
 	{
 		img: img10,
 		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "$14.99",
+		price: "€14.99",
 		fullDesc: {
 			analysis: ["Protein 21.2%"],
 			vitPerKg: [""],

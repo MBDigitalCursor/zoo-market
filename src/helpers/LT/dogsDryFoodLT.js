@@ -13,14 +13,14 @@ const dogsDryFoodArr = [
 	
 	{
 		img: img1,
-    desc: "HILL'S SCIENCE PLAN suaugusių šunų ėdalas su ėriena ir ryžiais",
+    desc: "Hill's Science Plan suaugusių šunų ėdalas su ėriena ir ryžiais",
 		price: "$19.99",
 		fullDesc: {
 			analysis: ["Žali baltymai 21.2%", "Žali riebalai 14.2%", "Žalia ląsteliena 1.7%", "Žali pelenai 4.7% ", "Omega-6 3.2%", "Kalcis 0.76%", "Fosforas 0.64%", "Natris 0.24%", "Kalis 0.65%", "Magnis 0.11%"],
 			vitPerKg: ["Vitaminas A 5817 IU", "Vitaminas C 70 mg", "Vitaminas D 3438 IU", "Vitaminas E 650 mg", "Beta-karotinas 1.5 mg"],
 			feedingGuide: ["Gyvūno svoris (kg) - Maisto kiekis (g)", "2.5 - 60", "5 - 100", "7.5 - 135", "10 - 170", "20 - 285", "30 - 385", "40 - 480", "50 - 565", "60+ - 11 per kg"],
 			desc: {
-				firstPart: "HILL'S SCIENCE PLAN suaugusių šunų ėdalas su ėriena ir ryžiais yra specialiai sukurtas taip, kad patenkintų energinius šunų poreikius pačiame jėgų žydėjime.",
+				firstPart: "Hill's Science Plan suaugusių šunų ėdalas su ėriena ir ryžiais yra specialiai sukurtas taip, kad patenkintų energinius šunų poreikius pačiame jėgų žydėjime.",
 				secondPart: "Pagaminta iš aukštos kokybės lengvai virškinamų ingredientų.",
 				thirdPart: "Suaugusių šunų (nuo 1 iki 6 metų) kasdienis sausas maistas",
 				keyBenefits: "Sukurtas palaikyti liesą raumenų masę ir sveikus organus, skirtas šunims, kurie teikia pirmenybę mažesnėms granulėms. Lengvai virškinamos pašarinės žaliavos optimaliai maistinių medžiagų absorbcijai, subalansuotas natrio ir fosforo kiekis.",
