@@ -102,7 +102,7 @@ const dogsDryFoodArr = [
 		fullDesc: {
 			analysis: ["Crude protein 32%", "Crude fat 18%", "Crude fiber 4%", "Moisture 10%", "Omega-3 0.3%", "Omega-6 2.8%", "Taurine 0.12%"],
 			vitPerKg: ["Vitamin E 150 IU", "Zinc 150 mg", "Selenium 0.35 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 30", ],
+			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 30", "2.25 - 55", "4.5 - 91", "9 - 154", "13.5 - 209", "18 - 259"],
 			desc: {
 				firstPart: "Venison, the number one ingredient in this formula, is rich in nutrients and energy, and a highly digestible source of protein.",
 				secondPart: "Rich in proteins and fat, this formula provides the energy that active small breed adult dogs need in a small kibble size that is easy for small mouths to chew.",
@@ -169,8 +169,8 @@ const dogsDryFoodArr = [
 		price: "$TBA",
 		fullDesc: {
 			analysis: ["Crude protein 16%", "Crude fat 18%", "Crude fiber 2.5%", "Crude ash 4.5%", "Moisture 10%", "Omega-3 0.8%", "Omega-6 2.8%", "Calcium 0.65%", "Phosphorus 0.25%", "Sodium 0.2%", "Magnesium 0.08%", "Potassium 0.7%", "Arginine 1.1%", "Taurine 0.2%"],
-			vitPerKg: [""],
-			feedingGuide: [""],
+			vitPerKg: ["Vitamin A 20000 IU", "Vitamin D3 1000 IU", "Vitamin E 600 mg", "Choline Chloride 2000 mg", "Biotin 2 mg", "Calcium-D-Panthothenate 30 mg", "Niacinamide 80 mg", "Organic Zinc 132 mg", "Organic Iron 55 mg", "Organic Manganese 66 mg", "Organic Copper 4 mg", "Potassium Iodide 3.5 mg", "Organic Selenium 0.2 mg", "Taurine 2000 mg", "L-Carnitine 300 mg", "L-Arginine 2800 mg"],
+			feedingGuide: ["Body Weight (kg) - Dry (g)", "5 - 95", "10 - 160", "15 - 220", "20 - 270", "25 - 320", "30 - 365", "40 - 455", "50 - 540", "60 - 615", "70 - 690", "80 - 765", "90 -835"],
 			desc: {
 				firstPart: "Calibra Veterinary Diet Renal & Cardiac Dry Dog Food is a complete dietetic food used for the dietary management of renal insufficiency and renal failure, support during the treatment of cardiac disorders, and support during the treatment of hypertension.",
 				secondPart: "The Renal & Cardiac food for dogs supports the functioning of renal tissue and the cardiovascular system. It has an advanced combination of high arginine (improves blood flow), high taurine (cardiac muscle condition) and vitamins & antioxidants.",
