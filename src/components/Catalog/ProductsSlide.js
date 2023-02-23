@@ -288,7 +288,7 @@ function ProductsSlide() {
 												}}
 											>
 												<p>
-													<b>{pageLanguage === "LT" ? "Analitika" : "Analysis"}</b>
+													<b>{pageLanguage === "LT" ? "Sudėtis" : "Analysis"}</b>
 												</p>
 												{selectedProduct.fullDesc.analysis.length !== 0 ? selectedProduct.fullDesc.analysis.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
@@ -303,7 +303,7 @@ function ProductsSlide() {
 												}}
 											>
 												<p>
-													<b>{pageLanguage === "LT" ? "Vitaminai per kg" : "Vitamins per kg "}</b>
+													<b>{pageLanguage === "LT" ? "Maistiniai priedai" : "Nutritional additives"}</b>
 												</p>
 												{selectedProduct.fullDesc.vitPerKg.length !== 0 ? selectedProduct.fullDesc.vitPerKg.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
@@ -318,7 +318,7 @@ function ProductsSlide() {
 												}}
 											>
 												<p>
-													<b>{pageLanguage === "LT" ? "Feeding Guide" : "Feeding Guide"}</b>
+													<b>{pageLanguage === "LT" ? "Šėrimo instrukcija" : "Feeding Guide"}</b>
 												</p>
 												{selectedProduct.fullDesc.feedingGuide.length !== 0 ? selectedProduct.fullDesc.feedingGuide.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
@@ -359,7 +359,7 @@ function ProductsSlide() {
 												}}
 											>
 												<p>
-													<b>Key Benefits</b>
+													<b>{pageLanguage === "LT" ? "Pagrindinės naudos" : "Key benefits"}</b>
 												</p>
 												{selectedProduct.fullDesc.desc.keyBenefits && <p>{selectedProduct.fullDesc.desc.keyBenefits}</p>}
 											</div>
@@ -370,7 +370,7 @@ function ProductsSlide() {
 												}}
 											>
 												<p>
-													<b>Ingredients</b>
+													<b>{pageLanguage === "LT" ? "Ingredientai" : "Ingredients"}</b>
 												</p>
 												{selectedProduct.fullDesc.desc.ingredients && <p>{selectedProduct.fullDesc.desc.ingredients}</p>}
 											</div>
