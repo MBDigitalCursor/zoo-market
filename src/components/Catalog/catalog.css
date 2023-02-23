@@ -111,6 +111,7 @@
 .single-cat-product img {
   width: 100%;
   height: 230px;
+  object-fit: contain;
 }
 
 .catalog-slide {
@@ -188,8 +189,18 @@
 }
 
 .modal-container {
-  display: flex;
-  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 170px auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  column-gap: 10px;
+  grid-template-areas:
+    'img analysis vitPerKg feedingGuide'
+    'fPart fPart fPart fPart'
+    'sPart sPart sPart sPart'
+    'tPart tPart tPart tPart'
+    'keyBenefits keyBenefits keyBenefits keyBenefits'
+    'ingredients ingredients ingredients ingredients'
+  ;
 }
 
 .modal-container img {
@@ -200,6 +211,17 @@
   display: flex;
   flex-direction: column;
 }
+
+.product-modal-icon {
+  font-size: 25px;
+}
+
+.product-modal-icon:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
+
 
 @media(max-width: 768px) {
   .catalog-container {

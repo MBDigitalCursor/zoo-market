@@ -17,6 +17,7 @@ export const generalSlice = createSlice({
 		mobileView: false,
 		burgerMenu: false,
 		pageLanguage: "LT",
+		selectedProduct: null,
 	},
 
 	reducers: {
@@ -50,9 +51,12 @@ export const generalSlice = createSlice({
 				catTree: "",
 			};
 		},
+		setSelectedProduct: (state, action) => {
+			state.selectedProduct = action.payload;
+		},
 	},
 });
 
-export const { setMainCategory, setCategoryProducts, setSlicedProds, setPagination, setMobileView, setBurgerMenu, setLanguage } = generalSlice.actions;
+export const { setMainCategory, setCategoryProducts, setSlicedProds, setPagination, setMobileView, setBurgerMenu, setLanguage, setSelectedProduct } = generalSlice.actions;
 
 export default generalSlice.reducer;

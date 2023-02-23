@@ -1,5 +1,6 @@
 import img1 from "../../assets/img/dogsCannedFood/dog konservai 1.png";
 import img2 from "../../assets/img/dogsCannedFood/dog konservai 2.png";
+import img2 from "../../assets/img/dogsCannedFood/dog konservai 2.jpeg";
 import img3 from "../../assets/img/dogsCannedFood/dog konservai 3.png";
 import img4 from "../../assets/img/dogsCannedFood/dog konservai 4.png";
 import img5 from "../../assets/img/dogsCannedFood/dog konservai 5.png";
@@ -148,8 +149,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img9,
-		desc: "",
-		price: "$TBA",
+		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
+		price: "$14.99",
 		fullDesc: {
 			analysis: ["Protein 21.2%"],
 			vitPerKg: [""],

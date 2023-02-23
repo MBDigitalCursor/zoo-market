@@ -6,7 +6,7 @@ import img5 from "../../assets/img/dogsDryFood/dog sausas 5.png";
 import img6 from "../../assets/img/dogsDryFood/dog sausas 6.png";
 import img7 from "../../assets/img/dogsDryFood/dog sausas 7.jpeg";
 import img8 from "../../assets/img/dogsDryFood/dog sausas 8.jpeg";
-import img9 from "../../assets/img/dogsDryFood/dog sausas 9.png";
+import img9 from "../../assets/img/dogsDryFood/dog sausas 9.jpeg";
 import img10 from "../../assets/img/dogsDryFood/dog sausas 10.png";
 
 const dogsDryFoodArr = [
@@ -165,6 +165,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img10,
+
 		desc: "Calibra Veterinary Diet Renal & Cardiac Dry Dog Food 2 kg",
 		price: "$16.65",
 		fullDesc: {
