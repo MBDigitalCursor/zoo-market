@@ -1,13 +1,21 @@
 import { Box, Modal, Pagination, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import { useDispatch, useSelector } from "react-redux";
+import { setSelectedProduct } from "../../../store/generalStore";
 
 const pageSize = 4;
 
 function ProdsPagination({ products }) {
+	const dispatch = useDispatch();
+	const { categoryProducts, selectedProduct, pageLanguage } = useSelector((state) => state.generalSlice);
+
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
-	const handleClose = () => setOpen(false);
+	const handleClose = () => {
+		dispatch(setSelectedProduct(null));
+		setOpen(false);
+	};
 	const [pagination, setPagination] = useState({
 		count: 0,
 		from: 0,
@@ -30,6 +38,8 @@ function ProdsPagination({ products }) {
 		p: 4,
 		margin: "0 auto",
 		height: "80vh",
+		overflow: "hidden",
+		overflowY: "scroll",
 	};
 
 	useEffect(() => {
@@ -63,7 +73,7 @@ function ProdsPagination({ products }) {
 						<div
 							onClick={() => {
 								handleOpen();
-								console.log(prod);
+								dispatch(setSelectedProduct(prod));
 							}}
 							className="single-product"
 							key={i}
@@ -109,30 +119,128 @@ function ProdsPagination({ products }) {
 				aria-labelledby="modal-modal-title"
 				aria-describedby="modal-modal-description"
 			>
-				<Box
-					className="modal-container"
-					sx={style}
-				>
-					<AiOutlineClose onClick={handleClose} />
-					<img
-						src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-						alt=""
+				<Box sx={style}>
+					<AiOutlineClose
+						onClick={handleClose}
+						className="product-modal-icon"
 					/>
-					<div className="modal-container-desc">
-						<Typography
-							id="modal-modal-title"
-							variant="h6"
-							component="h2"
-						>
-							Produkto pav.
-						</Typography>
-						<Typography
-							id="modal-modal-description"
-							sx={{ mt: 2 }}
-						>
-							produkto aprasymas
-						</Typography>
-					</div>
+					{selectedProduct && (
+						<div className="modal-mobile-container">
+							<div
+								style={{
+									gridArea: "img",
+									display: "flex",
+									justifyContent: "center",
+									alignItems: "center",
+								}}
+							>
+								<img
+									src={selectedProduct.img}
+									alt="product"
+									style={{
+										width: "170px",
+										maxHeight: "240px",
+										objectFit: "contain",
+									}}
+								/>
+							</div>
+							<div
+								style={{
+									gridArea: "analysis",
+									display: "flex",
+									flexDirection: "column",
+									justifySelf: "center",
+									fontSize: "15px",
+								}}
+							>
+								<p>
+									<b>{pageLanguage === "LT" ? "Sudėtis" : "Analysis"}</b>
+								</p>
+								{selectedProduct.fullDesc.analysis.length !== 0 ? selectedProduct.fullDesc.analysis.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
+							</div>
+							<div
+								style={{
+									gridArea: "vitPerKg",
+									display: "flex",
+									flexDirection: "column",
+									justifySelf: "center",
+									fontSize: "15px",
+								}}
+							>
+								<p>
+									<b>{pageLanguage === "LT" ? "Maistiniai priedai" : "Nutritional additives"}</b>
+								</p>
+								{selectedProduct.fullDesc.vitPerKg.length !== 0 ? selectedProduct.fullDesc.vitPerKg.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
+							</div>
+							<div
+								style={{
+									gridArea: "feedingGuide",
+									display: "flex",
+									flexDirection: "column",
+
+									justifySelf: "center",
+									fontSize: "15px",
+								}}
+							>
+								<p>
+									<b>{pageLanguage === "LT" ? "Šėrimo instrukcija" : "Feeding Guide"}</b>
+								</p>
+								{selectedProduct.fullDesc.feedingGuide.length !== 0 ? selectedProduct.fullDesc.feedingGuide.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
+							</div>
+							{selectedProduct.fullDesc.desc.firstPart && (
+								<p
+									style={{
+										gridArea: "fPart",
+										marginTop: "20px",
+									}}
+								>
+									{selectedProduct.fullDesc.desc.firstPart}
+								</p>
+							)}
+							{selectedProduct.fullDesc.desc.secondPart && (
+								<p
+									style={{
+										gridArea: "sPart",
+										marginTop: "20px",
+									}}
+								>
+									{selectedProduct.fullDesc.desc.secondPart}
+								</p>
+							)}
+							{selectedProduct.fullDesc.desc.thirdPart && (
+								<p
+									style={{
+										gridArea: "tPart",
+										marginTop: "20px",
+									}}
+								>
+									{selectedProduct.fullDesc.desc.thirdPart}
+								</p>
+							)}
+							<div
+								style={{
+									gridArea: "keyBenefits",
+									marginTop: "20px",
+								}}
+							>
+								<p>
+									<b>{pageLanguage === "LT" ? "Pagrindinės naudos" : "Key benefits"}</b>
+								</p>
+								{selectedProduct.fullDesc.desc.keyBenefits && <p>{selectedProduct.fullDesc.desc.keyBenefits}</p>}
+							</div>
+							<div
+								style={{
+									gridArea: "ingredients",
+									marginTop: "20px",
+								}}
+							>
+								<p>
+									<b>{pageLanguage === "LT" ? "Ingredientai" : "Ingredients"}</b>
+								</p>
+								{selectedProduct.fullDesc.desc.ingredients && <p>{selectedProduct.fullDesc.desc.ingredients}</p>}
+							</div>
+						</div>
+					)}
 				</Box>
 			</Modal>
 		</Box>

@@ -242,6 +242,31 @@
   .products-with-pagination {
     display: flex;
   }
+
+  .modal-mobile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    grid-template-areas:
+      'img'
+      'analysis'
+      'vitPerKg'
+      'feedingGuide'
+      'fPart'
+      'sPart'
+      'tPart'
+      'keyBenefits'
+      'ingredients'
+    ;
+    row-gap: 10px;
+
+  }
+
+
+  .modal-mobile-container>div {
+    width: 100%
+  }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
