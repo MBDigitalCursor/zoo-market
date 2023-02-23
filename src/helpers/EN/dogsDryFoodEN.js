@@ -6,7 +6,7 @@ import img5 from "../../assets/img/dogsDryFood/dog sausas 5.png";
 import img6 from "../../assets/img/dogsDryFood/dog sausas 6.png";
 import img7 from "../../assets/img/dogsDryFood/dog sausas 7.jpeg";
 import img8 from "../../assets/img/dogsDryFood/dog sausas 8.jpeg";
-import img9 from "../../assets/img/dogsDryFood/dog sausas 9.png";
+import img9 from "../../assets/img/dogsDryFood/dog sausas 9.jpeg";
 import img10 from "../../assets/img/dogsDryFood/dog sausas 10.png";
 
 const dogsDryFoodArr = [
@@ -102,7 +102,7 @@ const dogsDryFoodArr = [
 		fullDesc: {
 			analysis: ["Crude protein 32%", "Crude fat 18%", "Crude fiber 4%", "Moisture 10%", "Omega-3 0.3%", "Omega-6 2.8%", "Taurine 0.12%"],
 			vitPerKg: ["Vitamin E 150 IU", "Zinc 150 mg", "Selenium 0.35 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 30", ],
+			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 30"],
 			desc: {
 				firstPart: "Venison, the number one ingredient in this formula, is rich in nutrients and energy, and a highly digestible source of protein.",
 				secondPart: "Rich in proteins and fat, this formula provides the energy that active small breed adult dogs need in a small kibble size that is easy for small mouths to chew.",

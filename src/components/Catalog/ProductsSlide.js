@@ -1,22 +1,26 @@
-import { Box, Paper, Stack, Slide, Modal, Typography } from "@mui/material";
+import { Box, Paper, Stack, Slide, Modal } from "@mui/material";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setCategoryProducts } from "../../store/generalStore";
+import { setCategoryProducts, setSelectedProduct } from "../../store/generalStore";
 import { AiOutlineClose } from "react-icons/ai";
-import dogsDryFoodArr from "../../helpers/LT/dogsDryFood.js";
-import dogsCannedFoodArr from "../../helpers/LT/dogsCannedFood.js";
-import catsDryFoodArr from "../../helpers/LT/catsDryFood.js";
-import catsCannedFoodArr from "../../helpers/LT/catsCannedFood.js";
+import dogsDryFoodArrLT from "../../helpers/LT/dogsDryFoodLT.js";
+import dogsCannedFoodArrLT from "../../helpers/LT/dogsCannedFoodLT.js";
+import catsDryFoodArrLT from "../../helpers/LT/catsDryFoodLT.js";
+import catsCannedFoodArrLT from "../../helpers/LT/catsCannedFoodLT.js";
+import dogsDryFoodArrEN from "../../helpers/EN/dogsDryFoodEN.js";
+import dogsCannedFoodArrEN from "../../helpers/EN/dogsCannedFoodEN.js";
+import catsDryFoodArrEN from "../../helpers/EN/catsDryFoodEN.js";
+import catsCannedFoodArrEN from "../../helpers/EN/catsCannedFoodEN.js";
 
 function ProductsSlide() {
 	const dispatch = useDispatch();
 
-	const { categoryProducts } = useSelector((state) => state.generalSlice);
+	const { categoryProducts, selectedProduct, pageLanguage } = useSelector((state) => state.generalSlice);
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => {
+		dispatch(setSelectedProduct(null));
 		setOpen(false);
-		console.log("uzdaryta");
 	};
 
 	const closeProducts = () => {
@@ -33,10 +37,13 @@ function ProductsSlide() {
 		top: "50%",
 		left: "50%",
 		transform: "translate(-50%, -50%)",
-		width: 400,
+		width: 950,
+		height: 700,
 		bgcolor: "background.paper",
 		boxShadow: 24,
 		p: 4,
+		paddingTop: "25px",
+		overflowY: "scroll",
 	};
 
 	return (
@@ -92,57 +99,138 @@ function ProductsSlide() {
 									padding: "0 0.5rem",
 								}}
 							>
-								{categoryProducts.catTree === "Šunims > Sausas ėdalas" || categoryProducts.catTree === "Dogs > Dry food"
-									? dogsDryFoodArr.map((product, i) => (
-											<div
-												onClick={handleOpen}
-												className='single-cat-product'
-												key={i}
-											>
-												<img
-													src={product.img}
-													alt=''
-												/>
-												<p>{product.desc}</p>
-												<p>{product.price}</p>
-											</div>
-									  ))
-									: categoryProducts.catTree === "Katėms > Sausas ėdalas" || categoryProducts.catTree === "Cats > Dry food"
-									? catsDryFoodArr.map((product, i) => (
-											<div
-												onClick={handleOpen}
-												className='single-cat-product'
-												key={i}
-											>
-												<img
-													src={product.img}
-													alt=''
-												/>
-												<p>{product.desc}</p>
-												<p>{product.price}</p>
-											</div>
-									  ))
-									: categoryProducts.catTree === "Šunims > Konservai" || categoryProducts.catTree === "Dogs > Canned food"
-									? dogsCannedFoodArr.map((product, i) => (
-											<div
-												onClick={handleOpen}
-												className='single-cat-product'
-												key={i}
-											>
-												<img
-													src={product.img}
-													alt=''
-												/>
-												<p>{product.desc}</p>
-												<p>{product.price}</p>
-											</div>
-									  ))
-									: categoryProducts.catTree === "Katėms > Konservai" || categoryProducts.catTree === "Cats > Canned food"
-									? catsCannedFoodArr.map((product, i) => (
+								{categoryProducts.catTree === "Šunims > Sausas ėdalas"
+									? dogsDryFoodArrLT.map((product, i) => (
 											<div
 												onClick={() => {
 													handleOpen();
-													console.log(product);
+													dispatch(setSelectedProduct(product));
+												}}
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Katėms > Sausas ėdalas"
+									? catsDryFoodArrLT.map((product, i) => (
+											<div
+												onClick={() => {
+													handleOpen();
+													dispatch(setSelectedProduct(product));
+												}}
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Šunims > Konservai"
+									? dogsCannedFoodArrLT.map((product, i) => (
+											<div
+												onClick={() => {
+													handleOpen();
+													dispatch(setSelectedProduct(product));
+												}}
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Katėms > Konservai"
+									? catsCannedFoodArrLT.map((product, i) => (
+											<div
+												onClick={() => {
+													handleOpen();
+													dispatch(setSelectedProduct(product));
+												}}
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Dogs > Dry food"
+									? dogsDryFoodArrEN.map((product, i) => (
+											<div
+												onClick={() => {
+													handleOpen();
+													dispatch(setSelectedProduct(product));
+												}}
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Cats > Dry food"
+									? catsDryFoodArrEN.map((product, i) => (
+											<div
+												onClick={() => {
+													handleOpen();
+													dispatch(setSelectedProduct(product));
+												}}
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Dogs > Canned food"
+									? dogsCannedFoodArrEN.map((product, i) => (
+											<div
+												onClick={() => {
+													handleOpen();
+													dispatch(setSelectedProduct(product));
+												}}
+												className='single-cat-product'
+												key={i}
+											>
+												<img
+													src={product.img}
+													alt=''
+												/>
+												<p>{product.desc}</p>
+												<p>{product.price}</p>
+											</div>
+									  ))
+									: categoryProducts.catTree === "Cats > Canned food"
+									? catsCannedFoodArrEN.map((product, i) => (
+											<div
+												onClick={() => {
+													handleOpen();
+													dispatch(setSelectedProduct(product));
 												}}
 												className='single-cat-product'
 												key={i}
@@ -164,30 +252,130 @@ function ProductsSlide() {
 								aria-labelledby='modal-modal-title'
 								aria-describedby='modal-modal-description'
 							>
-								<Box
-									className='modal-container'
-									sx={style}
-								>
-									<AiOutlineClose onClick={handleClose} />
-									<img
-										src='https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-										alt=''
+								<Box sx={style}>
+									<AiOutlineClose
+										onClick={handleClose}
+										className='product-modal-icon'
 									/>
-									<div className='modal-container-desc'>
-										<Typography
-											id='modal-modal-title'
-											variant='h6'
-											component='h2'
-										>
-											Produkto pav.
-										</Typography>
-										<Typography
-											id='modal-modal-description'
-											sx={{ mt: 2 }}
-										>
-											produkto aprasymas
-										</Typography>
-									</div>
+									{selectedProduct && (
+										<div className='modal-container'>
+											<div
+												style={{
+													gridArea: "img",
+													display: "flex",
+													justifyContent: "center",
+													alignItems: "center",
+												}}
+											>
+												<img
+													src={selectedProduct.img}
+													alt='product'
+													style={{
+														width: "170px",
+														maxHeight: "240px",
+														objectFit: "contain",
+													}}
+												/>
+											</div>
+											<div
+												style={{
+													gridArea: "analysis",
+													display: "flex",
+													flexDirection: "column",
+													width: "max-content",
+													justifySelf: "center",
+													fontSize: "15px",
+												}}
+											>
+												<p>
+													<b>{pageLanguage === "LT" ? "Analitika" : "Analysis"}</b>
+												</p>
+												{selectedProduct.fullDesc.analysis.length !== 0 ? selectedProduct.fullDesc.analysis.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
+											</div>
+											<div
+												style={{
+													gridArea: "vitPerKg",
+													display: "flex",
+													flexDirection: "column",
+													width: "max-content",
+													justifySelf: "center",
+													fontSize: "15px",
+												}}
+											>
+												<p>
+													<b>{pageLanguage === "LT" ? "Vitaminai per kg" : "Vitamins per kg "}</b>
+												</p>
+												{selectedProduct.fullDesc.vitPerKg.length !== 0 ? selectedProduct.fullDesc.vitPerKg.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
+											</div>
+											<div
+												style={{
+													gridArea: "feedingGuide",
+													display: "flex",
+													flexDirection: "column",
+													width: "max-content",
+													justifySelf: "center",
+													fontSize: "15px",
+												}}
+											>
+												<p>
+													<b>{pageLanguage === "LT" ? "Feeding Guide" : "Feeding Guide"}</b>
+												</p>
+												{selectedProduct.fullDesc.feedingGuide.length !== 0 ? selectedProduct.fullDesc.feedingGuide.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
+											</div>
+											{selectedProduct.fullDesc.desc.firstPart && (
+												<p
+													style={{
+														gridArea: "fPart",
+														marginTop: "20px",
+													}}
+												>
+													{selectedProduct.fullDesc.desc.firstPart}
+												</p>
+											)}
+											{selectedProduct.fullDesc.desc.secondPart && (
+												<p
+													style={{
+														gridArea: "sPart",
+														marginTop: "20px",
+													}}
+												>
+													{selectedProduct.fullDesc.desc.secondPart}
+												</p>
+											)}
+											{selectedProduct.fullDesc.desc.thirdPart && (
+												<p
+													style={{
+														gridArea: "tPart",
+														marginTop: "20px",
+													}}
+												>
+													{selectedProduct.fullDesc.desc.thirdPart}
+												</p>
+											)}
+											<div
+												style={{
+													gridArea: "keyBenefits",
+													marginTop: "20px",
+												}}
+											>
+												<p>
+													<b>Key Benefits</b>
+												</p>
+												{selectedProduct.fullDesc.desc.keyBenefits && <p>{selectedProduct.fullDesc.desc.keyBenefits}</p>}
+											</div>
+											<div
+												style={{
+													gridArea: "ingredients",
+													marginTop: "20px",
+												}}
+											>
+												<p>
+													<b>Ingredients</b>
+												</p>
+												{selectedProduct.fullDesc.desc.ingredients && <p>{selectedProduct.fullDesc.desc.ingredients}</p>}
+											</div>
+										</div>
+									)}
 								</Box>
 							</Modal>
 						</Box>

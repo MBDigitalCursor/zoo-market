@@ -1,8 +1,12 @@
 import React from "react";
-import dogsDryFoodArr from "../../../helpers/LT/dogsDryFood.js";
-import dogsCannedFoodArr from "../../../helpers/LT/dogsCannedFood.js";
-import catsDryFoodArr from "../../../helpers/LT/catsDryFood.js";
-import catsCannedFoodArr from "../../../helpers/LT/catsCannedFood.js";
+import dogsDryFoodArrLT from "../../../helpers/LT/dogsDryFoodLT.js";
+import dogsCannedFoodArrLT from "../../../helpers/LT/dogsCannedFoodLT.js";
+import catsDryFoodArrLT from "../../../helpers/LT/catsDryFoodLT.js";
+import catsCannedFoodArrLT from "../../../helpers/LT/catsCannedFoodLT.js";
+import dogsDryFoodArrEN from "../../../helpers/EN/dogsDryFoodEN.js";
+import dogsCannedFoodArrEN from "../../../helpers/EN/dogsCannedFoodEN.js";
+import catsDryFoodArrEN from "../../../helpers/EN/catsDryFoodEN.js";
+import catsCannedFoodArrEN from "../../../helpers/EN/catsCannedFoodEN.js";
 import ProdsPagination from "./ProdsPagination.js";
 import dogIcon from "../../../assets/icons/dog 2.svg";
 import catIcon from "../../../assets/icons/cat 2.svg";
@@ -14,21 +18,21 @@ function MobileProducts() {
 	const dogsCategoryTrees = [
 		{
 			title: pageLanguage === "LT" ? "Šunims > Sausas ėdalas" : "Dogs > Dry food",
-			products: dogsDryFoodArr,
+			products: pageLanguage === "LT" ? dogsDryFoodArrLT : dogsDryFoodArrEN,
 		},
 		{
 			title: pageLanguage === "LT" ? "Šunims > Konservai" : "Dogs > Canned food",
-			products: dogsCannedFoodArr,
+			products: pageLanguage === "LT" ? dogsCannedFoodArrLT : dogsCannedFoodArrEN,
 		},
 	];
 	const catsCategoryTrees = [
 		{
 			title: pageLanguage === "LT" ? "Katėms > Sausas ėdalas" : "Cats > Dry food",
-			products: catsDryFoodArr,
+			products: pageLanguage === "LT" ? catsDryFoodArrLT : catsDryFoodArrEN,
 		},
 		{
 			title: pageLanguage === "LT" ? "Katėms > Konservai" : "Cats > Canned food",
-			products: catsCannedFoodArr,
+			products: pageLanguage === "LT" ? catsCannedFoodArrLT : catsCannedFoodArrEN,
 		},
 	];
 
@@ -46,7 +50,7 @@ function MobileProducts() {
 			</div>
 			{dogsCategoryTrees.map((cat, i) => (
 				<div
-					id={`${cat.products === dogsDryFoodArr ? "dogsDryFood" : "dogsCannedFood"}`}
+					id={`${cat.products === dogsDryFoodArrLT ? "dogsDryFood" : "dogsCannedFood"}`}
 					key={i}
 					className='tree-products'
 				>
@@ -66,7 +70,7 @@ function MobileProducts() {
 			</div>
 			{catsCategoryTrees.map((cat, i) => (
 				<div
-					id={`${cat.products === catsDryFoodArr ? "catsDryFood" : "catsCannedFood"}`}
+					id={`${cat.products === catsDryFoodArrLT ? "catsDryFood" : "catsCannedFood"}`}
 					key={i}
 					className='tree-products'
 				>
