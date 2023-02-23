@@ -49,9 +49,9 @@ const dogsCannedFoodArr = [
 		desc: "Nature's Variety Adult Madium/Maxi Beef Original Paté 300 g",
 		price: "€3.70",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
-			vitPerKg: [""],
-			feedingGuide: [""],
+			analysis: ["Crude protein 10.8%", "Crude fat 8.5%", "Crude fiber 0.5%", "Crude ash 2.3%", "Moisture 75%"],
+			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 30 mg", "Calcium iodate anhydrous 2.3 mg (I: 0.75 mg)", "Manganous sulphate monohydrate 4.31 mg (Mn: 1.4 mg)", "Zinc sulphate monohydrate 68.6 mg (Zn: 25 mg)"],
+			feedingGuide: ["Body Weight (kg) - Pouches (per day)", "10 - 1.5", "20 - 2.5", "30 - 3.5", "40 - 4", "55 - 5.5"],
 			desc: {
 				firstPart: "Complete and balanced pet food for adult dogs, no grain. With high-quality beef as the main ingredient, paired with fruits and vegetables. Steam cooked in its own juices and at optimal temperature for better nutrient conservation.",
 				secondPart: "",
@@ -63,10 +63,10 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "$14.99",
+		desc: "Healthy Meat",
+		price: "€2.80",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
+			analysis: [""],
 			vitPerKg: [""],
 			feedingGuide: [""],
 			desc: {
