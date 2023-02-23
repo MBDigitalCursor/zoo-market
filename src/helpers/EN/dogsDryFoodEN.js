@@ -13,7 +13,7 @@ const dogsDryFoodArr = [
 	{
 		img: img1,
 		desc: "Hill's Science Plan Adult Medium Lamb & Rice Dog Food",
-		price: "$TBA",
+		price: "$5.20/kg",
 		fullDesc: {
 			analysis: ["Crude protein 21.2%", "Crude fat 14.2%", "Crude fiber 1.7%", "Crude ash 4.7% ", "Omega-6 3.2%", "Calcium 0.76%", "Phosphorus 0.64%", "Sodium 0.24%", "Potassium 0.65%", "Magnesium 0.11%"],
 			vitPerKg: ["Vitamin A 5817 IU", "Vitamin C 70 mg", "Vitamin D 3438 IU", "Vitamin E 650 mg", "Beta-carotene 1.5 mg"],
@@ -30,7 +30,7 @@ const dogsDryFoodArr = [
 	{
 		img: img2,
 		desc: "Natural Trainer Sensitive Plus Medium & Maxi Adult Horse-Rice-Oil",
-		price: "$TBA",
+		price: "$5.50/kg",
 		fullDesc: {
 			analysis: ["Crude protein 23%", "Crude fat 13.5%", "Crude fiber 2.5%", "Crude ash 7%", "Omega-3 1%", "Omega-6 4.5%", "Magnesium 0.1%"],
 			vitPerKg: ["Vitamin A 26000 IU", "Vitamin D3 1350 IU", "Vitamin E 555 mg", "Biotin 0.8 mg", "Copper (II) sulphate pentahydrate 49.13 mg (copper 12.5 mg)", "Iron (II) carbonate 310.5 mg (iron 150 mg)", "Coated granulated calcium iodate anhydrous 3.85 mg (iodine 2.5 mg)", "Sodium selenite 0.44 mg (selenium 0.2 mg)", "Zinc oxide 193.4 mg (zinc 156 mg)", "Manganese (II) oxide 45.1 mg (manganese 35 mg)", "Dried Boswellia serrata extract 600 mg"],
@@ -47,7 +47,7 @@ const dogsDryFoodArr = [
 	{
 		img: img3,
 		desc: "Brit Care Dog Sustainable Adult Small Breed",
-		price: "$TBA",
+		price: "$17.10/3kg",
 		fullDesc: {
 			analysis: ["Crude protein 28.0%", "Crude fat 17.0%", "Crude fiber 3.0%", "Crude ash 6.5%", "Omega-3 0.4%", "Omega-6 2.7%", "Moisture 10.0%", "Calcium 1.4%", "Phosphorus 1.0%", "Sodium 0.3%", "EPA (20:5 n-3) 0.05%", "DHA (22:6 n-3) 0.1%"],
 			vitPerKg: ["Vitamin A (3a672a) 20000 IU", "Vitamin B1 (3a821) 2.5 mg", " Vitamin B2 (3a825i) 9.6 mg", "Vitamin B6 (3a831) 2.5 mg", "Vitamin C (3a312) 300 mg", "Vitamin D3 (3a671) 1500 IU", "Vitamin E (3a700) 500 mg", "Biotin (3a880) 3.5 mg", "Folic acid (3a316) 1.2 mg", ""],
@@ -64,7 +64,7 @@ const dogsDryFoodArr = [
 	{
 		img: img4,
 		desc: "Affinity Advance Veterinary Diets Hypoallergenic",
-		price: "$TBA",
+		price: "$33.40/2.5 kg",
 		fullDesc: {
 			analysis: ["Crude protein 22%", "Crude fat 11%", "Crude fiber 2%", "Inorganic matter 6.5%", "Essential fatty 1.6%"],
 			vitPerKg: ["Vitamin A 27000 IU", "Vitamin D3 1800 IU", "Vitamin E 315 mg", "Ferrous sulphate monohydrate 260 mg (Fe: 86 mg", "Potassium iodide 1.9 mg (I: 1.4 mg)", "Copper sulphate pentahydrate 33 mg (Cu: 8.8 mg)", "Manganous sulphate monohydrate 123 mg (Mn: 40 mg)", "Zinc sulphate monohydrate 407 mg (Zn: 148 mg)", "Sodium Selenite 0.2 mg (Se: 0.1 mg)"],
@@ -80,8 +80,8 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Natural Trainer Sensitive No Gluten Mini Adult with Lamb",
-		price: "$TBA",
+		desc: "Natural Trainer Sensitive No Gluten Mini Adult With Lamb",
+		price: "$6.50/kg",
 		fullDesc: {
 			analysis: ["Crude protein 25%", "Crude fat 15%", "Crude fiber 2.5%", "Crude ash 7%"],
 			vitPerKg: ["Vitamin A 26000 IU", "Vitamin D3 1350 IU", "Vitamin E 555 mg", "Copper (II) sulphate pentahydrate 49.13 mg (copper 12.5 mg)", "Iron (II) carbonate 310.5 mg (iron 150 mg)", "Coated granulated calcium iodate anhydrous 3.85 mg (iodine 2.5 mg)", "Sodium selenite 0.44 mg (selenium 0.2 mg)", "Zinc oxide 193.4 mg (zinc 156 mg)", "Manganese (II) oxide 45.1 mg (manganese 35 mg)"],
@@ -98,12 +98,11 @@ const dogsDryFoodArr = [
 	{
 		img: img6,
 		desc: "Appalachian Valley Small Breed Canine Recipe",
-		price: "$TBA",
+		price: "$17.30/2 kg",
 		fullDesc: {
 			analysis: ["Crude protein 32%", "Crude fat 18%", "Crude fiber 4%", "Moisture 10%", "Omega-3 0.3%", "Omega-6 2.8%", "Taurine 0.12%"],
 			vitPerKg: ["Vitamin E 150 IU", "Zinc 150 mg", "Selenium 0.35 mg"],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 30", "2.25 - 55", "4.5 - 91", "9 - 154", "13.5 - 209", "18 - 259"],
-
 			desc: {
 				firstPart: "Venison, the number one ingredient in this formula, is rich in nutrients and energy, and a highly digestible source of protein.",
 				secondPart: "Rich in proteins and fat, this formula provides the energy that active small breed adult dogs need in a small kibble size that is easy for small mouths to chew.",
@@ -116,7 +115,7 @@ const dogsDryFoodArr = [
 	{
 		img: img7,
 		desc: "Hill's Science Plan Adult Small & Mini Dry Dog Food Lamb & Rice Flavour",
-		price: "$TBA",
+		price: "$8.80/kg",
 		fullDesc: {
 			analysis: ["Protein 24.3%", "Fat 15.5%", "Crude fiber 1.8%", "Crude ash 5.8%", "Omega-6 3.72%", "Calcium 0.85%", "Phosphorus 0.75%", "Potassium 0.81%", "Sodium 0.32%", "Magnesium 0.108%"],
 			vitPerKg: ["Vitamin A 12285 IU", "Vitamin C 125 ppm", "Vitamin D 841 IU", "Vitamin E 613 IU", "Beta-carotene 3.49 ppm"],
@@ -133,7 +132,7 @@ const dogsDryFoodArr = [
 	{
 		img: img8,
 		desc: "Platinum Adult Iberico + Greens",
-		price: "TBA",
+		price: "$7.20/kg",
 		fullDesc: {
 			analysis: ["Crude protein 23%", "Crude fat 14%%", "Crude fiber 2%", "Crude ash 7.8%", "Moisture 19%", "Calcium 1.6%", "Phosphorus 1%"],
 			vitPerKg: ["Vitamin A (3a672a) 10000 IU", "Vitamin D3 (3a671) 1600 IU", "Vitamin E (3a700) 150 mg", "Iron (3b104) 75 mg", "Iodine (3b201) 3 mg", "Copper (3b405) 19 mg", "Manganese (3b503) 40 mg", "Zinc (3b603) 50 mg", "Zinc (3b607) 100 mg", "Selenium (3b801) 0.4 mg"],
@@ -150,7 +149,7 @@ const dogsDryFoodArr = [
 	{
 		img: img9,
 		desc: "Royal Canin Exigent Mini",
-		price: "$TBA",
+		price: "$25.80/3 kg",
 		fullDesc: {
 			analysis: ["Protein 30.0%", "Fat 22.0%", "Crude fiber 2.6%", "Crude ash 4.8%"],
 			vitPerKg: ["Vitamin A 29500 IU", "Vitamin D3 800 IU", "Vitamin E1 (Iron) 38 mg", "Vitamin E2 (Iodine) 3.9 mg", "Vitamin E4 (Copper) 12 mg", "Vitamin E5 (Manganese) 50 mg", "Vitamin E6 (Zinc) 133 mg", "Vitamin E8 (Selenium) 0.08 mg"],
@@ -166,8 +165,9 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "Calibra Veterinary Diet Renal & Cardiac Dry Dog Food",
-		price: "$TBA",
+
+		desc: "Calibra Veterinary Diet Renal & Cardiac Dry Dog Food 2 kg",
+		price: "$16.65",
 		fullDesc: {
 			analysis: ["Crude protein 16%", "Crude fat 18%", "Crude fiber 2.5%", "Crude ash 4.5%", "Moisture 10%", "Omega-3 0.8%", "Omega-6 2.8%", "Calcium 0.65%", "Phosphorus 0.25%", "Sodium 0.2%", "Magnesium 0.08%", "Potassium 0.7%", "Arginine 1.1%", "Taurine 0.2%"],
 			vitPerKg: ["Vitamin A 20000 IU", "Vitamin D3 1000 IU", "Vitamin E 600 mg", "Choline Chloride 2000 mg", "Biotin 2 mg", "Calcium-D-Panthothenate 30 mg", "Niacinamide 80 mg", "Organic Zinc 132 mg", "Organic Iron 55 mg", "Organic Manganese 66 mg", "Organic Copper 4 mg", "Potassium Iodide 3.5 mg", "Organic Selenium 0.2 mg", "Taurine 2000 mg", "L-Carnitine 300 mg", "L-Arginine 2800 mg"],

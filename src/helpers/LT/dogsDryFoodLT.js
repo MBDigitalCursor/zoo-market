@@ -10,10 +10,11 @@ import img9 from "../../assets/img/dogsDryFood/dog sausas 9.jpeg";
 import img10 from "../../assets/img/dogsDryFood/dog sausas 10.png";
 
 const dogsDryFoodArr = [
+	
 	{
 		img: img1,
-		desc: "HILL'S SCIENCE PLAN suaugusių šunų ėdalas su ėriena ir ryžiais",
-		price: "$TBA",
+    desc: "HILL'S SCIENCE PLAN suaugusių šunų ėdalas su ėriena ir ryžiais",
+		price: "$19.99",
 		fullDesc: {
 			analysis: ["Žali baltymai 21.2%", "Žali riebalai 14.2%", "Žalia ląsteliena 1.7%", "Žali pelenai 4.7% ", "Omega-6 3.2%", "Kalcis 0.76%", "Fosforas 0.64%", "Natris 0.24%", "Kalis 0.65%", "Magnis 0.11%"],
 			vitPerKg: ["Vitaminas A 5817 IU", "Vitaminas C 70 mg", "Vitaminas D 3438 IU", "Vitaminas E 650 mg", "Beta-karotinas 1.5 mg"],
