@@ -22,9 +22,9 @@ const dogsDryFoodArr = [
 			desc: {
 				firstPart: "Hill's Science Plan suaugusių šunų ėdalas su ėriena ir ryžiais yra specialiai sukurtas taip, kad patenkintų energinius šunų poreikius pačiame jėgų žydėjime.",
 				secondPart: "Pagaminta iš aukštos kokybės lengvai virškinamų ingredientų.",
-				thirdPart: "Suaugusių šunų (nuo 1 iki 6 metų) kasdienis sausas maistas",
+				thirdPart: "Suaugusių šunų (nuo 1 iki 6 metų) kasdienis sausas maistas.",
 				keyBenefits: "Sukurtas palaikyti liesą raumenų masę ir sveikus organus, skirtas šunims, kurie teikia pirmenybę mažesnėms granulėms. Lengvai virškinamos pašarinės žaliavos optimaliai maistinių medžiagų absorbcijai, subalansuotas natrio ir fosforo kiekis.",
-				ingredients: "Kukurūzai, kviečiai, ėriena, sojos miltai, gyvuliniai riebalai, kukurūzų glitimo miltai, ryžių košė, virškinimo fermentas, augalinis aliejus, sėmenys, mineralai",
+				ingredients: "Kukurūzai, kviečiai, ėriena, sojos miltai, gyvuliniai riebalai, kukurūzų glitimo miltai, ryžių košė, virškinimo fermentas, augalinis aliejus, sėmenys, mineralai.",
 			},
 		},
 	},

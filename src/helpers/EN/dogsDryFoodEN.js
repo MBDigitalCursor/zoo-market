@@ -36,7 +36,7 @@ const dogsDryFoodArr = [
 			vitPerKg: ["Vitamin A 26000 IU", "Vitamin D3 1350 IU", "Vitamin E 555 mg", "Biotin 0.8 mg", "Copper (II) sulphate pentahydrate 49.13 mg (copper 12.5 mg)", "Iron (II) carbonate 310.5 mg (iron 150 mg)", "Coated granulated calcium iodate anhydrous 3.85 mg (iodine 2.5 mg)", "Sodium selenite 0.44 mg (selenium 0.2 mg)", "Zinc oxide 193.4 mg (zinc 156 mg)", "Manganese (II) oxide 45.1 mg (manganese 35 mg)", "Dried Boswellia serrata extract 600 mg"],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "11 - 155-185", "15 - 195-235", "20 - 240-290", "25 - 285-345", "30 - 325-395", "40 - 405-490", "50 - 475-575", "60 - 545-660", "70 - 615-745", "80 - 680-820"],
 			desc: {
-				firstPart: "Sensitive Plus Medium & Maxi Adult with horse-rice-oil, pineapple and olive leaf concentrates",
+				firstPart: "Sensitive Plus Medium & Maxi Adult with horse-rice-oil, pineapple and olive leaf concentrates.",
 				secondPart: "Helps to maintain skin barrier thanks to olive leaf concentrate rich in antioxidants, Omega-6 and zinc.",
 				thirdPart: "Omega-3 from linseed and algae, Boswellia serrata and magnensium help to take care of joints.",
 				keyBenefits: "Nutritionally complete pet food formulated with a single source of animal protein (horse meal), a single source of carbohydrate (rice) and a single source of vegetal fat (maize oil). Helps digestion thanks to 100% natural pineapple concentrate, rice and prebiotics from natural origin, coming from chicory root concentrate.",
