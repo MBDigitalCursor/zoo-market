@@ -86,6 +86,10 @@
   font-weight: 700;
 }
 
+.close-icon {
+  font-size: 45px;
+}
+
 .close-icon:hover {
   transition: 0.5s ease-in-out;
   transform: rotate(180deg);

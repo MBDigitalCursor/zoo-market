@@ -38,7 +38,7 @@ export default function DrawerComp() {
 					sx={{
 						display: "flex",
 						flexDirection: "column",
-						gap: "35px",
+						gap: "30px",
 					}}
 				>
 					<div className="mobile-lang">
@@ -62,9 +62,6 @@ export default function DrawerComp() {
 						</div>
 						<VscChromeClose
 							className="close-icon"
-							style={{
-								fontSize: "30px",
-							}}
 							onClick={() => dispatch(setBurgerMenu(false))}
 						/>
 					</div>

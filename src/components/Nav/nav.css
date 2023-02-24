@@ -75,6 +75,7 @@ nav img {
   .mobile-lang {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .mobile-lang div:first-of-type {
