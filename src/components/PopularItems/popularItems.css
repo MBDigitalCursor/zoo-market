@@ -16,6 +16,10 @@
   max-width: 37%;
 }
 
+.pop-items-right-side h3 {
+  margin-left: 20px;
+}
+
 .pop-items-left-side {
   width: 60%;
 }
