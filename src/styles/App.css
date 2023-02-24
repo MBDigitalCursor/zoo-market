@@ -36,6 +36,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 /* neleidzia kopijuoti teksto */
