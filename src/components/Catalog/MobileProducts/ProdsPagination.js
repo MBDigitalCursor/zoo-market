@@ -119,10 +119,10 @@ function ProdsPagination({ products }) {
 				<Box sx={style}>
 					<AiOutlineClose
 						onClick={handleClose}
-						className="product-modal-icon"
+						className='product-modal-icon'
 					/>
 					{selectedProduct && (
-						<div className="modal-mobile-container">
+						<div className='modal-mobile-container'>
 							<div
 								style={{
 									gridArea: "img",
@@ -133,7 +133,7 @@ function ProdsPagination({ products }) {
 							>
 								<img
 									src={selectedProduct.img}
-									alt="product"
+									alt='product'
 									style={{
 										width: "170px",
 										maxHeight: "240px",
