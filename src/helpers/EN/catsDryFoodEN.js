@@ -97,7 +97,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Royal Canin Regular Fit 32",
+		desc: "Royal Canin Fit 32 Regular",
 		price: "€",
 		fullDesc: {
 			analysis: ["Protein 32%", "Fat 15%", "Crude fiber 4.6%", "Crude ash 7.2%"],
@@ -114,18 +114,18 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "",
+		desc: "Josera SensiCat Adult",
 		price: "€",
 		fullDesc: {
-			analysis: [""],
+			analysis: ["Protein 33%", "Fat 18%", "Crude fiber 2%", "Crude ash 6.7%", "Calcium 1.3%", "Phosphorus 1%", "Magnesium 0.6%"],
 			vitPerKg: [""],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 30", "4 - 45", "6 - 60", "8 - 75"],
+			feedingGuide: ["Body Weight (kg) - Dry (g)", "2-3 - 25-40", "3-4 - 40-55", "4-5 - 55-70", "5-7 - 70-95", "7-10 - 95-120"],
 			desc: {
-				firstPart: "",
+				firstPart: "The selected, easily digestible raw materials in Josera SensiCat guarantee the best possible tolerability and are therefore especially suitable for nutritionally sensitive cats.",
 				secondPart: "",
 				thirdPart: "",
-				keyBenefits: "",
-				ingredients: "",
+				keyBenefits: "Ideal for adult cats and cats with a sensitive digestive system. Formula with high acceptance and easy digestible ingredients. Dietary fibre reduces hairball formation. Encourages a pH value of 6.0-6.5 to reduce the risk of urinary stone formation.",
+				ingredients: "Dried poultry protein, whole grain corn, rice, greaves, poultry fat, beet fibre, hydrolysed animal protein; minerals, hydrolysed poultry liver, herbs, fruits.",
 			},
 		},
 	},
