@@ -90,11 +90,11 @@ function Catalog() {
 
 						{pageLanguage === "LT" ? (
 							<h4 className='photo-header'>
-								PREKIAUJAME <span>SVERIAMU</span> POPULIARIŲ <br /> GAMINTOJŲ SAUSU ĖDALU
+								PREKIAUJAME VISŲ GAMINTOJŲ <span>SVERIAMU</span> <br /> SAUSU ĖDALU BE IŠIMČIŲ
 							</h4>
 						) : (
 							<h4 className='photo-header'>
-								WE SELL DRY FOOD <span>BY THE KILO</span> FROM <br /> POPULAR MANUFACTURERS
+								WE TRADE <span>WEIGHED</span> DRY FOOD FROM ALL <br /> MANUFACTURERS WITHOUT EXCEPTIONS
 							</h4>
 						)}
 					</div>

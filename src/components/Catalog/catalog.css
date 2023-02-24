@@ -169,6 +169,7 @@
 
 .single-product {
   max-width: 210px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
