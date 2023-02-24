@@ -1,6 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function About() {
+	const { pageLanguage } = useSelector((state) => state.generalSlice);
+
 	return (
 		<div className='linear-radient-bgc'>
 			<div
@@ -15,16 +18,16 @@ function About() {
 						marginBottom: "20px",
 					}}
 				>
-					Apie mus
+					{pageLanguage === "LT" ? "Apie mus" : "About us"}
 				</h5>
 				<p
 					style={{
 						lineHeight: "1.6",
 						fontSize: "16px",
-						maxWidth: "411px",
+						maxWidth: pageLanguage === "LT" ? "412px" : "440px",
 					}}
 				>
-					Esame smulkus šeimos verslas įsikūrę Lazdynuose, Vilniuje. Dirbame augintinių bendruomenės gyvenime nuo 2018
+					{pageLanguage === "LT" ? "Esame smulkus šeimos verslas įsikūrę Lazdynuose, Vilniuje. Dirbame augintinių bendruomenės gyvenime nuo 2018" : "We are a small family business located in Lazdynai, Vilnius. We have been working in the life of the pet community since 2018"}
 				</p>
 			</div>
 		</div>
