@@ -116,14 +116,13 @@ function ProdsPagination({ products }) {
 				aria-labelledby='modal-modal-title'
 				aria-describedby='modal-modal-description'
 			>
-<<<<<<< HEAD
 				<Box sx={style}>
 					<AiOutlineClose
 						onClick={handleClose}
-						className="product-modal-icon"
+						className='product-modal-icon'
 					/>
 					{selectedProduct && (
-						<div className="modal-mobile-container">
+						<div className='modal-mobile-container'>
 							<div
 								style={{
 									gridArea: "img",
@@ -134,7 +133,7 @@ function ProdsPagination({ products }) {
 							>
 								<img
 									src={selectedProduct.img}
-									alt="product"
+									alt='product'
 									style={{
 										width: "170px",
 										maxHeight: "240px",
@@ -239,32 +238,6 @@ function ProdsPagination({ products }) {
 							</div>
 						</div>
 					)}
-=======
-				<Box
-					className='modal-container'
-					sx={style}
-				>
-					<AiOutlineClose onClick={handleClose} />
-					<img
-						src='https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
-						alt=''
-					/>
-					<div className='modal-container-desc'>
-						<Typography
-							id='modal-modal-title'
-							variant='h6'
-							component='h2'
-						>
-							Produkto pav.
-						</Typography>
-						<Typography
-							id='modal-modal-description'
-							sx={{ mt: 2 }}
-						>
-							produkto aprasymas
-						</Typography>
-					</div>
->>>>>>> 933fb9e3c8db9db7d37ac8448b970cf149248005
 				</Box>
 			</Modal>
 		</Box>
