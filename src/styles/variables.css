@@ -26,11 +26,11 @@
   --pop-pb: 94px;
 
   /* catalog paddings */
-  --catalog-pt: 90px;
+  --catalog-pt: 100px;
   --catalog-pb: 132px;
 
   /* contact paddings */
-  --contact-pt: 130px;
+  --contact-pt: 90px;
   --contact-pb: 60px;
 
   --semi-bold: 500;

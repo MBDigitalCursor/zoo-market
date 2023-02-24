@@ -28,5 +28,31 @@ input {
   font-family: 'Red Hat Display', sans-serif;
 }
 
+.linear-radient-bgc {
+  background: var(--yellow);
+  height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* neleidzia kopijuoti teksto */
 /* user-select: none; */
+
+@media(max-width: 480px) {
+  .linear-radient-bgc {
+    margin-bottom: 70px;
+  }
+
+  .linear-radient-bgc p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .linear-radient-bgc {
+    margin-bottom: 70px;
+  }
+}
