@@ -9,6 +9,7 @@ import Contacts from "./components/Contacts/Contacts";
 import MobileProducts from "./components/Catalog/MobileProducts/MobileProducts";
 import HeroPaws from "./components/Hero/HeroPaws/HeroPaws";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import About from "./components/About/About";
 
 const theme = createTheme({
 	palette: {
@@ -26,12 +27,13 @@ function App() {
 		<>
 			<ThemeProvider theme={theme}>
 				<Nav />
-				<div className="App">
+				<div className='App'>
 					<Hero />
 					<HeroPaws />
 					<PopularItems />
 					<MobileProducts />
 					<Catalog />
+					<About />
 					<Contacts />
 				</div>
 			</ThemeProvider>
