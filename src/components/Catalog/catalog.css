@@ -9,7 +9,7 @@
   padding-top: var(--catalog-pt);
   font-size: var(--28px);
   font-weight: var(--regular);
-  padding-bottom: 25px;
+  padding-bottom: 8px;
 }
 
 .single-category-item {
@@ -120,7 +120,7 @@
 
 .catalog-slide {
   position: absolute;
-  top: -75px;
+  top: -50px;
   right: 0;
   height: 765px;
   width: 1000px;

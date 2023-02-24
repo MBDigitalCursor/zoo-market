@@ -44,6 +44,7 @@ function ProductsSlide() {
 		p: 4,
 		paddingTop: "25px",
 		overflowY: "scroll",
+		lineHeight: "1.5"
 	};
 
 	return (
@@ -287,8 +288,8 @@ function ProductsSlide() {
 													fontSize: "15px",
 												}}
 											>
-												<p>
-													<b>{pageLanguage === "LT" ? "Sudėtis" : "Analysis"}</b>
+												<p style={{fontWeight: "600"}}>
+													{pageLanguage === "LT" ? "Sudėtis" : "Analysis"}
 												</p>
 												{selectedProduct.fullDesc.analysis.length !== 0 ? selectedProduct.fullDesc.analysis.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
@@ -302,8 +303,8 @@ function ProductsSlide() {
 													fontSize: "15px",
 												}}
 											>
-												<p>
-													<b>{pageLanguage === "LT" ? "Maistiniai priedai" : "Nutritional additives"}</b>
+												<p style={{fontWeight: "600"}}>
+													{pageLanguage === "LT" ? "Maistiniai Priedai" : "Nutritional Additives"}
 												</p>
 												{selectedProduct.fullDesc.vitPerKg.length !== 0 ? selectedProduct.fullDesc.vitPerKg.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
@@ -317,8 +318,8 @@ function ProductsSlide() {
 													fontSize: "15px",
 												}}
 											>
-												<p>
-													<b>{pageLanguage === "LT" ? "Šėrimo instrukcija" : "Feeding Guide"}</b>
+												<p style={{fontWeight: "600"}}>
+													{pageLanguage === "LT" ? "Šėrimo Instrukcija" : "Feeding Guide"}
 												</p>
 												{selectedProduct.fullDesc.feedingGuide.length !== 0 ? selectedProduct.fullDesc.feedingGuide.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
@@ -358,8 +359,8 @@ function ProductsSlide() {
 													marginTop: "20px",
 												}}
 											>
-												<p>
-													<b>{pageLanguage === "LT" ? "Pagrindinės naudos" : "Key benefits"}</b>
+												<p style={{fontWeight: "600"}}>
+													{pageLanguage === "LT" ? "Pagrindinės Naudos" : "Key Benefits"}
 												</p>
 												{selectedProduct.fullDesc.desc.keyBenefits && <p>{selectedProduct.fullDesc.desc.keyBenefits}</p>}
 											</div>
@@ -369,8 +370,8 @@ function ProductsSlide() {
 													marginTop: "20px",
 												}}
 											>
-												<p>
-													<b>{pageLanguage === "LT" ? "Ingredientai" : "Ingredients"}</b>
+												<p style={{fontWeight: "600"}}>
+													{pageLanguage === "LT" ? "Ingredientai" : "Ingredients"}
 												</p>
 												{selectedProduct.fullDesc.desc.ingredients && <p>{selectedProduct.fullDesc.desc.ingredients}</p>}
 											</div>

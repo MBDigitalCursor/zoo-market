@@ -72,7 +72,7 @@ function Contacts() {
 						)}
 
 						<p>Vilnius</p>
-						{pageLanguage === "LT" ? <p>Architektų g. 43</p> : <p>Architektų Str. 43</p>}
+						{pageLanguage === "LT" ? <p>Architektų g. 43</p> : <p>Architektų st. 43</p>}
 						{pageLanguage === "LT" ? <p>(Lazdynai, šalia IKI-Papartis)</p> : <p>(Lazdynai, near IKI-Papartis)</p>}
 					</div>
 				</div>
