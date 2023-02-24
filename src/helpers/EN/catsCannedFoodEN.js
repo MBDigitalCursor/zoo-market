@@ -13,7 +13,7 @@ const catsCannedFoodArr = [
 	{
 		img: img1,
 		desc: "Calibra Premium Line Adult Chicken & Beef in Gravy 100 g",
-		price: "€",
+		price: "€0.80",
 		fullDesc: {
 			analysis: ["Crude protein 9%", "Fat 4.5%", "Crude fiber 1%", "Crude ash 3%", "Moisture 82%"],
 			vitPerKg: ["Vitamin D3 250 IU", "Vitamin E 25 mg", "Zinc (as zinc sulphate, monohydrate) 10 mg", "Manganese (as manganous oxide) 2.5 mg", "Taurine 450 mg", "Biotin 50 µg"],
@@ -30,7 +30,7 @@ const catsCannedFoodArr = [
 	{
 		img: img2,
 		desc: "Royal Canin Sterilised Feline Gravy 85 g",
-		price: "€",
+		price: "€1.60",
 		fullDesc: {
 			analysis: ["Crude protein 9%", "Fat 2.6%", "Crude fiber 1.8%", "Crude ash 1.3%", "Moisture 81%"],
 			vitPerKg: ["Vitamin D3 90 IU", "Iron 3 mg", "Iodine 0.21 mg", "Copper 1.6 mg", "Manganese 0.9 mg", "Zinc 9 mg"],
@@ -47,7 +47,7 @@ const catsCannedFoodArr = [
 	{
 		img: img3,
 		desc: "Monge Kitten Tuna Flakes with Aloe 80 g",
-		price: "€",
+		price: "€1.90",
 		fullDesc: {
 			analysis: ["Crude protein 13%", "Crude fat 0.5%", "Crude fiber 1%", "Crude ash 2%", "Moisture 82%"],
 			vitPerKg: ["Vitamin E (DL-alpha-tocopheryl acetate) 50 mg"],
@@ -64,7 +64,7 @@ const catsCannedFoodArr = [
 	{
 		img: img4,
 		desc: "Aatas Cat Tantalizing Tuna & Shrimp in Aspic 80 g",
-		price: "€",
+		price: "€1.20",
 		fullDesc: {
 			analysis: ["Crude protein 10%", "Crude fat 0.4%", "Crude fiber 1%", "Crude ash 2%", "Moisture 89%"],
 			vitPerKg: [""],
@@ -81,7 +81,7 @@ const catsCannedFoodArr = [
 	{
 		img: img5,
 		desc: "Kippy Pate Sterilised Turkey 90 g",
-		price: "€",
+		price: "€1.00",
 		fullDesc: {
 			analysis: ["Crude protein 11%", "Crude fat 6%", "Crude fiber 1%", "Crude ash 3%", "Moisture 78%"],
 			vitPerKg: ["Vitamin D3 135 IU", "Zinc 3.3 mg", "Iodine 0.45 mg", "Manganese 1.35 mg", "Taurine 139.5 mg"],
@@ -98,7 +98,7 @@ const catsCannedFoodArr = [
 	{
 		img: img6,
 		desc: "Monge Sterilised Cat Oven Cooked Chunkies in Jelly Rich in Cockerel 85 g",
-		price: "€",
+		price: "€0.80",
 		fullDesc: {
 			analysis: ["Crude protein 11.5%", "Crude fat 2.4%", "Crude fiber 0.5%", "Crude ash 2.4%", "Moisture 80%"],
 			vitPerKg: ["Vitamin D3: 180 IU", "Vitamin E 40 mg", "Iron 13 mg", "Iodine 1.6 mg", "Copper 3.4 mg", "Manganese 8.5 mg", "Zinc 42 mg", "Selenium 0.04 mg", "Taurine 500 mg"],
@@ -115,7 +115,7 @@ const catsCannedFoodArr = [
 	{
 		img: img7,
 		desc: "Brit Care Sterilized Adult Healthy Rabbit Fillets in Gravy 85 g",
-		price: "€",
+		price: "€1.30",
 		fullDesc: {
 			analysis: ["Crude protein 9%", "Crude fat 3%", "Crude fiber 0.5%", "Crude ash 2%", "Moisture 82%", "Calcium 0.25%", "Phosphorus 0.2%", "Sodium 0.3%"],
 			vitPerKg: ["Vitamin D3 (E671) 250 IU", "Vitamin E (3a700) 150 mg", "Biotin (3a880) 0.5 mg", "Zinc (3b606) 12 mg", "Manganese (3b502) 3 mg", "Iron (3b103) 10 mg", "Copper (3b405) 0.4 mg", "Iodine (3b201) 0.7 mg", "Taurine (3a370) 500 mg", "L-Methionine (3c305) 2 000 mg"],
@@ -132,7 +132,7 @@ const catsCannedFoodArr = [
 	{
 		img: img8,
 		desc: "Natural Trainer Kitten & Young with Turkey Chunks in Gravy 85 g",
-		price: "€",
+		price: "€1.40",
 		fullDesc: {
 			analysis: ["Crude protein 10%", "Crude fat 5%", "Crude fiber 0.8%", "Crude ash 2%", "Moisture 80%"],
 			vitPerKg: ["Vitamin D3 161 IU", "Vitamin E 32 mg", "Taurine 234 mg", "Copper (II) sulphate pentahydrate 2.49 mg (copper 0.62 mg)", "Potassium iodide 0.24 mg (iodine 0.16 mg)", "Manganese sulphate monohydrate 5.97 mg (manganese 1.91 mg)", "Zinc sulphate monohydrate 44.07 mg (zinc 16.18 mg)"],
@@ -149,7 +149,7 @@ const catsCannedFoodArr = [
 	{
 		img: img9,
 		desc: "Croci Vibrisse Shake with Tuna 135 g",
-		price: "€",
+		price: "€1.30",
 		fullDesc: {
 			analysis: ["Crude protein 2%", "Crude fat 0.8%", "Crude fiber 0.1%", "Crude ash 1%", "Moisture 96%"],
 			vitPerKg: [""],
@@ -166,7 +166,7 @@ const catsCannedFoodArr = [
 	{
 		img: img10,
 		desc: "Affinity Advance Veterinary Diets Renal Wet Pouch 85 g",
-		price: "€",
+		price: "€1.45",
 		fullDesc: {
 			analysis: ["Crude protein 6.5%", "Crude fat 5.7%", "Crude fiber 0.5%", "Crude ash 1.3%", "Moisture 81%", "Calcium 0.18%", "Phosphorus 0.1%", "Potassium 0.2%", "Sodium 0.11%", "Omega-3 0.25%", "Omega-6 0.75%"],
 			vitPerKg: ["Vitamin D3	203 IU", "Vitamin E	181 mg", "Taurine	465 mg", "Iodine 0.51 mg", "Copper 1.34 mg", "Iron 22.3 mg", "Manganese 2.7 mg", "Zinc 22.4 mg"],

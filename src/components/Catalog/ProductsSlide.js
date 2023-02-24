@@ -2,7 +2,7 @@ import { Box, Paper, Stack, Slide, Modal } from "@mui/material";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setCategoryProducts, setSelectedProduct } from "../../store/generalStore";
-import { AiOutlineClose } from "react-icons/ai";
+import { RxCross1 } from "react-icons/rx";
 import dogsDryFoodArrLT from "../../helpers/LT/dogsDryFoodLT.js";
 import dogsCannedFoodArrLT from "../../helpers/LT/dogsCannedFoodLT.js";
 import catsDryFoodArrLT from "../../helpers/LT/catsDryFoodLT.js";
@@ -74,7 +74,7 @@ function ProductsSlide() {
 								paddingRight: "0.6rem",
 							}}
 						>
-							<AiOutlineClose
+							<RxCross1
 								className="close-icon"
 								onClick={closeProducts}
 								style={{
@@ -254,7 +254,7 @@ function ProductsSlide() {
 								aria-describedby="modal-modal-description"
 							>
 								<Box sx={style}>
-									<AiOutlineClose
+									<RxCross1
 										onClick={handleClose}
 										className="product-modal-icon"
 									/>
