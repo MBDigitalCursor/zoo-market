@@ -12,7 +12,7 @@ import img10 from "../../assets/img/dogsDryFood/dog sausas 10.png";
 const dogsDryFoodArr = [
 	{
 		img: img1,
-		desc: "Hill's Science Plan Adult Medium Lamb & Rice Dog Food",
+		desc: "Hill's Science Plan Adult Medium Lamb & Rice",
 		price: "€5.20/kg",
 		fullDesc: {
 			analysis: ["Crude protein 21.2%", "Crude fat 14.2%", "Crude fiber 1.7%", "Crude ash 4.7% ", "Omega-6 3.2%", "Calcium 0.76%", "Phosphorus 0.64%", "Sodium 0.24%", "Potassium 0.65%", "Magnesium 0.11%"],
@@ -46,25 +46,25 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Brit Care Dog Sustainable Adult Small Breed",
-		price: "€17.10/3kg",
+		desc: "Brit Care Dog Sustainable Adult Small Breed 3 kg",
+		price: "€17.10",
 		fullDesc: {
 			analysis: ["Crude protein 28.0%", "Crude fat 17.0%", "Crude fiber 3.0%", "Crude ash 6.5%", "Omega-3 0.4%", "Omega-6 2.7%", "Moisture 10.0%", "Calcium 1.4%", "Phosphorus 1.0%", "Sodium 0.3%", "EPA (20:5 n-3) 0.05%", "DHA (22:6 n-3) 0.1%"],
 			vitPerKg: ["Vitamin A (3a672a) 20000 IU", "Vitamin B1 (3a821) 2.5 mg", " Vitamin B2 (3a825i) 9.6 mg", "Vitamin B6 (3a831) 2.5 mg", "Vitamin C (3a312) 300 mg", "Vitamin D3 (3a671) 1500 IU", "Vitamin E (3a700) 500 mg", "Biotin (3a880) 3.5 mg", "Folic acid (3a316) 1.2 mg", ""],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 50", "3 - 58", "4 - 65", "5 - 75", "6 - 85", "7 - 100", "8 - 115", "9 - 125", "10 - 135"],
 			desc: {
 				firstPart: "Superpremium, sustainable and ecofriendly for healthy digestion, reduced stress, improved physical condition and immunity support. Ideal for adult dogs of small breeds. Contains easily digestible and nutritionally valuable proteins with complete amino acids for excellent muscle tone and healthy tissues. The gluten-free forumula is suitable for all dogs without the risk of weight gain. An ecofriendly food based on sustainable proteins and ingredients with 35% smaller on environment.",
-				secondPart: "Antistress - L-tryptophan provides calmingsupport in stressful situations,motherwort helps ease anxiety.",
-				thirdPart: "Immunity - Probiotics and antioxidantsboost the immune system andsupport digestive health.",
-				keyBenefits: "Low CO2 - Recipe balanced to lower CO2 footprint.",
-				ingredients: "",
+				secondPart: "",
+				thirdPart: "",
+				keyBenefits: "Antistress - L-tryptophan provides calmingsupport in stressful situations,motherwort helps ease anxiety. Immunity - probiotics and antioxidantsboost the immune system andsupport digestive health. Low CO2 - recipe balanced to lower CO2 footprint.",
+				ingredients: "Chicken (38%) (dehydrated chicken, hydrolysed chicken), oats (26%), dehydrated insect (14%), chicken fat, dried apple pulp, natural flavour, brewer's yeast, salmon oil (2%), pea flour, glucosamine (260 mg/kg), fructo-oligosaccharides (200 mg/kg), chondroitin sulphate (200 mg/kg), mannan-oligosaccharides (150 mg/kg), Mojave yucca (150 mg/kg), milk thistle seed (90 mg/kg), β-glucans (50 mg/kg), dried motherwort (50 mg/kg), dried sea buckthorn (50 mg/kg), probiotic Lactobacillus helveticus HA - 122 inactivated (15x109 cells/kg).",
 			},
 		},
 	},
 	{
 		img: img4,
-		desc: "Affinity Advance Veterinary Diets Hypoallergenic",
-		price: "€33.40/2.5 kg",
+		desc: "Affinity Advance Veterinary Diets Hypoallergenic 2.5 kg",
+		price: "€33.40",
 		fullDesc: {
 			analysis: ["Crude protein 22%", "Crude fat 11%", "Crude fiber 2%", "Inorganic matter 6.5%", "Essential fatty 1.6%"],
 			vitPerKg: ["Vitamin A 27000 IU", "Vitamin D3 1800 IU", "Vitamin E 315 mg", "Ferrous sulphate monohydrate 260 mg (Fe: 86 mg", "Potassium iodide 1.9 mg (I: 1.4 mg)", "Copper sulphate pentahydrate 33 mg (Cu: 8.8 mg)", "Manganous sulphate monohydrate 123 mg (Mn: 40 mg)", "Zinc sulphate monohydrate 407 mg (Zn: 148 mg)", "Sodium Selenite 0.2 mg (Se: 0.1 mg)"],
@@ -97,8 +97,8 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Appalachian Valley Small Breed Canine Recipe",
-		price: "€17.30/2 kg",
+		desc: "Appalachian Valley Small Breed Canine Recipe 2 kg",
+		price: "€17.30",
 		fullDesc: {
 			analysis: ["Crude protein 32%", "Crude fat 18%", "Crude fiber 4%", "Moisture 10%", "Omega-3 0.3%", "Omega-6 2.8%", "Taurine 0.12%"],
 			vitPerKg: ["Vitamin E 150 IU", "Zinc 150 mg", "Selenium 0.35 mg"],
@@ -114,7 +114,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "Hill's Science Plan Adult Small & Mini Dry Dog Food Lamb & Rice Flavour",
+		desc: "Hill's Science Plan Adult Small and Mini Lamb & Rice Flavour",
 		price: "€8.80/kg",
 		fullDesc: {
 			analysis: ["Protein 24.3%", "Fat 15.5%", "Crude fiber 1.8%", "Crude ash 5.8%", "Omega-6 3.72%", "Calcium 0.85%", "Phosphorus 0.75%", "Potassium 0.81%", "Sodium 0.32%", "Magnesium 0.108%"],
@@ -148,8 +148,8 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img9,
-		desc: "Royal Canin Exigent Mini",
-		price: "€25.80/3 kg",
+		desc: "Royal Canin Exigent Mini 3 kg",
+		price: "€25.80",
 		fullDesc: {
 			analysis: ["Protein 30.0%", "Fat 22.0%", "Crude fiber 2.6%", "Crude ash 4.8%"],
 			vitPerKg: ["Vitamin A 29500 IU", "Vitamin D3 800 IU", "Vitamin E1 (Iron) 38 mg", "Vitamin E2 (Iodine) 3.9 mg", "Vitamin E4 (Copper) 12 mg", "Vitamin E5 (Manganese) 50 mg", "Vitamin E6 (Zinc) 133 mg", "Vitamin E8 (Selenium) 0.08 mg"],
@@ -166,7 +166,7 @@ const dogsDryFoodArr = [
 	{
 		img: img10,
 
-		desc: "Calibra Veterinary Diet Renal & Cardiac Dry Dog Food 2 kg",
+		desc: "Calibra Veterinary Diet Renal & Cardiac 2 kg",
 		price: "€16.65",
 		fullDesc: {
 			analysis: ["Crude protein 16%", "Crude fat 18%", "Crude fiber 2.5%", "Crude ash 4.5%", "Moisture 10%", "Omega-3 0.8%", "Omega-6 2.8%", "Calcium 0.65%", "Phosphorus 0.25%", "Sodium 0.2%", "Magnesium 0.08%", "Potassium 0.7%", "Arginine 1.1%", "Taurine 0.2%"],
@@ -177,7 +177,7 @@ const dogsDryFoodArr = [
 				secondPart: "The Renal & Cardiac food for dogs supports the functioning of renal tissue and the cardiovascular system. It has an advanced combination of high arginine (improves blood flow), high taurine (cardiac muscle condition) and vitamins & antioxidants.",
 				thirdPart: "Slow the onset of irreversible changes to the kidneys.",
 				keyBenefits: "High-quality protein formula - eggs, low natrium & low phosphorus & optimal potassium concentration, high arginine (improves blood flow), high taurine (cardiac muscle condition), high level of Omega-3 (from salmon oil and algae), Vitamins & antioxidants (polyphenols and flavonoids from green tea and turmeric).",
-				ingredients: "Salmon oil (3 %), hydrolysed chicken liver, brewer's yeast, calcium carbonate (1.5 %), algae (1 %, Schizochytrium limacinum), potassium citrate (0.9 %, urine alkalising substance), fructo-oligosaccharides (220 mg/kg), β-glucans (200 mg/kg), mannan-oligosaccharides (180 mg/kg), Mojave yucca (150 mg/kg), curcuma & green tea decaffeinated extract (sources of flavonoids 160 mg/kg & polyphenols 80 mg/kg), Lactobacillus acidophilus HA-122 inactivated (15 x 109 cells/kg). Source of protein: dried eggs",
+				ingredients: "Salmon oil (3 %), hydrolysed chicken liver, brewer's yeast, calcium carbonate (1.5 %), algae (1 %, Schizochytrium limacinum), potassium citrate (0.9 %, urine alkalising substance), fructo-oligosaccharides (220 mg/kg), β-glucans (200 mg/kg), mannan-oligosaccharides (180 mg/kg), Mojave yucca (150 mg/kg), curcuma & green tea decaffeinated extract (sources of flavonoids 160 mg/kg & polyphenols 80 mg/kg), Lactobacillus acidophilus HA-122 inactivated (15 x 109 cells/kg). Source of protein: dried eggs.",
 			},
 		},
 	},

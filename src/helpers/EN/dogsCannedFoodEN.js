@@ -12,7 +12,7 @@ import img10 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
 const dogsCannedFoodArr = [
 	{
 		img: img1,
-		desc: "Calibra Dog Life Sensitive Rabbit 400 g",
+		desc: "Calibra Dog Life Sensitive Rabbit Wet Food 400 g",
 		price: "€3.10",
 		fullDesc: {
 			analysis: ["Crude protein 8.5%", "Crude fat 3%", "Crude fiber 1%", "Crude ash 2.5% ", "Omega-3 0.15%", "Omega-6 1%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%", "Sodium 0.3%"],
@@ -46,7 +46,7 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Nature's Variety Adult Madium/Maxi Beef Original Paté 300 g",
+		desc: "Nature's Variety Adult Madium/Maxi Beef Original Pate 300 g",
 		price: "€3.70",
 		fullDesc: {
 			analysis: ["Crude protein 10.8%", "Crude fat 8.5%", "Crude fiber 0.5%", "Crude ash 2.3%", "Moisture 75%"],
@@ -63,7 +63,7 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Healthy Meat Pate With Buffalo Meat And Potatoes 400 g",
+		desc: "Healthy Meat Pate with Buffalo Meat and Potatoes 400 g",
 		price: "€2.80",
 		fullDesc: {
 			analysis: ["Crude protein 11%", "Crude fat 3%", "Crude fiber 0.5%", "Crude ash 1.5%", "Moisture 82%"],
@@ -80,7 +80,7 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Petkult Miel Grain Free Adult Wet Dog Food With Lamb 400 g",
+		desc: "Petkult Miel Grain Free Adult Wet Dog Food with Lamb 400 g",
 		price: "€2.40",
 		fullDesc: {
 			analysis: ["Protein 10%", "Fat 8%", "Fiber 0.6%", "Ash 2.5%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%"],
@@ -114,7 +114,7 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "Carnilove Lamb & Wild Boar Pate For Adult Dogs 400 g",
+		desc: "Carnilove Lamb & Wild Boar Pate for Adult Dogs 400 g",
 		price: "€3.00",
 		fullDesc: {
 			analysis: ["Crude protein 9.5%", "Crude fat 6.5%", "Crude fiber 0.4%", "Crude ash 2.5%", "Moisture 78%", "Calcium 0.2%", "Phosphorus 0.25%", "Sodium 0.3%"],
@@ -131,14 +131,14 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img8,
-		desc: "Monge BWild Grain Free Salmon Wet Food For Adults 400 g",
+		desc: "Monge BWild Grain Free Salmon Wet Food for Adults 400 g",
 		price: "€2.10",
 		fullDesc: {
 			analysis: ["Crude protein 8.6%", "Crude fat 6.2%", "Crude fiber 0.7%", "Crude ash 2.6%", "Moisture 79%"],
-			vitPerKg: ["Vitamin D3 434 IU", "Vitamin E (all-rac-alpha-tocopheryl-acetate) 15.5 mg", "Selenium (sodium selenite 0.05 mg) 0.02 mg", "Manganese (manganous sulphate monohydrate 11 mg) 3.5 mg", "Zinc (zinc oxide 20 mg) 16 mg", "Copper (copper (II) sulphate pentahydrate 5.5 mg) 1.4 mg", "Iron  (iron (II) sulphate monohydrate 35 mg) 11.5 mg", "Iodine (calcium iodate anhydrous 0.3 mg) 0.19 mg"],
+			vitPerKg: ["Vitamin D3 434 IU", "Vitamin E 15.5 mg", "Selenium (sodium selenite 0.05 mg) 0.02 mg", "Manganese (manganese sulphate monohydrate 11 mg) 3.5 mg", "Zinc (zinc oxide 20 mg) 16 mg", "Copper (copper (II) sulphate pentahydrate 5.5 mg) 1.4 mg", "Iron  (iron (II) sulphate monohydrate 35 mg) 11.5 mg", "Iodine (calcium iodite 0.3 mg) 0.19 mg"],
 			feedingGuide: ["Body Weight (kg) - Food (g)", "12 - 160", "14 - 181", "16 - 202", "18 - 222", "20 - 241", "25 - 296", "30 - 340", "40 - 421", "50 - 498", "60 - 571", "70 - 641"],
 			desc: {
-				firstPart: "Bwild Grain Free Salmon is a grain-free formula, tasty pieces of salmon meat in a sauce for adult dogs of all breeds.",
+				firstPart: "BWild Grain Free Salmon is a grain-free formula, tasty pieces of salmon meat in a sauce for adult dogs of all breeds.",
 				secondPart: "Specially  developed  for  the  wellness  of  dogs  of  every  size,  trough a selection of alternative non-cereal derivative carbohydrate sources such as zucchini and pumpkin. ",
 				thirdPart: "",
 				keyBenefits: "The recipe is enhanced with xylo-oligosaccharides  (XOS),  next  generation  prebiotics  to  support  intestinal  wellness.  The  formulation supports articulations, due to the inclusion of glucosamine and chondroitin sulphate. It is recommended for dogs of every size.",
@@ -148,35 +148,35 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img9,
-		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "€14.99",
+		desc: "DRN Solo Quaglia (Quail) Dietary Wet Food for Dogs and Cats 300 g",
+		price: "€2.80",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
+			analysis: ["Crude protein 8.5%", "Crude oils and fats 5%", "Crude fiber 0.3%", "Crude ash 2.46%", "Moisture 82%"],
 			vitPerKg: [""],
-			feedingGuide: [""],
+			feedingGuide: ["Body Weight (kg) - Food (g)", "4 - 100-200"],
 			desc: {
-				firstPart: "",
-				secondPart: "",
-				thirdPart: "",
-				keyBenefits: "",
-				ingredients: "",
+				firstPart: "Dietary wet food for dogs and cats containing proteins from real meat of quail. Helps in case of suspected food allergy, possibly supplemented with a source of carbohydrates not present in the previous diet.",
+				secondPart: "Palatable, useful for feeding animals picky for food.",
+				thirdPart: "Facilitates resumption of nutrition in postoperative period.",
+				keyBenefits: "Easily digested, produced without the use of derivatives of meat, coloring agents, preservatives and flavorings.",
+				ingredients: "100% quail meat with no internal organs and scraps of slaughtering.",
 			},
 		},
 	},
 	{
 		img: img10,
-		desc: "Royal Canin Pussy Juice Extra Wet, 1 kg",
-		price: "€14.99",
+		desc: "Disugual Salmon with Blueberry Adult Pate 150 g",
+		price: "€1.80",
 		fullDesc: {
-			analysis: ["Protein 21.2%"],
-			vitPerKg: [""],
-			feedingGuide: [""],
+			analysis: ["Protein 8.8%", "Fat 8.1%", "Fiber 0.3%", "Ash 2.8%", "Moisture 78.8%"],
+			vitPerKg: ["Vitamin A 4000 IU", "Vitamin D3 170 IU", "Vitamin E 41 mg", "Zinc 6.42 mg (zinc oxide 8.1 mg", "Selenium 0.0054 mg (sodium selenite 0.012 mg)", "Iodine 0.09 mg (sodium iodide 0.127 mg)", "Iron 1.58 mg (iron (II) carbonate 3.29 mg)", "Copper 0.24 mg (copper (II) sulphate pentahydrate 1 mg)", "Manganese 5.25 mg (manganese (II) oxide 7 mg)"],
+			feedingGuide: ["Body Weight (kg) - Food (g)", "1 - 120", "5 - 350", "10 - 600", "15 - 850", "20 - 1100", "25 - 1200", "30 - 1400", "35 - 1600"],
 			desc: {
-				firstPart: "",
+				firstPart: "Complete food suitable for adult dogs of all sizes and breeds.",
 				secondPart: "",
 				thirdPart: "",
-				keyBenefits: "",
-				ingredients: "",
+				keyBenefits: "Composed with protein and enriched with fruit.",
+				ingredients: "Salmon and salmon by-products (92%), blueberries (4%), minerals and sugar.",
 			},
 		},
 	},
