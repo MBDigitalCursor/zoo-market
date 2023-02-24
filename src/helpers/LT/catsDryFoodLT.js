@@ -151,7 +151,7 @@ const catsDryFoodArr = [
 		desc: "Platinum MeatCrisp suaugusioms katėms su vištiena",
 		price: "€12.70/kg",
 		fullDesc: {
-			analysis: ["Crude protein 35%", "Crude fat 17%", "Crude fiber 3%", "Crude ash 6.9%", "Calcium 1.1%", "Phosphorus 1%"],
+			analysis: ["Žali baltymai 35%", "Crude fat 17%", "Crude fiber 3%", "Crude ash 6.9%", "Calcium 1.1%", "Phosphorus 1%"],
 			vitPerKg: ["Vitamin A 35000 IU", "Vitamin D3 1500 IU", "Vitamin E 200 mg", "Iron 40 mg", "Iodine 1.5 mg", "Copper 10 mg", "Manganese 3b505 10 mg", "Manganese 3b502 20 mg", "Zinc 3b603 80 mg", "Zinc 3b612 40 mg", "Selenium 3b810 0.05 mg", "Selenium 3b802 0.1 mg", "Taurine 1500 mg"],
 			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 41", "3 - 54", "4 - 65", "5 - 76", "6 - 86", "7 - 95", "8 - 104"],
 			desc: {
