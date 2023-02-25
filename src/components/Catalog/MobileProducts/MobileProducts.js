@@ -21,7 +21,7 @@ function MobileProducts() {
 			products: pageLanguage === "LT" ? dogsDryFoodArrLT : dogsDryFoodArrEN,
 		},
 		{
-			title: pageLanguage === "LT" ? "Šunims > Konservai" : "Dogs > Canned food",
+			title: pageLanguage === "LT" ? "Šunims > Konservai" : "Dogs > Wet food",
 			products: pageLanguage === "LT" ? dogsCannedFoodArrLT : dogsCannedFoodArrEN,
 		},
 	];
@@ -31,7 +31,7 @@ function MobileProducts() {
 			products: pageLanguage === "LT" ? catsDryFoodArrLT : catsDryFoodArrEN,
 		},
 		{
-			title: pageLanguage === "LT" ? "Katėms > Konservai" : "Cats > Canned food",
+			title: pageLanguage === "LT" ? "Katėms > Konservai" : "Cats > Wet food",
 			products: pageLanguage === "LT" ? catsCannedFoodArrLT : catsCannedFoodArrEN,
 		},
 	];

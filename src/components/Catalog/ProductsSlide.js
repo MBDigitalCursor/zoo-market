@@ -44,14 +44,14 @@ function ProductsSlide() {
 		p: 4,
 		paddingTop: "25px",
 		overflowY: "scroll",
-		lineHeight: "1.5"
+		lineHeight: "1.5",
 	};
 
 	return (
-		<Box className="catalog-slide">
+		<Box className='catalog-slide'>
 			<Box sx={{ width: "100%" }}>
 				<Slide
-					direction="left"
+					direction='left'
 					in={categoryProducts.active}
 				>
 					<Paper
@@ -75,7 +75,7 @@ function ProductsSlide() {
 							}}
 						>
 							<RxCross1
-								className="close-icon"
+								className='close-icon'
 								onClick={closeProducts}
 								style={{
 									fontSize: "1.7rem",
@@ -91,11 +91,11 @@ function ProductsSlide() {
 							}}
 						>
 							<Stack
-								direction="row"
-								justifyContent="space-between"
-								alignItems="flex-start"
+								direction='row'
+								justifyContent='space-between'
+								alignItems='flex-start'
 								gap={1}
-								flexWrap="wrap"
+								flexWrap='wrap'
 								sx={{
 									padding: "0 0.5rem",
 								}}
@@ -107,12 +107,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -125,12 +125,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -143,12 +143,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -161,12 +161,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -179,12 +179,12 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -197,48 +197,48 @@ function ProductsSlide() {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
 											</div>
 									  ))
-									: categoryProducts.catTree === "Dogs > Canned food"
+									: categoryProducts.catTree === "Dogs > Wet food"
 									? dogsCannedFoodArrEN.map((product, i) => (
 											<div
 												onClick={() => {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
 											</div>
 									  ))
-									: categoryProducts.catTree === "Cats > Canned food"
+									: categoryProducts.catTree === "Cats > Wet food"
 									? catsCannedFoodArrEN.map((product, i) => (
 											<div
 												onClick={() => {
 													handleOpen();
 													dispatch(setSelectedProduct(product));
 												}}
-												className="single-cat-product"
+												className='single-cat-product'
 												key={i}
 											>
 												<img
 													src={product.img}
-													alt=""
+													alt=''
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -250,16 +250,16 @@ function ProductsSlide() {
 							<Modal
 								open={open}
 								onClose={handleClose}
-								aria-labelledby="modal-modal-title"
-								aria-describedby="modal-modal-description"
+								aria-labelledby='modal-modal-title'
+								aria-describedby='modal-modal-description'
 							>
 								<Box sx={style}>
 									<RxCross1
 										onClick={handleClose}
-										className="product-modal-icon"
+										className='product-modal-icon'
 									/>
 									{selectedProduct && (
-										<div className="modal-container">
+										<div className='modal-container'>
 											<div
 												style={{
 													gridArea: "img",
@@ -270,7 +270,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={selectedProduct.img}
-													alt="product"
+													alt='product'
 													style={{
 														width: "170px",
 														maxHeight: "240px",
@@ -288,9 +288,7 @@ function ProductsSlide() {
 													fontSize: "15px",
 												}}
 											>
-												<p style={{fontWeight: "600"}}>
-													{pageLanguage === "LT" ? "Sudėtis" : "Analysis"}
-												</p>
+												<p style={{ fontWeight: "600" }}>{pageLanguage === "LT" ? "Sudėtis" : "Analysis"}</p>
 												{selectedProduct.fullDesc.analysis.length !== 0 ? selectedProduct.fullDesc.analysis.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
 											<div
@@ -303,9 +301,7 @@ function ProductsSlide() {
 													fontSize: "15px",
 												}}
 											>
-												<p style={{fontWeight: "600"}}>
-													{pageLanguage === "LT" ? "Maistiniai Priedai" : "Nutritional Additives"}
-												</p>
+												<p style={{ fontWeight: "600" }}>{pageLanguage === "LT" ? "Maistiniai Priedai" : "Nutritional Additives"}</p>
 												{selectedProduct.fullDesc.vitPerKg.length !== 0 ? selectedProduct.fullDesc.vitPerKg.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
 											<div
@@ -318,9 +314,7 @@ function ProductsSlide() {
 													fontSize: "15px",
 												}}
 											>
-												<p style={{fontWeight: "600"}}>
-													{pageLanguage === "LT" ? "Šėrimo Instrukcija" : "Feeding Guide"}
-												</p>
+												<p style={{ fontWeight: "600" }}>{pageLanguage === "LT" ? "Šėrimo Instrukcija" : "Feeding Guide"}</p>
 												{selectedProduct.fullDesc.feedingGuide.length !== 0 ? selectedProduct.fullDesc.feedingGuide.map((desc, i) => <p key={i}>{desc}</p>) : <p>--------</p>}
 											</div>
 											{selectedProduct.fullDesc.desc.firstPart && (
@@ -359,9 +353,7 @@ function ProductsSlide() {
 													marginTop: "20px",
 												}}
 											>
-												<p style={{fontWeight: "600"}}>
-													{pageLanguage === "LT" ? "Pagrindinės Naudos" : "Key Benefits"}
-												</p>
+												<p style={{ fontWeight: "600" }}>{pageLanguage === "LT" ? "Pagrindinės Naudos" : "Key Benefits"}</p>
 												{selectedProduct.fullDesc.desc.keyBenefits && <p>{selectedProduct.fullDesc.desc.keyBenefits}</p>}
 											</div>
 											<div
@@ -370,9 +362,7 @@ function ProductsSlide() {
 													marginTop: "20px",
 												}}
 											>
-												<p style={{fontWeight: "600"}}>
-													{pageLanguage === "LT" ? "Ingredientai" : "Ingredients"}
-												</p>
+												<p style={{ fontWeight: "600" }}>{pageLanguage === "LT" ? "Ingredientai" : "Ingredients"}</p>
 												{selectedProduct.fullDesc.desc.ingredients && <p>{selectedProduct.fullDesc.desc.ingredients}</p>}
 											</div>
 										</div>
