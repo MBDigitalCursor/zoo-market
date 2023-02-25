@@ -12,8 +12,8 @@ import img10 from "../../assets/img/catsCannedFood/cat konservai 10.png";
 const catsCannedFoodArr = [
 	{
 		img: img1,
-		desc: "Calibra Premium Line suaugusioms katėms su vištiena ir jautiena padaže 100 g",
-		price: "€0.80",
+		desc: "Calibra Premium Line suaugusioms katėms su vištiena ir jautiena padaže",
+		price: "€0.80 (100 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 9%", "Riebalai 4.5%", "Žalia ląsteliena 1%", "Žali pelenai 3%", "Drėgnis 82%"],
 			vitPerKg: ["Vitaminas D3 250 TV", "Vitaminas E 25 mg", "Cinkas (cinko sulfato monohidrato pavidalu) 10 mg", "Manganas (mangano oksido pavidalu) 2,5 mg", "Taurinas 450 mg", "Biotinas 50 µg"],
@@ -29,8 +29,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img2,
-		desc: "Royal Canin sterilizuotoms katėms padaže 85 g",
-		price: "€1.60",
+		desc: "Royal Canin sterilizuotoms katėms padaže",
+		price: "€1.60 (85 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 9%", "Riebalai 2.6%", "Žalia ląsteliena 1.8%", "Žali pelenai 1.3%", "Drėgnis 81%"],
 			vitPerKg: ["Vitaminas D3 90 TV", "Geležis 3 mg", "Jodas 0.21 mg", "Varis 1.6 mg", "Manganas 0.9 mg", "Cinkas 9 mg"],
@@ -46,8 +46,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Monge Kitten tuno dribsniai su alaviju 80 g",
-		price: "€1.90",
+		desc: "Monge Kitten tuno dribsniai su alaviju",
+		price: "€1.90 (80 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 13%", "Žali riebalai 0.5%", "Žalia ląsteliena 1%", "Žali pelenai 2%", "Drėgnis 82%"],
 			vitPerKg: ["Vitaminas E (DL-alfa-tokoferilo acetatas) 50 mg"],
@@ -63,8 +63,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Aatas Cat viliojantis tunas ir krevetės drebučiuose 80 g",
-		price: "€1.20",
+		desc: "Aatas Cat viliojantis tunas ir krevetės drebučiuose",
+		price: "€1.20 (80 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 10%", "Žali riebalai 0.4%", "Žalia ląsteliena 1%", "Žali pelenai 2%", "Drėgnis 89%"],
 			vitPerKg: [""],
@@ -80,8 +80,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Kippy paštetas sterilizuotoms katėms su kalakutiena 90 g",
-		price: "€1.00",
+		desc: "Kippy paštetas sterilizuotoms katėms su kalakutiena",
+		price: "€1.00 (90 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 11%", "Žali riebalai 6%", "Žalia ląsteliena 1%", "Žali pelenai 3%", "Drėgnis 78%"],
 			vitPerKg: ["Vitaminas D3 135 TV", "Cinkas 3.3 mg", "Jodas 0.45 mg", "Manganas 1.35 mg", "Taurinas 139.5 mg"],
@@ -97,8 +97,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Monge orkaitėje gaminti gabaliukai želė su gaidžio mėsa sterilizuotoms katėms 85 g",
-		price: "€0.80",
+		desc: "Monge orkaitėje gaminti gabaliukai želė su gaidžio mėsa sterilizuotoms katėms",
+		price: "€0.80 (85 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 11.5%", "Žali riebalai 2.4%", "Žalia ląsteliena 0.5%", "Žali pelenai 2.4%", "Drėgnis 80%"],
 			vitPerKg: ["Vitaminas D3 180 TV", "Vitaminas E 40 mg", "Geležis 13 mg", "Jodas 1.6 mg", "Varis 3.4 mg", "Manganas 8.5 mg", "Cinkas 42 mg", "Selenas 0.04 mg", "Taurinas 500 mg"],
@@ -114,8 +114,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "Brit Care sveikų triušių filė padaže sterilizuotoms suaugusioms katėms 85 g",
-		price: "€1.30",
+		desc: "Brit Care sveikų triušių filė padaže sterilizuotoms suaugusioms katėms",
+		price: "€1.30 (85 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 9%", "Žali riebalai 3%", "Žalia ląsteliena 0.5%", "Žali pelenai 2%", "Drėgnis 82%", "Kalcis 0.25%", "Fosforas 0.2%", "Natris 0.3%"],
 			vitPerKg: ["Vitaminas D3 (E671) 250 TV", "Vitaminas E (3a700) 150 mg", "Biotinas (3a880) 0.5 mg", "Cinkas (3b606) 12 mg", "Manganas (3b502) 3 mg", "Geležis (3b103) 10 mg", "Varis (3b405) 0.4 mg", "Jodas (3b201) 0.7 mg", "Taurinas (3a370) 500 mg", "L-Metioninas (3c305) 2 000 mg"],
@@ -131,8 +131,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img8,
-		desc: "Natural Trainer kačiukams su kalakutienos gabaliukais padaže 85 g",
-		price: "€1.40",
+		desc: "Natural Trainer kačiukams su kalakutienos gabaliukais padaže",
+		price: "€1.40 (85 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 10%", "Žali riebalai 5%", "Žalia ląsteliena 0.8%", "Žali pelenai 2%", "Drėgnis 80%"],
 			vitPerKg: ["Vitaminas D3 161 TV", "Vitaminas E 32 mg", "Taurinas 234 mg", "Vario (II) sulfato pentahidratas 2,49 mg (varis 0,62 mg)", "Kalio jodidas 0,24 mg (jodas 0,16 mg)", "Mangano sulfatas monohidratas 5,97 mg (manganas 1,91 mg)", "Cinko sulfatas monohidratas 44,07 mg (cinkas 16,18 mg)"],
@@ -148,8 +148,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img9,
-		desc: "Croci Vibrisse kokteilis su tunu 135 g",
-		price: "€1.30",
+		desc: "Croci Vibrisse kokteilis su tunu",
+		price: "€1.30 (135 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 2%", "Žali riebalai 0.8%", "Žalia ląsteliena 0.1%", "Žali pelenai 1%", "Drėgnis 96%"],
 			vitPerKg: [""],
@@ -165,8 +165,8 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "Affinity Advance Veterinary Diets maistas katėms su inkstų problemomis 85 g",
-		price: "€1.45",
+		desc: "Affinity Advance Veterinary Diets maistas katėms su inkstų problemomis",
+		price: "€1.45 (85 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 6.5%", "Žali riebalai 5.7%", "Žalia ląsteliena 0.5%", "Žalia pelenai 1.3%", "Drėgnis 81%", "Kalcis 0.18%", "Fosforas 0.1%", "Kalis 0.2%", "Natris 0.11%", "Omega-3 0.25%", "Omega-6 0.75%"],
 			vitPerKg: ["Vitaminas D3 203 TV", "Vitaminas E 181 mg", "Taurinas 465 mg", "Jodas 0.51 mg", "Varis 1.34 mg", "Geležis 22.3 mg", "Manganas 2.7 mg", "Cinkas 22.4 mg"],

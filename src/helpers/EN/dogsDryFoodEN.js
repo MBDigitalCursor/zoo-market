@@ -17,7 +17,7 @@ const dogsDryFoodArr = [
 		fullDesc: {
 			analysis: ["Crude protein 21.2%", "Crude fat 14.2%", "Crude fiber 1.7%", "Crude ash 4.7% ", "Omega-6 3.2%", "Calcium 0.76%", "Phosphorus 0.64%", "Sodium 0.24%", "Potassium 0.65%", "Magnesium 0.11%"],
 			vitPerKg: ["Vitamin A 5817 IU", "Vitamin C 70 mg", "Vitamin D 3438 IU", "Vitamin E 650 mg", "Beta-carotene 1.5 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "2.5 - 60", "5 - 100", "7.5 - 135", "10 - 170", "20 - 285", "30 - 385", "40 - 480", "50 - 565", "60+ - 11 per kg"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "2.5 - 60", "5 - 100", "7.5 - 135", "10 - 170", "20 - 285", "30 - 385", "40 - 480", "50 - 565", "60+ - 11 per kg"],
 			desc: {
 				firstPart: "Hill's Science Plan Adult dog food with chicken is specially formulated to fuel the energy needs of dogs during the prime of their life.",
 				secondPart: "Made with high quality, easy-to-digest ingredients. Omega-6 & Vitamin E for beautiful skin & coat. High-quality protein for lean muscles. Easy-to-digest ingredients and fibers for healthy digestion.",
@@ -34,7 +34,7 @@ const dogsDryFoodArr = [
 		fullDesc: {
 			analysis: ["Crude protein 23%", "Crude fat 13.5%", "Crude fiber 2.5%", "Crude ash 7%", "Omega-3 1%", "Omega-6 4.5%", "Magnesium 0.1%"],
 			vitPerKg: ["Vitamin A 26000 IU", "Vitamin D3 1350 IU", "Vitamin E 555 mg", "Biotin 0.8 mg", "Copper (II) sulphate pentahydrate 49.13 mg (copper 12.5 mg)", "Iron (II) carbonate 310.5 mg (iron 150 mg)", "Coated granulated calcium iodate anhydrous 3.85 mg (iodine 2.5 mg)", "Sodium selenite 0.44 mg (selenium 0.2 mg)", "Zinc oxide 193.4 mg (zinc 156 mg)", "Manganese (II) oxide 45.1 mg (manganese 35 mg)", "Dried Boswellia serrata extract 600 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "11 - 155-185", "15 - 195-235", "20 - 240-290", "25 - 285-345", "30 - 325-395", "40 - 405-490", "50 - 475-575", "60 - 545-660", "70 - 615-745", "80 - 680-820"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "11 - 155-185", "15 - 195-235", "20 - 240-290", "25 - 285-345", "30 - 325-395", "40 - 405-490", "50 - 475-575", "60 - 545-660", "70 - 615-745", "80 - 680-820"],
 			desc: {
 				firstPart: "Sensitive Plus Medium & Maxi Adult with horse-rice-oil, pineapple and olive leaf concentrates.",
 				secondPart: "Helps to maintain skin barrier thanks to olive leaf concentrate rich in antioxidants, Omega-6 and zinc.",
@@ -46,12 +46,12 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Brit Care Dog Sustainable Adult Small Breed 3 kg",
-		price: "€17.10",
+		desc: "Brit Care Dog Sustainable Adult Small Breed Chicken & Insects",
+		price: "€17.10 (3 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 28.0%", "Crude fat 17.0%", "Crude fiber 3.0%", "Crude ash 6.5%", "Omega-3 0.4%", "Omega-6 2.7%", "Moisture 10.0%", "Calcium 1.4%", "Phosphorus 1.0%", "Sodium 0.3%", "EPA (20:5 n-3) 0.05%", "DHA (22:6 n-3) 0.1%"],
 			vitPerKg: ["Vitamin A (3a672a) 20000 IU", "Vitamin B1 (3a821) 2.5 mg", " Vitamin B2 (3a825i) 9.6 mg", "Vitamin B6 (3a831) 2.5 mg", "Vitamin C (3a312) 300 mg", "Vitamin D3 (3a671) 1500 IU", "Vitamin E (3a700) 500 mg", "Biotin (3a880) 3.5 mg", "Folic acid (3a316) 1.2 mg", ""],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "2 - 50", "3 - 58", "4 - 65", "5 - 75", "6 - 85", "7 - 100", "8 - 115", "9 - 125", "10 - 135"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "2 - 50", "3 - 58", "4 - 65", "5 - 75", "6 - 85", "7 - 100", "8 - 115", "9 - 125", "10 - 135"],
 			desc: {
 				firstPart: "Superpremium, sustainable and ecofriendly for healthy digestion, reduced stress, improved physical condition and immunity support. Ideal for adult dogs of small breeds. Contains easily digestible and nutritionally valuable proteins with complete amino acids for excellent muscle tone and healthy tissues. The gluten-free forumula is suitable for all dogs without the risk of weight gain. An ecofriendly food based on sustainable proteins and ingredients with 35% smaller on environment.",
 				secondPart: "",
@@ -63,12 +63,12 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Affinity Advance Veterinary Diets Hypoallergenic 2.5 kg",
-		price: "€33.40",
+		desc: "Affinity Advance Veterinary Diets Hypoallergenic",
+		price: "€33.40 (2.5 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 22%", "Crude fat 11%", "Crude fiber 2%", "Inorganic matter 6.5%", "Essential fatty 1.6%"],
 			vitPerKg: ["Vitamin A 27000 IU", "Vitamin D3 1800 IU", "Vitamin E 315 mg", "Ferrous sulphate monohydrate 260 mg (Fe: 86 mg", "Potassium iodide 1.9 mg (I: 1.4 mg)", "Copper sulphate pentahydrate 33 mg (Cu: 8.8 mg)", "Manganous sulphate monohydrate 123 mg (Mn: 40 mg)", "Zinc sulphate monohydrate 407 mg (Zn: 148 mg)", "Sodium Selenite 0.2 mg (Se: 0.1 mg)"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 25", "5 - 85", "10 - 145", "20 - 245", "30 - 335", "40 - 415", "50 - 490"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "1 - 25", "5 - 85", "10 - 145", "20 - 245", "30 - 335", "40 - 415", "50 - 490"],
 			desc: {
 				firstPart: "It's a complete dietetic product for puppies and adult dogs, recommended for reducing intolerances to ingredients and nutrients. It contains a single source of protein and a single source of carbohydrates.",
 				secondPart: "Formulated with hydrolysed soy protein of very low molecular weight as the only protein source, and purified starch as the only carbohydrate source, Advance Veterinary Diets - Hypoallergenic aids digestion in dogs with food allergies and intolerances. In addition, thanks to its hypoallergenic coating, it has an exquisite taste.",
@@ -80,12 +80,12 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Natural Trainer Sensitive No Gluten Mini Adult With Lamb",
+		desc: "Natural Trainer Sensitive No Gluten Mini Adult with Lamb",
 		price: "€6.50/kg",
 		fullDesc: {
 			analysis: ["Crude protein 25%", "Crude fat 15%", "Crude fiber 2.5%", "Crude ash 7%"],
 			vitPerKg: ["Vitamin A 26000 IU", "Vitamin D3 1350 IU", "Vitamin E 555 mg", "Copper (II) sulphate pentahydrate 49.13 mg (copper 12.5 mg)", "Iron (II) carbonate 310.5 mg (iron 150 mg)", "Coated granulated calcium iodate anhydrous 3.85 mg (iodine 2.5 mg)", "Sodium selenite 0.44 mg (selenium 0.2 mg)", "Zinc oxide 193.4 mg (zinc 156 mg)", "Manganese (II) oxide 45.1 mg (manganese 35 mg)"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 30", "2 - 45", "3 - 60", "4 - 75", "5 - 90", "6 - 100", "7 - 110", "8 - 125", "10 - 150"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "1 - 30", "2 - 45", "3 - 60", "4 - 75", "5 - 90", "6 - 100", "7 - 110", "8 - 125", "10 - 150"],
 			desc: {
 				firstPart: "Complete and balanced pet food for small & toy-sized adult dogs.",
 				secondPart: "Formulated without gluten and ingredients containing gluten.",
@@ -97,12 +97,12 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Appalachian Valley Small Breed Canine Recipe 2 kg",
-		price: "€17.30",
+		desc: "Appalachian Valley Small Breed Canine Recipe",
+		price: "€17.30 (2 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 32%", "Crude fat 18%", "Crude fiber 4%", "Moisture 10%", "Omega-3 0.3%", "Omega-6 2.8%", "Taurine 0.12%"],
 			vitPerKg: ["Vitamin E 150 IU", "Zinc 150 mg", "Selenium 0.35 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 30", "2.25 - 55", "4.5 - 91", "9 - 154", "13.5 - 209", "18 - 259"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "1 - 30", "2.25 - 55", "4.5 - 91", "9 - 154", "13.5 - 209", "18 - 259"],
 			desc: {
 				firstPart: "Venison, the number one ingredient in this formula, is rich in nutrients and energy, and a highly digestible source of protein.",
 				secondPart: "Rich in proteins and fat, this formula provides the energy that active small breed adult dogs need in a small kibble size that is easy for small mouths to chew.",
@@ -119,12 +119,12 @@ const dogsDryFoodArr = [
 		fullDesc: {
 			analysis: ["Protein 24.3%", "Fat 15.5%", "Crude fiber 1.8%", "Crude ash 5.8%", "Omega-6 3.72%", "Calcium 0.85%", "Phosphorus 0.75%", "Potassium 0.81%", "Sodium 0.32%", "Magnesium 0.108%"],
 			vitPerKg: ["Vitamin A 12285 IU", "Vitamin C 125 ppm", "Vitamin D 841 IU", "Vitamin E 613 IU", "Beta-carotene 3.49 ppm"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "1.5 - 40", "2 - 50", "3 - 70", "4 - 85", "5 - 100", "7.5 - 140", "10 - 170"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "1.5 - 40", "2 - 50", "3 - 70", "4 - 85", "5 - 100", "7.5 - 140", "10 - 170"],
 			desc: {
-				firstPart: "Recommended for: Adult dogs 1 - 6 years of age that weigh up to 10 kg full grown.",
-				secondPart: "Not recommended for: Puppies, or mature adult dogs (> 6 years of age). Pregnant or nursing dogs. During pregnancy or nursing, dogs should be switched to Hill's Science Plan Puppy Small & Mini dog food.",
-				thirdPart: "Contains our special Small & Mini antioxidant blend for lifelong immune support",
-				keyBenefits: "Hill's Science Plan Adult Small & Mini Dry Dog Food Lamb & Rice Flavour is tailored nutrition for the unique needs of Small & mMni dogs during the prime of their life. Delicious lamb flavour for those that prefer variety & specially made with our smallest kibble.",
+				firstPart: "Recommended for adult dogs 1-6 years of age that weigh up to 10 kg full grown.",
+				secondPart: "Not recommended for: Puppies, or mature adult dogs (> 6 years of age). Pregnant or nursing dogs.",
+				thirdPart: "Contains our special Small & Mini antioxidant blend for lifelong immune support.",
+				keyBenefits: "Tailored nutrition for the unique needs of Small & mMni dogs during the prime of their life. Delicious lamb flavour for those that prefer variety & specially made with our smallest kibble.",
 				ingredients: "Maize, brown rice, brewers' rice, wheat, maize gluten meal, lamb meal, barley, oats, animal fat, digest, soybean meal, vegetable oil, flaxseed, dried tomato pomace, dried citrus pulp, spinach powder.",
 			},
 		},
@@ -136,7 +136,7 @@ const dogsDryFoodArr = [
 		fullDesc: {
 			analysis: ["Crude protein 23%", "Crude fat 14%%", "Crude fiber 2%", "Crude ash 7.8%", "Moisture 19%", "Calcium 1.6%", "Phosphorus 1%"],
 			vitPerKg: ["Vitamin A (3a672a) 10000 IU", "Vitamin D3 (3a671) 1600 IU", "Vitamin E (3a700) 150 mg", "Iron (3b104) 75 mg", "Iodine (3b201) 3 mg", "Copper (3b405) 19 mg", "Manganese (3b503) 40 mg", "Zinc (3b603) 50 mg", "Zinc (3b607) 100 mg", "Selenium (3b801) 0.4 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "3.0-5.0 - 55-85", "5.0-7.5 - 85-115", "7.5-10.0 - 115-150", "10.0-12.5 - 150-165", "12.5-15.0 - 165-190", "15.0-20.0 - 190-250", "25.0-30.0 - 300-325", "30.0-40.0 - 325-425", "40.0-60.0 - 425-600", "60.0-80.0 - 600-750"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "3.0-5.0 - 55-85", "5.0-7.5 - 85-115", "7.5-10.0 - 115-150", "10.0-12.5 - 150-165", "12.5-15.0 - 165-190", "15.0-20.0 - 190-250", "25.0-30.0 - 300-325", "30.0-40.0 - 325-425", "40.0-60.0 - 425-600", "60.0-80.0 - 600-750"],
 			desc: {
 				firstPart: "Meat-juice-cooking method is used to prepare Adult Iberico + Greens food. Meat-juice-cooking is a method of preparing fresh meat. It was developed in the kitchen and not in the feed industry. The method is based on techniques often used by culinary chefs to make meat tastier and healthier by using meat juices.",
 				secondPart: "Meat-juice-cooking is a carefully selected combination of cooking techniques, adapted to the physical needs and interests of dogs.",
@@ -148,30 +148,30 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img9,
-		desc: "Royal Canin Exigent Mini 3 kg",
-		price: "€25.80",
+		desc: "Royal Canin Exigent Mini",
+		price: "€25.80 (3 kg)",
 		fullDesc: {
 			analysis: ["Protein 30.0%", "Fat 22.0%", "Crude fiber 2.6%", "Crude ash 4.8%"],
 			vitPerKg: ["Vitamin A 29500 IU", "Vitamin D3 800 IU", "Vitamin E1 (Iron) 38 mg", "Vitamin E2 (Iodine) 3.9 mg", "Vitamin E4 (Copper) 12 mg", "Vitamin E5 (Manganese) 50 mg", "Vitamin E6 (Zinc) 133 mg", "Vitamin E8 (Selenium) 0.08 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "1 - 26", "3 - 59", "6 - 99", "10 - 146"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "1 - 26", "3 - 59", "6 - 99", "10 - 146"],
 			desc: {
 				firstPart: "Complete feed specially for adult and mature small breed dogs (from 1 to 10 kg) - Over 10 months old - Dogs with fussy appetites.",
 				secondPart: " Vtamins and amino acids improve the skin's barrier function and prevent the penetration of bacteria. Vitamin A, biotin, fish oil, linoleic acid and zinc promote a shiny coat and reduced scurf development.",
 				thirdPart: "Sodium polyphosphates bind salivary calcium and thus limit its contribution to the development of tartar.",
 				keyBenefits: "Carefully selected nutrients and natural flavours ensure maximum acceptance. Special texture, shape and size of kibble help satisfy fussy appetites. A special kibble size, shape and structure makes feeding easier.",
-				ingredients: "Dehydrated poultry protein, animal fats, rice, vegetable protein isolate*, precooked wheat flour, maize flour, hydrolysed animal proteins, vegetable fibres, beet pulp, minerals, fish oil, fructo-oligo-saccharides, borage oil, marigold extract (source of lutein).",
+				ingredients: "Dehydrated poultry protein, animal fats, rice, vegetable protein isolate, precooked wheat flour, maize flour, hydrolysed animal proteins, vegetable fibres, beet pulp, minerals, fish oil, fructo-oligo-saccharides, borage oil, marigold extract (source of lutein).",
 			},
 		},
 	},
 	{
 		img: img10,
 
-		desc: "Calibra Veterinary Diet Renal & Cardiac 2 kg",
-		price: "€16.65",
+		desc: "Calibra Veterinary Diet Renal & Cardiac",
+		price: "€16.65 (2 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 16%", "Crude fat 18%", "Crude fiber 2.5%", "Crude ash 4.5%", "Moisture 10%", "Omega-3 0.8%", "Omega-6 2.8%", "Calcium 0.65%", "Phosphorus 0.25%", "Sodium 0.2%", "Magnesium 0.08%", "Potassium 0.7%", "Arginine 1.1%", "Taurine 0.2%"],
 			vitPerKg: ["Vitamin A 20000 IU", "Vitamin D3 1000 IU", "Vitamin E 600 mg", "Choline Chloride 2000 mg", "Biotin 2 mg", "Calcium-D-Panthothenate 30 mg", "Niacinamide 80 mg", "Organic Zinc 132 mg", "Organic Iron 55 mg", "Organic Manganese 66 mg", "Organic Copper 4 mg", "Potassium Iodide 3.5 mg", "Organic Selenium 0.2 mg", "Taurine 2000 mg", "L-Carnitine 300 mg", "L-Arginine 2800 mg"],
-			feedingGuide: ["Body Weight (kg) - Dry (g)", "5 - 95", "10 - 160", "15 - 220", "20 - 270", "25 - 320", "30 - 365", "40 - 455", "50 - 540", "60 - 615", "70 - 690", "80 - 765", "90 -835"],
+			feedingGuide: ["Body Weight (kg) - Dry Food (g)", "5 - 95", "10 - 160", "15 - 220", "20 - 270", "25 - 320", "30 - 365", "40 - 455", "50 - 540", "60 - 615", "70 - 690", "80 - 765", "90 -835"],
 			desc: {
 				firstPart: "Calibra Veterinary Diet Renal & Cardiac Dry Dog Food is a complete dietetic food used for the dietary management of renal insufficiency and renal failure, support during the treatment of cardiac disorders, and support during the treatment of hypertension.",
 				secondPart: "The Renal & Cardiac food for dogs supports the functioning of renal tissue and the cardiovascular system. It has an advanced combination of high arginine (improves blood flow), high taurine (cardiac muscle condition) and vitamins & antioxidants.",

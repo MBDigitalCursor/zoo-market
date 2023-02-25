@@ -80,8 +80,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Orijen Tundra visoms kačių veislėms ir amžiams 1.8 kg",
-		price: "€50.50",
+		desc: "Orijen Tundra visoms kačių veislėms ir amžiams",
+		price: "€50.50 (1.8 kg)",
 		fullDesc: {
 			analysis: ["Žali baltymai 40%", "Žali riebalai 20%", "Žalia ląsteliena 3%", "Žali pelenai 9%", "Drėgnis 10%", "Kalcis 1.9%", "Fosforas 1.4%", "Magnis 0.1%", "Taurinas 0.1%", "Omega-3 1%", "Omega-6 2.4%"],
 			vitPerKg: ["Vitamino E papildas"],
@@ -97,8 +97,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Royal Canin Fit 32 Regular suaugusioms katėms 2 kg",
-		price: "€21.00",
+		desc: "Royal Canin Fit 32 Regular suaugusioms katėms",
+		price: "€21.00 (2 kg)",
 		fullDesc: {
 			analysis: ["Baltymai 32%", "Riebalai 15%", "Žalia ląsteliena 4.6%", "Žali pelenai 7.2%"],
 			vitPerKg: ["Vitaminas A 13000 TV", "Vitaminas D3 700 TV", "Geležis 35 mg", "Jodas 3.5 mg", "Varis 11 mg", "Manganas 45 mg", "Cinkas 136 mg", "Selenas 0.09 mg"],
@@ -131,8 +131,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img8,
-		desc: "Affinity Advance Veterinary Diets Weight Balance suaugusioms katėms 1.5 kg",
-		price: "€18.90",
+		desc: "Affinity Advance Veterinary Diets Weight Balance suaugusioms katėms",
+		price: "€18.90 (1.5 kg)",
 		fullDesc: {
 			analysis: ["Žali baltymai 40%", "Žali riebalai 9%", "Žalia ląsteliena 10%", "Žali pelenai 7%", "Nepakeičiamos riebalų rūgštys 2%"],
 			vitPerKg: ["Vitaminas A 30000 TV", "Vitaminas D3 2000 TV", "Vitaminas E 660 mg", "L-Karnitinas 500 mg", "Geležies sulfato monohidratas 358 mg (Fe: 118 mg)", "Geležies fumaratas 144 mg (Fe: 47 mg)", "Kalio jodidas 2.6 mg (I: 2 mg)", "Vario sulfato pentahidratas 45 mg (Cu: 12 mg)", "Mangano sulfato monohidratas 169 mg (Mn: 55 mg)", "Cinko sulfato monohidratas 407 mg (Zn: 148 mg)", "Natrio selenitas 0.33 mg (Se: 0.15 mg)"],
@@ -165,8 +165,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "AATU ėdalas katėms su laisvai bėgiojančių ančių mėsa 3 kg",
-		price: "€44.00",
+		desc: "AATU ėdalas katėms su laisvai bėgiojančių ančių mėsa",
+		price: "€44.00 (3 kg)",
 		fullDesc: {
 			analysis: ["Žali baltymai 34%", "Riebalai 20%", "Žalia ląsteliena 2.5%", "Pelenai 8.9%", "Drėgnis 8%", "Omega-3 0.7%", "Omega-6 2.9%"],
 			vitPerKg: ["Vitaminas A 25000 TV", "Vitaminas D3 1700 TV", "Vitaminas E 330 mg", "Taurinas 1500 mg", "L-Karnitinas 200 mg", "Geležies sulfato monohidratas 600 mg", "Cinko sulfato monohidratas 310 mg", "Mangano sulfato monohidratas 70 mg", "Vario sulfato pentahidratas 45 mg", "Bevandenis kalcio jodatas 3.64 mg", "Natrio selenitas 0.41 mg"],
