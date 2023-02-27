@@ -165,7 +165,7 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "Affinity Advance Veterinary Diets maistas katėms su inkstų problemomis",
+		desc: "Advance Veterinary Diets maistas katėms su inkstų problemomis",
 		price: "€1.45 (85 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 6.5%", "Žali riebalai 5.7%", "Žalia ląsteliena 0.5%", "Žalia pelenai 1.3%", "Drėgnis 81%", "Kalcis 0.18%", "Fosforas 0.1%", "Kalis 0.2%", "Natris 0.11%", "Omega-3 0.25%", "Omega-6 0.75%"],

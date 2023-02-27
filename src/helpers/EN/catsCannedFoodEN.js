@@ -165,7 +165,7 @@ const catsCannedFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "Affinity Advance Veterinary Diets Renal Wet Pouch",
+		desc: "Advance Veterinary Diets Renal Wet Pouch",
 		price: "€1.45 (85 g)",
 		fullDesc: {
 			analysis: ["Crude protein 6.5%", "Crude fat 5.7%", "Crude fiber 0.5%", "Crude ash 1.3%", "Moisture 81%", "Calcium 0.18%", "Phosphorus 0.1%", "Potassium 0.2%", "Sodium 0.11%", "Omega-3 0.25%", "Omega-6 0.75%"],

@@ -30,7 +30,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img2,
-		desc: "Natural Trainer Sensitive Plus dideliems ir vidutinio dydžio šunims su ryžiais ir arkliena",
+		desc: "Natural Trainer Sensitive Plus dideliems šunims su ryžiais ir arkliena",
 		price: "€5.50/kg",
 		fullDesc: {
 			analysis: ["Žali baltymai 23%", "Žali riebalai 13.5%", "Žalia ląsteliena 2.5%", "Žali pelenai 7%", "Omega-3 1%", "Omega-6 4.5%", "Magnis 0.1%"],
@@ -47,7 +47,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Brit Care Sustainable suaugusiems mažų veislių šunims su vištiena ir vabzdžiais",
+		desc: "Brit Care suaugusiems mažų veislių šunims su vištiena ir vabzdžiais",
 		price: "€17.10 (3 kg)",
 		fullDesc: {
 			analysis: ["Žali baltymai 28.0%", "Žali riebalai 17.0%", "Žalia ląsteliena 3.0%", "Žali pelenai 6.5%", "Omega-3 0.4%", "Omega-6 2.7%", "Drėgmė 10.0%", "Kalcis 1.4%", "Fosforas 1.0%", "Natris 0.3%", "EPA (20:5 n-3) 0.05%", "DHA (22:6 n-3) 0.1%"],
@@ -64,7 +64,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Affinity Advance Veterinary Diets hipoalerginis maistas alergiškiems šunims",
+		desc: "Advance Veterinary Diets hipoalerginis maistas alergiškiems šunims",
 		price: "€33.40 (2.5 kg)",
 		fullDesc: {
 			analysis: ["Žali baltymai 22%", "Žali riebalai 11%", "Žalia ląsteliena 2%", "Neorganinės medžiagos 6.5%", "Nepakeičiamos riebalų rūgštys 1.6%"],
@@ -81,7 +81,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Natural Trainer Sensitive suaugusiems mažų veislių šunims su ėriena be glitimo",
+		desc: "Natural Trainer Sensitive suaugusiems mažų veislių šunims su ėriena",
 		price: "€6.50/kg",
 		fullDesc: {
 			analysis: ["Žali baltymai 25%", "Žali riebalai 15%", "Žalia ląsteliena 2.5%", "Žali pelenai 7%"],
@@ -115,7 +115,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "Hill's Science Plan suaugusiems mažų ir miniatiūrinių veislių šunims ėrienos skonio",
+		desc: "Hill's Science Plan suaugusiems mažų veislių šunims ėrienos skonio",
 		price: "€8.80/kg",
 		fullDesc: {
 			analysis: ["Baltymai 24.3%", "Riebalai 15.5%", "Žalia ląsteliena 1.8%", "Žali pelenai 5.8%", "Omega-6 3.72%", "Kalcis 0.85%", "Fosforas 0.75%", "Kalis 0.81%", "Natris 0.32%", "Magnis 0.108%"],

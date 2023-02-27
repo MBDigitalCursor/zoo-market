@@ -63,7 +63,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Affinity Advance Veterinary Diets Hypoallergenic",
+		desc: "Advance Veterinary Diets Hypoallergenic",
 		price: "€33.40 (2.5 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 22%", "Crude fat 11%", "Crude fiber 2%", "Inorganic matter 6.5%", "Essential fatty 1.6%"],

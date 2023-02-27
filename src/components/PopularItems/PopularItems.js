@@ -20,7 +20,7 @@ function PopularItems() {
 	const items = [
 		{
 			img: img1,
-			desc: pageLanguage === "LT" ? "Affinity Advance Sensitive sausas ėdalas suagusioms sterilizuotoms katėms" : "Affinity Advance Sensitive Dry Food for Adult Sterilized Cats",
+			desc: pageLanguage === "LT" ? "Advance Sensitive sausas ėdalas suagusioms sterilizuotoms katėms" : "Advance Sensitive Dry Food for Adult Sterilized Cats",
 			price: "7.10/kg",
 			hot: false,
 			new: false,

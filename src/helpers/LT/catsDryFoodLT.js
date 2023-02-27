@@ -12,7 +12,7 @@ import img10 from "../../assets/img/catsDryFood/cat sausas 10.png";
 const catsDryFoodArr = [
 	{
 		img: img1,
-		desc: "Affinity Advance Sensitive suagusioms sterilizuotoms katėms",
+		desc: "Advance Sensitive suagusioms sterilizuotoms katėms",
 		price: "€7.10/kg",
 		fullDesc: {
 			analysis: ["Žali baltymai 36%", "Žali riebalai 16%", "Žalia ląsteliena 1.5%", "Žali pelenai 6.5%", "Omega-3 0.7%", "Omega-6 1.7%"],
@@ -29,7 +29,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img2,
-		desc: "Hill's Science Plan Optimal Care suaugusioms katėms su ėriena",
+		desc: "Hill's Science Plan suaugusioms katėms su ėriena",
 		price: "€7.50/kg",
 		fullDesc: {
 			analysis: ["Baltymai 33.8%", "Riebalai 21.3%", "Žalia ląsteliena 1%", "Pelenai 5.8%", "Kalcis 0.86%", "Angliavandeniai 38.1%", "Fosforas 0.78%", "Kalis 0.74%", "Natris 0.39%", "Magnis 0.064%", "Taurinas 0.2%"],
@@ -46,7 +46,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Affinity Libra suaugusioms sterilizuotoms katėms su vištiena",
+		desc: "Libra suaugusioms sterilizuotoms katėms su vištiena",
 		price: "€3.80/kg",
 		fullDesc: {
 			analysis: ["Žali baltymai 35%", "Žali riebalai 11.7%", "Žalia ląsteliena 5%", "Žali pelenai 7.5%", "Omega-6 1.5%", "Natris 0.7%"],
@@ -131,7 +131,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img8,
-		desc: "Affinity Advance Veterinary Diets Weight Balance suaugusioms katėms",
+		desc: "Advance Veterinary Diets Weight Balance suaugusioms katėms",
 		price: "€18.90 (1.5 kg)",
 		fullDesc: {
 			analysis: ["Žali baltymai 40%", "Žali riebalai 9%", "Žalia ląsteliena 10%", "Žali pelenai 7%", "Nepakeičiamos riebalų rūgštys 2%"],
