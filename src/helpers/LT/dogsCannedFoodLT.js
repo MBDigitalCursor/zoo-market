@@ -29,7 +29,7 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img2,
-		desc: "Affinity Advance Veterinary Diets gastroenterinis konservuotas pašaras",
+		desc: "Advance Veterinary Diets gastroenterinis konservuotas pašaras",
 		price: "€3.00 (150 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 8%", "Žali riebalai 2.5%", "Žalia ląsteliena 0.3%", "Žali pelenai 2.3%", "Drėgnis 79%", "Natris 0.1%", "Kalis 0.2%"],
