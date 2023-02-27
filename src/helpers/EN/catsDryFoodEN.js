@@ -12,7 +12,7 @@ import img10 from "../../assets/img/catsDryFood/cat sausas 10.png";
 const catsDryFoodArr = [
 	{
 		img: img1,
-		desc: "Affinity Advance Sensitive Adult Sterilized",
+		desc: "Affinity Advance Sensitive for Adult Sterilized Cats",
 		price: "€7.10/kg",
 		fullDesc: {
 			analysis: ["Crude protein 36%", "Crude fat 16%", "Crude fiber 1.5%", "Crude ash 6.5%", "Omega-3 0.7%", "Omega-6 1.7%"],
@@ -46,7 +46,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Affinity Libra Adult Sterilized with Chicken",
+		desc: "Affinity Libra for Adult Sterilized Cats with Chicken",
 		price: "€3.80/kg",
 		fullDesc: {
 			analysis: ["Crude protein 35%", "Crude fat 11.7%", "Crude fiber 5%", "Crude ash 7.5%", "Omega-6 1.5%", "Sodium 0.7%"],
@@ -63,7 +63,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Natural Trainer Sterilised Adult with Dry-cured Ham",
+		desc: "Natural Trainer for Sterilised Adult Cats with Dry-cured Ham",
 		price: "€6.50/kg",
 		fullDesc: {
 			analysis: ["Crude protein 35%", "Crude fat 12%", "Crude fiber 3.4%", "Crude ash 6.8%", "Omega-3 0.7%", "Omega-6 2.1%"],
@@ -97,7 +97,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Royal Canin Fit 32 Regular",
+		desc: "Royal Canin Fit 32 Regular for Adult Cats",
 		price: "€21.00 (2 kg)",
 		fullDesc: {
 			analysis: ["Protein 32%", "Fat 15%", "Crude fiber 4.6%", "Crude ash 7.2%"],

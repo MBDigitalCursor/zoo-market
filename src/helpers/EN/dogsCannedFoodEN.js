@@ -12,7 +12,7 @@ import img10 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
 const dogsCannedFoodArr = [
 	{
 		img: img1,
-		desc: "Calibra Dog Life Sensitive Rabbit Wet Food",
+		desc: "Calibra Life Sensitive Monoprotein Rabbit Wet Food",
 		price: "€3.10 (400 g)",
 		fullDesc: {
 			analysis: ["Crude protein 8.5%", "Crude fat 3%", "Crude fiber 1%", "Crude ash 2.5% ", "Omega-3 0.15%", "Omega-6 1%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%", "Sodium 0.3%"],

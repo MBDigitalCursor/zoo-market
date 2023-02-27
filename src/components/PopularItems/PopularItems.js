@@ -1,12 +1,12 @@
 import React from "react";
 import "./popularItems.css";
-import img1 from "../../assets/img/dogsDryFood/dog sausas 3.png";
-import img2 from "../../assets/img/catsCannedFood/cat konservai 8.png";
-import img3 from "../../assets/img/catsDryFood/cat sausas 6.png";
-import img4 from "../../assets/img/dogsDryFood/dog sausas 6.png";
-import img5 from "../../assets/img/dogsCannedFood/dog konservai 3.png";
-import img6 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
-import popImg from "../../assets/img/dogsDryFood/dog sausas 8.jpeg";
+import img1 from "../../assets/img/catsDryFood/cat sausas 1.png";
+import img2 from "../../assets/img/catsDryFood/cat sausas 10.png";
+import img3 from "../../assets/img/dogsCannedFood/dog konservai 6.png";
+import img4 from "../../assets/img/dogsDryFood/dog sausas 10.png";
+import img5 from "../../assets/img/catsCannedFood/cat konservai 4.png";
+import img6 from "../../assets/img/dogsDryFood/dog sausas 11.png";
+import popImg from "../../assets/img/dogsDryFood/dog sausas 11.png";
 import logo from "../../assets/img/mobileMain/brand logos.svg";
 import division from "../../assets/img/mobileMain/division section.svg";
 import nose from "../../assets/img/mobileMain/nose 1.svg";
@@ -20,43 +20,43 @@ function PopularItems() {
 	const items = [
 		{
 			img: img1,
-			desc: pageLanguage === "LT" ? "Kačių skanėstas Pussycat Juice Mega Pussy Extra Wet, 1 kg" : "Cat treat Pussycat Juice Mega Pussy Extra Wet",
-			price: 14.99,
+			desc: pageLanguage === "LT" ? "Affinity Advance Sensitive sausas ėdalas suagusioms sterilizuotoms katėms" : "Affinity Advance Sensitive Dry Food for Adult Sterilized Cats",
+			price: "7.10/kg",
 			hot: false,
 			new: false,
 		},
 		{
 			img: img2,
-			desc: pageLanguage === "LT" ? "Sausas šunų ėdalas Royal Canin Puppy Pussy Magnet, 2 kg" : "Dry dog food Royal Canin Puppy Pussy Magnet, 2 kg",
-			price: 69.99,
+			desc: pageLanguage === "LT" ? "AATU sausas ėdalas katėms su laisvai bėgiojančių ančių mėsa" : "AATU Free Run Duck Dry Food for Cats",
+			price: "44.00 (3 kg)",
 			hot: false,
 			new: false,
 		},
 		{
 			img: img3,
-			desc: pageLanguage === "LT" ? "Sausas šunų ėdalas Royal Canin Bright Wet Pussy Boy, 5 kg" : "Dry dog food Royal Canin Bright Wet Pussy Boy, 5 kg",
-			price: 20.99,
+			desc: pageLanguage === "LT" ? "Barking Heads Puppy Days konservai šuniukams" : "Barking Heads Puppy Days Wet Puppy Food",
+			price: "3.50 (300 g)",
 			hot: true,
 			new: false,
 		},
 		{
 			img: img4,
-			desc: "Šunų ėdalas Boombastic Ultra Royal Canin Dry Pussy, 15 kg",
-			price: 23.99,
+			desc: pageLanguage === "LT" ? "Calibra Veterinary Diet sausas ėdalas šunims su inkstų nepakankamumu ir širdies sutrikimais" : "Calibra Veterinary Diet Renal & Cardiac Dry Food for Dogs",
+			price: "16.65 (2 kg)",
 			hot: false,
 			new: false,
 		},
 		{
 			img: img5,
-			desc: "Šunų ir kačių universalus ėdalas Royal Canin Festival Pussy, 10 vnt",
-			price: 21.99,
+			desc: pageLanguage === "LT" ? "Aatas Cat viliojantis konservuotas tunas ir krevetės drebučiuose (12 skirtingų rūšių)" : "Aatas Cat Tantalizing Canned Tuna & Shrimp in Aspic for Cats (12 different options)",
+			price: "1.20 (80 g)",
 			hot: false,
 			new: true,
 		},
 		{
 			img: img6,
-			desc: "Cat food Royal Canin Fake Hair Protection From Dogs, 5 kg",
-			price: 13.99,
+			desc: pageLanguage === "LT" ? "Brit Care sausas elnienos ir bulvių ėdalas be grūdų jautriems ir maisto netoleruojantiems šunims" : "Brit Care Grain-Free Venison & Potatoes Dry Food for Sensitive Dogs and Dogs with Intolerance",
+			price: "6.30/kg",
 			hot: false,
 			new: false,
 		},
@@ -64,29 +64,23 @@ function PopularItems() {
 
 	const sliderItems = [
 		{
-			title: "Puiki nauja prekė, OMG! 1",
-			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
-			price: "$59.99 for limited time",
-			img: popImg,
+			title: "Sveiki atvykę į Zoo Market krautuvėlės namus internete!",
+			desc: "Naujienos ir pasiūlymai jūsų visuomet lauks čia.",
+			img: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
 		},
 		{
-			title: "Puiki nauja prekė, OMG! 2",
-			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
-			price: "$59.99 for limited time",
-			img: "https://images.unsplash.com/photo-1604544203292-0daa7f847478?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+			title: "Šunų skanėstai",
+			desc: "Kviečiame apsilankyti ir rinktis iš gausybės įvairių šunų skanėstų, kuriuos visus rasite mūsų krautuvėlėje.",
+			price: "Tiks ir išrankiausiems jūsų draugams.",
+			img: "https://images.unsplash.com/photo-1508609540374-67d1601ba520?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80",
 		},
 		{
-			title: "Puiki nauja prekė, OMG! 3",
-			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
-			price: "$59.99 for limited time",
-			img: "https://images.unsplash.com/photo-1583337260546-28b6bf66d004?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+			title: "Platus kačių kraiko pasirinkimas",
+			desc: "Prekės pačioms jautriausioms ir išrankiausioms katėms.",
+			price: "",
+			img: "https://images.unsplash.com/photo-1496285138399-b5d7d20d1e16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 		},
-		{
-			title: "Puiki nauja prekė, OMG! 4",
-			desc: "Enjoying life in the senior years is always possible: this meal is tailored to the needs of those, who have reached a certain age. It contains finest ingredients",
-			price: "$59.99 for limited time",
-			img: "https://images.unsplash.com/photo-1608096275263-1667980c4dc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
-		},
+
 	];
 
 	return (
