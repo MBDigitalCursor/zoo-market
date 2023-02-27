@@ -81,7 +81,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Natural Trainer Sensitive mažų veislių suaugusiems šunims su ėriena be glitimo",
+		desc: "Natural Trainer Sensitive suaugusiems mažų veislių šunims su ėriena be glitimo",
 		price: "€6.50/kg",
 		fullDesc: {
 			analysis: ["Žali baltymai 25%", "Žali riebalai 15%", "Žalia ląsteliena 2.5%", "Žali pelenai 7%"],

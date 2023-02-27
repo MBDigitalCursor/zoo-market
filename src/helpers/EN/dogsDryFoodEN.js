@@ -12,7 +12,7 @@ import img10 from "../../assets/img/dogsDryFood/dog sausas 10.png";
 const dogsDryFoodArr = [
 	{
 		img: img1,
-		desc: "Hill's Science Plan Adult Medium Lamb & Rice",
+		desc: "Hill's Science Plan Medium Adult Lamb & Rice",
 		price: "€5.20/kg",
 		fullDesc: {
 			analysis: ["Crude protein 21.2%", "Crude fat 14.2%", "Crude fiber 1.7%", "Crude ash 4.7% ", "Omega-6 3.2%", "Calcium 0.76%", "Phosphorus 0.64%", "Sodium 0.24%", "Potassium 0.65%", "Magnesium 0.11%"],
@@ -46,7 +46,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Brit Care Dog Sustainable Adult Small Breed Chicken & Insects",
+		desc: "Brit Care Dog Sustainable Small Adult Breed Chicken & Insects",
 		price: "€17.10 (3 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 28.0%", "Crude fat 17.0%", "Crude fiber 3.0%", "Crude ash 6.5%", "Omega-3 0.4%", "Omega-6 2.7%", "Moisture 10.0%", "Calcium 1.4%", "Phosphorus 1.0%", "Sodium 0.3%", "EPA (20:5 n-3) 0.05%", "DHA (22:6 n-3) 0.1%"],
@@ -97,7 +97,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Appalachian Valley Small Breed Canine Recipe",
+		desc: "Appalachian Valley Small Adult Breed Canine Recipe",
 		price: "€17.30 (2 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 32%", "Crude fat 18%", "Crude fiber 4%", "Moisture 10%", "Omega-3 0.3%", "Omega-6 2.8%", "Taurine 0.12%"],
@@ -114,7 +114,7 @@ const dogsDryFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "Hill's Science Plan Adult Small and Mini Lamb & Rice Flavour",
+		desc: "Hill's Science Plan Small and Mini Adult Lamb & Rice Flavour",
 		price: "€8.80/kg",
 		fullDesc: {
 			analysis: ["Protein 24.3%", "Fat 15.5%", "Crude fiber 1.8%", "Crude ash 5.8%", "Omega-6 3.72%", "Calcium 0.85%", "Phosphorus 0.75%", "Potassium 0.81%", "Sodium 0.32%", "Magnesium 0.108%"],

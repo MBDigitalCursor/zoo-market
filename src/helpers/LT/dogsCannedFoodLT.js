@@ -12,7 +12,7 @@ import img10 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
 const dogsCannedFoodArr = [
 	{
 		img: img1,
-		desc: "Calibra Life Sensitive Monoprotein konservai jautriems šunims su triušiena",
+		desc: "Calibra Life Sensitive monoproteininiai konservai jautriems šunims su triušiena",
 		price: "€3.10 (400 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 8.5%", "Žali riebalai 3%", "Žalia ląsteliena 1%", "Žali pelenai 2.5% ", "Omega-3 0.15%", "Omega-6 1%", "Drėgnis 78%", "Kalcis 0.3%", "Fosforas 0.25%", "Natris 0.3%"],
@@ -29,7 +29,7 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img2,
-		desc: "Affinity Advance Veterinary Diets Gastroenteric konservuotas pašaras",
+		desc: "Affinity Advance Veterinary Diets gastroenterinis konservuotas pašaras",
 		price: "€3.00 (150 g)",
 		fullDesc: {
 			analysis: ["Žali baltymai 8%", "Žali riebalai 2.5%", "Žalia ląsteliena 0.3%", "Žali pelenai 2.3%", "Drėgnis 79%", "Natris 0.1%", "Kalis 0.2%"],
