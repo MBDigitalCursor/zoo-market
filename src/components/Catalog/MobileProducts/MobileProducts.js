@@ -56,7 +56,7 @@ function MobileProducts() {
 						height: "70px",
 					}}
 					src={dogIcon}
-					alt=''
+					alt='dog icon'
 				/>
 			</div>
 			{dogsCategoryTrees.map((cat, i) => (
@@ -76,7 +76,7 @@ function MobileProducts() {
 						height: "50px",
 					}}
 					src={catIcon}
-					alt=''
+					alt='cat icon'
 				/>
 			</div>
 			{catsCategoryTrees.map((cat, i) => (

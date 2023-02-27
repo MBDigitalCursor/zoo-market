@@ -54,7 +54,6 @@ function Catalog() {
 		dispatch(setMobileView(window.innerWidth));
 	}
 	useEffect(() => {
-		// dispatch(setMobileView(window.innerWidth));
 		if (!mobileView) window.addEventListener("resize", handleResize);
 	}, []);
 

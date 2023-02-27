@@ -112,7 +112,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='dogs dry food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -130,7 +130,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='cats dry food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -148,7 +148,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='dogs wet food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -166,7 +166,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='cats wet food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -184,7 +184,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='dogs dry food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -202,7 +202,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='cats dry food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -220,7 +220,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='dogs wet food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>
@@ -238,7 +238,7 @@ function ProductsSlide() {
 											>
 												<img
 													src={product.img}
-													alt=''
+													alt='cats wet food'
 												/>
 												<p>{product.desc}</p>
 												<p>{product.price}</p>

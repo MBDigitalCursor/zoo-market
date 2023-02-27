@@ -1,4 +1,4 @@
-import { Box, Modal, Pagination, Typography } from "@mui/material";
+import { Box, Modal, Pagination } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,7 +8,7 @@ const pageSize = 4;
 
 function ProdsPagination({ products }) {
 	const dispatch = useDispatch();
-	const { categoryProducts, selectedProduct, pageLanguage } = useSelector((state) => state.generalSlice);
+	const { selectedProduct, pageLanguage } = useSelector((state) => state.generalSlice);
 
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
@@ -77,11 +77,11 @@ function ProdsPagination({ products }) {
 							<img
 								style={{
 									width: "170px",
-									height: "230px",
+									height: "210px",
 									objectFit: "contain",
 								}}
 								src={prod.img}
-								alt=''
+								alt='product'
 							/>
 							<div
 								style={{

@@ -6,7 +6,6 @@ import img3 from "../../assets/img/dogsCannedFood/dog konservai 6.png";
 import img4 from "../../assets/img/dogsDryFood/dog sausas 10.png";
 import img5 from "../../assets/img/catsCannedFood/cat konservai 4.png";
 import img6 from "../../assets/img/dogsDryFood/dog sausas 11.png";
-import popImg from "../../assets/img/dogsDryFood/dog sausas 11.png";
 import logo from "../../assets/img/mobileMain/brand logos.svg";
 import division from "../../assets/img/mobileMain/division section.svg";
 import divisionEN from "../../assets/img/mobileMain/division-section-EN-mobile.svg";
@@ -68,21 +67,21 @@ function PopularItems() {
 			title: "Sveiki atvykę į Zoo Market krautuvėlės namus internete!",
 			desc: "Naujienos ir pasiūlymai jūsų visuomet lauks čia.",
 			img: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
-			credits: "LABAS",
+			credits: "Photo by Alvan Nee on Unsplash",
 		},
 		{
 			title: "Šunų skanėstai",
 			desc: "Kviečiame apsilankyti ir rinktis iš gausybės įvairių šunų skanėstų, kuriuos visus rasite mūsų krautuvėlėje.",
 			price: "Tiks ir išrankiausiems jūsų draugams.",
 			img: "https://images.unsplash.com/photo-1508609540374-67d1601ba520?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80",
-			credits: "LABAS",
+			credits: "Photo by McDobbie Hu on Unsplash",
 		},
 		{
 			title: "Platus kačių kraiko pasirinkimas",
 			desc: "Prekės pačioms jautriausioms ir išrankiausioms katėms.",
 			price: "",
 			img: "https://images.unsplash.com/photo-1496285138399-b5d7d20d1e16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-			credits: "LABAS",
+			credits: "Photo by Paul Hanaoka on Unsplash",
 		},
 	];
 

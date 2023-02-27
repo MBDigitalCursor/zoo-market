@@ -324,6 +324,7 @@ textarea {
   }
 
   .remodal {
+    display: none;
     bottom: -31.5rem;
     right: 0rem;
   }
