@@ -39,6 +39,16 @@ function SlideComp({ slides }) {
 					className='slide-icon slide-icon-right'
 					onClick={nextSlide}
 				/>
+				<p
+					style={{
+						position: "absolute",
+						bottom: "0",
+						right: "0",
+						fontSize: "8px",
+					}}
+				>
+					{slides[slideIndex].credits}
+				</p>
 			</div>
 		</div>
 	);

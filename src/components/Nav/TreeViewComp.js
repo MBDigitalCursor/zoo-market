@@ -64,7 +64,7 @@ export default function TreeViewComp() {
 							nodeId='4'
 							label='Konservai'
 							onClick={() => {
-								scrollToSection("dogsCannedFood");
+								scrollToSection("dogsWetFood");
 								dispatch(setBurgerMenu(false));
 							}}
 						/>
@@ -85,7 +85,7 @@ export default function TreeViewComp() {
 							nodeId='7'
 							label='Konservai'
 							onClick={() => {
-								scrollToSection("catsCannedFood");
+								scrollToSection("catsWetFood");
 								dispatch(setBurgerMenu(false));
 							}}
 						/>
@@ -151,7 +151,7 @@ export default function TreeViewComp() {
 							nodeId='4'
 							label='Wet food'
 							onClick={() => {
-								scrollToSection("dogsCannedFood");
+								scrollToSection("dogsWetFood");
 								dispatch(setBurgerMenu(false));
 							}}
 						/>
@@ -172,7 +172,7 @@ export default function TreeViewComp() {
 							nodeId='7'
 							label='Wet food'
 							onClick={() => {
-								scrollToSection("catsCannedFood");
+								scrollToSection("catsWetFood");
 								dispatch(setBurgerMenu(false));
 							}}
 						/>

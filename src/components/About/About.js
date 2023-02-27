@@ -24,10 +24,10 @@ function About() {
 					style={{
 						lineHeight: "1.6",
 						fontSize: "16px",
-						maxWidth: pageLanguage === "LT" ? "412px" : "440px",
+						maxWidth: pageLanguage === "LT" ? "425px" : "440px",
 					}}
 				>
-					{pageLanguage === "LT" ? "Esame smulkus šeimos verslas įsikūrę Lazdynuose, Vilniuje. Dirbame augintinių bendruomenės gyvenime nuo 2018" : "We are a small family business located in Lazdynai, Vilnius. We have been working in the life of the pet community since 2018"}
+					{pageLanguage === "LT" ? "Esame smulkus šeimos verslas, įsikūręs Vilniuje, Lazdynuose. Dirbame augintinių bendruomenės gyvenime nuo 2018" : "We are a small family business located in Vilnius, Lazdynai. Have been working in the life of the pet community since 2018"}
 				</p>
 			</div>
 		</div>

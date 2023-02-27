@@ -5,7 +5,8 @@ import cat from "../../assets/icons/cat 2.svg";
 import bird from "../../assets/icons/bird2.png";
 import hamster from "../../assets/icons/hamster2.png";
 import fish from "../../assets/icons/fish2.png";
-import info from "../../assets/img/division-section.svg";
+import infoLT from "../../assets/img/division-section.svg";
+import infoEN from "../../assets/img/division-section-EN.svg";
 import CategoryItem from "./CategoryItem";
 import ProductsSlide from "./ProductsSlide";
 import { useDispatch, useSelector } from "react-redux";
@@ -94,13 +95,13 @@ function Catalog() {
 							</h4>
 						) : (
 							<h4 className='photo-header'>
-								WE TRADE <span>WEIGHED</span> DRY FOOD FROM ALL <br /> MANUFACTURERS WITHOUT EXCEPTIONS
+								WE SELL <span>WEIGHED</span> DRY FOOD FROM ALL <br /> MANUFACTURERS WITHOUT EXCEPTIONS
 							</h4>
 						)}
 					</div>
 					<div className='left-side-desc'>
 						<img
-							src={info}
+							src={pageLanguage === "LT" ? infoLT : infoEN}
 							alt='animals products description'
 						/>
 					</div>

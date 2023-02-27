@@ -37,6 +37,8 @@
 .single-item {
   max-width: 244px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .single-item img {
@@ -116,8 +118,9 @@
 }
 
 .slide-icon {
+  color: white;
   font-size: 3rem;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .slide-icon:hover {

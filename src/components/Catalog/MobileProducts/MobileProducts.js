@@ -36,6 +36,17 @@ function MobileProducts() {
 		},
 	];
 
+	const handleSectionId = (category) => {
+		if (category.products === dogsDryFoodArrLT) return "dogsDryFood";
+		if (category.products === dogsDryFoodArrEN) return "dogsDryFood";
+		if (category.products === dogsCannedFoodArrLT) return "dogsWetFood";
+		if (category.products === dogsCannedFoodArrEN) return "dogsWetFood";
+		if (category.products === catsDryFoodArrLT) return "catsDryFood";
+		if (category.products === catsDryFoodArrEN) return "catsDryFood";
+		if (category.products === catsCannedFoodArrLT) return "catsWetFood";
+		if (category.products === catsCannedFoodArrEN) return "catsWetFood";
+	};
+
 	return (
 		<div className='products-with-pagination'>
 			<div className='products-with-pagination-logo'>
@@ -50,7 +61,7 @@ function MobileProducts() {
 			</div>
 			{dogsCategoryTrees.map((cat, i) => (
 				<div
-					id={`${cat.products === dogsDryFoodArrLT ? "dogsDryFood" : "dogsCannedFood"}`}
+					id={handleSectionId(cat)}
 					key={i}
 					className='tree-products'
 				>
@@ -70,7 +81,7 @@ function MobileProducts() {
 			</div>
 			{catsCategoryTrees.map((cat, i) => (
 				<div
-					id={`${cat.products === catsDryFoodArrLT ? "catsDryFood" : "catsCannedFood"}`}
+					id={handleSectionId(cat)}
 					key={i}
 					className='tree-products'
 				>
