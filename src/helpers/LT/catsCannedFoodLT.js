@@ -1,185 +1,185 @@
-import img1 from "../../assets/img/dogsCannedFood/dog konservai 1.png";
-import img2 from "../../assets/img/dogsCannedFood/dog konservai 2.jpeg";
-import img3 from "../../assets/img/dogsCannedFood/dog konservai 3.png";
-import img4 from "../../assets/img/dogsCannedFood/dog konservai 4.png";
-import img5 from "../../assets/img/dogsCannedFood/dog konservai 5.png";
-import img6 from "../../assets/img/dogsCannedFood/dog konservai 6.png";
-import img7 from "../../assets/img/dogsCannedFood/dog konservai 7.png";
-import img8 from "../../assets/img/dogsCannedFood/dog konservai 8.png";
-import img9 from "../../assets/img/dogsCannedFood/dog konservai 9.png";
-import img10 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
+import img1 from "../../assets/img/catsCannedFood/cat konservai 1.png";
+import img2 from "../../assets/img/catsCannedFood/cat konservai 2.png";
+import img3 from "../../assets/img/catsCannedFood/cat konservai 3.png";
+import img4 from "../../assets/img/catsCannedFood/cat konservai 4.png";
+import img5 from "../../assets/img/catsCannedFood/cat konservai 5.png";
+import img6 from "../../assets/img/catsCannedFood/cat konservai 6.png";
+import img7 from "../../assets/img/catsCannedFood/cat konservai 7.png";
+import img8 from "../../assets/img/catsCannedFood/cat konservai 8.png";
+import img9 from "../../assets/img/catsCannedFood/cat konservai 9.png";
+import img10 from "../../assets/img/catsCannedFood/cat konservai 10.png";
 
-const dogsCannedFoodArr = [
+const catsCannedFoodArr = [
 	{
 		img: img1,
-		desc: "Calibra Dog Life Sensitive Rabbit Wet Food 400 g",
-		price: "€3.10",
+		desc: "Calibra Premium Line suaugusioms katėms su vištiena ir jautiena padaže",
+		price: "€0.80 (100 g)",
 		fullDesc: {
-			analysis: ["Crude protein 8.5%", "Crude fat 3%", "Crude fiber 1%", "Crude ash 2.5% ", "Omega-3 0.15%", "Omega-6 1%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%", "Sodium 0.3%"],
-			vitPerKg: ["Vitamin A (3a672a) 800 IU", "Vitamin B1 (3a821) 1 mg", "Vitamin D3 (3a671) 200 IU", "Vitamin E (3a700) 120 mg", "Biotin (3a880) 0.4 mg", "Zinc (3b606) 10 mg", "Manganese (3b504) 2.4 mg", "Iodine (3b201) 0.6 mg", "Copper (3b406) 3.2 mg", "Iron (3b106) 8 mg"],
-			feedingGuide: ["Body Weight (kg) - Food (g)", "5 - 305", "10 - 515", "15 - 700", "20 - 870", "25 - 1025", "30 - 1175", "40 - 1460", "50 - 1730", "60 - 1980", "70 - 2225", "80 - 2460"],
+			analysis: ["Žali baltymai 9%", "Riebalai 4.5%", "Žalia ląsteliena 1%", "Žali pelenai 3%", "Drėgnis 82%"],
+			vitPerKg: ["Vitaminas D3 250 TV", "Vitaminas E 25 mg", "Cinkas (cinko sulfato monohidrato pavidalu) 10 mg", "Manganas (mangano oksido pavidalu) 2,5 mg", "Taurinas 450 mg", "Biotinas 50 µg"],
+			feedingGuide: ["Gyvūno Svoris (kg) - Maišeliai (per dieną)", "3-5 - 3-4"],
 			desc: {
-				firstPart: "Calibra Dog Life Sensitive Rabbit - This canned food recipe with rabbit is a complete food designed for adult dogs, and is also suitable for sensitive digestion.",
-				secondPart: "The hypoallergenic recipe, based on a single protein, is formulated with a limited number of ingredients.",
-				thirdPart: "The recipe composition is grain- and gluten-free, which has an effect on its excellent digestibility. It contains only 100% defined ingredients of the highest quality.",
-				keyBenefits: "The recipe contains salmon oil, a source of Omega-3 unsaturated fatty acids (EPA, DHA), necessary for brain development and function, and to support the physiological functions of the skin and coat and the quality thereof. Omega-3 also has anti-inflammatory properties. Schizochytrium limacinum (dried seaweed) - a source of the Omega-3 fatty acid DHA, which supports normal brain function.",
-				ingredients: "Rabbit (70 %), pea flour, lignocellulose, salmon oil (1 %), calcium carbonate, dried algae (0.2 %, Schizochytrium limacinum).",
+				firstPart: "Visavertis maistas suaugusioms katėms su vištiena ir jautiena padaže. Skani vištiena su švelnia jautiena reiklioms katėms.",
+				secondPart: "",
+				thirdPart: "",
+				keyBenefits: "Nėra cheminių konservantų. Jokių dirbtinių dažiklių. Be sojos, GMO ir pridėtinio cukraus.",
+				ingredients: "Mėsa ir gyvūninės kilmės produktai (78 % gabaliukais, iš kurių 10% antiena, 10% vištiena), žuvis ir žuvies produktai, augalinės kilmės produktai, mineralai.",
 			},
 		},
 	},
 	{
 		img: img2,
-		desc: "Advance Veterinary Diets Gastroenteric Wet Pouch 150 g",
-		price: "€3.00",
+		desc: "Royal Canin sterilizuotoms katėms padaže",
+		price: "€1.60 (85 g)",
 		fullDesc: {
-			analysis: ["Crude protein 8%", "Crude fat 2.5%", "Crude fiber 0.3%", "Crude ash 2.3%", "Moisture 79%", "Sodium 0.1%", "Potassium 0.2%"],
-			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 20 mg", "Iodine 0.75 mg", "Copper 1.75 mg", "Manganese 1.4 mg", "Zinc 25 mg"],
-			feedingGuide: ["Body Weight (kg) - Pouches (per day)", "2-5 - 1.5-2.5", "6-10 - 3-4.5", "11-15 - 4.5-6", "16-20 - 6-7", "21-30 - 7.5-9.5", "31-40 - 10-12", "41-50 - 12.5-14.5"],
+			analysis: ["Žali baltymai 9%", "Riebalai 2.6%", "Žalia ląsteliena 1.8%", "Žali pelenai 1.3%", "Drėgnis 81%"],
+			vitPerKg: ["Vitaminas D3 90 TV", "Geležis 3 mg", "Jodas 0.21 mg", "Varis 1.6 mg", "Manganas 0.9 mg", "Cinkas 9 mg"],
+			feedingGuide: ["Gyvūno Svoris (kg) - Maišeliai (per dieną)", "4 - 3"],
 			desc: {
-				firstPart: "Complete and balanced dietetic product for puppies over 14 weeks old and adult dogs, prepared with easily digestible ingredients, a low fibre content, and increased sodium and potassium content to help relieve certain gastrointestinal problems and aid with cases of exocrine pancreatic insufficiency.",
-				secondPart: "Its easy-to-digest formula facilitates the absorption of essential nutrients.",
-				thirdPart: "Veterinary diets canine gastroenteric is a clinically tested food with proven results.",
-				keyBenefits: "Soursce of chicken protein to help digestion. Flavourful food to improve appetite. Easily digestible rice contributes to generating a smaller volume of faeces. Prebiotics (FOS & MOS) promote the development of healthy intestinal flora.",
-				ingredients: "Meat and animal derivatives (chicken 43%), cereals (rice 8%), minerals, oils and fats, derivatives of vegetable origin (fructo-oligosaccharides 0.1%), mannan-oligosaccharides 0.1%.",
+				firstPart: "Visavertis pašaras katėms - ypač sterilizuotoms suaugusioms katėms (ploni griežinėliai padaže).",
+				secondPart: "",
+				thirdPart: "",
+				keyBenefits: "Padeda išlaikyti idealų sterilizuotų kačių svorį. Padeda palaikyti sveiką šlapimo sistemą. Sukurta taip, kad atitiktų optimalų makro mitybos profilį, kurį instinktyviai renkasi suaugusios katės.",
+				ingredients: "Mėsa ir mėsos perdirbimo produktai, javai, daržovių perdirbimo produktai, mineralai, augalinės kilmės baltymų ekstraktai, cukrus.",
 			},
 		},
 	},
 	{
 		img: img3,
-		desc: "Nature's Variety Adult Madium/Maxi Beef Original Pate 300 g",
-		price: "€3.70",
+		desc: "Monge Kitten tuno dribsniai su alaviju",
+		price: "€1.90 (80 g)",
 		fullDesc: {
-			analysis: ["Crude protein 10.8%", "Crude fat 8.5%", "Crude fiber 0.5%", "Crude ash 2.3%", "Moisture 75%"],
-			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 30 mg", "Calcium iodate anhydrous 2.3 mg (I: 0.75 mg)", "Manganous sulphate monohydrate 4.31 mg (Mn: 1.4 mg)", "Zinc sulphate monohydrate 68.6 mg (Zn: 25 mg)"],
-			feedingGuide: ["Body Weight (kg) - Pouches (per day)", "10 - 1.5", "20 - 2.5", "30 - 3.5", "40 - 4", "55 - 5.5"],
+			analysis: ["Žali baltymai 13%", "Žali riebalai 0.5%", "Žalia ląsteliena 1%", "Žali pelenai 2%", "Drėgnis 82%"],
+			vitPerKg: ["Vitaminas E (DL-alfa-tokoferilo acetatas) 50 mg"],
+			feedingGuide: ["Gyvūno Svoris (kg) - Skardinės (per dieną)", "3-4 - 2-3"],
 			desc: {
-				firstPart: "Complete and balanced pet food for adult dogs, no grain. With high-quality beef as the main ingredient, paired with fruits and vegetables. Steam cooked in its own juices and at optimal temperature for better nutrient conservation.",
-				secondPart: "",
+				firstPart: "Papildomas maistas išrankiems ir išskirtiniams kačiukams su gardžiu tunu ir alaviju, aukšta maistine verte ir mažai riebalų.",
+				secondPart: "Kačiukams iki 12 mėnesių amžiaus.",
 				thirdPart: "",
-				keyBenefits: "Complete & balanced, high quality protein, no artificial colours, flavours or preservatives, made with natural ingredients, steam cooked, trusted suppliers.",
-				ingredients: "Beef (66%), beef broth (28.9%), spinach (2%), pumpkin (2%), minerals, salmon oil.",
+				keyBenefits: "Visiškai natūralus savo sultyse, be dažiklių, konservantų ir glitimo. Turtingas Omega-3 ir Omega-6 riebalų rūgščių. Dėl garuose paruoštų ingredientų patiekalas yra skanesnis ir aromatingesnis. Vaisiai nėra chemiškai apdoroti, be konservantų ir dažiklių. Alavijas stiprina imunitetą ir turi raminamąjį poveikį.",
+				ingredients: "Tunas 55%, alavijas 5%, ryžiai, FOS (fruktooligosacharidai) 0,04%.",
 			},
 		},
 	},
 	{
 		img: img4,
-		desc: "Healthy Meat Pate with Buffalo Meat and Potatoes 400 g",
-		price: "€2.80",
+		desc: "Aatas Cat viliojantis tunas ir krevetės drebučiuose",
+		price: "€1.20 (80 g)",
 		fullDesc: {
-			analysis: ["Crude protein 11%", "Crude fat 3%", "Crude fiber 0.5%", "Crude ash 1.5%", "Moisture 82%"],
-			vitPerKg: ["Vitamin A 2670 IU", "Vitamin D3 290 IU", "Zinc 15.62 mg", "Iron 6.5 mg", "Copper 1.64 mg", "Iodite 0.37 mg", "Manganese 1.12 mg", "Selenium 0.08 mg"],
-			feedingGuide: ["Recommended daily rate is indicated on the package."],
+			analysis: ["Žali baltymai 10%", "Žali riebalai 0.4%", "Žalia ląsteliena 1%", "Žali pelenai 2%", "Drėgnis 89%"],
+			vitPerKg: [""],
+			feedingGuide: [""],
 			desc: {
-				firstPart: "Complete dietary feed for adult dogs with only one ingredient of animal origin. Selected source of protein (buffalo meat) and carbohydrates (potatoes).",
+				firstPart: "Puikus viliojančio sugautų laukinių tunų ir sultingų krevečių mišinys, virtas ir troškintas su gardžiais pipirais.",
 				secondPart: "",
 				thirdPart: "",
-				keyBenefits: "Formulated to reduce intolerance to ingredients and nutrients, but recommended as a traditional feed.",
-				ingredients: "Buffalo meat 95%, potatoes 4%, sunflower oil.",
+				keyBenefits: "Natūralūs, sveiki ingredientai be grūdų, karagenino, dirbtinių dažiklių, skonių ir konservantų.",
+				ingredients: "Tuno sultinys, tunas, krevetės, stingimo medžiagos (jūros dumbliai, kasijos derva, guaro derva, saldžiavaisio pupmedžio derva, kalio chloridas ir karbonatai).",
 			},
 		},
 	},
 	{
 		img: img5,
-		desc: "Petkult Miel Grain Free Adult Wet Dog Food with Lamb 400 g",
-		price: "€2.40",
+		desc: "Kippy paštetas sterilizuotoms katėms su kalakutiena",
+		price: "€1.00 (90 g)",
 		fullDesc: {
-			analysis: ["Protein 10%", "Fat 8%", "Fiber 0.6%", "Ash 2.5%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%"],
-			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 20 mg", "Vitamin B1", "Vitamin B2", "Vitamin B6", "Vitamin B5", "Vitamin B9", "Vitamin B12", "Omega-3", "Biotin", "Zinc (zinc oxide) 13 mg"],
-			feedingGuide: ["Body Weight (kg) - Cans (per day)", "10 - 1", "20 - 2", "40 - 4"],
+			analysis: ["Žali baltymai 11%", "Žali riebalai 6%", "Žalia ląsteliena 1%", "Žali pelenai 3%", "Drėgnis 78%"],
+			vitPerKg: ["Vitaminas D3 135 TV", "Cinkas 3.3 mg", "Jodas 0.45 mg", "Manganas 1.35 mg", "Taurinas 139.5 mg"],
+			feedingGuide: ["Gyvūno Svoris (kg) - Maisto Kiekis (g)", "2 - 30", "4 - 45", "6 - 60", "8 - 75"],
 			desc: {
-				firstPart: "Natural, super premium without ingredients that cause allergies, intolerances or health changes: dyes, preservatives, synthetic additives, artificial flavors, soy, genetically modified organisms.",
+				firstPart: "Visavertis super premium klasės konservas skaniausio pašteto su kalakutiena pavidalu. Idealiai tinka kasdieniam reiklių sterilizuotų kačių maitinimui. Maistas gaminamas pašteto pavidalu pagal skaniausią itališką receptą iš kokybiškų žaliavų, kuriose maksimaliai išsaugomos kačių organizmui naudingos maistinės medžiagos. Jis gali aprūpinti gyvūną reikiamu dienos energijos lygiu ir garantuoja gerą sveikatą.",
 				secondPart: "",
 				thirdPart: "",
-				keyBenefits: "Hypoallergenic lamb meat with a low allergenic potential, ideal for sensitive dogs.Supports the health of the nervous system of the heart and the correct functioning of the metabolism.",
-				ingredients: "67% lamb meat and organs (min 5% lamb), cooking water (max 30%), linseed oil, minerals.",
+				keyBenefits: "Be angliavandenių, turinčių užpildų ar konservantų. Daug baltymų, lengvai virškinamas.",
+				ingredients: "Mėsa ir mėsos subproduktai (14% kalakutiena), žuvis ir žuvies subproduktai, runkelių minkštimas, natūralūs aliejai ir riebalai.",
 			},
 		},
 	},
 	{
 		img: img6,
-		desc: "Barking Heads Puppy Days Wet Puppy Food 300 g",
-		price: "€3.50",
+		desc: "Monge orkaitėje gaminti gabaliukai želė su gaidžio mėsa sterilizuotoms katėms",
+		price: "€0.80 (85 g)",
 		fullDesc: {
-			analysis: ["Crude protein 11%", "Crude fat 7%", "Crude fiber 0.8%", "Crude ash 2.5%", "Moisture 76%"],
-			vitPerKg: [""],
-			feedingGuide: ["Body Weight (kg) - Pouches (per day)", "5 - 1.5", "10 - 2", "20 - 3", "30+ - 4+"],
+			analysis: ["Žali baltymai 11.5%", "Žali riebalai 2.4%", "Žalia ląsteliena 0.5%", "Žali pelenai 2.4%", "Drėgnis 80%"],
+			vitPerKg: ["Vitaminas D3 180 TV", "Vitaminas E 40 mg", "Geležis 13 mg", "Jodas 1.6 mg", "Varis 3.4 mg", "Manganas 8.5 mg", "Cinkas 42 mg", "Selenas 0.04 mg", "Taurinas 500 mg"],
+			feedingGuide: ["Gyvūno Svoris (kg) - Maisto Kiekis (g)", "3 - 191", "4 - 231", "5 - 268", "6 - 303"],
 			desc: {
-				firstPart: "Barking Heads Puppy Days Wet Puppy Food has been specially formulated for all your growing puppy's needs.",
-				secondPart: "This delicious grain-free recipe with added vitamins & minerals has been slow cooked to paw-fection, using only the best quality, natural ingredients. Packed with protein (85% free-run chicken!), this super yummy complete puppy food has been blended with vegetables and herbs for your newest family member.",
+				firstPart: "Gabaliukai želė pasižymi tvirta tekstūra ir maloniu keptai vištienai būdingu aromatu. Gaidžio mėsa, kaip pagrindinė sudedamoji dalis, yra baltymų šaltinis, kuriame mažai riebalų ir cholesterolio. Puikus vitamino B komplekso, geležies, cinko ir seleno šaltinis.",
+				secondPart: "",
 				thirdPart: "",
-				keyBenefits: "Contains 85% free-run chicken, free from artificial colours, flavours & preservatives. Grain-free Recipe. Slow cooked with added vitamins & minerals.",
-				ingredients: "85% chicken includes - fresh deboned chicken (60%), chicken broth (25%), sweet potato, carrot, courgette, peas, aalmon oil, sunflower oil, lucerne, seaweed, parsley, celery, chicory root, nettle, turmeric, aniseed and minerals.",
+				keyBenefits: "Speciali formulė, kurioje yra daug baltymų ir mažai riebalų, padeda palaikyti normalią sterilizuotų kačių, linkusių į antsvorį arba nutukimą, kūno būklę. Receptas taip pat suformuluotas nenaudojant javų.",
+				ingredients: "Mėsa ir gyvulinės kilmės produktai (švieži itališki gaidžiai 20% ir triušiena 20%), žuvis ir žuvies produktai, daržovės (bulvės), mineralai, pieno baltymų milteliai.",
 			},
 		},
 	},
 	{
 		img: img7,
-		desc: "Carnilove Lamb & Wild Boar Pate for Adult Dogs 400 g",
-		price: "€3.00",
+		desc: "Brit Care sveikų triušių filė padaže sterilizuotoms suaugusioms katėms",
+		price: "€1.30 (85 g)",
 		fullDesc: {
-			analysis: ["Crude protein 9.5%", "Crude fat 6.5%", "Crude fiber 0.4%", "Crude ash 2.5%", "Moisture 78%", "Calcium 0.2%", "Phosphorus 0.25%", "Sodium 0.3%"],
-			vitPerKg: ["Vtamin D3 (3a671) 250 IU", "Vitamin E (3a700) 150 mg", "Biotin (3a880) 0.5 mg", "Copper (3b406) 4 mg", "Iron (3b106) 10 mg", "Iodine (3b201) 0.75 mg", "Manganese (3b504) 3 mg", "Zinc (3b606) 15 mg", "Taurine (3a370) 1000 mg"],
-			feedingGuide: ["Body Weight (kg) - Food (g)", "1-25 - 200-800", ">25 - 800-2200"],
+			analysis: ["Žali baltymai 9%", "Žali riebalai 3%", "Žalia ląsteliena 0.5%", "Žali pelenai 2%", "Drėgnis 82%", "Kalcis 0.25%", "Fosforas 0.2%", "Natris 0.3%"],
+			vitPerKg: ["Vitaminas D3 (E671) 250 TV", "Vitaminas E (3a700) 150 mg", "Biotinas (3a880) 0.5 mg", "Cinkas (3b606) 12 mg", "Manganas (3b502) 3 mg", "Geležis (3b103) 10 mg", "Varis (3b405) 0.4 mg", "Jodas (3b201) 0.7 mg", "Taurinas (3a370) 500 mg", "L-Metioninas (3c305) 2 000 mg"],
+			feedingGuide: ["Gyvūno Svoris (kg) - Maisto Kiekis (g)", "3 - 170", "4 - 255", "5 - 298", "6 - 340", "7 - 425", "8 - 510"],
 			desc: {
-				firstPart: "Lamb and wild boar are the perfect combination of quality, highly digestible, usable proteins rich in natural nutrients. Lamb is an excellent source of trace elements such as selenium, iron, zinc, B vitamins, and unsaturated fats, while wild boar is packed with proteins yet contains little fat.",
-				secondPart: "",
+				firstPart: "Filė padaže su sveiku triušiu, praturtinta šaltalankiais ir nasturtais. Super premium klasės begrūdis kačių maistas suaugusioms sterilizuotoms katėms.",
+				secondPart: "Skanūs Brit Care maišeliai naudojami ir kaip visavertis maistas, ir kaip skanus sauso maisto priedas, suteikiantis papildomos įvairovės ir skonio. Jie ypač tinka labai išrankioms katėms arba katėms, kurių maitinimasis yra problematiškas. Dėl pridėtų šaltalankių ir nasturtų jie padeda išvengti šlapimo takų ligų.",
 				thirdPart: "",
-				keyBenefits: "Ideal for maintaining optimum physical condition without the risk of increased blood cholesterol levels.",
-				ingredients: "Lamb (35%), wild boar (32%), blueberries (2%), cranberries (2%), raspberries (2%), pea flour (2%), lignocellulose (1%), salmon oil (0.5%)",
+				keyBenefits: "Formulė be grūdų, 85% mėsos filė, skonio patrauklumas, natūralūs antioksidantai: rozmarino ekstraktas.",
+				ingredients: "Filė su 85% mėsos (62% vištienos, 15% kepenų, 8% triušio), sultinio, 1% šaltalankių, 0,5% nasturtų, mineralų, žirnių krakmolo.",
 			},
 		},
 	},
 	{
 		img: img8,
-		desc: "Monge BWild Grain Free Salmon Wet Food for Adults 400 g",
-		price: "€2.10",
+		desc: "Natural Trainer kačiukams su kalakutienos gabaliukais padaže",
+		price: "€1.40 (85 g)",
 		fullDesc: {
-			analysis: ["Crude protein 8.6%", "Crude fat 6.2%", "Crude fiber 0.7%", "Crude ash 2.6%", "Moisture 79%"],
-			vitPerKg: ["Vitamin D3 434 IU", "Vitamin E 15.5 mg", "Selenium (sodium selenite 0.05 mg) 0.02 mg", "Manganese (manganese sulphate monohydrate 11 mg) 3.5 mg", "Zinc (zinc oxide 20 mg) 16 mg", "Copper (copper (II) sulphate pentahydrate 5.5 mg) 1.4 mg", "Iron  (iron (II) sulphate monohydrate 35 mg) 11.5 mg", "Iodine (calcium iodite 0.3 mg) 0.19 mg"],
-			feedingGuide: ["Body Weight (kg) - Food (g)", "12 - 160", "14 - 181", "16 - 202", "18 - 222", "20 - 241", "25 - 296", "30 - 340", "40 - 421", "50 - 498", "60 - 571", "70 - 641"],
+			analysis: ["Žali baltymai 10%", "Žali riebalai 5%", "Žalia ląsteliena 0.8%", "Žali pelenai 2%", "Drėgnis 80%"],
+			vitPerKg: ["Vitaminas D3 161 TV", "Vitaminas E 32 mg", "Taurinas 234 mg", "Vario (II) sulfato pentahidratas 2,49 mg (varis 0,62 mg)", "Kalio jodidas 0,24 mg (jodas 0,16 mg)", "Mangano sulfatas monohidratas 5,97 mg (manganas 1,91 mg)", "Cinko sulfatas monohidratas 44,07 mg (cinkas 16,18 mg)"],
+			feedingGuide: ["Kačiukas (mėn.) - Maisto Kiekis (g)", "1 - 140", "3 - 240", "5 - 290", "7 - 300", "9 - 300", "12 - 295", "Suaugusios Katės Svoris (kg) - Maisto Kiekis (g)", "3 - 325", "5 - 455"],
 			desc: {
-				firstPart: "BWild Grain Free Salmon is a grain-free formula, tasty pieces of salmon meat in a sauce for adult dogs of all breeds.",
-				secondPart: "Specially  developed  for  the  wellness  of  dogs  of  every  size,  trough a selection of alternative non-cereal derivative carbohydrate sources such as zucchini and pumpkin. ",
+				firstPart: "Visavertis ir subalansuotas pašaras kačiukams ir jaunoms katėms nuo 1 iki 12 mėnesių amžiaus.",
+				secondPart: "",
 				thirdPart: "",
-				keyBenefits: "The recipe is enhanced with xylo-oligosaccharides  (XOS),  next  generation  prebiotics  to  support  intestinal  wellness.  The  formulation supports articulations, due to the inclusion of glucosamine and chondroitin sulphate. It is recommended for dogs of every size.",
-				ingredients: "Fresh salmon (26%), pork liver, chicken meat, salmon oil, yeast products, dried pumpkin 2% (equal to 8.6% of fresh pumpkin), dried zucchini 2% (equal to 8.6% of fresh zucchini), minerals, potatoes, fresh blueberries, fresh cranberries, fresh raspberries, xylo-oligosaccharide (XOS 0.1%), yucca schidigera, spirulina (0.1%),  glucosamine  (0.019%),  chondroitin  sulphate  (0.01%  mg/kg).",
+				keyBenefits: "Taip pat idealiai tinka nėščioms ar žindančioms katėms.",
+				ingredients: "Paukštiena (kalakutiena 4%), kiauliena (šviežia 4%), jautiena, kukurūzų krakmolas, žirnių skaidulos, mineralai, bulvių krakmolas, dekstrozė, džiovintų spanguolių koncentratas 0,01%.",
 			},
 		},
 	},
 	{
 		img: img9,
-		desc: "DRN Solo Quaglia (Quail) Dietary Wet Food for Dogs and Cats 300 g",
-		price: "€2.80",
+		desc: "Croci Vibrisse kokteilis su tunu",
+		price: "€1.30 (135 g)",
 		fullDesc: {
-			analysis: ["Crude protein 8.5%", "Crude oils and fats 5%", "Crude fiber 0.3%", "Crude ash 2.46%", "Moisture 82%"],
+			analysis: ["Žali baltymai 2%", "Žali riebalai 0.8%", "Žalia ląsteliena 0.1%", "Žali pelenai 1%", "Drėgnis 96%"],
 			vitPerKg: [""],
-			feedingGuide: ["Body Weight (kg) - Food (g)", "4 - 100-200"],
+			feedingGuide: [""],
 			desc: {
-				firstPart: "Dietary wet food for dogs and cats containing proteins from real meat of quail. Helps in case of suspected food allergy, possibly supplemented with a source of carbohydrates not present in the previous diet.",
-				secondPart: "Palatable, useful for feeding animals picky for food.",
-				thirdPart: "Facilitates resumption of nutrition in postoperative period.",
-				keyBenefits: "Easily digested, produced without the use of derivatives of meat, coloring agents, preservatives and flavorings.",
-				ingredients: "100% quail meat with no internal organs and scraps of slaughtering.",
+				firstPart: "Papildomas maistas katėms.",
+				secondPart: "Idealiai tinka ir kaip priedas prie sauso maisto, ypač toms katėms, kurios nemėgsta šlapio maisto ir kurioms maistą reikia dar labiau drėkinti.",
+				thirdPart: "Vibrisse kokteilis, kurio sudėtyje nėra grūdų, taip pat puikiai tinka jautriausioms maistui katėms.",
+				keyBenefits: "Daug skysčių, puikiai malšina troškulį ir labai skanu, nes mėsa ir žuvis sudaro 5% viso kiekio. Mėsa ir žuvis smulkiai pjaustomos, kad būtų lengvai suvartojamos kačių, turinčių ypatingų problemų.",
+				ingredients: "Tunas 5%, bulvių krakmolas, žuvies sultinys, rafinuotas saulėgrąžų aliejus.",
 			},
 		},
 	},
 	{
 		img: img10,
-		desc: "Disugual Salmon with Blueberry Adult Pate 150 g",
-		price: "€1.80",
+		desc: "Affinity Advance Veterinary Diets maistas katėms su inkstų problemomis",
+		price: "€1.45 (85 g)",
 		fullDesc: {
-			analysis: ["Protein 8.8%", "Fat 8.1%", "Fiber 0.3%", "Ash 2.8%", "Moisture 78.8%"],
-			vitPerKg: ["Vitamin A 4000 IU", "Vitamin D3 170 IU", "Vitamin E 41 mg", "Zinc 6.42 mg (zinc oxide 8.1 mg", "Selenium 0.0054 mg (sodium selenite 0.012 mg)", "Iodine 0.09 mg (sodium iodide 0.127 mg)", "Iron 1.58 mg (iron (II) carbonate 3.29 mg)", "Copper 0.24 mg (copper (II) sulphate pentahydrate 1 mg)", "Manganese 5.25 mg (manganese (II) oxide 7 mg)"],
-			feedingGuide: ["Body Weight (kg) - Food (g)", "1 - 120", "5 - 350", "10 - 600", "15 - 850", "20 - 1100", "25 - 1200", "30 - 1400", "35 - 1600"],
+			analysis: ["Žali baltymai 6.5%", "Žali riebalai 5.7%", "Žalia ląsteliena 0.5%", "Žalia pelenai 1.3%", "Drėgnis 81%", "Kalcis 0.18%", "Fosforas 0.1%", "Kalis 0.2%", "Natris 0.11%", "Omega-3 0.25%", "Omega-6 0.75%"],
+			vitPerKg: ["Vitaminas D3 203 TV", "Vitaminas E 181 mg", "Taurinas 465 mg", "Jodas 0.51 mg", "Varis 1.34 mg", "Geležis 22.3 mg", "Manganas 2.7 mg", "Cinkas 22.4 mg"],
+			feedingGuide: ["Gyvūno Svoris (kg) - Maišeliai (per dieną)", "2-4 - 2-3", "4-6 - 3-4.5", "6-8 - 4.5-5"],
 			desc: {
-				firstPart: "Complete food suitable for adult dogs of all sizes and breeds.",
+				firstPart: "Dietinis visavertis suaugusių kačių ėdalas su ribotu baltymų kiekiu, bet aukštos kokybės ir mažai fosforo, skirtas palaikyti inkstų funkciją esant lėtiniam ar laikinam inkstų nepakankamumui.",
 				secondPart: "",
 				thirdPart: "",
-				keyBenefits: "Composed with protein and enriched with fruit.",
-				ingredients: "Salmon and salmon by-products (92%), blueberries (4%), minerals and sugar.",
+				keyBenefits: "Padeda įsisavinti maistines medžiagas mažą apetitą turinčioms katėms. Padeda sulėtinti inkstų nepakankamumo progresavimą. Palaiko tinkamą inkstų funkcionavimą ir palaiko raumenis. Padeda išvengti oksalatinių akmenų susidarymo.",
+				ingredients: "Mėsa ir gyvūninės kilmės produktai (vištiena 19%, kiauliena 14%), augalinės kilmės produktai (cikorijos inulinas 0,1%), aliejai ir riebalai, mineralinės medžiagos, augalinių baltymų ekstraktai, įvairūs cukrūs.",
 			},
 		},
 	},
 ];
 
-export default dogsCannedFoodArr;
+export default catsCannedFoodArr;

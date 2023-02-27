@@ -12,8 +12,8 @@ import img10 from "../../assets/img/dogsCannedFood/dog konservai 10.png";
 const dogsCannedFoodArr = [
 	{
 		img: img1,
-		desc: "Calibra Dog Life Sensitive Rabbit Wet Food 400 g",
-		price: "€3.10",
+		desc: "Calibra Life Sensitive Monoprotein Rabbit Wet Food",
+		price: "€3.10 (400 g)",
 		fullDesc: {
 			analysis: ["Crude protein 8.5%", "Crude fat 3%", "Crude fiber 1%", "Crude ash 2.5% ", "Omega-3 0.15%", "Omega-6 1%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%", "Sodium 0.3%"],
 			vitPerKg: ["Vitamin A (3a672a) 800 IU", "Vitamin B1 (3a821) 1 mg", "Vitamin D3 (3a671) 200 IU", "Vitamin E (3a700) 120 mg", "Biotin (3a880) 0.4 mg", "Zinc (3b606) 10 mg", "Manganese (3b504) 2.4 mg", "Iodine (3b201) 0.6 mg", "Copper (3b406) 3.2 mg", "Iron (3b106) 8 mg"],
@@ -29,8 +29,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img2,
-		desc: "Advance Veterinary Diets Gastroenteric Wet Pouch 150 g",
-		price: "€3.00",
+		desc: "Advance Veterinary Diets Gastroenteric Wet Pouch",
+		price: "€3.00 (150 g)",
 		fullDesc: {
 			analysis: ["Crude protein 8%", "Crude fat 2.5%", "Crude fiber 0.3%", "Crude ash 2.3%", "Moisture 79%", "Sodium 0.1%", "Potassium 0.2%"],
 			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 20 mg", "Iodine 0.75 mg", "Copper 1.75 mg", "Manganese 1.4 mg", "Zinc 25 mg"],
@@ -39,15 +39,15 @@ const dogsCannedFoodArr = [
 				firstPart: "Complete and balanced dietetic product for puppies over 14 weeks old and adult dogs, prepared with easily digestible ingredients, a low fibre content, and increased sodium and potassium content to help relieve certain gastrointestinal problems and aid with cases of exocrine pancreatic insufficiency.",
 				secondPart: "Its easy-to-digest formula facilitates the absorption of essential nutrients.",
 				thirdPart: "Veterinary diets canine gastroenteric is a clinically tested food with proven results.",
-				keyBenefits: "Soursce of chicken protein to help digestion. Flavourful food to improve appetite. Easily digestible rice contributes to generating a smaller volume of faeces. Prebiotics (FOS & MOS) promote the development of healthy intestinal flora.",
+				keyBenefits: "Source of chicken protein to help digestion. Flavourful food to improve appetite. Easily digestible rice contributes to generating a smaller volume of faeces. Prebiotics (FOS & MOS) promote the development of healthy intestinal flora.",
 				ingredients: "Meat and animal derivatives (chicken 43%), cereals (rice 8%), minerals, oils and fats, derivatives of vegetable origin (fructo-oligosaccharides 0.1%), mannan-oligosaccharides 0.1%.",
 			},
 		},
 	},
 	{
 		img: img3,
-		desc: "Nature's Variety Adult Madium/Maxi Beef Original Pate 300 g",
-		price: "€3.70",
+		desc: "Nature's Variety Adult Madium/Maxi Beef Original Pate",
+		price: "€3.70 (300 g)",
 		fullDesc: {
 			analysis: ["Crude protein 10.8%", "Crude fat 8.5%", "Crude fiber 0.5%", "Crude ash 2.3%", "Moisture 75%"],
 			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 30 mg", "Calcium iodate anhydrous 2.3 mg (I: 0.75 mg)", "Manganous sulphate monohydrate 4.31 mg (Mn: 1.4 mg)", "Zinc sulphate monohydrate 68.6 mg (Zn: 25 mg)"],
@@ -63,8 +63,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Healthy Meat Pate with Buffalo Meat and Potatoes 400 g",
-		price: "€2.80",
+		desc: "Healthy Meat Pate with Buffalo Meat and Potatoes",
+		price: "€2.80 (400 g)",
 		fullDesc: {
 			analysis: ["Crude protein 11%", "Crude fat 3%", "Crude fiber 0.5%", "Crude ash 1.5%", "Moisture 82%"],
 			vitPerKg: ["Vitamin A 2670 IU", "Vitamin D3 290 IU", "Zinc 15.62 mg", "Iron 6.5 mg", "Copper 1.64 mg", "Iodite 0.37 mg", "Manganese 1.12 mg", "Selenium 0.08 mg"],
@@ -80,8 +80,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Petkult Miel Grain Free Adult Wet Dog Food with Lamb 400 g",
-		price: "€2.40",
+		desc: "Petkult Miel Grain Free Adult Wet Dog Food with Lamb",
+		price: "€2.40 (400 g)",
 		fullDesc: {
 			analysis: ["Protein 10%", "Fat 8%", "Fiber 0.6%", "Ash 2.5%", "Moisture 78%", "Calcium 0.3%", "Phosphorus 0.25%"],
 			vitPerKg: ["Vitamin D3 200 IU", "Vitamin E 20 mg", "Vitamin B1", "Vitamin B2", "Vitamin B6", "Vitamin B5", "Vitamin B9", "Vitamin B12", "Omega-3", "Biotin", "Zinc (zinc oxide) 13 mg"],
@@ -97,8 +97,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Barking Heads Puppy Days Wet Puppy Food 300 g",
-		price: "€3.50",
+		desc: "Barking Heads Puppy Days Wet Puppy Food",
+		price: "€3.50 (300 g)",
 		fullDesc: {
 			analysis: ["Crude protein 11%", "Crude fat 7%", "Crude fiber 0.8%", "Crude ash 2.5%", "Moisture 76%"],
 			vitPerKg: [""],
@@ -114,8 +114,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img7,
-		desc: "Carnilove Lamb & Wild Boar Pate for Adult Dogs 400 g",
-		price: "€3.00",
+		desc: "Carnilove Lamb & Wild Boar Pate for Adult Dogs",
+		price: "€3.00 (400 g)",
 		fullDesc: {
 			analysis: ["Crude protein 9.5%", "Crude fat 6.5%", "Crude fiber 0.4%", "Crude ash 2.5%", "Moisture 78%", "Calcium 0.2%", "Phosphorus 0.25%", "Sodium 0.3%"],
 			vitPerKg: ["Vtamin D3 (3a671) 250 IU", "Vitamin E (3a700) 150 mg", "Biotin (3a880) 0.5 mg", "Copper (3b406) 4 mg", "Iron (3b106) 10 mg", "Iodine (3b201) 0.75 mg", "Manganese (3b504) 3 mg", "Zinc (3b606) 15 mg", "Taurine (3a370) 1000 mg"],
@@ -125,14 +125,14 @@ const dogsCannedFoodArr = [
 				secondPart: "",
 				thirdPart: "",
 				keyBenefits: "Ideal for maintaining optimum physical condition without the risk of increased blood cholesterol levels.",
-				ingredients: "Lamb (35%), wild boar (32%), blueberries (2%), cranberries (2%), raspberries (2%), pea flour (2%), lignocellulose (1%), salmon oil (0.5%)",
+				ingredients: "Lamb (35%), wild boar (32%), blueberries (2%), cranberries (2%), raspberries (2%), pea flour (2%), lignocellulose (1%), salmon oil (0.5%).",
 			},
 		},
 	},
 	{
 		img: img8,
-		desc: "Monge BWild Grain Free Salmon Wet Food for Adults 400 g",
-		price: "€2.10",
+		desc: "Monge BWild Grain Free Salmon Wet Food for Adults",
+		price: "€2.10 (400 g)",
 		fullDesc: {
 			analysis: ["Crude protein 8.6%", "Crude fat 6.2%", "Crude fiber 0.7%", "Crude ash 2.6%", "Moisture 79%"],
 			vitPerKg: ["Vitamin D3 434 IU", "Vitamin E 15.5 mg", "Selenium (sodium selenite 0.05 mg) 0.02 mg", "Manganese (manganese sulphate monohydrate 11 mg) 3.5 mg", "Zinc (zinc oxide 20 mg) 16 mg", "Copper (copper (II) sulphate pentahydrate 5.5 mg) 1.4 mg", "Iron  (iron (II) sulphate monohydrate 35 mg) 11.5 mg", "Iodine (calcium iodite 0.3 mg) 0.19 mg"],
@@ -148,8 +148,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img9,
-		desc: "DRN Solo Quaglia (Quail) Dietary Wet Food for Dogs and Cats 300 g",
-		price: "€2.80",
+		desc: "DRN Solo Quaglia (Quail) Dietary Wet Food for Dogs and Cats",
+		price: "€2.80 (300 g)",
 		fullDesc: {
 			analysis: ["Crude protein 8.5%", "Crude oils and fats 5%", "Crude fiber 0.3%", "Crude ash 2.46%", "Moisture 82%"],
 			vitPerKg: [""],
@@ -165,8 +165,8 @@ const dogsCannedFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "Disugual Salmon with Blueberry Adult Pate 150 g",
-		price: "€1.80",
+		desc: "Disugual Salmon with Blueberry Adult Pate",
+		price: "€1.80 (150 g)",
 		fullDesc: {
 			analysis: ["Protein 8.8%", "Fat 8.1%", "Fiber 0.3%", "Ash 2.8%", "Moisture 78.8%"],
 			vitPerKg: ["Vitamin A 4000 IU", "Vitamin D3 170 IU", "Vitamin E 41 mg", "Zinc 6.42 mg (zinc oxide 8.1 mg", "Selenium 0.0054 mg (sodium selenite 0.012 mg)", "Iodine 0.09 mg (sodium iodide 0.127 mg)", "Iron 1.58 mg (iron (II) carbonate 3.29 mg)", "Copper 0.24 mg (copper (II) sulphate pentahydrate 1 mg)", "Manganese 5.25 mg (manganese (II) oxide 7 mg)"],

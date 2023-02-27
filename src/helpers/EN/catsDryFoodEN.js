@@ -12,7 +12,7 @@ import img10 from "../../assets/img/catsDryFood/cat sausas 10.png";
 const catsDryFoodArr = [
 	{
 		img: img1,
-		desc: "Affinity Advance Sensitive Adult Sterilized",
+		desc: "Affinity Advance Sensitive for Adult Sterilized Cats",
 		price: "€7.10/kg",
 		fullDesc: {
 			analysis: ["Crude protein 36%", "Crude fat 16%", "Crude fiber 1.5%", "Crude ash 6.5%", "Omega-3 0.7%", "Omega-6 1.7%"],
@@ -46,7 +46,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img3,
-		desc: "Affinity Libra Adult Sterilized with Chicken",
+		desc: "Affinity Libra for Adult Sterilized Cats with Chicken",
 		price: "€3.80/kg",
 		fullDesc: {
 			analysis: ["Crude protein 35%", "Crude fat 11.7%", "Crude fiber 5%", "Crude ash 7.5%", "Omega-6 1.5%", "Sodium 0.7%"],
@@ -63,7 +63,7 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img4,
-		desc: "Natural Trainer Sterilised Adult with Dry-cured Ham",
+		desc: "Natural Trainer for Sterilised Adult Cats with Dry-cured Ham",
 		price: "€6.50/kg",
 		fullDesc: {
 			analysis: ["Crude protein 35%", "Crude fat 12%", "Crude fiber 3.4%", "Crude ash 6.8%", "Omega-3 0.7%", "Omega-6 2.1%"],
@@ -80,8 +80,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img5,
-		desc: "Orijen Tundra Cat All Breeds & Life Stages 1.8 kg",
-		price: "€50.50",
+		desc: "Orijen Tundra Cat All Breeds & Life Stages",
+		price: "€50.50 (1.8 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 40%", "Crude fat 20%", "Crude fiber 3%", "Crude ash 9%", "Moisture 10%", "Calcium 1.9%", "Phosphorus 1.4%", "Magnesium 0.1%", "Taurine 0.1%", "Omega-3 1%", "Omega-6 2.4%"],
 			vitPerKg: ["Vitamin E supplement"],
@@ -97,8 +97,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img6,
-		desc: "Royal Canin Fit 32 Regular 2 kg",
-		price: "€21.00",
+		desc: "Royal Canin Fit 32 Regular for Adult Cats",
+		price: "€21.00 (2 kg)",
 		fullDesc: {
 			analysis: ["Protein 32%", "Fat 15%", "Crude fiber 4.6%", "Crude ash 7.2%"],
 			vitPerKg: ["Vitamin A 13000 IU", "Vitamin D3 700 IU", "Iron 35 mg", "Iodine 3.5 mg", "Copper 11 mg", "Manganese 45 mg", "Zinc 136 mg", "Selenium 0.09 mg"],
@@ -131,8 +131,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img8,
-		desc: "Affinity Advance Veterinary Diets Weight Balance Feline Adult 1.5 kg",
-		price: "€18.90",
+		desc: "Affinity Advance Veterinary Diets Weight Balance Feline Adult",
+		price: "€18.90 (1.5 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 40%", "Crude fat 9%", "Crude fiber 10%", "Crude ash 7%", "Essential fatty acids 2%"],
 			vitPerKg: ["Vitamin A 30000 IU", "Vitamin D3 2000 IU", "Vitamin E 660 mg", "L-Carnitine 500 mg", "Ferrous sulphate monohydrate 358 mg (Fe: 118 mg)", "Ferrous fumarate 144 mg (Fe: 47 mg)", "Potassium iodide 2.6 mg (I: 2 mg)", "Copper sulphate pentahydrate 45 mg (Cu: 12 mg)", "Manganese sulphate monohydrate 169 mg (Mn: 55 mg)", "Zinc sulphate monohydrate 407 mg (Zn: 148 mg)", "Sodium selenite 0.33 mg (Se: 0.15 mg)"],
@@ -165,8 +165,8 @@ const catsDryFoodArr = [
 	},
 	{
 		img: img10,
-		desc: "AATU Free Run Duck for Cats 3 kg",
-		price: "€44.00",
+		desc: "AATU Free Run Duck for Cats",
+		price: "€44.00 (3 kg)",
 		fullDesc: {
 			analysis: ["Crude protein 34%", "Fat 20%", "Crude fiber 2.5%", "Ash 8.9%", "Moisture 8%", "Omega-3 0.7%", "Omega-6 2.9%"],
 			vitPerKg: ["Vitamin A 25000 IU", "Vitamin D3 1700 IU", "Vitamin E 330 mg", "Taurine 1500 mg", "L-Carnitine 200 mg", "Ferrous sulphate monohydrate 600 mg", "Zinc sulphate monohydrate 310 mg", "Manganese sulphate monohydrate 70 mg", "Cupric sulphate pentahydrate 45 mg", "Calcium iodate anhydrous 3.64 mg", "Sodium selenite 0.41 mg"],
